@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bible v3.0 (2026-10-01): grow hunta-bible.pages.dev from a summary to the full vault.
+"""Bible v3.0 (2026-10-01): grow stpi-bible.pages.dev from a summary to the full vault.
 
 Owner: "it's way too shallow — add 600% more information, and all promo images + materials."
 
@@ -15,16 +15,16 @@ What this builder injects into index.html (idempotent, between AUTO markers):
                  the copy-drift table, the affiliate-program block.
   7. machine     The 2026 machine — cadence/budgets, the self-healing systems, host ownership,
                  the runbook index, the self-serve journey, the grind, the landing verbatim.
-  8. brand2      Brand 2.0 — the 2026-10-01 Jacaranda refresh: tokens, glyph, voice, coverage.
+  8. brand2      Brand 2.0 — the 2026-10-01 STPi refresh: tokens, glyph, voice, coverage.
 
 Refresh inputs:
-  - scripts/_data/topics-rendered.json : regenerate from the hunta checkout with
+  - scripts/_data/topics-rendered.json : regenerate from the stpi checkout with
       python3 -c 'import sys; sys.path.insert(0,"press"); import facts, json;
       json.dump({"topics": json.loads(facts.render(open("press/topics.json").read()))},
                  open("MARKETING/scripts/_data/topics-rendered.json","w"), indent=2)'
   - bible-assets/cards/*.png : regenerate with press/cards.py (see bottom of this file).
-  - landing copy + FAQ : re-extracted from the hunta checkout when present
-    (HUNTA env var), else the last vendored snapshot in scripts/_data/ is reused.
+  - landing copy + FAQ : re-extracted from the stpi checkout when present
+    (STPI env var), else the last vendored snapshot in scripts/_data/ is reused.
 
 Requires: pip install markdown
 """
@@ -41,8 +41,8 @@ import markdown
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "scripts" / "_data"
-HUNTA = Path(os.environ.get("HUNTA", "/home/user/sweep/hunta"))
-DOCS = Path(os.environ.get("HUNTA_DOCS", "/home/user/sweep/hunta-docs"))
+STPI = Path(os.environ.get("STPI", "/home/user/sweep/stpi"))
+DOCS = Path(os.environ.get("STPI_DOCS", "/home/user/sweep/stpi-docs"))
 TODAY = "2026-10-01"
 
 NAV_BEGIN = "<!-- AUTO-NAV:BEGIN -->"
@@ -98,8 +98,8 @@ def load_topics() -> list[dict]:
 
 
 def landing_parts() -> tuple[str, list[tuple[str, str]]]:
-    """(verbatim page text, [(question, answer)]) refreshed from the hunta checkout."""
-    src = HUNTA / "landing" / "index.html"
+    """(verbatim page text, [(question, answer)]) refreshed from the stpi checkout."""
+    src = STPI / "landing" / "index.html"
     lp, fq = DATA / "landing-copy.txt", DATA / "landing-faq.json"
     if src.exists():
         raw = src.read_text(encoding="utf-8", errors="ignore")
@@ -111,7 +111,7 @@ def landing_parts() -> tuple[str, list[tuple[str, str]]]:
         txt = re.sub(r"<br[^>]*>", "\n", txt, flags=re.I)
         txt = html.unescape(re.sub(r"<[^>]+>", "", txt))
         lines = [l.strip() for l in txt.splitlines() if l.strip()]
-        lp.write_text(f"-- extracted {TODAY} from hunta/landing/index.html --\n" + "\n".join(lines))
+        lp.write_text(f"-- extracted {TODAY} from stpi/landing/index.html --\n" + "\n".join(lines))
         fq.write_text(json.dumps(faq, indent=1))
     copy = lp.read_text() if lp.exists() else "(landing snapshot missing)"
     faqs = json.loads(fq.read_text()) if fq.exists() else []
@@ -121,7 +121,7 @@ def landing_parts() -> tuple[str, list[tuple[str, str]]]:
 def docs_index() -> str:
     rd = DOCS / "README.md"
     if not rd.exists():
-        return "<p><i>runbook index unavailable (hunta-docs checkout not found)</i></p>"
+        return "<p><i>runbook index unavailable (stpi-docs checkout not found)</i></p>"
     rows = []
     for line in rd.read_text().splitlines():
         m = re.match(r"\|\s*\*\*`([^`]+)`\*\*\s*\|\s*([^|]+)\|\s*([^|]+)\|", line)
@@ -138,11 +138,11 @@ def file_size(p: Path) -> str:
 
 # ----------------------------------------------------------------------------- storefront verbatim (fetched 2026-10-01)
 
-SOLO_COPY = """Hunta Solo — $306/ month   (+2 options)
+SOLO_COPY = """STPi Solo — $306/ month   (+2 options)
 "3 candidates, 100 sends a month. Drafted nightly, sent after your yes."
 For individual career coaches and job agents.
 
-Hunta hunts vacancies nightly, scores them against each CV, drafts a tailored CV
+STPi hunts vacancies nightly, scores them against each CV, drafts a tailored CV
 and cover letter, and sends you a one-tap approval card in Discord.
 
 Solo includes:
@@ -160,13 +160,13 @@ FAQ
 Does anything send without me? No. Each application is a Discord card; nothing goes
 out until you tap Approve.
 Can I try first? Yes, free demo pack (1 candidate, 25 drafts, 5 sends / 30 days):
-https://gethunta.pages.dev/
+https://getstpi.pages.dev/
 Pay in rands? Yes: rand checkouts at R4,999/mo / R9,999/mo / R15,000/mo.
 Annual: one bank-wire payment, 25% off.
 No card? Lightning (SharkSkin@coinos.io) or Mukuru / EFT (+263 78 460 0904, ref = tenant id).
-Full FAQ in the Hunta forum. Questions: simalidudu@gmail.com"""
+Full FAQ in the STPi forum. Questions: simalidudu@gmail.com"""
 
-STUDIO_COPY = """Hunta Studio — $613/ month   (+2 options)
+STUDIO_COPY = """STPi Studio — $613/ month   (+2 options)
 "15 candidates, fair-use sends, PDFs branded as your agency."
 For coaching practices and small recruitment agencies.
 
@@ -185,13 +185,13 @@ FAQ
 Does anything send without me? No. Each application is a Discord card; nothing goes
 out until you tap Approve.
 Can I try first? Yes, free demo pack (1 candidate, 25 drafts, 5 sends / 30 days):
-https://gethunta.pages.dev/
+https://getstpi.pages.dev/
 Pay in rands? Yes: rand checkouts at R4,999/mo / R9,999/mo / R15,000/mo.
 Annual: one bank-wire payment, 25% off.
 No card? Lightning (SharkSkin@coinos.io) or Mukuru / EFT (+263 78 460 0904, ref = tenant id).
-Full FAQ in the Hunta forum. Questions: simalidudu@gmail.com"""
+Full FAQ in the STPi forum. Questions: simalidudu@gmail.com"""
 
-SOVEREIGN_COPY = """Hunta Sovereign — $920/ month   (+2 options)
+SOVEREIGN_COPY = """STPi Sovereign — $920/ month   (+2 options)
 "Self-hosted, unlimited candidates and sends. Your data stays on your servers."
 For agencies and institutions that need the pipeline on their own infrastructure.
 
@@ -211,18 +211,18 @@ FAQ
 Does anything send without me? No. Each application is a Discord card; nothing goes
 out until you tap Approve.
 Can I try first? Yes, free demo pack (1 candidate, 25 drafts, 5 sends / 30 days):
-https://gethunta.pages.dev/
+https://getstpi.pages.dev/
 Pay in rands? Yes: rand checkouts at R4,999/mo / R9,999/mo / R15,000/mo.
 Annual: one bank-wire payment, 25% off.
 No card? Lightning (SharkSkin@coinos.io) or Mukuru / EFT (+263 78 460 0904, ref = tenant id).
-Full FAQ in the Hunta forum. Questions: simalidudu@gmail.com"""
+Full FAQ in the STPi forum. Questions: simalidudu@gmail.com"""
 
-DEMO_CTA_INVENTORY = """The demo sells at every surface (verified in hunta/demo.py, 2026-10-01):
+DEMO_CTA_INVENTORY = """The demo sells at every surface (verified in stpi/demo.py, 2026-10-01):
 
 1. CLI banner on every invocation (demo.py cli_banner(), ~L201):
    ┌──────────────────────────────────────────────────────────┐
-   │  HUNTA · FREE DEMO BUILD — you are one upgrade from unlimited    │
-   │  Buy: https://whop.com/jacaranda-labs                    │
+   │  STPI · FREE DEMO BUILD — you are one upgrade from unlimited    │
+   │  Buy: https://whop.com/stpi                    │
    │  ⚡ SharkSkin@coinos.io   ·   Mukuru / EFT               │
    └──────────────────────────────────────────────────────────┘
 
@@ -230,16 +230,16 @@ DEMO_CTA_INVENTORY = """The demo sells at every surface (verified in hunta/demo.
    "Hunts stop when the demo caps run out — an upgrade takes a minute and your
     whole queue comes back to life: Buy Premium · Solo $306 · Studio $613 ·
     Sovereign $920 · pay in rands · ⚡ Lightning"
-   (now in the brand palette — lilac #F4EEF9 panel on plum #3D2B57 ink)
+   (now in the brand palette — lilac #eef4fb panel on plum #0a1f3c ink)
 
 3. Every demo PDF footer (demo.py pdf_note(), ~L189):
-   "Prepared with Hunta Demo · get the full engine: https://gethunta.pages.dev"
+   "Prepared with STPi Demo · get the full engine: https://getstpi.pages.dev"
 
 4. The leash itself (demo.py, ~L126): the 26th draft / 6th send attempt is not an
    error message — it is the buy message with the store link. The freeze is visible
    in the CLI, the dashboard and the bundle.
 
-5. Trial workspace upsell (hunta-mint growth.js /trial page): "Keep going by buying
+5. Trial workspace upsell (stpi-mint growth.js /trial page): "Keep going by buying
    Solo/Studio/Sovereign on Whop — your workspace upgrades in place when the same
    email pays. The wall talks."
 
@@ -318,7 +318,7 @@ def sec_vault() -> str:
         if not p.exists():
             continue
         text = page_text(p)
-        parts.append(f'<h3>gethunta.pages.dev/{path[:-5] if path != "index.html" else ""} '
+        parts.append(f'<h3>getstpi.pages.dev/{path[:-5] if path != "index.html" else ""} '
                      f'<span class="pill">{len(text.split())} words</span></h3>'
                      f'<p class="sub">{cap}</p>{cb(text)}')
     return "\n".join(parts)
@@ -378,7 +378,7 @@ def sec_cards() -> str:
            "pin    1000x1500  pinterest\n"
            "cover  1000x420   devto, nostr30023 (dev.to crops covers to 1000x420)"),
         '<style>.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;align-items:start}'
-        ".cg figure{margin:0}.cg figcaption{font-size:11.5px;color:var(--muted,#8E7FA6);margin-top:4px;word-break:break-all}"
+        ".cg figure{margin:0}.cg figcaption{font-size:11.5px;color:var(--muted,#7d97b8);margin-top:4px;word-break:break-all}"
         ".cg img{width:100%;border:1px solid var(--line);border-radius:8px;display:block}</style>",
         f"<h3>Wide cards — one per promo topic ({len(wide)})</h3>",
         '<div class="cg">' + "".join(
@@ -400,10 +400,10 @@ def sec_media() -> str:
         "<h2>The media vault — every image we own</h2>",
         '<p class="lede">All of it, in one place, with what each piece is for. Files live in the '
         "repo next to this page; the bible serves the 2026 additions itself (bible-assets/), the "
-        "legacy sets come from gethunta's asset store (same repo, same bytes).</p>",
+        "legacy sets come from getstpi's asset store (same repo, same bytes).</p>",
     ]
     whop = [(f"whop/{n}.png", d) for n, d in [
-        ("1-hero", "Whop gallery 1 of 5 — the storefront hero: what Hunta is in one frame"),
+        ("1-hero", "Whop gallery 1 of 5 — the storefront hero: what STPi is in one frame"),
         ("2-how-it-works", "Whop gallery 2 — the four-step loop for skimmers"),
         ("3-approval-card", "Whop gallery 3 — the Discord approval card, the trust shot"),
         ("4-plans", "Whop gallery 4 — the three plans knife-edge"),
@@ -431,8 +431,8 @@ def sec_media() -> str:
     ]]
     out.append(group("Legacy embeds (.embed/)", "The base64-era hero set (.embed/b64.txt holds an inline payload).", embeds))
     ext = [
-        ("bible-assets/external/jacaranda-logo.png", "2026-10-01: the Jacaranda Labs literary mark — the brand anchor going forward"),
-        ("bible-assets/external/jacaranda-pulse.gif", "2026 kit: the living wordmark, animated pulse (760×427)"),
+        ("bible-assets/external/stpi-logo.png", "2026-10-01: the STPi literary mark — the brand anchor going forward"),
+        ("bible-assets/external/stpi-pulse.gif", "2026 kit: the living wordmark, animated pulse (760×427)"),
         ("bible-assets/external/hero-banner.png", "2026 kit: hero banner for campaigns (1540×560)"),
         ("bible-assets/external/hero-raw.png", "2026 kit: raw hero variant (1792×592)"),
         ("bible-assets/external/pricing-banner.png", "2026 kit: pricing banner for the store/decks (1540×780)"),
@@ -444,20 +444,20 @@ def sec_media() -> str:
         ("cartoon-boards-crossroads.png", "Board coverage as a night crossroads — ads and posts about the 17 boards"),
         ("cartoon-pipeline-machine.png", "The factory machine turning paper planes into approval cards — the pipeline visual"),
         ("cartoon-before-after-desk.png", "The before/after desk split — the pain visual for ads, decks and comparison posts"),
-        ("cartoon-jacaranda-mail.png", "Under the jacaranda tree: the graduate, the mailbox, the paper plane — the hope shot"),
+        ("cartoon-stpi-mail.png", "Under the stpi tree: the graduate, the mailbox, the paper plane — the hope shot"),
         ("cartoon-approval-gate.png", "The approval gate itself: nothing passes without the guard's hand — the trust visual"),
         ("cartoon-rand-pricing.png", "Three plan boxes on a shelf with coins and a banknote — the honest-pricing visual"),
-        ("cartoon-affiliate-handshake.png", "Handshake over a jacaranda branch with coin sparkles — the affiliate/referral visual"),
+        ("cartoon-affiliate-handshake.png", "Handshake over a stpi branch with coin sparkles — the affiliate/referral visual"),
         ("cartoon-trial-seven-days.png", "Seven calendar tabs lifting off as paper planes — the 7-day trial visual"),
     ]]
     out.append(group("Cartoon promo illustrations (bible-assets/illustrations/)",
-                     "2026-10-01 set: text-free, flat jacaranda-palette cartoons — legal for ads, safe next to any caption, "
+                     "2026-10-01 set: text-free, flat stpi-palette cartoons — legal for ads, safe next to any caption, "
                      "and generated in the house palette so they sit beside the cards without clashing.", illus))
     brand_files = []
     for p in sorted((ROOT / "brand").glob("*")):
         if p.is_file() and p.suffix.lower() in (".png", ".svg", ".ico"):
             brand_files.append((f"brand/{p.name}", f"{p.name} · {file_size(p)}"))
-    out.append(group("Brand marks (brand/)", "The complete Hunta mark set: wordmark, mono, tile, icons, og.", brand_files))
+    out.append(group("Brand marks (brand/)", "The complete STPi mark set: wordmark, mono, tile, icons, og.", brand_files))
     samples_md = """
 | File | What it proves |
 | --- | --- |
@@ -503,8 +503,8 @@ def sec_demokit() -> str:
     ])
 
 
-TRIAL_COPY = """Try Hunta on one of your candidates, free for 7 days
-(hunta-mint .../trial — verbatim, fetched 2026-10-01)
+TRIAL_COPY = """Try STPi on one of your candidates, free for 7 days
+(stpi-mint .../trial — verbatim, fetched 2026-10-01)
 
 For career coaches and placement agencies. We run the hunt on our servers: the boards are
 checked on a schedule, every advert is matched against your candidate's real profile, and
@@ -530,7 +530,7 @@ def sec_storefront() -> str:
 | --- | --- | --- | --- |
 | Whop Solo product page | "3 candidates, 100 sends a month" | 5 candidates | conflict — owner decides, one edit |
 | Whop Studio product page | "15 candidates, fair-use sends" | 25 candidates | conflict — owner decides, one edit |
-| Whop pinned FAQ post | demo link = old king-kunta-cpu.github.io URL | gethunta.pages.dev | stale — update the pin |
+| Whop pinned FAQ post | demo link = old stpi-cloud.github.io URL | getstpi.pages.dev | stale — update the pin |
 | Whop pinned FAQ post | Solo/Studio candidate counts | (same two drifts) | one edit fixes all |
 """
     affiliate = cb("""AFFILIATE PROGRAM — status 2026-10-01: NOT YET ENABLED on the store.
@@ -544,7 +544,7 @@ Recommended: 30% of first month — it mirrors the field-agent agreement exactly
 
 Once it's on, these four promo topics recruit automatically through whop_public
 and the social mix (number-free copy, true before and after the toggle):
-  - promo-affiliate-coaches   "Recommend hunta, get paid for it"
+  - promo-affiliate-coaches   "Recommend stpi, get paid for it"
   - promo-affiliate-demo-sells "The easiest referral is a demo they can click"
   - promo-affiliate-recurring "One referral, paid again every month it stays"
   - promo-affiliate-proof     "Sell the pipeline, not a promise"
@@ -556,9 +556,9 @@ never both — the lead ledger decides per lead (doc 12 addendum).""")
         f'<p class="lede">The three live product copies exactly as published (fetched {TODAY}), '
         "so nobody works from memory. Beneath them: the drift audit and the one lever still "
         "waiting on the owner.</p>",
-        "<h3>Hunta Solo — whop.com/jacaranda-labs/products/hunta-solo/</h3>", cb(SOLO_COPY),
-        "<h3>Hunta Studio — whop.com/jacaranda-labs/products/hunta-studio/</h3>", cb(STUDIO_COPY),
-        "<h3>Hunta Sovereign — whop.com/jacaranda-labs/products/hunta-sovereign/</h3>", cb(SOVEREIGN_COPY),
+        "<h3>STPi Solo — whop.com/stpi/products/stpi-solo/</h3>", cb(SOLO_COPY),
+        "<h3>STPi Studio — whop.com/stpi/products/stpi-studio/</h3>", cb(STUDIO_COPY),
+        "<h3>STPi Sovereign — whop.com/stpi/products/stpi-sovereign/</h3>", cb(SOVEREIGN_COPY),
         "<h3>Copy drift audit (found 2026-10-01 — manual copy the machine can't write)</h3>", md(drift),
         "<h3>The hosted 7-day trial page — verbatim</h3>", cb(TRIAL_COPY),
         "<h3>Affiliates</h3>", affiliate,
@@ -569,11 +569,11 @@ never both — the lead ledger decides per lead (doc 12 addendum).""")
 
 
 def numbers_ledger() -> str:
-    """Live product numbers straight from hunta/press/facts.py — the render source for every post."""
-    if not HUNTA.exists():
-        return "<p><i>(hunta checkout not found — ledger unavailable)</i></p>"
+    """Live product numbers straight from stpi/press/facts.py — the render source for every post."""
+    if not STPI.exists():
+        return "<p><i>(stpi checkout not found — ledger unavailable)</i></p>"
     import sys
-    sys.path.insert(0, str(HUNTA / "press"))
+    sys.path.insert(0, str(STPI / "press"))
     try:
         import facts
         bill = facts.billing()
@@ -607,17 +607,17 @@ def sec_machine(landing_copy: str, faqs: list) -> str:
     mirrors = """
 | Host | Serves | Deployed by | Owner repo |
 | --- | --- | --- | --- |
-| gethunta.pages.dev | The buyer site: landing, demo, setup, domain, downloads, samples | pages-deploy.yml | hunta (landing/ owns the WHOLE site, 2026-10-01) |
-| gethunta-a.pages.dev | Seller-a mirror (host refs swapped by sed in CI) | pages-deploy.yml same run | hunta |
-| hunta-mint.workers.dev | Trials, licences, Discord relay, press image hosting | mint deploy on push | hunta-mint |
-| hunta-mint-a.workers.dev | Seller-a mint mirror (SITE_BASE -> gethunta-a) | mint deploy same run | hunta-mint |
-| hunta-bible.pages.dev | This bible (internal, noindex) | cf-pages.yml | hunta-marketing (bible-only from 2026-10-01) |
+| getstpi.pages.dev | The buyer site: landing, demo, setup, domain, downloads, samples | pages-deploy.yml | stpi (landing/ owns the WHOLE site, 2026-10-01) |
+| stpi-a.pages.dev | Seller-a mirror (host refs swapped by sed in CI) | pages-deploy.yml same run | stpi |
+| stpi-mint.workers.dev | Trials, licences, Discord relay, press image hosting | mint deploy on push | stpi-mint |
+| stpi-mint-a.workers.dev | Seller-a mint mirror (SITE_BASE -> stpi-a) | mint deploy same run | stpi-mint |
+| stpi-bible.pages.dev | This bible (internal, noindex) | cf-pages.yml | stpi-marketing (bible-only from 2026-10-01) |
 """
     journey = """
 | Moment | What happens | Human touches |
 | --- | --- | --- |
-| Discover | Buyer hits gethunta.pages.dev from a tracked post | none |
-| Try | One tap downloads hunta-demo-1.0.1.zip (or starts the hosted 7-day trial on Whop) | none |
+| Discover | Buyer hits getstpi.pages.dev from a tracked post | none |
+| Try | One tap downloads stpi-demo-1.0.1.zip (or starts the hosted 7-day trial on Whop) | none |
 | Set up | /setup walkthrough: install, first candidate, first draft | none (the self-serve panel links every how-to) |
 | Hit the wall | Caps freeze the pipeline — visibly, with the buy link (see Demo kit) | none |
 | Buy | Whop checkout (card $, rands R, Lightning, Mukuru/EFT, annual by wire) | none |
@@ -676,40 +676,40 @@ def sec_brand2() -> str:
     palette = """
 | Token | Hex | Role |
 | --- | --- | --- |
-| Lilac | #F4EFFA | light surfaces (brand hone) |
-| Plum ink | #3D2B57 | primary ink / night surface |
-| Jacaranda | #6B3FA0 | primary accent — buttons, links, marks |
-| Mauve | #8E7FA6 | muted text on lilac |
-| Night accent | #B99CE8 | accent on plum |
-| Night muted | #B9ACCC | muted on plum |
+| Lilac | #eef4fb | light surfaces (brand hone) |
+| Plum ink | #0a1f3c | primary ink / night surface |
+| STPi | #14365e | primary accent — buttons, links, marks |
+| Mauve | #7d97b8 | muted text on lilac |
+| Night accent | #a4c5e0 | accent on plum |
+| Night muted | #afbdc9 | muted on plum |
 | Paper | #FBF7EF | warm paper surface |
 | Paper muted | #756C62 | muted on paper |
 | Gold kick | #C6803C | the one allowed contrast accent |
-| Brand muted | #EBDFF7 | muted on brand fill |
+| Brand muted | #e1ecf5 | muted on brand fill |
 """
     voice = cb("""Wordmark-only. We never ship a logo lockup with an icon we didn't draw ourselves.
-Lead colour: jacaranda purple. "Colours, not noise."
+Lead colour: stpi purple. "Colours, not noise."
 Display voice: Georgia serif for the one headline that matters; system sans elsewhere.
-The mark: the five-bell jacaranda blossom — drawn, never borrowed.
+The mark: the five-bell stpi blossom — drawn, never borrowed.
 Skin everything customer-facing: landing, mirrors, trial pages, cards, owner PDFs.""")
     coverage = """
 | Surface | Brand 2.0 status (2026-10-01, live-verified) |
 | --- | --- |
-| gethunta.pages.dev | eyebrow wordmark, brand palette, literary logo, self-serve panel |
-| gethunta-a.pages.dev | same, mirrored with -a host refs |
-| hunta-mint /trial | brand palette on the trial workspace |
-| hunta-mint-a | same + SITE_BASE -> gethunta-a |
-| press cards | PALETTES = brand tokens; footer "Jacaranda Labs · job-hunt mechanics" |
+| getstpi.pages.dev | eyebrow wordmark, brand palette, literary logo, self-serve panel |
+| stpi-a.pages.dev | same, mirrored with -a host refs |
+| stpi-mint /trial | brand palette on the trial workspace |
+| stpi-mint-a | same + SITE_BASE -> stpi-a |
+| press cards | PALETTES = brand tokens; footer "STPi · job-hunt mechanics" |
 | this bible | v3.0 — the vault + brand 2.0 tab |
 """
     return "\n".join([
-        "<h2>Brand 2.0 — the Jacaranda refresh (2026-10-01)</h2>",
-        '<p class="lede">The house is Jacaranda Labs; Hunta is the engine. Everything '
+        "<h2>Brand 2.0 — the STPi refresh (2026-10-01)</h2>",
+        '<p class="lede">The house is STPi; STPi is the engine. Everything '
         "customer-facing wears the same coat, and this is the pattern book.</p>",
         "<h3>Palette</h3>", md(palette),
         "<h3>Doctrine</h3>", voice,
-        fig("bible-assets/external/jacaranda-logo.png", "The Jacaranda Labs literary mark — brand anchor"),
-        fig("bible-assets/external/jacaranda-pulse.gif", "The living wordmark (animated)"),
+        fig("bible-assets/external/stpi-logo.png", "The STPi literary mark — brand anchor"),
+        fig("bible-assets/external/stpi-pulse.gif", "The living wordmark (animated)"),
         "<h3>Coverage</h3>", md(coverage),
     ])
 
@@ -733,7 +733,7 @@ without comment." The card sells; you go quiet.
 mailbox, their name, their client sees their brand. Rands checkout exists; so does the $2754
 annual wire (25% off) for the coach who hates subscriptions.
 
-**Kill shot.** "You bill by the client, not by the hour. Hunta is the only hire that works
+**Kill shot.** "You bill by the client, not by the hour. STPi is the only hire that works
 nights, never phones in sick, and asks permission before it acts."
 
 **Common stall.** "I can do this with ChatGPT." True — and the six-prompt essay (Copy vault)
@@ -859,14 +859,14 @@ def sec_record() -> str:
         rows = "".join(f"<tr><td>{m}</td><td>{n}</td></tr>" for m, n in sorted(months.items(), reverse=True))
         parts.append(f"<h3>dev.to author record — {len(arts)} posts indexed</h3>"
                      "<p class='sub'>Era counts before the list: the May-era is the persona's "
-                     "legacy listings phase (index-only, off-mission); Sep 19+ is the hunta press era.</p>"
+                     "legacy listings phase (index-only, off-mission); Sep 19+ is the stpi press era.</p>"
                      f"<table><tr><th>Month</th><th>Posts</th></tr>{rows}</table>")
         era = [a for a in arts if a["published_at"] >= "2026-09-19"]
         listing = "".join(
             f'<tr><td>{a["published_at"][:10]}</td><td><a href="{a["url"]}">{esc(a["title"])}</a></td>'
             f'<td>{esc(", ".join(a.get("tags", [])[:4]))}</td></tr>'
             for a in era)
-        parts.append("<h4>The hunta-era posts (full-text where vendored below)</h4>"
+        parts.append("<h4>The stpi-era posts (full-text where vendored below)</h4>"
                      f"<table><tr><th>Date</th><th>Post</th><th>Tags</th></tr>{listing}</table>")
         legacy = "".join(
             f'<tr><td>{a["published_at"][:10]}</td><td><a href="{a["url"]}">{esc(a["title"])}</a></td></tr>'
@@ -877,7 +877,7 @@ def sec_record() -> str:
         text = f.read_text()
         parts.append(f"<h4 style='margin-top:1em'>{esc(f.stem[6:])}</h4>"
                      f'<div class="card">{md(text)}</div>')
-    stp = HUNTA / "press" / "auto" / "state.json"
+    stp = STPI / "press" / "auto" / "state.json"
     if stp.exists():
         st = json.loads(stp.read_text())
         pub = st.get("published", [])

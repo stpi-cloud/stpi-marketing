@@ -1,11 +1,11 @@
 # Your pipeline in ~10 minutes
 
-> Want the bits themselves? **downloads/hunta-demo-1.0.1.zip** (sha256 beside it) — one wheel,
+> Want the bits themselves? **downloads/stpi-demo-1.0.1.zip** (sha256 beside it) — one wheel,
 > the identical build the paid tiers run (caps in code: 25 drafts + 5 sends per rolling 30
-> days until you licence). `unzip`, `pip install hunta-1.0.1-py3-none-any.whl`, `hunta doctor`.
+> days until you licence). `unzip`, `pip install stpi-1.0.1-py3-none-any.whl`, `stpi doctor`.
 > Full walkthrough with every command: **setup.html** (CV designs in §8).
 
-1. **Discord (2 min)** — in your server: create #hunta → Edit Channel →
+1. **Discord (2 min)** — in your server: create #stpi → Edit Channel →
    Integrations → Webhooks → New Webhook. Copy the URL.
 2. **Gmail (2 min)** — switch on 2-step verification, then
    myaccount.google.com/apppasswords → create → 16 characters.

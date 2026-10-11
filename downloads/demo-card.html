@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hunta — interactive demo card</title>
+<title>STPi — interactive demo card</title>
 <style>
   body{margin:0;background:#313338;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#DBDEE1;
        display:flex;align-items:flex-start;justify-content:center;min-height:100vh;padding:24px}
   .wrap{max-width:1080px;width:100%}
   .chan{color:#949BA4;font-size:14px;font-weight:700;border-bottom:1px solid #3F4147;padding-bottom:10px;margin-bottom:18px}
-  .chan b{color:#F2F3F5}
+  .chan b{color:#f2f4f5}
   .cols{display:grid;grid-template-columns:minmax(0,1fr) 355px;gap:24px;align-items:start}
   @media (max-width:820px){ .cols{grid-template-columns:1fr} }
   .msg{display:flex;gap:14px}
-  .ava{width:44px;height:44px;border-radius:50%;background:#7B5EA7;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+  .ava{width:44px;height:44px;border-radius:50%;background:#27548f;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
   .bot{background:#5865F2;color:#fff;font-size:10px;font-weight:700;border-radius:4px;padding:2px 5px;vertical-align:2px;margin-left:6px}
-  .name{font-weight:700;color:#F2F3F5}
+  .name{font-weight:700;color:#f2f4f5}
   .time{color:#949BA4;font-size:12px;margin-left:8px}
   .content{line-height:1.65;font-size:15px}
   .content .t{font-weight:700}
   .match{color:#B5BAC1}
-  .link{color:#7B5EA7;text-decoration:none;word-break:break-all}
+  .link{color:#27548f;text-decoration:none;word-break:break-all}
   .meta{color:#949BA4;font-size:13px}
   .btns{margin:12px 0}
   .btn{display:inline-block;border-radius:6px;padding:8px 16px;font-weight:700;font-size:14px;cursor:pointer;margin-right:10px;border:1px solid transparent;background:#2B2D31}
@@ -29,13 +29,13 @@
   .nx{color:#949BA4;font-size:12.5px;cursor:pointer;text-decoration:underline}
   .nx:hover{color:#DBDEE1}
   .dots{float:right;margin-top:11px;font-size:9px;letter-spacing:5px;color:#4A4C52;cursor:default}
-  .dots .on{color:#7B5EA7}
+  .dots .on{color:#27548f}
   a.file{display:flex;gap:12px;align-items:center;background:#2B2D31;border:1px solid #1E1F22;border-radius:8px;
          padding:10px 14px;margin:8px 0;max-width:420px;text-decoration:none;transition:border-color .15s}
-  a.file:hover{border-color:#7B5EA7}
-  .file .ic{width:36px;height:44px;background:#7B5EA7;border-radius:4px;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  a.file:hover{border-color:#27548f}
+  .file .ic{width:36px;height:44px;background:#27548f;border-radius:4px;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
   .file .dl{margin-left:auto;color:#949BA4;font-size:12px}
-  .file .fn{color:#7B5EA7;font-weight:600;font-size:14px}
+  .file .fn{color:#27548f;font-weight:600;font-size:14px}
   .file .fs{color:#949BA4;font-size:12px}
   #status{margin-top:16px;padding:12px 16px;border-radius:8px;font-size:14px;display:none}
   #status.sent{display:block;background:rgba(35,165,89,.12);border:1px solid #23A559;color:#23A559}
@@ -44,15 +44,15 @@
   .side{position:sticky;top:18px}
   @media (max-width:820px){ .side{position:static} }
   .offer{background:#2B2D31;border:1px solid #1E1F22;border-radius:12px;padding:16px 18px;margin-bottom:16px}
-  .offer h2{margin:0 0 4px;font-size:16px;color:#F2F3F5}
+  .offer h2{margin:0 0 4px;font-size:16px;color:#f2f4f5}
   .offer p{margin:0 0 12px;color:#B5BAC1;font-size:13.5px;line-height:1.55}
   .obtns a{display:block;border-radius:6px;padding:9px 13px;font-weight:700;font-size:13.5px;
            text-decoration:none;margin:0 0 8px;background:#5865F2;color:#fff;text-align:center}
   .obtns a.ghost{background:transparent;border:1px solid #5865F2;color:#DBDEE1}
   .obtns a.green{background:#23A559;color:#04110A}
-  .rails h3{margin:0 0 8px;font-size:14px;color:#F2F3F5}
+  .rails h3{margin:0 0 8px;font-size:14px;color:#f2f4f5}
   .rail{background:#2B2D31;border:1px solid #1E1F22;border-radius:12px;padding:13px 15px;margin-bottom:10px}
-  .rail b{color:#F2F3F5;font-size:13.5px}
+  .rail b{color:#f2f4f5;font-size:13.5px}
   .rail .amt{float:right;color:#23A559;font-weight:800;font-size:13.5px}
   .rail p{margin:6px 0 8px;color:#B5BAC1;font-size:12.5px;line-height:1.5}
   .rail .num{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px;color:#fff;background:#1E1F22;
@@ -62,24 +62,24 @@
   .rail a.wa{background:#23A559;color:#04110A}
   .rail a.ml{background:transparent;border:1px solid #5865F2;color:#DBDEE1}
   .fine{font-size:12px;color:#949BA4;line-height:1.55;margin-top:10px}
-  .fine a{color:#7B5EA7}
+  .fine a{color:#27548f}
   .foot{margin-top:22px;color:#949BA4;font-size:12.5px;line-height:1.6;border-top:1px solid #3F4147;padding-top:14px}
-  .foot a{color:#7B5EA7}
+  .foot a{color:#27548f}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="chan"># <b>hunta</b> — interactive demo · this card is live: taps work, PDFs download, jobs rotate</div>
+  <div class="chan"># <b>stpi</b> — interactive demo · this card is live: taps work, PDFs download, jobs rotate</div>
   <div class="cols">
 
     <div><!-- LEFT: the card, as it lands in your Discord -->
       <div class="msg">
         <div class="ava"><svg width="26" height="26" viewBox="0 0 116 116"><g fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="27"/><path d="M59 59 L72 72"/><path d="M72 72 L108 48 L88 106 L78 84 Z"/><path d="M78 84 L108 48"/></g></svg></div>
         <div style="min-width:0;flex:1">
-          <span class="name">Hunta</span><span class="bot">BOT</span><span class="time">Today at 06:00</span>
+          <span class="name">STPi</span><span class="bot">BOT</span><span class="time">Today at 06:00</span>
           <div class="dots" id="dots"></div>
           <div class="content">
-            🔎 <span class="t">Hunta — new application ready</span><br>
+            🔎 <span class="t">STPi — new application ready</span><br>
             <span class="t" id="jline"></span><br>
             <span class="match" id="mline"></span><br>
             <a class="link" href="#" onclick="return false" id="jurl"></a><br>
@@ -98,8 +98,8 @@
       <div class="foot">This is exactly what lands in a real coach's Discord. In production, ✅ sends the
       application from the coach's mailbox, signed as the candidate (replies reach both), and ❌ deletes both PDFs on the spot — untouched drafts
       self-destruct after 72 hours. Nothing ever sends without the tap. The job lines here are
-      illustrative demo ads; the downloadable PDFs are genuine Hunta render output.
-      <a href="../demo.html" target="_top">hunta-marketing/demo.html</a> · <span id="ctr"></span></div>
+      illustrative demo ads; the downloadable PDFs are genuine STPi render output.
+      <a href="../demo.html" target="_top">stpi-marketing/demo.html</a> · <span id="ctr"></span></div>
     </div>
 
     <aside class="side"><!-- RIGHT: the offer, on the same plane -->
@@ -110,7 +110,7 @@
         per rolling 30 days, enforced in code).</p>
         <div class="obtns">
           <a class="green" href="../demo.html" target="_top">⬇ Free demo — download page</a>
-          <a href="hunta-demo-1.0.1.zip" target="_top">⬇ Installable pack (.zip + sha256)</a>
+          <a href="stpi-demo-1.0.1.zip" target="_top">⬇ Installable pack (.zip + sha256)</a>
           <a class="ghost" href="../setup.html" target="_top">📖 Setup guide (10 min)</a>
         </div>
         <p class="fine">Try a design before you pay for one:
@@ -128,7 +128,7 @@
           Annual prepay saves 25%: Solo $2,754/yr (about R45,000). Reference: your name + tier. Slip screenshot below and
           your tenant is provisioned within hours, not days.</p>
           <span class="num">+263 78 460 0904</span><br>
-          <a class="rl wa" href="https://wa.me/263784600904?text=Hunta%20payment%20%E2%80%94%20tier%3A%20(Solo%2FStudio%2FSovereign)%2C%20sent%20via%20Mukuru%2C%20proof%20attached" target="_blank" rel="noopener">📲 Send proof on WhatsApp</a>
+          <a class="rl wa" href="https://wa.me/263784600904?text=STPi%20payment%20%E2%80%94%20tier%3A%20(Solo%2FStudio%2FSovereign)%2C%20sent%20via%20Mukuru%2C%20proof%20attached" target="_blank" rel="noopener">📲 Send proof on WhatsApp</a>
           <a class="rl ml" href="tel:+263784600904">☎️ Call the number</a>
         </div>
         <div class="rail">
@@ -138,15 +138,15 @@
           WhatsApp below and you're provisioned within hours. Verified working 2026-09-19.</p>
           <span class="num">SharkSkin@coinos.io</span><br>
           <a class="rl" href="lightning:SharkSkin@coinos.io">⚡ Pay in wallet</a>
-          <a class="rl wa" href="https://wa.me/263784600904?text=Hunta%20%E2%80%94%20Lightning%20paid%20(tier%3A%20)%2C%20receipt%20attached" target="_blank" rel="noopener">📲 Post receipt</a>
-          <a class="rl ml" href="https://wa.me/263784600904?text=Hunta%20%E2%80%94%20Lightning%20receipt%20attached">📲 WhatsApp</a>
+          <a class="rl wa" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Lightning%20paid%20(tier%3A%20)%2C%20receipt%20attached" target="_blank" rel="noopener">📲 Post receipt</a>
+          <a class="rl ml" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Lightning%20receipt%20attached">📲 WhatsApp</a>
         </div>
         <div class="rail">
           <b>💳 Card (Whop) &amp; anything else</b>
-          <p><b>Card (Whop) &mdash; one-tap checkout LIVE</b>: <a href="https://whop.com/checkout/ch_abZZn55zTTq9VO0/" target="_blank" rel="noopener">Solo</a> &middot; <a href="https://whop.com/checkout/ch_xXwDxquSJP2Ctwu/" target="_blank" rel="noopener">Studio</a> (store: <a href="https://whop.com/jacaranda-labs" target="_blank" rel="noopener">whop.com/jacaranda-labs</a>). Sovereign by invoice &mdash; WhatsApp below.</p>
-          <a class="rl wa" href="https://wa.me/263784600904?text=Hi%20%E2%80%94%20Hunta%20pricing%2Fpayment%20question" target="_blank" rel="noopener">WhatsApp +263 78 460 0904</a>
+          <p><b>Card (Whop) &mdash; one-tap checkout LIVE</b>: <a href="https://whop.com/checkout/ch_abZZn55zTTq9VO0/" target="_blank" rel="noopener">Solo</a> &middot; <a href="https://whop.com/checkout/ch_xXwDxquSJP2Ctwu/" target="_blank" rel="noopener">Studio</a> (store: <a href="https://whop.com/stpi" target="_blank" rel="noopener">whop.com/stpi</a>). Sovereign by invoice &mdash; WhatsApp below.</p>
+          <a class="rl wa" href="https://wa.me/263784600904?text=Hi%20%E2%80%94%20STPi%20pricing%2Fpayment%20question" target="_blank" rel="noopener">WhatsApp +263 78 460 0904</a>
           <a class="rl ml" href="mailto:simalidudu@gmail.com">✉️ simalidudu@gmail.com</a>
-          <a class="rl ml" href="https://wa.me/263784600904?text=Hunta%20%E2%80%94%20paid%20plan">📲 WhatsApp +263 78 460 0904</a>
+          <a class="rl ml" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20paid%20plan">📲 WhatsApp +263 78 460 0904</a>
         </div>
       </div>
     </aside>

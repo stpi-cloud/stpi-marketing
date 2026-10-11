@@ -1,9 +1,9 @@
-"""Build the public site for Cloudflare Pages (gethunta.pages.dev) into _cf/.
+"""Build the public site for Cloudflare Pages (getstpi.pages.dev) into _cf/.
 
 2026-09-27: GitHub Pages was unreliable on phones, so the buyer-facing pages moved to
-Cloudflare Pages. The site root is the landing page (gethunta/index.html); the internal
+Cloudflare Pages. The site root is the landing page (getstpi/index.html); the internal
 marketing bible (repo-root index.html) is NOT published here; it builds into _cf_bible/ for its own
-project, hunta-bible.pages.dev (see build_bible). Old GitHub Pages URLs
+project, stpi-bible.pages.dev (see build_bible). Old GitHub Pages URLs
 redirect to the matching page on this host (see the redirect snippet in each page head).
 """
 from __future__ import annotations
@@ -14,10 +14,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_cf"
-SITE = "https://gethunta.pages.dev"
+SITE = "https://getstpi.pages.dev"
 
 PAGES = {  # source -> path on the site
-    "gethunta/index.html": "index.html",
+    "getstpi/index.html": "index.html",
     "demo.html": "demo.html",
     "setup.html": "setup.html",
     "domain.html": "domain.html",
@@ -27,14 +27,14 @@ FILES = ["16e37daa71b14add9de53ec65d64e01a.txt"]  # IndexNow key
 
 REDIRECTS = """# Pages already serves /demo for demo.html (and 308s /demo.html -> /demo); never map
 # /demo back to /demo.html or it loops.
-/gethunta        /           301
-/gethunta/       /           301
-/gethunta/*      /           301
+/getstpi        /           301
+/getstpi/       /           301
+/getstpi/*      /           301
 /download        /demo       301
 /downloads       /demo       301
 /downloads/      /demo       301
-/trial           https://hunta-mint.simalidudu.workers.dev/trial 302
-/store           https://whop.com/jacaranda-labs 302
+/trial           https://stpi-mint.stpi-cloud.workers.dev/trial 302
+/store           https://whop.com/stpi 302
 """
 
 HEADERS = """/*
@@ -82,7 +82,7 @@ def build() -> Path:
     bad = []
     for p in OUT.rglob("*.html"):
         t = p.read_text(encoding="utf-8", errors="ignore")
-        for needle in ("github.io/hunta-marketing", "github.com/king-kunta-cpu/hunta\""):
+        for needle in ("github.io/stpi-marketing", "github.com/stpi-cloud/stpi\""):
             if needle in t.replace("GH_REDIRECT_OK", ""):
                 bad.append(f"{p.relative_to(OUT)}: {needle}")
     if bad:
@@ -90,11 +90,11 @@ def build() -> Path:
     return OUT
 
 
-# ---- the marketing bible: its own Pages project (hunta-bible.pages.dev), kept off the buyer site ----
+# ---- the marketing bible: its own Pages project (stpi-bible.pages.dev), kept off the buyer site ----
 # 2026-09-28 (owner): host the bible on Cloudflare. It is internal sales material, so it is a separate
-# project, not linked from gethunta, and marked noindex. (The repo is public, so this adds no exposure.)
+# project, not linked from getstpi, and marked noindex. (The repo is public, so this adds no exposure.)
 BIBLE_OUT = ROOT / "_cf_bible"
-BIBLE_SITE = "https://hunta-bible.pages.dev"
+BIBLE_SITE = "https://stpi-bible.pages.dev"
 _SITE_PATHS = {"demo.html": "/demo", "setup.html": "/setup", "domain.html": "/domain"}
 
 

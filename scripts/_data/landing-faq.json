@@ -9,7 +9,7 @@
  ],
  [
   "Is the demo actually the product?",
-  "Bit-for-bit \u2014 one environment flag separates demo from paid (HUNTA_FLAVOUR=demo). No feature lobotomy,\n  just a 25-draft / 5-send / 30-day leash and a lot of purple upgrade banners."
+  "Bit-for-bit \u2014 one environment flag separates demo from paid (STPI_FLAVOUR=demo). No feature lobotomy,\n  just a 25-draft / 5-send / 30-day leash and a lot of purple upgrade banners."
  ],
  [
   "What's your licence stance?",

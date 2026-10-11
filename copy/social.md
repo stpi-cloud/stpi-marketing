@@ -1,4 +1,4 @@
-# Hunta — social copy
+# STPi — social copy
 
 Paste-ready. Every number below is from the production pipeline on 2026-09-17; swap in fresh
 numbers before posting.
@@ -17,7 +17,7 @@ VacancyMail, iHarareJobs. Read every ad. Decide "is this Thabo?" Rewrite the sam
 letter for the 30th time. Attach the CV. Send. Repeat across 6 boards, 3 candidates,
 4 hours a day.
 
-So I built Hunta. It runs on a schedule, sweeps 17 job boards by default (22 supported) across South Africa,
+So I built STPi. It runs on a schedule, sweeps 17 job boards by default (22 supported) across South Africa,
 Zimbabwe and Zambia, matches every ad against the candidate's real profile, scores the
 fit, and drafts a tailored cover letter + a country-formatted CV — both as PDFs.
 
@@ -38,7 +38,7 @@ each with its own letter and CV. Zero auto-sends.
 
 If you coach job seekers in ZA, ZW or ZM and this sounds like your Tuesday,
 the demo is free forever — one candidate, no card:
-https://gethunta.pages.dev/demo
+https://getstpi.pages.dev/demo
 
 #CareerCoaching #JobSearch #SouthAfrica #Zimbabwe #Zambia #AI #FutureOfWork
 ```
@@ -48,13 +48,13 @@ https://gethunta.pages.dev/demo
 ```
 The 40 open tabs are why good candidates lose.
 
-Hunta sweeps 17 job boards by default (22 supported) in ZA·ZW·ZM, scores each ad against the candidate's real
+STPi sweeps 17 job boards by default (22 supported) in ZA·ZW·ZM, scores each ad against the candidate's real
 profile, drafts the letter + CV as PDFs, and drops one card in your Discord:
 [✅ Approve & send] [❌ Reject].
 
 Nothing sends without your tap. Nothing is invented. Drafts die after 72 h.
 
-Demo is free forever, one candidate, no card: https://gethunta.pages.dev/demo
+Demo is free forever, one candidate, no card: https://getstpi.pages.dev/demo
 ```
 
 ## X / Twitter — thread (8 posts)
@@ -63,10 +63,10 @@ Demo is free forever, one candidate, no card: https://gethunta.pages.dev/demo
 1/ Your candidates aren't losing to better candidates.
 They're losing to the 40 open tabs.
 
-I built Hunta — a job-hunting copilot for coaches in ZA, ZW, ZM.
+I built STPi — a job-hunting copilot for coaches in ZA, ZW, ZM.
 Here's the whole loop in 7 posts 🧵
 
-2/ 06:00, 10:00, 14:00, 18:00. Hunta wakes up and sweeps 17 boards by default (22 supported):
+2/ 06:00, 10:00, 14:00, 18:00. STPi wakes up and sweeps 17 boards by default (22 supported):
 Adzuna, Google for Jobs, PNet, CareerJunction, JobMail, VacancyMail, iHarareJobs,
 GoZambiaJobs, remote boards and more. No LinkedIn login. No scraping profiles.
 
@@ -88,7 +88,7 @@ The coach is the product. The tap is the product.
 
 6/ Tap ✅ → it sends from YOUR mailbox, signed as the candidate, capped
 so your mailbox never gets flagged. Replies reach the candidate AND you,
-and Hunta pings you when one is an interview invite.
+and STPi pings you when one is an interview invite.
 Tap ❌ → the PDFs are deleted on the spot.
 Untouched drafts self-destruct at 72 hours. Zero-retention by design.
 
@@ -100,13 +100,13 @@ Fly.io died. Oracle is a second job. This is two YAML files.
 zero auto-sends.
 
 If you coach job seekers in southern Africa and want the demo:
-the demo is free forever — no card: https://gethunta.pages.dev/demo
+the demo is free forever — no card: https://getstpi.pages.dev/demo
 ```
 
 ## X — single post
 
 ```
-Hunta sweeps 17 job boards by default (22 supported) in ZA·ZW·ZM, drafts the letter + CV, and posts one card
+STPi sweeps 17 job boards by default (22 supported) in ZA·ZW·ZM, drafts the letter + CV, and posts one card
 to your Discord. [✅ Approve & send] [❌ Reject]. Nothing sends without your tap.
 The 40 tabs die today.
 ```
@@ -128,7 +128,7 @@ first.
 
 If you're a coach, recruiter or outplacement consultant in SA / Zimbabwe / Zambia
 and this sounds useful, comment below — or skip me entirely and take the free demo (one candidate,
-free forever, no card): https://gethunta.pages.dev/demo
+free forever, no card): https://getstpi.pages.dev/demo
 ```
 
 ## WhatsApp — broadcast to coach contacts
@@ -141,14 +141,14 @@ It drops ONE card in my Discord and I tap approve — nothing sends without me.
 
 Ran it a week: 41 drafted applications, all reviewed by me first.
 
-Free demo, one candidate, forever, no card: https://gethunta.pages.dev/demo
+Free demo, one candidate, forever, no card: https://getstpi.pages.dev/demo
 Reply "help" and I'll set it up with you on a 10-min call.
 ```
 
 ## Discord / Telegram community announcement
 
 ```
-**Hunta** is live for our coaching crew 🔎
+**STPi** is live for our coaching crew 🔎
 
 What it does: sweeps 17 job boards by default (22 supported) across ZA·ZW·ZM + remote, scores each ad against your
 candidate's profile, drafts a tailored cover letter + CV as PDFs, and posts a single
@@ -160,7 +160,7 @@ Rules of the house:
 • drafts expire after 72 h; sent/rejected files are deleted immediately
 
 Free demo for every member — one candidate, free forever:
-https://gethunta.pages.dev/demo
+https://getstpi.pages.dev/demo
 Onboarding is a Discord webhook + 10 minutes.
 ```
 

@@ -36,4 +36,4 @@ Start a simple “Application Tracker” in your notebook or a spreadsheet. Colu
 
 ## A quick note about tools
 
-If you want a lightweight way to keep that tracker automated and accessible across devices, consider using a self‑hosted solution like hunta. It lets you batch board checks, set freshness windows, and log applications with a single click. No emails are sent until you approve them, and you stay within the limits set by the demo version. For more detail, visit https://gethunta.pages.dev/downloads/hunta-demo-1.0.0.zip.
+If you want a lightweight way to keep that tracker automated and accessible across devices, consider using a self‑hosted solution like stpi. It lets you batch board checks, set freshness windows, and log applications with a single click. No emails are sent until you approve them, and you stay within the limits set by the demo version. For more detail, visit https://getstpi.pages.dev/downloads/stpi-demo-1.0.0.zip.

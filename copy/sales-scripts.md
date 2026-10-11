@@ -1,4 +1,4 @@
-# Hunta — sales script library
+# STPi — sales script library
 
 Every script assumes the **free demo** is the offer on the table: anyone gets it, no card,
 no call required. The paid conversation only starts after they've seen a card land.
@@ -55,7 +55,7 @@ delete it. Did I earn the right to send the link?"
 candidates' applications and waits for your tap — nothing sends without you.
 The link is in the SMS I just sent. That's the whole message."
 ```
-Then SMS: `Hunta demo (free, no card): <landing-url> — 1 candidate, free forever.`
+Then SMS: `STPi demo (free, no card): <landing-url> — 1 candidate, free forever.`
 
 ### 1.4 Discovery questions (use in order, shut up after each)
 
@@ -99,7 +99,7 @@ about Solo at $306 a month (about R4,999). Fair?"
 ## 3 · WhatsApp sales sequence (5 touches, stop on any reply)
 
 ```
-T0  Hi {{name}}! Quick one — I run Hunta, a pipeline that drafts job applications
+T0  Hi {{name}}! Quick one — I run STPi, a pipeline that drafts job applications
     for your candidates and waits for your tap. The demo is free forever, one
     candidate, no card: <landing-url>
     Want me to set it up with you on a 10-min call instead?
@@ -177,7 +177,7 @@ is the easiest yes of your month."
 
 ### CV-writing / job-search studio
 Pain: margin on bundles. "You charge R600–R1500 per CV-and-letter bundle and eat
-hours writing them. Hunta produces the bundle in minutes with your brand on the
+hours writing them. STPi produces the bundle in minutes with your brand on the
 PDF (Studio tier). Your writers edit instead of type — you triple throughput at
 the same price."
 
@@ -189,7 +189,7 @@ office will love that sentence."
 
 ### Outplacement firm
 Pain: billable hours vs. outcomes. "Your consultants bill for judgement, not tab
-management. Hunta frees the judgement hours; the audit trail (match %, approve
+management. STPi frees the judgement hours; the audit trail (match %, approve
 timestamps) goes into your client reporting."
 
 ### Recruiter moving into coaching
@@ -217,12 +217,12 @@ capped at 20 per candidate and 150 per mailbox a day. That's cleaner than most m
 is the feature."
 
 **"It's expensive."** → "The demo is R0 forever. Solo is $306/mo (about R4,999) — two or three bundled CV-and-letter
-sale at your prices. If Hunta doesn't produce one bundle a month, cancel in the app,
+sale at your prices. If STPi doesn't produce one bundle a month, cancel in the app,
 no email needed."
 
 **"I already use ChatGPT."** → "Great — you've felt the magic and the maintenance. Who
 sweeps the boards at 06:00? Who purges the PDFs? Who keeps the three countries' CV
-formats current? Hunta is the difference between a prompt and a pipeline."
+formats current? STPi is the difference between a prompt and a pipeline."
 
 **"My candidates won't trust it."** → "The employer gets a normal email signed by the
 candidate, and the reply goes straight to them as well as you. The candidate sees their own letter in the card before it flies.

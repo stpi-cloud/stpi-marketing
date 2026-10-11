@@ -1,16 +1,16 @@
-"""Whop product copy + FAQ. Numbers come from hunta code (BILLING, PLANS, facts) — never hand-typed."""
+"""Whop product copy + FAQ. Numbers come from stpi code (BILLING, PLANS, facts) — never hand-typed."""
 import ast
 import sys
 from pathlib import Path
 
-HUNTA = Path("/home/user/audit/hunta")
-sys.path.insert(0, str(HUNTA / "press"))
+STPI = Path("/home/user/audit/stpi")
+sys.path.insert(0, str(STPI / "press"))
 import facts  # noqa: E402
 
 B, F = facts.billing(), facts.facts()
-src = (HUNTA / "hunta" / "billing.py").read_text()
+src = (STPI / "stpi" / "billing.py").read_text()
 PLANS = ast.literal_eval(src[src.index("PLANS: dict[str, dict] = ") + 25:src.index("DEFAULT_PLAN")].strip())
-_d = (HUNTA / "hunta" / "demo.py").read_text()
+_d = (STPI / "stpi" / "demo.py").read_text()
 CAPS = ast.literal_eval(_d[_d.index("CAPS = ") + 7:].split("\n")[0])
 S, ST = PLANS["solo"], PLANS["studio"]
 BOARDS = f"{F['boards_default']} job boards by default ({F['boards_registered']} supported) across South Africa, Zimbabwe and Zambia"
@@ -51,16 +51,16 @@ Does anything send without me? No. Each application is a Discord card; nothing g
 Can I try first? Yes, free demo pack (1 candidate, {CAPS['total_drafts']} drafts, {CAPS['total_sends']} sends / {CAPS['days']} days): {B['site']}
 Pay in rands? Yes: rand checkouts at {B['solo_zar']} / {B['studio_zar']} / {B['sovereign_zar']}. Annual: one bank-wire payment, 25% off.
 No card? Lightning ({B['lightning']}) or Mukuru / EFT ({B['mukuru'].split(': ')[1].split(' ·')[0]}, ref = tenant id).
-Full FAQ in the Hunta forum. Questions: {B['support']}"""
+Full FAQ in the STPi forum. Questions: {B['support']}"""
 FAQ = SHORT_FAQ
 
 PRODUCTS = {
     "prod_lh6Mq2wTIHqog": {
-        "title": "Hunta Solo",
+        "title": "STPi Solo",
         "headline": f"{S['candidates']} candidates, {S['sends_month']} sends a month. Drafted nightly, sent after your yes.",
         "description": f"""For individual career coaches and job agents.
 
-Hunta hunts vacancies nightly, scores them against each CV, drafts a tailored CV and cover letter, and sends you a one-tap approval card in Discord.
+STPi hunts vacancies nightly, scores them against each CV, drafts a tailored CV and cover letter, and sends you a one-tap approval card in Discord.
 
 Solo includes:
 - {S['candidates']} candidates
@@ -74,7 +74,7 @@ Solo includes:
 """ + FAQ,
     },
     "prod_S3yLSyR1X98sE": {
-        "title": "Hunta Studio",
+        "title": "STPi Studio",
         "headline": f"{ST['candidates']} candidates, fair-use sends, PDFs branded as your agency.",
         "description": f"""For coaching practices and small recruitment agencies.
 
@@ -90,7 +90,7 @@ Studio includes:
 """ + FAQ,
     },
     "prod_YinMTkuhgU2Xv": {
-        "title": "Hunta Sovereign",
+        "title": "STPi Sovereign",
         "headline": "Self-hosted, unlimited candidates and sends. Your data stays on your servers.",
         "description": f"""For agencies and institutions that need the pipeline on their own infrastructure.
 

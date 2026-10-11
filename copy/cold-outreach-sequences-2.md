@@ -10,10 +10,10 @@ same beats.
 **T1 · email.**
 Subject: the 06:00 shift you don't staff
 Your consultants start reading boards at 08:00. The adverts were posted at
-06:00, and three hundred applications landed by lunch. Hunta hunts 17 boards
+06:00, and three hundred applications landed by lunch. STPi hunts 17 boards
 by default on a schedule, scores each against your candidate's real CV, and
 drafts the tailoring pass overnight — your consultants keep the yes/no.
-One candidate, free forever, self-hosted: gethunta.pages.dev
+One candidate, free forever, self-hosted: getstpi.pages.dev
 Worth fifteen minutes, or should I close the file?
 
 **T2 · day 3, value drop.**
@@ -31,7 +31,7 @@ in the first hour.
 **T4 · day 10, proof.**
 The engine's actual product surfaces, so you can check the claims without
 talking to me: the approval card, the 72-hour purge, the CV designs.
-gethunta.pages.dev/samples — and the zip carries its own checksum.
+getstpi.pages.dev/samples — and the zip carries its own checksum.
 
 **T5 · day 14, the break-up.**
 Closing the file: agency hunts are either staffed at 06:00 or they're not, and
@@ -42,10 +42,10 @@ one word back ("later") and I return next quarter with better manners.
 
 **T1 · WhatsApp.**
 Mhoro [name] — quick one: your graduates compete with applications posted at
-06:00 that nobody on your team reads before 14:00. I built hunta: it hunts the
+06:00 that nobody on your team reads before 14:00. I built stpi: it hunts the
 ZA/ZW/ZM boards nightly, drafts tailored docs per graduate, and your officer
 taps approve per send. Free forever for one candidate, self-hosted:
-gethunta.pages.dev — worth a look for the next intake?
+getstpi.pages.dev — worth a look for the next intake?
 
 **T2 · day 4.**
 For the newsletter home: one placement officer with a laptop runs a whole
@@ -66,10 +66,10 @@ next term.
 
 **T1 · WhatsApp.**
 Mhoro [name], I see you coach job seekers in [city]. Be honest: how many
-tailored letters can you write a week? My clients stopped counting — hunta
+tailored letters can you write a week? My clients stopped counting — stpi
 reads VacancyMail, iHarareJobs, JobsZimbabwe and 14+ more boards nightly and
 drafts the letters; the coach taps approve. No card needed: Mukuru/EFT or
-Lightning. One candidate free forever: gethunta.pages.dev
+Lightning. One candidate free forever: getstpi.pages.dev
 
 **T2 · day 3.** The price in one line: Solo is about R4,999/mo or USD 306 on
 Whop; Mukuru/EFT works for the annual too — one wire, 25% off, done for the year.
@@ -83,7 +83,7 @@ we talk or not. If the timing's wrong, "later" is a complete sentence.
 ## Referral-ask bank (post-win, any sequence)
 
 - "You know one coach who still hand-writes every letter. One tap of forwarding
-  this does their January a favour: gethunta.pages.dev"
+  this does their January a favour: getstpi.pages.dev"
 - "Placement offices talk. If the pipeline earned a mention in yours, I'd
   rather hear that sentence from you than write it myself."
 - (when the affiliate toggle is live) "The store tracks referrals properly now —

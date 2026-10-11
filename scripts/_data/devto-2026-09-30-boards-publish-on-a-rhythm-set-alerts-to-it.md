@@ -43,6 +43,6 @@ A practical workflow that incorporates board cadence looks like this:
 
 By treating the posting schedule as a predictable rhythm rather than a random stream, the process becomes repeatable and less stressful. The cadence‑driven approach also reduces wasted effort: you no longer waste time scrolling through stale listings, and you avoid the anxiety of “missing out” on a role that has already been buried.  
 
-For teams that want to codify this method, the open‑source version of hunta provides a self‑hosted demo zip that includes a basic alert engine and a role‑scoring module. The demo can be downloaded from https://gethunta.pages.dev/downloads/hunta-demo-1.0.0.zip and run locally without any subscription.  
+For teams that want to codify this method, the open‑source version of stpi provides a self‑hosted demo zip that includes a basic alert engine and a role‑scoring module. The demo can be downloaded from https://getstpi.pages.dev/downloads/stpi-demo-1.0.0.zip and run locally without any subscription.  
 
 Applying a disciplined cadence to board monitoring turns a chaotic job‑search landscape into a series of small, measurable actions. The result is a clearer view of when the market is freshest, a faster response loop, and a workflow that feels less like a gamble and more like a well‑orchestrated operation.

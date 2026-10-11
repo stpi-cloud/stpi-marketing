@@ -1,23 +1,23 @@
-"""Whop gallery images (1600x900). Prices/limits/board counts are read from hunta's code
+"""Whop gallery images (1600x900). Prices/limits/board counts are read from stpi's code
 (BILLING, PLANS, board registry) so the images cannot disagree with checkout."""
 import ast
 import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-HUNTA = Path("/home/user/audit/hunta")
-MKT = Path("/home/user/audit/hunta-marketing")
+STPI = Path("/home/user/audit/stpi")
+MKT = Path("/home/user/audit/stpi-marketing")
 OUT = Path(__file__).parent
-sys.path.insert(0, str(HUNTA / "press"))
+sys.path.insert(0, str(STPI / "press"))
 import facts  # noqa: E402
 
 B = facts.billing()
 F = facts.facts()
-src = (HUNTA / "hunta" / "billing.py").read_text()
+src = (STPI / "stpi" / "billing.py").read_text()
 PLANS = ast.literal_eval(src[src.index("PLANS: dict[str, dict] = ") + len("PLANS: dict[str, dict] = "):src.index("DEFAULT_PLAN")].strip())
 
 W, H = 1600, 900
-PURPLE, DARK, GREY, BG, CARD, GREEN = "#7B5EA7", "#26232B", "#6B6475", "#F6F2FA", "#FFFFFF", "#2E9E5B"
+PURPLE, DARK, GREY, BG, CARD, GREEN = "#27548f", "#24272a", "#6B6475", "#f3f6f9", "#FFFFFF", "#2E9E5B"
 FD = "/usr/share/fonts/truetype/dejavu/"
 
 
@@ -35,7 +35,7 @@ def center(d, x0, x1, y, text, f, fill):
 
 
 def logo(img, x, y, h=64):
-    lg = Image.open(MKT / "brand" / "hunta-logo.png").convert("RGBA")
+    lg = Image.open(MKT / "brand" / "stpi-logo.png").convert("RGBA")
     px = lg.load()
     for yy in range(lg.height):
         for xx in range(lg.width):
@@ -59,7 +59,7 @@ def how_it_works():
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
     logo(img, 80, 60, 56)
-    d.text((80, 150), "How Hunta works", font=font(60, True), fill=DARK)
+    d.text((80, 150), "How STPi works", font=font(60, True), fill=DARK)
     d.text((80, 230), "Runs every night. You only make the final call.", font=font(30), fill=GREY)
     steps = [
         ("1", "Hunt", [f"{F['boards_default']} job boards by", f"default ({F['boards_registered']} supported),", "across ZA, ZW, ZM"]),
@@ -69,7 +69,7 @@ def how_it_works():
     ]
     x, cw, gap, y0 = 80, 335, 28, 320
     for n, title, lines in steps:
-        rrect(d, (x, y0, x + cw, y0 + 400), CARD, "#E3D9F0")
+        rrect(d, (x, y0, x + cw, y0 + 400), CARD, "#dbe5ee")
         d.ellipse((x + 30, y0 + 30, x + 100, y0 + 100), fill=GREEN if n == "4" else PURPLE)
         center(d, x + 30, x + 100, y0 + 45, n, font(36, True), "white")
         d.text((x + 30, y0 + 130), title, font=font(40, True), fill=DARK)
@@ -99,7 +99,7 @@ def plans():
     x, cw, gap, y0 = 80, 460, 30, 310
     for name, key, lines in tiers:
         hl = key == "studio"
-        rrect(d, (x, y0, x + cw, y0 + 470), CARD, PURPLE if hl else "#E3D9F0", w=5 if hl else 3)
+        rrect(d, (x, y0, x + cw, y0 + 470), CARD, PURPLE if hl else "#dbe5ee", w=5 if hl else 3)
         d.text((x + 40, y0 + 35), name, font=font(40, True), fill=PURPLE)
         usd = f"${B['usd'][key]}"
         d.text((x + 40, y0 + 100), usd, font=font(72, True), fill=DARK)
@@ -115,7 +115,7 @@ def plans():
 
 
 if __name__ == "__main__":
-    pad(MKT / "brand" / "og-image.png", "1-hero.png", "#F7F5F9")
+    pad(MKT / "brand" / "og-image.png", "1-hero.png", "#f5f7f9")
     how_it_works()
     pad(MKT / "graphics" / "discord-card-mockup.png", "3-approval-card.png", "#1E1F22")
     plans()

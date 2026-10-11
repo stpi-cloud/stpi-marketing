@@ -1,10 +1,10 @@
-# Hunta — FAQ & objection handling
+# STPi — FAQ & objection handling
 
 ## FAQ
 
 **Does it apply automatically?**
 No. Every application requires a human tap on ✅. This is a design guarantee, not a
-setting — there is no "auto" mode to turn on. Hunta is a pipeline for your judgement.
+setting — there is no "auto" mode to turn on. STPi is a pipeline for your judgement.
 
 **Will the AI invent experience on the CV or letter?**
 No. The writer prompt hard-forbids inventing qualifications, employers, dates or skills;
@@ -12,7 +12,7 @@ it may only reorder and rephrase what is already on the profile. Ask for the sam
 next to the sample letter and check line by line.
 
 **Will I know if a candidate gets an interview?**
-Yes. Employer replies go to the candidate and to your mailbox. Hunta reads your mailbox
+Yes. Employer replies go to the candidate and to your mailbox. STPi reads your mailbox
 (read-only) and posts in #activity when an employer answers — interview invite, question,
 no, or a bounced address — and a monthly report counts the interviews per candidate.
 Interviews arranged only by phone won't show; ask candidates to tell you those.
@@ -61,7 +61,7 @@ Mukuru / cash as a manual grant. No other payment rails.
 **"AI cover letters are generic."**
 Show the sample letter. Second paragraph names the company and mirrors two concrete
 requirements; the facts trace back line-for-line to the CV. Generic is what *they*
-were writing at 11pm — same letter, thirty employers. Hunta writes a different letter
+were writing at 11pm — same letter, thirty employers. STPi writes a different letter
 per ad because the match reason is per ad.
 
 **"Mass applications get everyone blacklisted."**
@@ -71,7 +71,7 @@ it's coverage. Every send is still a decision."
 
 **"We already use an ATS / agency."**
 An ATS is for employers; an agency is for sourcing. You're on the candidate's side.
-Hunta is the candidate-side desk. If anything, it feeds your ATS with better inputs.
+STPi is the candidate-side desk. If anything, it feeds your ATS with better inputs.
 
 **"My candidates won't trust a bot."**
 The bot never talks to an employer. The employer receives a normal email signed by the
@@ -86,7 +86,7 @@ person approved it.
 **"Why not just use ChatGPT myself?"**
 You can — and then also maintain the board sweepers, the match scoring, the PDF
 renderers for three countries, the expiry logic, the approval channel, and the 4am
-cron. Hunta is the difference between a prompt and a pipeline.
+cron. STPi is the difference between a prompt and a pipeline.
 
 **"What's the catch with $0 hosting?"**
 No catch, just honesty: GitHub Actions free tier is 2,000 minutes on a private repo;

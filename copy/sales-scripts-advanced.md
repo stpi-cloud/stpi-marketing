@@ -35,7 +35,7 @@ is the one-sentence answer."
 **The door.** "When you offboard fifty people, twelve get your A-team. What do
 the other thirty-eight get — a PDF and good luck?"
 
-**The offer.** Hunta gives every affected employee their own hunt: boards swept
+**The offer.** STPi gives every affected employee their own hunt: boards swept
 on a schedule, fit scored against their real CV, tailored drafts behind the
 employee's own approval tap. Your firm reports hunt activity per cohort —
 the number your client's CFO actually wanted in the outplacement budget line.

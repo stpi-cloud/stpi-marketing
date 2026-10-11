@@ -288,7 +288,7 @@
         "What the leash means and why it exists",
         "The zip and its digest are on the landing page"
       ],
-      "asset": "https://gethunta.pages.dev/"
+      "asset": "https://getstpi.pages.dev/"
     },
     {
       "id": "promo-tiers",
@@ -301,20 +301,20 @@
         "No lock-in: files stay on your machine either way",
         "Support costs money; that is the whole pitch"
       ],
-      "asset": "https://whop.com/jacaranda-labs"
+      "asset": "https://whop.com/stpi"
     },
     {
       "id": "promo-caps-feature",
       "kind": "promo",
       "format": "short",
       "title": "The caps are the feature",
-      "angle": "Every other tool maximizes send volume; hunta makes burnout unsendable.",
+      "angle": "Every other tool maximizes send volume; stpi makes burnout unsendable.",
       "beats": [
         "Approval gates and cooldowns as product philosophy",
         "Why we turned volume down on purpose",
         "Demo runs the same constraints, just smaller"
       ],
-      "asset": "https://gethunta.pages.dev/"
+      "asset": "https://getstpi.pages.dev/"
     },
     {
       "id": "promo-changelog",
@@ -327,7 +327,7 @@
         "One link, one sentence of what changed for users",
         "Skip the slot entirely if nothing shipped (planner knows this)"
       ],
-      "asset": "https://gethunta.pages.dev/"
+      "asset": "https://getstpi.pages.dev/"
     },
     {
       "id": "skim-six-seconds",
@@ -508,7 +508,7 @@
         "No countdown, no scarcity, no emoji",
         "Support costs money; say it once"
       ],
-      "asset": "https://whop.com/jacaranda-labs"
+      "asset": "https://whop.com/stpi"
     },
     {
       "id": "promo-community",
@@ -521,7 +521,7 @@
         "Free demo folks are welcome, not just buyers",
         "One link, zero pressure"
       ],
-      "asset": "https://gethunta.pages.dev/"
+      "asset": "https://getstpi.pages.dev/"
     },
     {
       "id": "caseload-ceiling",
@@ -746,17 +746,17 @@
         "No card; the hunt pauses at the end and the setup is kept",
         "Link included, zero hype"
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "operator"
     },
     {
       "id": "promo-use-case-bootcamp",
       "kind": "promo",
       "format": "short",
-      "title": "Bootcamp graduates find jobs faster with Hunta",
+      "title": "Bootcamp graduates find jobs faster with STPi",
       "angle": "Illustrate a real-world workflow for recent grads using the Solo plan.",
       "beats": [
-        "Import alumni list, let Hunta match to openings automatically.",
+        "Import alumni list, let STPi match to openings automatically.",
         "Track each application\u2019s status in one place.",
         "Cost is just $306/mo (about R4,999) a month, less than a single coffee habit."
       ],
@@ -770,18 +770,18 @@
       "title": "Ethical hiring versus click-bait platforms",
       "angle": "Contrast transparent pricing with platforms that charge per click and hide costs.",
       "beats": [
-        "Hunta shows exact monthly cost upfront - no surprise invoices.",
+        "STPi shows exact monthly cost upfront - no surprise invoices.",
         "Candidates see only relevant roles, not endless ads.",
         "Annual plans discount the year and are paid by bank wire on Whop."
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
       "id": "promo-behind-the-scenes",
       "kind": "promo",
       "format": "short",
-      "title": "Inside Hunta\u2019s matching algorithm",
+      "title": "Inside STPi\u2019s matching algorithm",
       "angle": "Give a peek at the data-driven process that powers job matches.",
       "beats": [
         "Machine learning scores each resume against employer criteria.",
@@ -802,49 +802,49 @@
         "Switch between monthly and annual without penalty.",
         "Cancel anytime; no hidden renewal clauses."
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "seeker"
     },
     {
       "id": "promo-buyer-math",
       "kind": "promo",
       "format": "short",
-      "title": "Calculate your hiring ROI with Hunta",
+      "title": "Calculate your hiring ROI with STPi",
       "angle": "Show the math of how a single successful placement offsets the subscription cost.",
       "beats": [
         "One hire saves dozens of interview hours.",
         "A single successful placement covers the subscription in weeks.",
         "Go yearly and the annual discount does the math for you."
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
       "id": "promo-sole-pro",
       "kind": "promo",
       "format": "short",
-      "title": "Freelance recruiters thrive on Hunta Solo",
+      "title": "Freelance recruiters thrive on STPi Solo",
       "angle": "Target solo consultants who need a lean, powerful tool.",
       "beats": [
         "One-click candidate export to client reports.",
         "Monthly fee of $306/mo (about R4,999) fits freelance cash flow.",
         "Access to all job sources without extra commissions."
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
       "id": "promo-annual-savings",
       "kind": "promo",
       "format": "short",
-      "title": "Lock in lower rates with Hunta\u2019s annual plans",
+      "title": "Lock in lower rates with STPi\u2019s annual plans",
       "angle": "Emphasize the yearly discount and the simple wire payment process.",
       "beats": [
         "Pay once via bank wire on Whop, no monthly hassle.",
         "Solo annual at $2,754/yr (about R45,000) beats stacking twelve monthly renewals.",
         "Same features, lower total cost for the year."
       ],
-      "asset": "https://whop.com/jacaranda-labs",
+      "asset": "https://whop.com/stpi",
       "audience": "seeker"
     },
     {
@@ -858,7 +858,7 @@
         "Lightning payments enable instant upgrades.",
         "Mukuru/EFT option for local cash flow."
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
@@ -873,22 +873,22 @@
         "Detail the simple cancel process through Whop",
         "Reassure that support is reachable via email"
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "seeker"
     },
     {
       "id": "promo-operator-usecase",
       "kind": "promo",
       "format": "short",
-      "title": "How recruiters streamline candidate pipelines with Hunta",
-      "angle": "Show recruiters the concrete steps where Hunta replaces manual tracking and saves time each week.",
+      "title": "How recruiters streamline candidate pipelines with STPi",
+      "angle": "Show recruiters the concrete steps where STPi replaces manual tracking and saves time each week.",
       "beats": [
         "Map the job posting to candidate sourcing flow",
         "Highlight automated tagging that reduces manual entry",
         "Demonstrate batch messaging that cuts outreach time",
         "Point out reporting that replaces spreadsheet updates"
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
@@ -910,7 +910,7 @@
       "id": "promo-behind-scenes",
       "kind": "promo",
       "format": "short",
-      "title": "A day in the life of the Hunta development team",
+      "title": "A day in the life of the STPi development team",
       "angle": "Give a behind-the-scenes glimpse at how features are prioritized based on user feedback.",
       "beats": [
         "Describe the weekly feedback review meeting",
@@ -924,7 +924,7 @@
       "id": "promo-fear-of-commit",
       "kind": "promo",
       "format": "short",
-      "title": "What happens if you stop using Hunta after a month",
+      "title": "What happens if you stop using STPi after a month",
       "angle": "Calm the fear of being locked in by outlining data export options and account closure steps.",
       "beats": [
         "Detail the one-click export to CSV for all pipelines",
@@ -932,7 +932,7 @@
         "Show the Whop dashboard button to cancel subscription",
         "Mention that support will confirm the closure"
       ],
-      "asset": "https://whop.com/jacaranda-labs",
+      "asset": "https://whop.com/stpi",
       "audience": "seeker"
     },
     {
@@ -947,7 +947,7 @@
         "Highlight real-time status updates visible to the whole team",
         "Mention the ability to assign tasks to specific users"
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
@@ -977,7 +977,7 @@
         "Highlight reporting that aggregates performance across accounts",
         "State that the same subscription covers unlimited users"
       ],
-      "asset": "https://whop.com/jacaranda-labs",
+      "asset": "https://whop.com/stpi",
       "audience": "operator"
     },
     {
@@ -992,7 +992,7 @@
         "Add a few candidate entries via CSV import",
         "Set the stages and start moving cards"
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "seeker"
     },
     {
@@ -1000,28 +1000,28 @@
       "kind": "promo",
       "format": "short",
       "title": "Your candidate data stays under your control",
-      "angle": "Reassure users that Hunta does not sell data and offers easy export options.",
+      "angle": "Reassure users that STPi does not sell data and offers easy export options.",
       "beats": [
         "State that no third parties receive your pipeline data",
         "Explain the one-click export to local files",
         "Highlight encryption at rest on all servers",
         "Mention that account deletion removes all records"
       ],
-      "asset": "https://whop.com/jacaranda-labs"
+      "asset": "https://whop.com/stpi"
     },
     {
       "id": "promo-compare-ethics-2",
       "kind": "promo",
       "format": "short",
       "title": "Choosing a tool that respects your brand reputation",
-      "angle": "Contrast Hunta\u2019s transparent policies with platforms that embed ads or promote competitor services.",
+      "angle": "Contrast STPi\u2019s transparent policies with platforms that embed ads or promote competitor services.",
       "beats": [
         "Declare that the UI contains no third-party ads",
         "Explain that branding remains fully customizable",
         "State that no competitor services are suggested in the app",
         "Highlight the clear terms of service that protect user rights"
       ],
-      "asset": "https://gethunta.pages.dev/"
+      "asset": "https://getstpi.pages.dev/"
     },
     {
       "id": "promo-operator-persona",
@@ -1030,12 +1030,12 @@
       "title": "Recruiters who need a clean pipeline for every client",
       "angle": "Speak directly to agency recruiters who juggle multiple client pipelines and need a single source of truth.",
       "beats": [
-        "Describe how Hunta centralises all candidate data in one view.",
+        "Describe how STPi centralises all candidate data in one view.",
         "Highlight the ability to tag pipelines per client without extra setup.",
         "Explain that the studio tier supports unlimited client workspaces.",
         "Show that you can export reports for each client on demand."
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
@@ -1050,7 +1050,7 @@
         "Show the metric view that tracks response rates over weeks.",
         "Mention the free trial link for a hands-on test."
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "seeker"
     },
     {
@@ -1065,7 +1065,7 @@
         "Show the audit log that records every change.",
         "Note that no personal data leaves the platform without consent."
       ],
-      "asset": "https://gethunta.pages.dev/"
+      "asset": "https://getstpi.pages.dev/"
     },
     {
       "id": "promo-seeker-mindset",
@@ -1079,7 +1079,7 @@
         "Adjust your outreach script based on the trend.",
         "Use the free trial to experiment with this workflow."
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "seeker"
     },
     {
@@ -1109,7 +1109,7 @@
         "Use the built-in tutorial to train new hires.",
         "Upgrade to studio for unlimited workspaces if needed."
       ],
-      "asset": "https://whop.com/jacaranda-labs",
+      "asset": "https://whop.com/stpi",
       "audience": "operator"
     },
     {
@@ -1152,7 +1152,7 @@
         "Calculate the time saved per open role with automated candidate matching.",
         "Demonstrate the ROI after one quarter of reduced time-to-hire."
       ],
-      "asset": "https://gethunta.pages.dev/",
+      "asset": "https://getstpi.pages.dev/",
       "audience": "operator"
     },
     {
@@ -1163,10 +1163,10 @@
       "angle": "Address the objection that job boards are a waste of time by showing a streamlined workflow.",
       "beats": [
         "Outline a typical day of applying on multiple sites versus using a single pipeline.",
-        "Show how Hunta syncs applications to all active listings automatically.",
+        "Show how STPi syncs applications to all active listings automatically.",
         "Mention that the free trial lets users test the flow before committing."
       ],
-      "asset": "https://hunta-mint.simalidudu.workers.dev/trial",
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
       "audience": "seeker"
     },
     {
@@ -1174,7 +1174,7 @@
       "kind": "promo",
       "format": "short",
       "title": "Data ownership matters when you choose a hiring platform",
-      "angle": "Contrast Hunta\u2019s transparent data policy with opaque competitor practices.",
+      "angle": "Contrast STPi\u2019s transparent data policy with opaque competitor practices.",
       "beats": [
         "Explain that candidates retain full control of their profiles.",
         "Point out that recruiters cannot export data without consent.",
@@ -1187,14 +1187,14 @@
       "id": "promo-affiliate-coaches",
       "kind": "promo",
       "format": "short",
-      "title": "Recommend hunta, get paid for it",
+      "title": "Recommend stpi, get paid for it",
       "angle": "Invite community members to become store affiliates; same generous share the field agents earn, paid automatically on referrals.",
       "beats": [
         "The store now recruits affiliates: coaches know coaches.",
         "Every referral that pays, pays you, tracked by Whop itself.",
         "No selling skills required when the demo does the talking."
       ],
-      "asset": "https://whop.com/jacaranda-labs/",
+      "asset": "https://whop.com/stpi/",
       "audience": "operator"
     },
     {
@@ -1208,7 +1208,7 @@
         "25 drafts and 5 sends prove the pipeline before any invoice.",
         "Referrals are tracked and paid by the platform, not by us."
       ],
-      "asset": "https://whop.com/jacaranda-labs/",
+      "asset": "https://whop.com/stpi/",
       "audience": "operator"
     },
     {
@@ -1222,7 +1222,7 @@
         "The share mirrors what our field agents already earn.",
         "Sovereign referrals are the ones that change a month."
       ],
-      "asset": "https://whop.com/jacaranda-labs/",
+      "asset": "https://whop.com/stpi/",
       "audience": "operator"
     },
     {
@@ -1236,7 +1236,7 @@
         "Court the coach, not the crowd: three good referrals beat thirty.",
         "The demo freeze is visible, so the upgrade question asks itself."
       ],
-      "asset": "https://whop.com/jacaranda-labs/",
+      "asset": "https://whop.com/stpi/",
       "audience": "operator"
     }
   ]

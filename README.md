@@ -1,23 +1,23 @@
-# hunta-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch
+# stpi-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch
 
-Everything to market Hunta, plus the public door for the **free-for-everyone demo**.
+Everything to market STPi, plus the public door for the **free-for-everyone demo**.
 
 ## The two pages
 
 | Page | What |
 |---|---|
 | **`index.html`** | The bible — 16 tabs: product truth, market/ICP, decided pricing (R0 · $306 (about R4,999)/$613 (about R9,999)/$920 (about R15,000)), social, outreach, sales scripts, lifecycle, demo & video, FAQ, growth plan, brand, samples, landing/leads, legal, checklist. Every block has a Copy button. Images are embedded (data URIs) so the file works from Pages, a USB stick or a WhatsApp download. |
-| **`demo.html`** | Public landing: hero → how it works → lead form → kit downloads instantly → lead card pings Discord ("Hunta Leads") → human replies <24 h. |
+| **`demo.html`** | Public landing: hero → how it works → lead form → kit downloads instantly → lead card pings Discord ("STPi Leads") → human replies <24 h. |
 
 Serve it: GitHub → Settings → Pages → `main` → `/ (root)` →
-`https://gethunta.pages.dev/` (already enabled).
+`https://getstpi.pages.dev/` (already enabled).
 
 ## Contents
 
 ```
 index.html      the bible (self-contained, ~400 KB with embedded imagery)
 demo.html       lead-capture landing + demo-kit download
-downloads/      hunta-demo-kit.zip · demo-card.html (interactive) · quickstart · pricing
+downloads/      stpi-demo-kit.zip · demo-card.html (interactive) · quickstart · pricing
 brand/          logos, icons, og-image (+ raw concepts)
 graphics/       discord mockup · hero card · before/after (PNG masters; index embeds JPGs)
 samples/        sample CV + letter (.pdf real-engine output, .html mirrors)
@@ -34,7 +34,7 @@ All CTAs point at `demo.html`. Paid (USD/mo, confirmed by owner 2026-09-19): Sol
 
 ## Before any campaign
 
-- Live: downloads/hunta-demo-1.0.1.zip (+.sha256) · setup.html (screenshot guide + §12
+- Live: downloads/stpi-demo-1.0.1.zip (+.sha256) · setup.html (screenshot guide + §12
   conversion playbook) · samples/cv-{classic,indigo,emerald,sunset}.pdf — CV designs are a
   per-candidate field, four looks.
 - Numbers: state-store-verified 2026-09-19 (runs 09-16→18: 72 drafted, 3 candidates, 0 auto-sends).

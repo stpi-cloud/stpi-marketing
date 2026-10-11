@@ -1,4 +1,4 @@
-# Hunta — pitches & positioning
+# STPi — pitches & positioning
 
 Official tagline (README): **“Jobs found. Applications drafted. You tap approve. It sends.”**
 
@@ -6,31 +6,31 @@ Official tagline (README): **“Jobs found. Applications drafted. You tap approv
 
 ## Elevator pitch (30 s)
 
-Hunta is a job-hunting copilot for career coaches in South Africa, Zimbabwe and Zambia.
+STPi is a job-hunting copilot for career coaches in South Africa, Zimbabwe and Zambia.
 It sweeps 17 job boards by default (22 supported) on a schedule — PNet, CareerJunction, JobMail, VacancyMail,
 iHarareJobs, GoZambiaJobs and more — matches every ad against your candidate's real profile,
 scores the fit, then drafts a tailored cover letter and a country-formatted CV as PDFs.
 The whole thing lands in your Discord as a single card with a ✅ and a ❌. Tap approve and it
 sends the application from your mailbox, signed as the candidate. When the employer answers,
-the reply reaches the candidate and you, and Hunta flags interview invites. Nothing ever goes out without your tap.
+the reply reaches the candidate and you, and STPi flags interview invites. Nothing ever goes out without your tap.
 
 ## One-liner (15 s)
 
-Hunta finds the jobs, drafts the application, and waits for your tap. You stay the professional
-in the loop; Hunta does the forty-tabs part.
+STPi finds the jobs, drafts the application, and waits for your tap. You stay the professional
+in the loop; STPi does the forty-tabs part.
 
 ## Tweet-length
 
 Your candidates aren't losing to better candidates. They're losing to the 40 open tabs.
-Hunta hunts, drafts, and asks before it sends.
+STPi hunts, drafts, and asks before it sends.
 
 ## Positioning statement
 
 For **career coaches, outplacement teams and job-search mentors in ZA / ZW / ZM** who lose
-billable hours to board-by-board searching and letter rewriting, **Hunta** is a
+billable hours to board-by-board searching and letter rewriting, **STPi** is a
 **human-in-the-loop application pipeline** that turns a private Discord channel into a
 **deal-flow desk for job applications**. Unlike CV mass-mailers and AI “apply for me” bots,
-Hunta **never sends anything without approval, never invents a word of experience, and deletes
+STPi **never sends anything without approval, never invents a word of experience, and deletes
 its own work product after 72 hours** — so you scale your judgement instead of outsourcing it.
 
 ## Stat block (verified, 2026-09-17, from production logs)

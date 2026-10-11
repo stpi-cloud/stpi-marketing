@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" width="520" height="96">
-<g transform="translate(48 48)" fill="#7B5EA7">
-  <g id="p"><ellipse cx="0" cy="-24" rx="11" ry="20"/></g>
-  <use href="#p" transform="rotate(72)"/><use href="#p" transform="rotate(144)"/>
-  <use href="#p" transform="rotate(216)"/><use href="#p" transform="rotate(288)"/>
-  <circle r="7" fill="#F4EEF9"/>
-</g>
-<text x="110" y="60" font-family="Poppins, Montserrat, 'DejaVu Sans', Arial, sans-serif" font-weight="600" font-size="40" fill="#2B2B2B">Jacaranda <tspan font-weight="300">Labs</tspan></text>
-</svg>

@@ -1,17 +1,17 @@
-# Hunta Sovereign (self-hosted). Guide: https://gethunta.pages.dev/setup#sovereign
-#   1. put this file and your .env in one folder (.env needs at least HUNTA_LICENCE_KEY + HUNTA_MASTER_KEY)
+# STPi Sovereign (self-hosted). Guide: https://getstpi.pages.dev/setup#sovereign
+#   1. put this file and your .env in one folder (.env needs at least STPI_LICENCE_KEY + STPI_MASTER_KEY)
 #   2. docker compose up -d
-#   3. docker compose exec hunta hunta licence-status      -> should say OK
+#   3. docker compose exec stpi stpi licence-status      -> should say OK
 # The image is public; your signed licence (posted in your Discord after purchase) is what unlocks it.
-# An expired or missing licence makes Hunta read-only (dashboard works, hunting/sending stops).
+# An expired or missing licence makes STPi read-only (dashboard works, hunting/sending stops).
 services:
-  hunta:
-    image: ghcr.io/king-kunta-cpu/hunta:latest
+  stpi:
+    image: ghcr.io/stpi-cloud/stpi:latest
     restart: unless-stopped
     env_file: .env
     environment:
-      HUNTA_MODE: selfhosted
+      STPI_MODE: selfhosted
     volumes:
       - ./data:/data          # SQLite, drafts, PDFs
       - ./config:/config      # tenants/<firm>/tenant.yaml + candidates
-    ports: ["8080:8080"]      # dashboard: http://localhost:8080 (sign in with HUNTA_ADMIN_TOKEN)
+    ports: ["8080:8080"]      # dashboard: http://localhost:8080 (sign in with STPI_ADMIN_TOKEN)

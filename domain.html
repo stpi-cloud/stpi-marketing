@@ -2,14 +2,14 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="canonical" href="https://gethunta.pages.dev/domain">
-<title>Hunta — give every client their own sender address on your domain</title>
+<link rel="canonical" href="https://getstpi.pages.dev/domain">
+<title>STPi — give every client their own sender address on your domain</title>
 <meta name="description" content="Applications go out as lerato.dube@yourpractice.co.za, replies land in your Gmail. Free Cloudflare Email Routing + a free sending relay; about R100–R200 a year for the domain.">
 <style>
- :root { --purple:#7B5EA7; --ink:#2B2B2B; --lilac:#F4EEF9; --line:#E4DCEF; --ok:#137333; --warn:#B00020; }
+ :root { --purple:#27548f; --ink:#2B2B2B; --lilac:#eef4fb; --line:#dbe7f4; --ok:#137333; --warn:#B00020; }
  * { box-sizing:border-box; }
  body { margin:0; font:15.5px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:#fff; }
- header { background:linear-gradient(135deg,#2B2B2B,#3E2F57); color:#fff; padding:26px 20px 30px; }
+ header { background:linear-gradient(135deg,#2B2B2B,#0f2748); color:#fff; padding:26px 20px 30px; }
  .wrap { max-width:900px; margin:0 auto; padding:0 18px; }
  header .wrap { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
  header svg { width:34px; height:34px; }
@@ -22,13 +22,13 @@
  h3 { font-size:15.5px; margin:20px 0 4px; }
  p { margin:8px 0; } .sub { color:#666; font-size:13.5px; }
  code, .mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; background:var(--lilac); padding:1px 5px; border-radius:4px; }
- pre.term { background:#1E1E2E; color:#D6D3E8; border-radius:10px; padding:14px 16px; overflow-x:auto; line-height:1.55; position:relative; font-size:12.8px; }
- pre.term::before { content:"● ● ●  terminal"; position:absolute; top:0; left:0; right:0; padding:5px 16px; background:#15151F; color:#666; border-radius:10px 10px 0 0; font-size:10.5px; letter-spacing:1.5px; }
+ pre.term { background:#20272c; color:#cfdded; border-radius:10px; padding:14px 16px; overflow-x:auto; line-height:1.55; position:relative; font-size:12.8px; }
+ pre.term::before { content:"● ● ●  terminal"; position:absolute; top:0; left:0; right:0; padding:5px 16px; background:#161a1e; color:#666; border-radius:10px 10px 0 0; font-size:10.5px; letter-spacing:1.5px; }
  pre.term { padding-top:34px; }
  pre.term { overflow-x:auto; max-width:100%; -webkit-overflow-scrolling:touch; }
  :not(pre) > code { overflow-wrap:anywhere; word-break:break-word; }
  @media (max-width:520px){ pre.term { font-size:12px; } table { display:block; overflow-x:auto; } }
- pre.term .c { color:#7ED9A0; } pre.term .dim { color:#8A87A0; } pre.term .hl { color:#FFD08A; }
+ pre.term .c { color:#7ED9A0; } pre.term .dim { color:#8296ad; } pre.term .hl { color:#FFD08A; }
  .cap { font-size:12px; color:#999; text-align:center; margin-top:4px; }
  .btns { display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 4px; }
  a.btn { display:inline-block; background:var(--purple); color:#fff; text-decoration:none; padding:10px 18px; border-radius:9px; font-weight:700; font-size:14.5px; }
@@ -46,24 +46,24 @@
 <header><div class="wrap">
  <svg viewBox="0 0 116 116" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="27"/><path d="M59 59 L72 72"/><path d="M72 72 L108 48 L88 106 L78 84 Z"/><path d="M78 84 L108 48"/></g></svg>
  <h1>Your own domain: one address per client<br><span style="font-weight:400;font-size:13px;opacity:.8">lerato.dube@yourpractice.co.za → replies in your inbox · ~30 minutes, once</span></h1>
- <nav><a href="https://gethunta.pages.dev/">Home</a><a href="setup.html">Setup guide</a><a href="demo.html">Demo</a></nav>
+ <nav><a href="https://getstpi.pages.dev/">Home</a><a href="setup.html">Setup guide</a><a href="demo.html">Demo</a></nav>
 </div></header>
 <main>
 
-<p class="sub">Optional. Without it, Hunta sends every application from your Gmail, signed
+<p class="sub">Optional. Without it, STPi sends every application from your Gmail, signed
 "Candidate (via your brand)". With it, each client gets an address of their own on your domain —
 created automatically from their name, nothing to set up per client — and every reply still lands
-in one inbox you already read, with a Hunta alert when an employer answers. Operators and candidates both get
+in one inbox you already read, with a STPi alert when an employer answers. Operators and candidates both get
 copies of outgoing applications; replies are addressed to the candidate and the operator.</p>
 <div class="warn"><b>Paid feature:</b> own-domain sending is available on Solo, Studio and Sovereign. Demo and the 7-day trial
 use a Gmail app password and send from that Gmail; they cannot connect a domain or a non-Gmail mail server.</div>
 
 <table>
 <tr><th>What employers see</th><td><b>Lerato Dube (via Momentum Careers)</b> &lt;lerato.dube@momentumcareers.co.za&gt;</td></tr>
-<tr><th>Where replies go</th><td>Your reply inbox (Cloudflare forwards the whole domain there), plus the candidate directly (Reply-To); Hunta alerts the operator</td></tr>
+<tr><th>Where replies go</th><td>Your reply inbox (Cloudflare forwards the whole domain there), plus the candidate directly (Reply-To); STPi alerts the operator</td></tr>
 <tr><th>Who sees sent mail</th><td>Candidate receives a private Bcc copy; the operator has a Sent copy in Gmail/IMAP</td></tr>
 <tr><th>Who signs the mail</th><td>Your domain (DKIM through the relay), so Gmail and Outlook see a properly authenticated sender</td></tr>
-<tr><th>Cost</th><td>Relay route: the domain only (about R100–R200/year for a .co.za); Cloudflare Email Routing and the relay free tier cost R0. If you already run a mail server, Hunta can use its SMTP + IMAP at no extra email-provider cost.</td></tr>
+<tr><th>Cost</th><td>Relay route: the domain only (about R100–R200/year for a .co.za); Cloudflare Email Routing and the relay free tier cost R0. If you already run a mail server, STPi can use its SMTP + IMAP at no extra email-provider cost.</td></tr>
 </table>
 
 <h2><span class="n">1</span> Domain DNS</h2>
@@ -71,7 +71,7 @@ use a Gmail app password and send from that Gmail; they cannot connect a domain 
  <li>Buy a domain from any registrar (a .co.za is cheapest), or use one you already own.</li>
  <li>For the relay route, put the domain on a free Cloudflare account and change the registrar's nameservers to the two Cloudflare shows. For your own mail server, keep your existing DNS provider and MX if you prefer.</li>
 </ol>
-<div class="note">Already have a mail server (for example, your own cPanel/Exim setup)? Keep its MX and skip Cloudflare Email Routing. Your server must accept mail to the candidate addresses (catch-all or aliases), allow SMTP sending with those From addresses, and provide IMAP for Hunta's reply alerts. Use its own SMTP/IMAP login in section 2 and choose “My own mail server” in section 3. Hunta will save sent copies through IMAP. No separate relay subscription is required. If your existing provider is Google Workspace or Microsoft 365, it must permit the candidate aliases as send-as addresses; otherwise use a relay.</div>
+<div class="note">Already have a mail server (for example, your own cPanel/Exim setup)? Keep its MX and skip Cloudflare Email Routing. Your server must accept mail to the candidate addresses (catch-all or aliases), allow SMTP sending with those From addresses, and provide IMAP for STPi's reply alerts. Use its own SMTP/IMAP login in section 2 and choose “My own mail server” in section 3. STPi will save sent copies through IMAP. No separate relay subscription is required. If your existing provider is Google Workspace or Microsoft 365, it must permit the candidate aliases as send-as addresses; otherwise use a relay.</div>
 
 <h2><span class="n">2</span> Forward the whole domain to your Gmail (free)</h2>
 <ol>
@@ -79,24 +79,24 @@ use a Gmail app password and send from that Gmail; they cannot connect a domain 
  <li><b>Destination addresses</b> → add your Gmail → click the link Cloudflare emails you.</li>
  <li><b>Routing rules</b> → <b>Catch-all address</b> → action <i>Send to an email</i> → your Gmail → enable.</li>
 </ol>
-<p>Now anything@yourdomain reaches your Gmail, which is why Hunta never has to create addresses one by one.</p>
+<p>Now anything@yourdomain reaches your Gmail, which is why STPi never has to create addresses one by one.</p>
 
 <h2><span class="n">3</span> A free sending relay</h2>
 <p>Cloudflare only receives. To send as your domain, pick one free relay:</p>
 <table>
 <tr><th></th><th>Brevo (recommended)</th><th>SMTP2GO</th></tr>
-<tr><td>Free tier / Hunta safety cap</td><td>300/day; Hunta allows up to 140 applications/day including each candidate's private copy</td><td>1,000/month; Hunta allows up to 15 applications/day including each candidate's private copy</td></tr>
+<tr><td>Free tier / STPi safety cap</td><td>300/day; STPi allows up to 140 applications/day including each candidate's private copy</td><td>1,000/month; STPi allows up to 15 applications/day including each candidate's private copy</td></tr>
 <tr><td>Add your domain</td><td>Senders, domains &amp; dedicated IPs → Domains → Add a domain → Authenticate. With Cloudflare, “authenticate automatically” adds the <code>brevo-code</code> TXT, the two DKIM records (<code>brevo1/brevo2._domainkey</code>) and DMARC for you.</td><td>Sending → Verified senders → Add sender domain → add the CNAME records it lists in Cloudflare → Verify.</td></tr>
-<tr><td>Hunta needs</td><td>SMTP &amp; API → SMTP tab: the <b>SMTP login</b> (…@smtp-brevo.com) and a new <b>SMTP key</b></td><td>Sending → SMTP users → add a user: its <b>username</b> and <b>password</b></td></tr>
+<tr><td>STPi needs</td><td>SMTP &amp; API → SMTP tab: the <b>SMTP login</b> (…@smtp-brevo.com) and a new <b>SMTP key</b></td><td>Sending → SMTP users → add a user: its <b>username</b> and <b>password</b></td></tr>
 </table>
 <div class="warn">Paste the SMTP key, not your account password. Free tiers are for your own clients' applications,
-one at a time after you approve them. That's exactly what Hunta sends, so don't use the relay for newsletters or bulk mail.</div>
+one at a time after you approve them. That's exactly what STPi sends, so don't use the relay for newsletters or bulk mail.</div>
 
-<h2><span class="n">4</span> Tell Hunta</h2>
+<h2><span class="n">4</span> Tell STPi</h2>
 <h3>Hosted (Solo, Studio, Sovereign)</h3>
 <p>In your Discord workspace press <b>🔐 Connect</b>. For Cloudflare Routing + a relay, section 2 is the Gmail (reply inbox),
 then section 3 is domain + relay credentials. For a server you already run, choose <b>My own SMTP/IMAP server</b> in section 2,
-enter its host/login/password, and select <b>My own mail server from section 2</b> in section 3. Hunta tests SMTP, IMAP and DNS,
+enter its host/login/password, and select <b>My own mail server from section 2</b> in section 3. STPi tests SMTP, IMAP and DNS,
 then posts the results in your channel. If your server only supports SMTP port 465, choose 465; IMAP uses SSL port 993.</p>
 <h3>Self-hosted (Sovereign)</h3>
 <pre class="term"><span class="dim"># tenant.yaml: the relay sends, your Gmail reads replies</span>
@@ -105,14 +105,14 @@ mailbox:
   address: applications@momentumcareers.co.za
   username: 9a1b2c001@smtp-brevo.com
   display_name: Momentum Careers
-  app_password: enc:...           <span class="dim"># hunta encrypt &lt;SMTP key&gt;</span>
+  app_password: enc:...           <span class="dim"># stpi encrypt &lt;SMTP key&gt;</span>
 inbox:
   provider: gmail
   address: you@gmail.com
-  app_password: enc:...           <span class="dim"># hunta encrypt &lt;Gmail app password&gt;</span>
+  app_password: enc:...           <span class="dim"># stpi encrypt &lt;Gmail app password&gt;</span>
 sender_domain: momentumcareers.co.za
 
-<span class="c">$ hunta sender-check momentum</span>
+<span class="c">$ stpi sender-check momentum</span>
 ✅ momentumcareers.co.za: ready
 ✅ Receiving: MX points to Cloudflare Email Routing (set a catch-all to your Gmail).
 ✅ SPF found.
@@ -120,7 +120,7 @@ sender_domain: momentumcareers.co.za
 ✅ DKIM: relay signing key published.
 ✅ DMARC found.
   lerato01             -&gt; lerato.dube@momentumcareers.co.za
-<span class="c">$ hunta mailbox-test momentum</span></pre>
+<span class="c">$ stpi mailbox-test momentum</span></pre>
 <p><b>Already have your own SMTP/IMAP server?</b> No Brevo or SMTP2GO account is needed. In the paid hosted form choose
 “My own SMTP/IMAP server” and “My own mail server from section 2”. In self-hosted <code>tenant.yaml</code>, use:</p>
 <pre class="term">mailbox:
@@ -147,7 +147,7 @@ If you only have a domain but no mail server, choose Cloudflare routing + a free
 </ul>
 
 <footer><div class="wrap" style="padding:0">
- Hunta · support: <b>simalidudu@gmail.com</b> · <b>+263 78 460 0904</b> (WhatsApp) ·
- <a href="https://gethunta.pages.dev/">home</a> · <a href="setup.html">setup guide</a>
+ STPi · support: <b>simalidudu@gmail.com</b> · <b>+263 78 460 0904</b> (WhatsApp) ·
+ <a href="https://getstpi.pages.dev/">home</a> · <a href="setup.html">setup guide</a>
 </div></footer>
 </main></body></html>

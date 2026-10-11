@@ -100,4 +100,4 @@ They can be tracked as part of your personal operations: number of links added, 
 If you need a lightweight system to manage these artifacts, consider a self‑hosted solution that gives you full control over when and how content is shared.  
 It can automate the approval gate, enforce your 30‑day cooldown rule, and track the metrics that matter for a disciplined engineering workflow.
 
-*Try the demo zip at https://gethunta.pages.dev/downloads/hunta-demo-1.0.0.zip and see how a simple, open‑source tool can keep your portfolio as clean and operational as your code.*
+*Try the demo zip at https://getstpi.pages.dev/downloads/stpi-demo-1.0.0.zip and see how a simple, open‑source tool can keep your portfolio as clean and operational as your code.*

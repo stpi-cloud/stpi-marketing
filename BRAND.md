@@ -1,12 +1,12 @@
-# Hunta — brand & voice
+# STPi — brand & voice
 
 ## Palette
 
 | Name | Hex | Use |
 |---|---|---|
-| Jacaranda | `#7B5EA7` | Logo stroke, buttons, links, highlights |
+| STPi | `#27548f` | Logo stroke, buttons, links, highlights |
 | Charcoal | `#2B2B2B` | Body text, wordmark on light |
-| Lilac tint | `#F4EEF9` | Backgrounds, cards, table stripes |
+| Lilac tint | `#eef4fb` | Backgrounds, cards, table stripes |
 | White | `#FFFFFF` | Canvas |
 | Green (approve) | `#1E8E3E` | ✅ moments only |
 | Red (reject) | `#B00020` | ❌ moments only |
@@ -20,13 +20,13 @@ Body: any clean sans (system stack is fine). Never a serif for UI copy.
 
 | File | Use |
 |---|---|
-| `hunta-logo.svg` / `.png` | Default on light backgrounds |
-| `hunta-logo-white.svg` | On jacaranda / charcoal |
-| `hunta-logo-mono.svg` | Single-colour print, invoices |
-| `hunta-logo-on-purple.png` | Dark heroes |
-| `hunta-icon.svg`, `hunta-icon-512/192/32.png`, `favicon.ico` | Avatars, app icon, Telegram bot (use 512) |
-| `hunta-tile.svg` | Source for tiles / pattern |
-| `jacaranda-labs.svg/.png` | "by Jacaranda Labs" credit, footer, DPA |
+| `stpi-logo.svg` / `.png` | Default on light backgrounds |
+| `stpi-logo-white.svg` | On stpi / charcoal |
+| `stpi-logo-mono.svg` | Single-colour print, invoices |
+| `stpi-logo-on-navy.png` | Dark heroes |
+| `stpi-icon.svg`, `stpi-icon-512/192/32.png`, `favicon.ico` | Avatars, app icon, Telegram bot (use 512) |
+| `stpi-tile.svg` | Source for tiles / pattern |
+| `stpi.svg/.png` | "by STPi" credit, footer, DPA |
 | `og-image.png` (1200×630) | Share card everywhere |
 
 Rules: minimum logo height 24 px; clear space = one magnifier-circle on all sides;
@@ -38,7 +38,7 @@ dark background (use white); never stretch.
 - Plain. Short sentences. Concrete nouns.
 - Specific beats impressive: "41 drafted applications, zero auto-sends" > "powerful AI".
 - Honest about limits: we say what it *won't* do (auto-send, invent, scrape LinkedIn).
-- The human is the hero. Hunta is the tool. Never "our AI got her the job."
+- The human is the hero. STPi is the tool. Never "our AI got her the job."
 - No emoji in email bodies except the ✅/❌ pair when literally describing the buttons.
 - Southern-African specifics welcome (SARS eFiling, SAIPA, NRC, EcoCash) — they signal
   we actually know the market.

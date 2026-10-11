@@ -1,4 +1,4 @@
-# Hunta — pricing (decided 2026-09-17, founder-approved mandate)
+# STPi — pricing (decided 2026-09-17, founder-approved mandate)
 
 Currency: **US dollars, set to the rand value** (owner decision 2026-09-27: Whop bills USD; rand
 figures are approximate at R16.31 per $1). ZA/ZW/ZM buyers can also pay sats via Lightning or
@@ -19,7 +19,7 @@ Bill monthly via **Whop**; annual = 25% off (the cash lever that funds the build
   cents of LLM on the customer's own key. The upgrade trigger is natural: the *second*
   candidate. "You upgrade when your bench asks" is the honest funnel.
 - **Solo $306 (about R4,999)** ≈ two-to-three bundled CV-and-letter sales at prevailing coach rates
-  (R600–R1 500), plus the 8–12 h of hunt-and-rewrite it deletes. If Hunta doesn't earn its keep
+  (R600–R1 500), plus the 8–12 h of hunt-and-rewrite it deletes. If STPi doesn't earn its keep
   the customer cancels in-app and is right to. Annual $2,754 (about R45,000, 25% off) is the prepay close —
   one deal ≈ six months of runway, cash now.
 - **Studio $613 (about R9,999)** is priced for throughput, not seats: a CV studio that triples writer
@@ -28,7 +28,7 @@ Bill monthly via **Whop**; annual = 25% off (the cash lever that funds the build
 - **Sovereign $920 (about R15,000)** undercuts one junior-recruiter-day and removes the two objections
   agencies actually have (data residency, vendor lock-in). Onboarding day included because
   self-host failures are support tickets; a guided day is cheaper.
-- **Prices are USD at the rand value of the 2026-09-23 service-first memo tiers (owner decision 2026-09-27): Solo $306 / Studio $613 / Sovereign $920 monthly (about R4,999 / R9,999 / R15,000); annual 25% off.** ZW/ZM buyers can pay sats via coinos or Mukuru/EFT at the day's rate. Billing is enforced fail-closed (`hunta billing grant`).
+- **Prices are USD at the rand value of the 2026-09-23 service-first memo tiers (owner decision 2026-09-27): Solo $306 / Studio $613 / Sovereign $920 monthly (about R4,999 / R9,999 / R15,000); annual 25% off.** ZW/ZM buyers can pay sats via coinos or Mukuru/EFT at the day's rate. Billing is enforced fail-closed (`stpi billing grant`).
 - **Affiliates 30% / 12 months** because coaches talk to coaches; Whop runs it natively and
   30% is the number that makes a coach mention you unprompted.
 

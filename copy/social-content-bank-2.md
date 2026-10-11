@@ -3,7 +3,7 @@
 More ready-to-ship posts beyond the first volume. Voice rules unchanged: show
 the card and the tap, show the purge unprompted, one CTA (the demo, free
 forever), number-free unless dated and true, the human is the hero.
-[CTA] = gethunta.pages.dev. [TRIAL] = the 7-day hosted trial join link.
+[CTA] = getstpi.pages.dev. [TRIAL] = the 7-day hosted trial join link.
 
 ## X — singles
 

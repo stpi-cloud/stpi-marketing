@@ -1,4 +1,4 @@
-# Hunta — lifecycle email sequences
+# STPi — lifecycle email sequences
 
 Customer = the coach (tenant owner). Tone: plain, specific, no exclamation inflation.
 
@@ -7,14 +7,14 @@ Customer = the coach (tenant owner). Tone: plain, specific, no exclamation infla
 ## Day 0 — welcome + setup (send the moment they sign up)
 
 ```
-Subject: Hunta is live for {{tenant}} — 3 clicks to first card
+Subject: STPi is live for {{tenant}} — 3 clicks to first card
 
 Hi {{name}},
 
 Welcome. Your pipeline already has a home; it just needs three things from you:
 
 1. DISCORD (2 min)
-   In your server: #hunta → Edit Channel → Integrations → Webhooks → New Webhook.
+   In your server: #stpi → Edit Channel → Integrations → Webhooks → New Webhook.
    Paste the URL into your tenant.yaml under discord_webhook (I did this with you
    on the call — skip if done).
 
@@ -30,7 +30,7 @@ Welcome. Your pipeline already has a home; it just needs three things from you:
 That's it. Hunts run 06:00 / 10:00 / 14:00 / 18:00 (SAST), Mon–Sat.
 Your first card should land within a few hours.
 
-— The Hunta desk
+— The STPi desk
 ```
 
 ## Day 2 — expectation-setting
@@ -42,7 +42,7 @@ Hi {{name}},
 
 Two days in, here's what "normal" looks like:
 
-- A handful of cards, not hundreds. Hunta pre-scores every ad for free and only
+- A handful of cards, not hundreds. STPi pre-scores every ad for free and only
   spends AI attention on the shortlist. Quiet days are healthy days.
 - Some cards you'll reject. That's the system learning your taste — rejections
   cost nothing and delete their own PDFs.
@@ -51,7 +51,7 @@ Two days in, here's what "normal" looks like:
 Tuning tip: exclusions beat keywords. "intern", "unpaid", "commission only"
 remove more garbage than any keyword adds.
 
-— The Hunta desk
+— The STPi desk
 ```
 
 ## Day 7 — activation nudge
@@ -69,13 +69,13 @@ exclusion — 5 minutes now saves a week of noise.
 
 And if a candidate got an interview, I'd genuinely like to hear about it.
 
-— The Hunta desk
+— The STPi desk
 ```
 
 ## Day 29 — renewal (Whop renews automatically; this is the courtesy mail)
 
 ```
-Subject: month 2 of Hunta for {{tenant}}
+Subject: month 2 of STPi for {{tenant}}
 
 Hi {{name}},
 
@@ -87,7 +87,7 @@ back (cards × 25 min of manual hunt-and-rewrite, our honest yardstick).
 Change plan, pause, or cancel from your Whop library — no email required,
 no retention call. We'd rather you stay because the cards are good.
 
-— The Hunta desk
+— The STPi desk
 ```
 
 ## Day 45 — win-back (only if they cancelled)
@@ -116,7 +116,7 @@ Subject: Your job hunt just got a second pair of hands
 
 Hi {{candidate}},
 
-From this week, your job hunt runs on Hunta:
+From this week, your job hunt runs on STPi:
 
 - It checks the boards for you, four times a day.
 - It shortlists only ads that match YOUR profile — location, field, seniority.

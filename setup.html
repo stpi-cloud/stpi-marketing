@@ -2,16 +2,16 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>/* GH_REDIRECT_OK: GitHub Pages copy -> Cloudflare Pages (2026-09-27) */if(location.hostname.slice(-9)==="github.io"){location.replace("https://gethunta.pages.dev/setup"+location.search+location.hash)}</script>
-<link rel="canonical" href="https://gethunta.pages.dev/setup">
+<script>/* GH_REDIRECT_OK: GitHub Pages copy -> Cloudflare Pages (2026-09-27) */if(location.hostname.slice(-9)==="github.io"){location.replace("https://getstpi.pages.dev/setup"+location.search+location.hash)}</script>
+<link rel="canonical" href="https://getstpi.pages.dev/setup">
 
-<title>Hunta — the setup guide: from zip to first application in ~20 minutes</title>
-<meta name="description" content="Install the free Hunta demo, wire Discord + Gmail, pick a CV design per candidate, and run your first job hunt. Every command here is the real product.">
+<title>STPi — the setup guide: from zip to first application in ~20 minutes</title>
+<meta name="description" content="Install the free STPi demo, wire Discord + Gmail, pick a CV design per candidate, and run your first job hunt. Every command here is the real product.">
 <style>
- :root { --purple:#7B5EA7; --ink:#2B2B2B; --lilac:#F4EEF9; --line:#E4DCEF; --ok:#137333; --warn:#B00020; }
+ :root { --purple:#27548f; --ink:#2B2B2B; --lilac:#eef4fb; --line:#dbe7f4; --ok:#137333; --warn:#B00020; }
  * { box-sizing:border-box; }
  body { margin:0; font:15.5px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:#fff; }
- header { background:linear-gradient(135deg,#2B2B2B,#3E2F57); color:#fff; padding:26px 20px 30px; }
+ header { background:linear-gradient(135deg,#2B2B2B,#0f2748); color:#fff; padding:26px 20px 30px; }
  .wrap { max-width:900px; margin:0 auto; padding:0 18px; }
  header .wrap { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
  header svg { width:34px; height:34px; }
@@ -24,13 +24,13 @@
  h3 { font-size:15.5px; margin:20px 0 4px; }
  p { margin:8px 0; } .sub { color:#666; font-size:13.5px; }
  code, .mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; background:var(--lilac); padding:1px 5px; border-radius:4px; }
- pre.term { background:#1E1E2E; color:#D6D3E8; border-radius:10px; padding:14px 16px; overflow-x:auto; line-height:1.55; position:relative; font-size:12.8px; }
- pre.term::before { content:"● ● ●  terminal"; position:absolute; top:0; left:0; right:0; padding:5px 16px; background:#15151F; color:#666; border-radius:10px 10px 0 0; font-size:10.5px; letter-spacing:1.5px; }
+ pre.term { background:#20272c; color:#cfdded; border-radius:10px; padding:14px 16px; overflow-x:auto; line-height:1.55; position:relative; font-size:12.8px; }
+ pre.term::before { content:"● ● ●  terminal"; position:absolute; top:0; left:0; right:0; padding:5px 16px; background:#161a1e; color:#666; border-radius:10px 10px 0 0; font-size:10.5px; letter-spacing:1.5px; }
  pre.term { padding-top:34px; }
  pre.term { overflow-x:auto; max-width:100%; -webkit-overflow-scrolling:touch; }
  :not(pre) > code { overflow-wrap:anywhere; word-break:break-word; }
  @media (max-width:520px){ pre.term { font-size:12px; } table { display:block; overflow-x:auto; } }
- pre.term .c { color:#7ED9A0; } pre.term .dim { color:#8A87A0; } pre.term .hl { color:#FFD08A; }
+ pre.term .c { color:#7ED9A0; } pre.term .dim { color:#8296ad; } pre.term .hl { color:#FFD08A; }
  .cap { font-size:12px; color:#999; text-align:center; margin-top:4px; }
  .shot { border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:14px 0 2px; }
  .shot img { width:100%; display:block; }
@@ -48,7 +48,7 @@
  @media (max-width:700px){ .gallery { grid-template-columns:1fr; } }
  .pv { border:1px solid var(--line); border-radius:12px; overflow:hidden; }
  .pv .frame { padding:14px 16px; font-family:Georgia,"DejaVu Serif",serif; }
- .pv .meta { padding:8px 12px; background:#FAF8FD; border-top:1px solid var(--line); font-size:12.5px; display:flex; justify-content:space-between; gap:8px; }
+ .pv .meta { padding:8px 12px; background:#f7fafd; border-top:1px solid var(--line); font-size:12.5px; display:flex; justify-content:space-between; gap:8px; }
  .pv .meta a { color:var(--purple); font-weight:700; text-decoration:none; }
  .frame { font-size:10.6px; line-height:1.5; color:#222; }
  .frame h1 { font:700 15px/1.2 Arial,sans-serif; margin:0 0 3px; color:#222; letter-spacing:.3px; }
@@ -56,11 +56,11 @@
  .frame .muted { color:#555; font:400 8.6px Arial,sans-serif; }
  .frame .sk { font:400 9.5px Arial,sans-serif; }
  .frame ul { margin:2px 0 4px 14px; padding:0; font-size:9.3px; }
- .pv.indigo .frame h1 { color:#312E81; border-bottom:3px solid #818CF8; padding-bottom:5px; }
- .pv.indigo .frame h4 { color:#3730A3; border-bottom:1px solid #C7D2FE; }
- .pv.indigo .frame .muted { color:#4338CA; font-weight:600; }
- .pv.indigo .frame .sk { background:#EEF2FF; color:#312E81; padding:4px 7px; border-radius:5px; font-weight:600; }
- .pv.indigo .frame ul li::marker { color:#6366F1; }
+ .pv.indigo .frame h1 { color:#10294a; border-bottom:3px solid #8dc1ec; padding-bottom:5px; }
+ .pv.indigo .frame h4 { color:#3b6e98; border-bottom:1px solid #cce5f8; }
+ .pv.indigo .frame .muted { color:#4787bb; font-weight:600; }
+ .pv.indigo .frame .sk { background:#f0f7fd; color:#10294a; padding:4px 7px; border-radius:5px; font-weight:600; }
+ .pv.indigo .frame ul li::marker { color:#71b0e3; }
  .pv.emerald .frame h1 { color:#064E3B; }
  .pv.emerald .frame .muted { border-top:2px solid #34D399; border-bottom:2px solid #34D399; padding:3px 0; color:#065F46; }
  .pv.emerald .frame h4 { color:#047857; border-bottom:none; border-left:4px solid #10B981; padding-left:7px; }
@@ -78,8 +78,8 @@
 <body>
 <header><div class="wrap">
  <svg viewBox="0 0 116 116" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="27"/><path d="M59 59 L72 72"/><path d="M72 72 L108 48 L88 106 L78 84 Z"/><path d="M78 84 L108 48"/></g></svg>
- <h1>Hunta — setup guide<br><span style="font-weight:400;font-size:13px;opacity:.8">zip → wired pipeline → first application, ~20 minutes</span></h1>
- <nav><a href="https://gethunta.pages.dev/">Home</a><a href="demo.html">Demo</a><a href="#buy">Customers</a></nav>
+ <h1>STPi — setup guide<br><span style="font-weight:400;font-size:13px;opacity:.8">zip → wired pipeline → first application, ~20 minutes</span></h1>
+ <nav><a href="https://getstpi.pages.dev/">Home</a><a href="demo.html">Demo</a><a href="#buy">Customers</a></nav>
 </div></header>
 <main>
 
@@ -88,28 +88,28 @@
 No card, no account, no telemetry: the download IS the product.</p>
 
 <div class="btns">
- <a class="btn" href="downloads/hunta-demo-1.0.1.zip">⬇ Download the demo (173 KB .zip)</a>
- <a class="btn alt" href="downloads/hunta-demo-1.0.1.zip.sha256">sha256 file</a>
+ <a class="btn" href="downloads/stpi-demo-1.0.1.zip">⬇ Download the demo (173 KB .zip)</a>
+ <a class="btn alt" href="downloads/stpi-demo-1.0.1.zip.sha256">sha256 file</a>
 </div>
 
 <h2><span class="n">1</span> Download, then prove the bytes</h2>
 <p>Two files: the pack and its signature hash. Check the download matches the hash before installing —
 if it ever differs, you did not get our file:</p>
 <pre class="term"><span class="dim"># Linux / Mac — in the folder you downloaded to:</span>
-sha256sum -c hunta-demo-1.0.1.zip.sha256
-<span class="c">hunta-demo-1.0.1.zip: OK</span>
+sha256sum -c stpi-demo-1.0.1.zip.sha256
+<span class="c">stpi-demo-1.0.1.zip: OK</span>
 
 <span class="dim"># Windows PowerShell:</span>
-(Get-FileHash hunta-demo-1.0.1.zip).Hash -eq (Get-Content hunta-demo-1.0.1.zip.sha256).Substring(0,64)
+(Get-FileHash stpi-demo-1.0.1.zip).Hash -eq (Get-Content stpi-demo-1.0.1.zip.sha256).Substring(0,64)
 <span class="c">True</span></pre>
 <p class="sub">Expected digest: <code>9f2b33e033a9cde21b131487180f598770426797efe97361e4c1e75c0a0f33a8</code></p>
 
 <h2><span class="n">2</span> Install (Python 3.11+)</h2>
-<pre class="term">unzip hunta-demo-1.0.1.zip -d hunta-demo && cd hunta-demo
+<pre class="term">unzip stpi-demo-1.0.1.zip -d stpi-demo && cd stpi-demo
 python3 -m venv .venv && source .venv/bin/activate      <span class="dim"># Windows: .venv\Scripts\activate</span>
-pip install hunta-1.0.1-py3-none-any.whl
+pip install stpi-1.0.1-py3-none-any.whl
 
-hunta doctor        <span class="dim"># self-check: config, files, data dir, LLM key, Discord, SMTP</span>
+stpi doctor        <span class="dim"># self-check: config, files, data dir, LLM key, Discord, SMTP</span>
 <span class="c">✔ flavour: demo (25 drafts / 5 sends / 30-day window)</span>
 <span class="c">✔ tenant demo: 2 candidates</span>  <span class="dim">…</span>
 <span class="dim">✘ groq key missing            ← fix it next line, that's the only real requirement</span></pre>
@@ -117,7 +117,7 @@ hunta doctor        <span class="dim"># self-check: config, files, data dir, LLM
 synthetic candidates (Pat — ZA — and Lee — ZW). Doctor goes green when you give it a model key
 and a Discord webhook:</p>
 <pre class="term"><span class="dim"># any free tier works; groq needs no card → console.groq.com → API key</span>
-hunta encrypt "gsk_...your key..."        <span class="dim"># prints an enc: blob — paste it as llm_api_key in tenant.yaml</span></pre>
+stpi encrypt "gsk_...your key..."        <span class="dim"># prints an enc: blob — paste it as llm_api_key in tenant.yaml</span></pre>
 
 <h2><span class="n">3</span> Your candidate = one YAML file</h2>
 <p>Copy <code>config/tenants/demo/candidates/demo01.yaml</code>, rename, edit. That's the whole
@@ -145,15 +145,15 @@ education:
 <span class="dim"># ZA extras (all optional, shown only if present):</span>
 id_number: "890412 …"    ee_status: SA Black Male    drivers_licence: C1</pre>
 <p class="sub">The criteria block in <code>tenant.yaml</code> (keywords / locations / exclusions)
-decides what gets hunted for this candidate. <code>hunta hunt --dry</code> previews without touching anything.</p>
+decides what gets hunted for this candidate. <code>stpi hunt --dry</code> previews without touching anything.</p>
 
 <h2><span class="n">4</span> Discord: the card that runs your whole pipeline</h2>
 <ol>
- <li>Your server → <b>#hunta</b> → Edit Channel → Integrations → Webhooks → <b>New Webhook</b> → copy URL.</li>
+ <li>Your server → <b>#stpi</b> → Edit Channel → Integrations → Webhooks → <b>New Webhook</b> → copy URL.</li>
  <li>Paste it as <code>discord_webhook:</code> in <code>tenant.yaml</code>.</li>
  <li>Every hunt posts <b>one card per match</b>: title · company · match % · reason · link · both PDFs · ✅ / ❌.</li>
 </ol>
-<div class="shot"><img src="graphics/discord-card-mockup.png" alt="The Hunta Discord card"></div>
+<div class="shot"><img src="graphics/discord-card-mockup.png" alt="The STPi Discord card"></div>
 <p class="cap">the card — real product screenshot (demo persona)</p>
 <p>Tap around a live one right here — approve/reject logic runs in this page, no backend:</p>
 <iframe class="card" src="downloads/demo-card.html" title="live tappable card demo"></iframe>
@@ -163,13 +163,13 @@ decides what gets hunted for this candidate. <code>hunta hunt --dry</code> previ
 <ol>
  <li>Your Google account (a separate Gmail just for applications is best) → security → 2-Step Verification ON → <b>App passwords</b> → create → 16 chars.</li>
  <li>Put <code>address:</code> + <code>app_password:</code> in <code>tenant.yaml</code> under <code>mailbox:</code>
-     (app password goes through <code>hunta encrypt</code> like the LLM key).</li>
- <li><code>hunta mailbox-test demo</code> → green means the pipeline can deliver. No Google Cloud project,
+     (app password goes through <code>stpi encrypt</code> like the LLM key).</li>
+ <li><code>stpi mailbox-test demo</code> → green means the pipeline can deliver. No Google Cloud project,
      no OAuth consent screen, nothing to pay.</li>
 </ol>
 <div class="note">How it's used: every application goes out from this mailbox, signed "Candidate (via your brand)",
 with reply-to set to the candidate <i>and</i> this mailbox — so the candidate hears straight away and so do you.
-The same app password lets Hunta read the inbox (read-only, nothing marked or moved) to flag employer
+The same app password lets STPi read the inbox (read-only, nothing marked or moved) to flag employer
 replies: interview invites, questions, no's, bounces. Caps: 20 per candidate a day, 150 per mailbox
 (demo: 5 sends per 30 days).</div>
 <div class="note"><b>Paid plans: want each candidate to have their own address?</b> With your domain, applications go out as
@@ -177,13 +177,13 @@ replies: interview invites, questions, no's, bounces. Caps: 20 per candidate a d
 or connect an SMTP/IMAP server you already run. Demo and trial use Gmail only. <a href="domain.html">The own-domain guide →</a></div>
 
 <h2><span class="n">6</span> First hunt</h2>
-<pre class="term">hunta hunt --dry         <span class="dim"># previews; marks nothing, sends nothing</span>
+<pre class="term">stpi hunt --dry         <span class="dim"># previews; marks nothing, sends nothing</span>
 <span class="dim">[hunter:careerjunction] 24 jobs</span>
 <span class="dim">[hunter:pnet] 30 jobs</span>
 <span class="dim">[pipeline:demo/lerato01] 32 pass rules, sending top 5 to LLM</span>
 <span class="dim">[dry] Senior Accountant @ Meridian Logistics (pre 0.71 / llm 88%) -&gt; Senior Accountant — Meridian…</span>
 
-hunta hunt               <span class="dim"># real: drafts the PDFs, posts the cards, waits for your tap</span></pre>
+stpi hunt               <span class="dim"># real: drafts the PDFs, posts the cards, waits for your tap</span></pre>
 <p>18 board integrations across ZA · ZW · ZM + remote feeds, four times a day if you schedule it
 (§10). A dead board never kills a run — <code>[hunter:x] 0 jobs</code> and the rest deliver.</p>
 
@@ -227,8 +227,8 @@ no graphics, no columns a parser can't read.</p>
 </div>
 <p class="cap">the previews above use the product's own CSS; the linked PDFs are real render output</p>
 <h3>Three ways to set it</h3>
-<pre class="term">hunta designs                          <span class="dim"># list them</span>
-hunta design demo lerato01 emerald     <span class="dim"># CLI — one line, done</span>
+<pre class="term">stpi designs                          <span class="dim"># list them</span>
+stpi design demo lerato01 emerald     <span class="dim"># CLI — one line, done</span>
 <span class="dim"># or the YAML field in §3, or the dropdown in the dashboard's candidate settings —</span>
 <span class="dim">#   cv design: [ classic ▾ ]   (classic · indigo · emerald · sunset)</span></pre>
 <p>Set it per <i>client</i> (a corporate-career person gets classic; a marketing graduate gets sunset),
@@ -244,16 +244,16 @@ Nothing phones home: no accounts, no analytics, no server of ours in the data pa
 means your laptop is the cloud.</p>
 
 <h2><span class="n">10</span> Four times a day, if you want it</h2>
-<p>Demo mode: a scheduled <code>hunta hunt</code> via cron (Linux/Mac) or Task Scheduler (Windows):</p>
+<p>Demo mode: a scheduled <code>stpi hunt</code> via cron (Linux/Mac) or Task Scheduler (Windows):</p>
 <pre class="term"><span class="dim"># crontab -e — the 06:00/14:00 SAST rhythm (adjust TZ to yours)</span>
-0 4,12 * * 1-6  cd ~/hunta-demo && .venv/bin/hunta hunt &gt;&gt; hunt.log 2&gt;&amp;1</pre>
+0 4,12 * * 1-6  cd ~/stpi-demo && .venv/bin/stpi hunt &gt;&gt; hunt.log 2&gt;&amp;1</pre>
 <p class="sub">Paid hosted tier runs the same thing on GitHub Actions ($0 infra) for you — you never
 touch a scheduler.</p>
 
 <h2><span class="n">11</span> When something looks wrong</h2>
 <table>
 <tr><th>Symptom</th><th>What it is</th></tr>
-<tr><td><code>[llm] groq: 429</code></td><td>free-tier rate limit. Naps are capped at 30 s then failover; run <code>hunta llm-chain demo</code> after exporting 2–3 free keys (cerebras, gemini…) to spread load.</td></tr>
+<tr><td><code>[llm] groq: 429</code></td><td>free-tier rate limit. Naps are capped at 30 s then failover; run <code>stpi llm-chain demo</code> after exporting 2–3 free keys (cerebras, gemini…) to spread load.</td></tr>
 <tr><td><code>[pnet] detail path unhealthy — serving the rest from list data</code></td><td>board/DNS hiccup; the breaker keeps delivering ads from list data. No action; the next run retries normally.</td></tr>
 <tr><td>a board logs <code>0 jobs</code></td><td>that board is blocked from your IP or empty today. Coverage degrades, the run completes — always.</td></tr>
 <tr><td><code>DEMO limit: all 5 premium sends used</code></td><td>the 30-day leash. Reset goodwill: delete <code>data/.demo_usage.json</code> — or upgrade (§12).</td></tr>
@@ -261,7 +261,7 @@ touch a scheduler.</p>
 </table>
 
 <h2 id="buy"><span class="n">12</span> You're a coach and a client just said "I want this for everyone I have"</h2>
-<p class="sub">(For Hunta sellers: the same section in mirror — the bible's growth tab links here.)</p>
+<p class="sub">(For STPi sellers: the same section in mirror — the bible's growth tab links here.)</p>
 <ol>
  <li><b>Take the order.</b> Confirm: candidate count, countries, branding (Studio+). Solo $306/mo (about R4,999)
      = 3 candidates · 100 sends; Studio $613/mo (about R9,999) = 15 + white-label PDFs; Sovereign $920/mo (about R15,000) =
@@ -271,7 +271,7 @@ touch a scheduler.</p>
      Studio <code>whop.com/checkout/ch_xXwDxquSJP2Ctwu</code>, Sovereign <code>whop.com/checkout/ch_cjiffJE23bpi6Zx</code>),
      in rands (Solo <code>ch_kx2q8S9aYZtNTbX</code>, Studio <code>ch_DevT4v0Yys7JPUX</code>, Sovereign <code>ch_kB1eviTd27jsJiv</code>),
      and annual by bank wire (Solo <code>ch_k0iLW2DxBwPn7Pb</code>, Studio <code>ch_2AqEEMTlrXveTzJ</code>, Sovereign <code>ch_4gPHCzpXHl3jk6y</code>).
-     Store <code>whop.com/jacaranda-labs</code>. Whop only takes cards up to $2,500, so annual is wire-only.
+     Store <code>whop.com/stpi</code>. Whop only takes cards up to $2,500, so annual is wire-only.
      Card payments run through Whop; every manual rail below is honoured in full too — Lightning to
      <b>SharkSkin@coinos.io</b> (LUD-16-verified 2026-09-19; payer puts name + tier in the payment
      note, receipt to WhatsApp), or Mukuru/EFT quoting their tenant id as the reference. Push annual
@@ -282,12 +282,12 @@ touch a scheduler.</p>
  <li><b>Provision the tenant</b> in seconds: copy the tenant template, add their candidates, encrypt their
      Gmail app passwords + their own LLM key (their key = their bill = their privacy), start their
      pipeline. A new paying tenant is a directory, not a deploy.</li>
- <li><b>Remove the leash:</b> their build runs without <code>HUNTA_FLAVOUR=demo</code> — that single env
+ <li><b>Remove the leash:</b> their build runs without <code>STPI_FLAVOUR=demo</code> — that single env
      flip is the entire upgrade; queues, history and CV designs carry over untouched.</li>
  <li><b>Self-host (Sovereign) customers:</b> nothing to do by hand. After a Whop purchase they run
-     <code>/claim</code> in their own Discord; the bot opens a private <b>#🔐-hunta-sovereign</b> channel with their
+     <code>/claim</code> in their own Discord; the bot opens a private <b>#🔐-stpi-sovereign</b> channel with their
      signed licence and the install steps below, and posts a fresh licence on every renewal. Manual-rail buyers:
-     <code>hunta licence-issue</code> signs one by hand. Support is <code>/help</code> in that channel, WhatsApp as backup.</li>
+     <code>stpi licence-issue</code> signs one by hand. Support is <code>/help</code> in that channel, WhatsApp as backup.</li>
  <li><b>Week-one check:</b> after 3 days ask for a screenshot of their first approved card.
      That moment is the product working; it's also your referral ask, made warm.</li>
 </ol>
@@ -296,40 +296,40 @@ touch a scheduler.</p>
 Nothing about your demo changes: same pipeline, your keys, your mailbox, no leash.
 Your first CV designs are set per candidate — say the word if anyone wants a different look."</div>
 
-<h2 id="sovereign"><span class="n">13</span> Sovereign: install Hunta on your own box</h2>
+<h2 id="sovereign"><span class="n">13</span> Sovereign: install STPi on your own box</h2>
 <p class="sub">For Sovereign buyers. About 15 minutes on any Linux server, VPS or spare PC with Docker. Your licence is
-in your <b>#🔐-hunta-sovereign</b> Discord channel (it appears after you run <code>/claim</code>). Stuck? Type
+in your <b>#🔐-stpi-sovereign</b> Discord channel (it appears after you run <code>/claim</code>). Stuck? Type
 <code>/help</code> in that channel, or WhatsApp <b>+263 78 460 0904</b>.</p>
 <ol>
  <li><b>Get the image and the compose file.</b>
-<pre class="term">mkdir hunta &amp;&amp; cd hunta
-docker pull ghcr.io/king-kunta-cpu/hunta:latest
-curl -fsSLO https://gethunta.pages.dev/downloads/docker-compose.sovereign.yml</pre></li>
+<pre class="term">mkdir stpi &amp;&amp; cd stpi
+docker pull ghcr.io/stpi-cloud/stpi:latest
+curl -fsSLO https://getstpi.pages.dev/downloads/docker-compose.sovereign.yml</pre></li>
  <li><b>Make two keys</b> (run each once and keep the output):
-<pre class="term">docker run --rm ghcr.io/king-kunta-cpu/hunta:latest hunta keygen
-docker run --rm ghcr.io/king-kunta-cpu/hunta:latest hunta admin-token</pre></li>
+<pre class="term">docker run --rm ghcr.io/stpi-cloud/stpi:latest stpi keygen
+docker run --rm ghcr.io/stpi-cloud/stpi:latest stpi admin-token</pre></li>
  <li><b>Create <code>.env</code></b> in the same folder:
-<pre class="term">HUNTA_LICENCE_KEY=HLT1.paste-your-licence-here
-HUNTA_MASTER_KEY=the-keygen-output
-HUNTA_ADMIN_TOKEN=the-admin-token-output</pre></li>
+<pre class="term">STPI_LICENCE_KEY=STP1.paste-your-licence-here
+STPI_MASTER_KEY=the-keygen-output
+STPI_ADMIN_TOKEN=the-admin-token-output</pre></li>
  <li><b>Start it and check the licence:</b>
 <pre class="term">docker compose -f docker-compose.sovereign.yml up -d
-docker compose -f docker-compose.sovereign.yml exec hunta hunta licence-status</pre>
+docker compose -f docker-compose.sovereign.yml exec stpi stpi licence-status</pre>
      It should print your firm name, the expiry date and "seats: unlimited".</li>
  <li><b>Add your firm and candidates:</b>
-<pre class="term">docker compose -f docker-compose.sovereign.yml exec hunta hunta tenant add my-firm --name "My Firm"</pre>
+<pre class="term">docker compose -f docker-compose.sovereign.yml exec stpi stpi tenant add my-firm --name "My Firm"</pre>
      It prints the next steps (mailbox app password, AI key, candidates). Then run
-     <code>hunta doctor</code> the same way to confirm everything is green. The dashboard is at
+     <code>stpi doctor</code> the same way to confirm everything is green. The dashboard is at
      <code>http://your-box:8080</code>; sign in with your admin token. Approvals go to Discord, the web dashboard,
-     or Telegram (<code>HUNTA_TELEGRAM_BOT_TOKEN</code> in <code>.env</code>).</li>
+     or Telegram (<code>STPI_TELEGRAM_BOT_TOKEN</code> in <code>.env</code>).</li>
  <li><b>Renewals:</b> each payment posts a fresh licence in your Discord channel. Replace the
-     <code>HUNTA_LICENCE_KEY</code> line and run <code>docker compose -f docker-compose.sovereign.yml up -d</code>.
-     If a licence lapses, Hunta turns read-only (the dashboard still works; hunting and sending stop). It never deletes anything.</li>
+     <code>STPI_LICENCE_KEY</code> line and run <code>docker compose -f docker-compose.sovereign.yml up -d</code>.
+     If a licence lapses, STPi turns read-only (the dashboard still works; hunting and sending stop). It never deletes anything.</li>
 </ol>
 
 <footer><div class="wrap" style="padding:0">
- hunta-demo 1.0.1 · the free demo is the real wheel with a counted leash ·
- support: <b>simalidudu@gmail.com</b> · <b>+263 78 460 0904</b> (WhatsApp) · <a href="https://gethunta.pages.dev/">home</a> ·
+ stpi-demo 1.0.1 · the free demo is the real wheel with a counted leash ·
+ support: <b>simalidudu@gmail.com</b> · <b>+263 78 460 0904</b> (WhatsApp) · <a href="https://getstpi.pages.dev/">home</a> ·
  <a href="demo.html">free demo page</a><br>
  LICENSE: redistribution of the UNMODIFIED demo build is encouraged (that's how it spreads);
  modifications and paid tiers are where the licence bites.

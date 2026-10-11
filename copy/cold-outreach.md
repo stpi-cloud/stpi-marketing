@@ -1,4 +1,4 @@
-# Hunta — cold outreach
+# STPi — cold outreach
 
 Audience A = the buyer: career coaches, outplacement consultants, CV-writing studios,
 university career centres, recruitment mentors in ZA/ZW/ZM.
@@ -22,7 +22,7 @@ cover letter for the 30th time, attach, send, repeat.
 
 That's the job nobody bills for.
 
-I run a small tool called Hunta that does that part. It checks 17 job boards by default (22 supported) across
+I run a small tool called STPi that does that part. It checks 17 job boards by default (22 supported) across
 South Africa, Zimbabwe and Zambia on a schedule, matches every advert against each
 candidate's real profile, scores the fit, and drafts a tailored cover letter + a
 country-formatted CV as PDFs.
@@ -39,7 +39,7 @@ It's been running for a week with a real coaching practice: 41 drafted
 applications across 3 candidates. Happy to show you the cards live.
 
 You don't need me to start: the demo is free forever — one candidate, no card:
-https://gethunta.pages.dev/demo
+https://getstpi.pages.dev/demo
 
 And if you'd rather have a human, 20 minutes this week?
 
@@ -54,10 +54,10 @@ boring "how much does this cost me" slide up front.
 Hi {{first_name}},
 
 One honest follow-up: the thing coaches ask first is "does it auto-apply?" — no.
-Every application is your tap on ✅. Hunta is a pipeline for your judgement,
+Every application is your tap on ✅. STPi is a pipeline for your judgement,
 not a replacement for it.
 
-The demo is free forever if you'd rather just look: https://gethunta.pages.dev/demo
+The demo is free forever if you'd rather just look: https://getstpi.pages.dev/demo
 Still worth 20 minutes?
 
 — {{your_name}}
@@ -89,7 +89,7 @@ CareerJunction / the ZW boards?
 I've got a tool that does the hunt + draft and waits for your tap — nothing sends
 without you. Ran 41 applications through it last week, all human-approved.
 
-Free demo, one candidate, forever, no card: https://gethunta.pages.dev/demo
+Free demo, one candidate, forever, no card: https://getstpi.pages.dev/demo
 If that's your world I'll set it up with you on a 10-min call. If not, sorry for the ping 🙏
 ```
 
@@ -98,7 +98,7 @@ If that's your world I'll set it up with you on a 10-min call. If not, sorry for
 ```
 FREE pilot for 5 job seekers 
 
-I'm testing Hunta — it hunts jobs for you across the big boards in
+I'm testing STPi — it hunts jobs for you across the big boards in
 {{country}}, shortlists what actually matches your profile, and writes a
 tailored letter + CV for each one. You approve every single application
 from your phone before anything goes anywhere.
@@ -108,7 +108,7 @@ from YOUR email; portal-only ads arrive as a ready-to-submit apply pack.
 Nothing is ever sent without your yes.
 
 Actually — it's free for everyone now. One candidate, free forever:
-https://gethunta.pages.dev/demo
+https://getstpi.pages.dev/demo
 Reply your name + field and I'll help you set it up.
 ```
 
@@ -118,6 +118,6 @@ Reply your name + field and I'll help you set it up.
 Hi {{name}} — saw your post on {{topic}}. I'm running a small experiment:
 a pipeline that does the board-sweep + letter-drafting part of coaching and
 leaves the approve-tap to the human. 41 applications through it last week,
-zero auto-sends. If that intersects with your practice, the demo is free forever, one candidate, no card: https://gethunta.pages.dev/demo
+zero auto-sends. If that intersects with your practice, the demo is free forever, one candidate, no card: https://getstpi.pages.dev/demo
 If not, carry on 🙂
 ```

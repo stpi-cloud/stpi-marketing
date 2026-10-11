@@ -1,7 +1,7 @@
-# Hunta — demo scripts
+# STPi — demo scripts
 
 Before the demo, have ready (5 min of prep):
-- [ ] your Discord open on #hunta with 2–3 real cards visible (or run one manually:
+- [ ] your Discord open on #stpi with 2–3 real cards visible (or run one manually:
       Actions → hunt → Run workflow; ~5 min)
 - [ ] one card you can approve live (or a pre-recorded phone clip of the tap)
 - [ ] the sample CV + cover letter open (samples/ in this repo)
@@ -27,7 +27,7 @@ Read it slowly, point at each line:
 
 **2:00 — the tap (60 s)**
 "Watch a real send." Tap ✅ → show the confirmation → "Sent from my mailbox, signed
-as the candidate. When the employer answers, it reaches the candidate and me, and Hunta
+as the candidate. When the employer answers, it reaches the candidate and me, and STPi
 pings me if it's an interview. The employer gets a normal human email.
 Now reject one." Tap ❌ → "Deleted. The PDFs are gone the moment you decide. Untouched
 cards self-destruct after 72 hours."
@@ -47,7 +47,7 @@ State price. Close with the demo stack:
 "The demo is free forever — one candidate, five sends a month, no card.
 Solo is $306 a month (about R4,999) for three candidates when your bench asks for it. Set the demo
 up now while we're on the phone; first card lands by the next hunt slot."
-Landing page (lead capture + download): https://gethunta.pages.dev/demo
+Landing page (lead capture + download): https://getstpi.pages.dev/demo
 
 ---
 
@@ -77,7 +77,7 @@ SHOT 1 (0:00-0:08)  Screen: 12 browser tabs open, clock ticking.
 CAPTION: "Tuesday, 6 boards, 40 tabs."
 
 SHOT 2 (0:08-0:18)  Discord: a card appears.
-CAPTION: "Hunta hunted so I didn't. One card. Match 90%."
+CAPTION: "STPi hunted so I didn't. One card. Match 90%."
 
 SHOT 3 (0:18-0:28)  Open the letter PDF, scroll.
 CAPTION: "Letter + CV drafted from the candidate's real profile. Nothing invented."
@@ -86,7 +86,7 @@ SHOT 4 (0:28-0:36)  Phone: tap ✅. Sent confirmation.
 CAPTION: "My tap. Sent, signed as them — or packed and ready for the portal."
 
 SHOT 5 (0:36-0:45)  Logo on lilac.
-VOICE/CAPTION: "Hunta. Jobs found. Applications drafted. You tap approve. It sends."
+VOICE/CAPTION: "STPi. Jobs found. Applications drafted. You tap approve. It sends."
 ```
 
 ## Post-demo email (send within an hour)
@@ -94,7 +94,7 @@ VOICE/CAPTION: "Hunta. Jobs found. Applications drafted. You tap approve. It sen
 ```
 Great speaking, {{first_name}}.
 
-What you saw, in one line: Hunta hunts 17 boards by default (22 supported), drafts the letter + CV,
+What you saw, in one line: STPi hunts 17 boards by default (22 supported), drafts the letter + CV,
 and waits for your tap.
 
 Attached/below: the sample CV + letter, the guard-rails list, pricing.
