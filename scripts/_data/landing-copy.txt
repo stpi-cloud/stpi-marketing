@@ -26,13 +26,13 @@ journey, start to running, in one list. Every screen you'll open says the same t
 Buy on Whop (store, plans below). Whop messages you
 within a minute: your licence plus your personal setup link (/start/…).
 Open your setup link. It asks for exactly the three things a machine can't guess —
-your Discord (one-click bot install into a free server you made),
+your WhatsApp number (for licence delivery),
 your Gmail app password (Google: 2FA on → App passwords),
 and a free LLM key (Groq or
 Gemini). Each field carries its own one-minute how-to.
-Hunts start on the next cycle. Matches arrive in your Discord as cards — ✅ sends, ❌
+Hunts start on the next cycle. Matches arrive on your dashboard as cards — ✅ sends, ❌
 skips. Nothing emails without a tap, ever; send caps keep your mailbox reputation boring.
-Add your own clients (candidates) in the same Discord. The candidates channel posts one card
+Add your own clients (candidates) in the same dashboard. The candidates page posts one card
 per job seeker: ➕ Add types their details (attach their CV with /candidate add cv:),
 🔗 Invite mints a private link you WhatsApp them — they fill in their own details, upload their CV and
 give consent, and you approve before they're hunted. Plan seats (5 / 25 / unlimited) are the only ceiling.
@@ -45,7 +45,7 @@ Free demoPremium (everything)
 Full hunt → draft → PDF pipeline✔ all of it✔
 Real email sends5, so the moment of truth is realUnlimited (20/candidate/day anti-spam cap)
 Candidates / tenants2 candidates, 1 tenantPlan-sized: solo → studio → agency
-Discord + Telegram approvals, dashboard, LLM failover chain✔✔ + priority board packs (LinkedIn-style searches, company career pages via sitemap)
+Dashboard approvals, Telegram/Discord webhook notifications, LLM failover chain✔✔ + priority board packs (LinkedIn-style searches, company career pages via sitemap)
 Upgrade nagseverywhere, on purposenone. poetic, really
 Supportdocs + the pipeline itselfsame-day human — WhatsApp +263 78 460 0904 or simalidudu@gmail.com
 Simple pricing. Pay how you want.
@@ -54,7 +54,7 @@ $306/mo
 about R4,999
 1 tenant · 5 candidates
 hosted on your GitHub Actions
-dashboard + Discord/Telegram
+dashboard + Telegram/webhook notifications
 $2,754/yr (about R45,000) — save $918
 Buy Solo on Whop
 Studio ⭐ most popular

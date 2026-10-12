@@ -6,7 +6,7 @@
 <link rel="canonical" href="https://getstpi.pages.dev/setup">
 
 <title>STPi — the setup guide: from zip to first application in ~20 minutes</title>
-<meta name="description" content="Install the free STPi demo, wire Discord + Gmail, pick a CV design per candidate, and run your first job hunt. Every command here is the real product.">
+<meta name="description" content="Install the free STPi demo, wire your AI key + Gmail, pick a CV design per candidate, and run your first job hunt. Every command here is the real product.">
 <style>
  :root { --purple:#27548f; --ink:#2B2B2B; --lilac:#eef4fb; --line:#dbe7f4; --ok:#137333; --warn:#B00020; }
  * { box-sizing:border-box; }
@@ -109,13 +109,12 @@ sha256sum -c stpi-demo-1.0.1.zip.sha256
 python3 -m venv .venv && source .venv/bin/activate      <span class="dim"># Windows: .venv\Scripts\activate</span>
 pip install stpi-1.0.1-py3-none-any.whl
 
-stpi doctor        <span class="dim"># self-check: config, files, data dir, LLM key, Discord, SMTP</span>
+stpi doctor        <span class="dim"># self-check: config, files, data dir, LLM key, SMTP</span>
 <span class="c">✔ flavour: demo (25 drafts / 5 sends / 30-day window)</span>
 <span class="c">✔ tenant demo: 2 candidates</span>  <span class="dim">…</span>
 <span class="dim">✘ groq key missing            ← fix it next line, that's the only real requirement</span></pre>
 <p>The pack already contains a working tenant: <code>config/tenants/demo/</code> with two
-synthetic candidates (Pat — ZA — and Lee — ZW). Doctor goes green when you give it a model key
-and a Discord webhook:</p>
+synthetic candidates (Pat — ZA — and Lee — ZW). Doctor goes green when you give it a model key:</p>
 <pre class="term"><span class="dim"># any free tier works; groq needs no card → console.groq.com → API key</span>
 stpi encrypt "gsk_...your key..."        <span class="dim"># prints an enc: blob — paste it as llm_api_key in tenant.yaml</span></pre>
 
@@ -147,13 +146,12 @@ id_number: "890412 …"    ee_status: SA Black Male    drivers_licence: C1</pre>
 <p class="sub">The criteria block in <code>tenant.yaml</code> (keywords / locations / exclusions)
 decides what gets hunted for this candidate. <code>stpi hunt --dry</code> previews without touching anything.</p>
 
-<h2><span class="n">4</span> Discord: the card that runs your whole pipeline</h2>
+<h2><span class="n">4</span> Approvals: the card that runs your whole pipeline</h2>
 <ol>
- <li>Your server → <b>#stpi</b> → Edit Channel → Integrations → Webhooks → <b>New Webhook</b> → copy URL.</li>
- <li>Paste it as <code>discord_webhook:</code> in <code>tenant.yaml</code>.</li>
- <li>Every hunt posts <b>one card per match</b>: title · company · match % · reason · link · both PDFs · ✅ / ❌.</li>
+ <li>Every hunt posts <b>one card per match</b> to your dashboard: title · company · match % · reason · link · both PDFs · ✅ / ❌.</li>
+ <li>Optional: paste a Discord webhook as <code>discord_webhook:</code> in <code>tenant.yaml</code> and each card also lands in your server as a notification with one-tap web links.</li>
 </ol>
-<div class="shot"><img src="graphics/discord-card-mockup.png" alt="The STPi Discord card"></div>
+<div class="shot"><img src="graphics/discord-card-mockup.png" alt="The STPi approval card"></div>
 <p class="cap">the card — real product screenshot (demo persona)</p>
 <p>Tap around a live one right here — approve/reject logic runs in this page, no backend:</p>
 <iframe class="card" src="downloads/demo-card.html" title="live tappable card demo"></iframe>
@@ -284,10 +282,9 @@ touch a scheduler.</p>
      pipeline. A new paying tenant is a directory, not a deploy.</li>
  <li><b>Remove the leash:</b> their build runs without <code>STPI_FLAVOUR=demo</code> — that single env
      flip is the entire upgrade; queues, history and CV designs carry over untouched.</li>
- <li><b>Self-host (Sovereign) customers:</b> nothing to do by hand. After a Whop purchase they run
-     <code>/claim</code> in their own Discord; the bot opens a private <b>#🔐-stpi-sovereign</b> channel with their
-     signed licence and the install steps below, and posts a fresh licence on every renewal. Manual-rail buyers:
-     <code>stpi licence-issue</code> signs one by hand. Support is <code>/help</code> in that channel, WhatsApp as backup.</li>
+ <li><b>Self-host (Sovereign) customers:</b> nothing to do by hand. After a Whop purchase their signed licence and the install steps below arrive
+     by WhatsApp, and a fresh licence arrives on every renewal. Manual-rail buyers:
+     <code>stpi licence-issue</code> signs one by hand. Support is WhatsApp <b>+263 78 460 0904</b>.</li>
  <li><b>Week-one check:</b> after 3 days ask for a screenshot of their first approved card.
      That moment is the product working; it's also your referral ask, made warm.</li>
 </ol>
@@ -297,9 +294,9 @@ Nothing about your demo changes: same pipeline, your keys, your mailbox, no leas
 Your first CV designs are set per candidate — say the word if anyone wants a different look."</div>
 
 <h2 id="sovereign"><span class="n">13</span> Sovereign: install STPi on your own box</h2>
-<p class="sub">For Sovereign buyers. About 15 minutes on any Linux server, VPS or spare PC with Docker. Your licence is
-in your <b>#🔐-stpi-sovereign</b> Discord channel (it appears after you run <code>/claim</code>). Stuck? Type
-<code>/help</code> in that channel, or WhatsApp <b>+263 78 460 0904</b>.</p>
+<p class="sub">For Sovereign buyers. About 15 minutes on any Linux server, VPS or spare PC with Docker. Your licence arrives
+by WhatsApp when you purchase (and again on every renewal). Stuck? WhatsApp
+<b>+263 78 460 0904</b>.</p>
 <ol>
  <li><b>Get the image and the compose file.</b>
 <pre class="term">mkdir stpi &amp;&amp; cd stpi
@@ -320,9 +317,9 @@ docker compose -f docker-compose.sovereign.yml exec stpi stpi licence-status</pr
 <pre class="term">docker compose -f docker-compose.sovereign.yml exec stpi stpi tenant add my-firm --name "My Firm"</pre>
      It prints the next steps (mailbox app password, AI key, candidates). Then run
      <code>stpi doctor</code> the same way to confirm everything is green. The dashboard is at
-     <code>http://your-box:8080</code>; sign in with your admin token. Approvals go to Discord, the web dashboard,
-     or Telegram (<code>STPI_TELEGRAM_BOT_TOKEN</code> in <code>.env</code>).</li>
- <li><b>Renewals:</b> each payment posts a fresh licence in your Discord channel. Replace the
+     <code>http://your-box:8080</code>; sign in with your admin token. Approvals go to the web dashboard or
+     Telegram (<code>STPI_TELEGRAM_BOT_TOKEN</code> in <code>.env</code>); a Discord webhook can be added for card notifications.</li>
+ <li><b>Renewals:</b> each payment delivers a fresh licence by WhatsApp. Replace the
      <code>STPI_LICENCE_KEY</code> line and run <code>docker compose -f docker-compose.sovereign.yml up -d</code>.
      If a licence lapses, STPi turns read-only (the dashboard still works; hunting and sending stop). It never deletes anything.</li>
 </ol>
