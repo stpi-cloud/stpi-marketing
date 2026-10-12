@@ -26,7 +26,7 @@ Body: any clean sans (system stack is fine). Never a serif for UI copy.
 | `stpi-logo-on-navy.png` | Dark heroes |
 | `stpi-icon.svg`, `stpi-icon-512/192/32.png`, `favicon.ico` | Avatars, app icon, Telegram bot (use 512) |
 | `stpi-tile.svg` | Source for tiles / pattern |
-| `stpi.svg/.png` | "by STPi" credit, footer, DPA |
+| `stpi.svg/.png` | "by Jacaranda Labs" credit, footer, DPA |
 | `og-image.png` (1200×630) | Share card everywhere |
 
 Rules: minimum logo height 24 px; clear space = one magnifier-circle on all sides;

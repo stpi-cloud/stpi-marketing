@@ -10,7 +10,7 @@ $ pip install ./stpi-1.0.1-py3-none-any.whl && stpi serve
 ✔ demo flavour active — 25 drafts · 5 premium sends · 30 days
 $ stpi hunt --dry
 ✔ 11 new matches for lerato01 — top 5 drafted
-⬆ unlock everything from $306/mo (about R4,999) — buy: https://whop.com/stpi (demo nag, deleted on upgrade)
+⬆ unlock everything from $306/mo (about R4,999) — buy: https://whop.com/jacaranda-labs (demo nag, deleted on upgrade)
 Run it free, forever… on your own terms
 Zero infrastructure. The default deployment is two GitHub Actions workflows —
 no server, no Docker, no credit card. Your state lives in your private repo.

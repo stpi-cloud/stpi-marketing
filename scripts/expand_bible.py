@@ -222,7 +222,7 @@ DEMO_CTA_INVENTORY = """The demo sells at every surface (verified in stpi/demo.p
 1. CLI banner on every invocation (demo.py cli_banner(), ~L201):
    ┌──────────────────────────────────────────────────────────┐
    │  STPI · FREE DEMO BUILD — you are one upgrade from unlimited    │
-   │  Buy: https://whop.com/stpi                    │
+   │  Buy: https://whop.com/jacaranda-labs                    │
    │  ⚡ SharkSkin@coinos.io   ·   Mukuru / EFT               │
    └──────────────────────────────────────────────────────────┘
 
@@ -556,9 +556,9 @@ never both — the lead ledger decides per lead (doc 12 addendum).""")
         f'<p class="lede">The three live product copies exactly as published (fetched {TODAY}), '
         "so nobody works from memory. Beneath them: the drift audit and the one lever still "
         "waiting on the owner.</p>",
-        "<h3>STPi Solo — whop.com/stpi/products/stpi-solo/</h3>", cb(SOLO_COPY),
-        "<h3>STPi Studio — whop.com/stpi/products/stpi-studio/</h3>", cb(STUDIO_COPY),
-        "<h3>STPi Sovereign — whop.com/stpi/products/stpi-sovereign/</h3>", cb(SOVEREIGN_COPY),
+        "<h3>STPi Solo — whop.com/jacaranda-labs/products/stpi-solo/</h3>", cb(SOLO_COPY),
+        "<h3>STPi Studio — whop.com/jacaranda-labs/products/stpi-studio/</h3>", cb(STUDIO_COPY),
+        "<h3>STPi Sovereign — whop.com/jacaranda-labs/products/stpi-sovereign/</h3>", cb(SOVEREIGN_COPY),
         "<h3>Copy drift audit (found 2026-10-01 — manual copy the machine can't write)</h3>", md(drift),
         "<h3>The hosted 7-day trial page — verbatim</h3>", cb(TRIAL_COPY),
         "<h3>Affiliates</h3>", affiliate,

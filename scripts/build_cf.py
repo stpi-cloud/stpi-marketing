@@ -34,7 +34,7 @@ REDIRECTS = """# Pages already serves /demo for demo.html (and 308s /demo.html -
 /downloads       /demo       301
 /downloads/      /demo       301
 /trial           https://stpi-mint.stpi-cloud.workers.dev/trial 302
-/store           https://whop.com/stpi 302
+/store           https://whop.com/jacaranda-labs 302
 """
 
 HEADERS = """/*
