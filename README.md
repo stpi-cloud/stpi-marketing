@@ -23,6 +23,8 @@ graphics/       discord mockup · hero card · before/after (PNG masters; index 
 samples/        sample CV + letter (.pdf real-engine output, .html mirrors)
 copy/           pitch · social · cold-outreach · email-sequences · demo-script
                 faq-objections · sales-scripts (the full library) · pricing (decided)
+                emotion-engine · sales-scripts-emotion · cold-outreach-emotion-rotation
+                one-pager-partner · emotional-scorecard (the AFGR selling layer, 2026-10-14)
 BRAND.md        palette, type, logo rules, voice
 ```
 
