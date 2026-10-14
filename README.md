@@ -1,5 +1,10 @@
 # stpi-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch
 
+> **2026-10-14 — this bible is a FROZEN SNAPSHOT.** The canonical, only-deployed bible is
+> `marketing/index.html` in **stpi-cloud/stpi** (77k+ words, 15 tabs incl. Technical/Owner/Client
+> guides + Manuals). This repo's copy (57k words, 10 tabs) is kept for history and its `copy/`
+> source files; its Cloudflare deploy is disabled. Decision + scoring: stpi-docs doc 53.
+
 Everything to market STPi, plus the public door for the **free-for-everyone demo**.
 
 ## The two pages

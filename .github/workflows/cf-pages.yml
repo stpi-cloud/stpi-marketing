@@ -2,9 +2,10 @@ name: deploy stpi-bible.pages.dev (+ independent getstpi smoke)
 # 2026-09-27: the buyer-facing site lives on Cloudflare Pages (GitHub Pages was unreliable on
 # phones). Every push to main rebuilds _cf/ (scripts/build_cf.py) and deploys it. Public repo:
 # Actions minutes are free.
+# FROZEN 2026-10-14 (owner decision, stpi-docs 53): the bible's sole owner is the
+# stpi monorepo (marketing/index.html there). This workflow must never deploy
+# stpi-bible again; the guard step below fails any manual dispatch on purpose.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 concurrency:
   group: cf-pages
@@ -15,6 +16,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+      - name: FROZEN — bible moved to the stpi monorepo
+        run: |
+          echo "::error::stpi-bible is owned by stpi-cloud/stpi (marketing/). This snapshot is frozen; refusing to deploy."
+          exit 1
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
