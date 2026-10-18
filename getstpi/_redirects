@@ -6,7 +6,8 @@
 /download        /demo       301
 /downloads       /demo       301
 /downloads/      /demo       301
-/downloads/STPi-* /guides/STPi-:splat 301
+/downloads/STPi-Photo-Guide-* /guides/STPi-Photo-Guide-:splat 301
+/downloads/STPi-Customer-Photo-Guide* /guides/STPi-Customer-Photo-Guide:splat 301
 /guides          /guides/STPi-Customer-Photo-Guide.html 302
 /guides/         /guides/STPi-Customer-Photo-Guide.html 302
 /trial           https://stpi-mint.stpi-cloud.workers.dev/trial 302
