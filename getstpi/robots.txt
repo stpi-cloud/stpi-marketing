@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://getstpi.pages.dev/sitemap.xml

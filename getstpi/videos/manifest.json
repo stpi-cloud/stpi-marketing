@@ -1,0 +1,189 @@
+{
+  "version": "2026.10.18-customer",
+  "support_first_policy": "If anything ever looks unfamiliar, if a mailbox test fails, or if you have a question at any step, ALWAYS contact STPi Official Support FIRST via WhatsApp (+263 78 460 0904), Email (simalidudu@gmail.com / tafadzwamchikanya@gmail.com), or any of our official social media channels listed below. Do NOT freak out, do NOT apply random advice from internet forums, and NEVER run to public social media or public review boards before contacting us first. STRICT POLICY: If we find that you ran to the public before contacting our team first to resolve your issue, we will immediately remove you and permanently terminate your workspace and licence without refund.",
+  "sales_contract_pdf": "https://getstpi.pages.dev/downloads/STPi-Customer-Sales-Contract.pdf",
+  "company_socials": [
+    {
+      "label": "WhatsApp 24/7 Priority Support",
+      "handle": "+263 78 460 0904",
+      "url": "https://wa.me/263784600904"
+    },
+    {
+      "label": "Primary Support & Contract Email",
+      "handle": "simalidudu@gmail.com",
+      "url": "mailto:simalidudu@gmail.com"
+    },
+    {
+      "label": "Customer Care & Onboarding Email",
+      "handle": "tafadzwamchikanya@gmail.com",
+      "url": "mailto:tafadzwamchikanya@gmail.com"
+    },
+    {
+      "label": "Official Website & Self-Serve Portal",
+      "handle": "getstpi.pages.dev",
+      "url": "https://getstpi.pages.dev"
+    },
+    {
+      "label": "Whop Official Storefront & Community",
+      "handle": "whop.com/stpi",
+      "url": "https://whop.com/stpi"
+    },
+    {
+      "label": "X (Twitter) Official Channel",
+      "handle": "@STPi_Cloud (via /g/xl/contact)",
+      "url": "https://getstpi.pages.dev/g/xl/contact"
+    },
+    {
+      "label": "LinkedIn Official Page & Team",
+      "handle": "STPi Placement \u00b7 Tariro Malajila",
+      "url": "https://getstpi.pages.dev/g/ll/contact"
+    },
+    {
+      "label": "Bluesky Official Accounts",
+      "handle": "@stpi.bsky.social \u00b7 @tariromalajila.bsky.social",
+      "url": "https://bsky.app/profile/stpi.bsky.social"
+    },
+    {
+      "label": "Telegram Official Channel",
+      "handle": "STPi Placement Channel",
+      "url": "https://getstpi.pages.dev/g/tl/contact"
+    },
+    {
+      "label": "Facebook Official Page",
+      "handle": "STPi Autonomous Placement",
+      "url": "https://getstpi.pages.dev/g/fl/contact"
+    },
+    {
+      "label": "Pinterest Official Visual Boards",
+      "handle": "pinterest.com/tafadzwamchikanya/stpi-board",
+      "url": "https://www.pinterest.com/tafadzwamchikanya/stpi-board/"
+    },
+    {
+      "label": "Dev.to Engineering & Career Guides",
+      "handle": "dev.to/simali_dud_b97add4154d7a6",
+      "url": "https://dev.to/simali_dud_b97add4154d7a6"
+    }
+  ],
+  "customer_onboarding_guide": {
+    "file": "STPi-Customer-Onboarding-Guide.mp4",
+    "title": "STPi 'For Dummies' Customer Onboarding & Operations Video Guide (16 Steps)",
+    "duration_seconds": 501.76,
+    "duration_human": "8m 22s",
+    "size_kb": 5223,
+    "formats": {
+      "pdf": "https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.pdf",
+      "md": "https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.md",
+      "html": "https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.html",
+      "video": "https://getstpi.pages.dev/videos/STPi-Customer-Onboarding-Guide.mp4"
+    }
+  },
+  "promo_long_complete": {
+    "file": "STPi-Promo-Long-Complete.mp4",
+    "title": "STPi Complete Flagship Social Media Promotional Video (Long Form)",
+    "duration_seconds": 383.15,
+    "duration_human": "6m 23s",
+    "size_kb": 3812
+  },
+  "promo_short_clips": [
+    {
+      "num": 1,
+      "file": "STPi-Promo-Short-01.mp4",
+      "title": "#01: Stop Spending 4 Hours Every Night Rewriting CVs & Hunting Boards",
+      "eyebrow": "AUTONOMOUS JOB HUNT ENGINE",
+      "summary": "Scans 76 verified job board endpoints across 21 African markets + remote. Scores every vacancy against your skills & drafts a tailored A4 CV + Cover Letter. Nothing ever sends without your explicit tap on Approve & Send.",
+      "duration_seconds": 51.26,
+      "duration_human": "51s",
+      "size_kb": 499
+    },
+    {
+      "num": 2,
+      "file": "STPi-Promo-Short-02.mp4",
+      "title": "#02: Every Regional Job Board Global Sites Miss \u2014 Checked 4x Daily",
+      "eyebrow": "21 AFRICAN COUNTRIES \u00b7 76 ENDPOINTS",
+      "summary": "Covers ZA, ZW, ZM, BW, NA, MZ, MW, LS, SZ, KE, NG, GH, UG, TZ, RW, ET, EG, MA, SN, CI, MU. 35 regional board families including CareerJunction, PNet, ReliefWeb, MyJobMag, BrighterMonday & Vacancymail. Deadlines & closing dates highlighted so urgent roles always come first.",
+      "duration_seconds": 53.64,
+      "duration_human": "54s",
+      "size_kb": 507
+    },
+    {
+      "num": 3,
+      "file": "STPi-Promo-Short-03.mp4",
+      "title": "#03: Turn Your CV Into an Executive Multi-Page Publication in 1 Click",
+      "eyebrow": "12 EXECUTIVE CV DESIGNS + CERTIFICATES",
+      "summary": "12 ATS-parseable A4 themes: Classic, Indigo, Emerald, Sunset, Modern, Aurora, Apex Executive & more. Custom brand hex accent colour + Light or Dark header styling. Certificate Vault appends degree scans, diplomas & IDs (3 at a time) into 1 clean PDF pack.",
+      "duration_seconds": 46.58,
+      "duration_human": "47s",
+      "size_kb": 459
+    },
+    {
+      "num": 4,
+      "file": "STPi-Promo-Short-04.mp4",
+      "title": "#04: Zero Spam Bots: You Approve Every Pack & Send From Your Own Email",
+      "eyebrow": "HUMAN APPROVAL \u00b7 YOUR OWN MAILBOX",
+      "summary": "Inspect the full cover letter & A4 PDF attachment before tapping Approve & Send. Dispatches directly from your verified Gmail App Password or custom agency domain. Read-only IMAP reply tracking flags employer interview invitations automatically.",
+      "duration_seconds": 44.3,
+      "duration_human": "44s",
+      "size_kb": 461
+    },
+    {
+      "num": 5,
+      "file": "STPi-Promo-Short-05.mp4",
+      "title": "#05: Too Busy to Job Hunt? Let Our Specialists Run STPi For You",
+      "eyebrow": "DONE-FOR-YOU PLACEMENT ($49/MO)",
+      "summary": "$49/mo Done-For-You Retainer: we overhaul your CV & manage up to 300 applications/month. $19 one-off Executive CV & Cover Letter Setup: 30 days access + all 12 ATS designs. You focus 100% on interview prep while fresh opportunities land in your inbox.",
+      "duration_seconds": 42.1,
+      "duration_human": "42s",
+      "size_kb": 450
+    },
+    {
+      "num": 6,
+      "file": "STPi-Promo-Short-06.mp4",
+      "title": "#06: Scale Your Recruitment Desk or Coaching Practice Without Extra Staff",
+      "eyebrow": "SOLO ($306/MO) & STUDIO ($613/MO)",
+      "summary": "STPi Solo ($306/mo): up to 3 active candidates & 100 approved sends/month. STPi Studio ($613/mo): up to 15 candidates, 1,000 sends/month & white-label agency PDFs. Per-candidate sending mailboxes + 25% discount on annual plans.",
+      "duration_seconds": 37.92,
+      "duration_human": "38s",
+      "size_kb": 349
+    },
+    {
+      "num": 7,
+      "file": "STPi-Promo-Short-07.mp4",
+      "title": "#07: Own the Entire Placement Engine on Your Own Servers with Docker",
+      "eyebrow": "SOVEREIGN ENTERPRISE ($920/MO)",
+      "summary": "Ed25519-signed STP1.* licence with UNLIMITED candidates & UNLIMITED monthly sends. Deploys in 5 minutes on any Linux VPS via docker compose -f docker-compose.sovereign.yml up -d. 100% data sovereignty + Fernet-encrypted credentials on your own disk.",
+      "duration_seconds": 25.46,
+      "duration_human": "25s",
+      "size_kb": 255
+    },
+    {
+      "num": 8,
+      "file": "STPi-Promo-Short-08.mp4",
+      "title": "#08: Try STPi Free Today: 7-Day Cloud Trial or Free Forever Laptop Demo",
+      "eyebrow": "2 ZERO-COST WAYS TO TEST STPi",
+      "summary": "7-Day Hosted Cloud Trial ($0): 1 candidate seat & 10 real approved applications in our cloud. Free Forever Downloadable Demo (stpi-demo-1.0.2.zip): 1 candidate & 5 real sends/month forever. Unlimited --dry hunts + local browser dashboard on http://localhost:8080.",
+      "duration_seconds": 20.93,
+      "duration_human": "21s",
+      "size_kb": 227
+    },
+    {
+      "num": 9,
+      "file": "STPi-Promo-Short-09.mp4",
+      "title": "#09: Yellow Speech Bubbles & Arrows Point to Every Single Button You Click",
+      "eyebrow": "'FOR DUMMIES' GUIDES IN 4 FORMATS",
+      "summary": "Included in 4 formats: Printable PDF, Markdown (.md), Interactive HTML & Narrated Video (.mp4). 16 real pipeline screenshots with numbered yellow speech bubbles (\u2460, \u2461, \u2462) & red-tipped arrows. Includes our printable 7-Business-Day hand-filled PDF Sales Contract.",
+      "duration_seconds": 27.7,
+      "duration_human": "28s",
+      "size_kb": 293
+    },
+    {
+      "num": 10,
+      "file": "STPi-Promo-Short-10.mp4",
+      "title": "#10: Real Humans Ready to Help on WhatsApp, Email & All Social Channels",
+      "eyebrow": "24/7 DIRECT HUMAN SUPPORT FIRST",
+      "summary": "WhatsApp 24/7 Priority Line: +263 78 460 0904 \u00b7 Email: simalidudu@gmail.com & tafadzwamchikanya@gmail.com. Official Socials: X (@STPi_Cloud), LinkedIn, Bluesky (@stpi.bsky.social), Telegram, Facebook, Pinterest & Dev.to. Golden Rule: Always contact STPi Support FIRST before panicking or using random internet advice!",
+      "duration_seconds": 33.26,
+      "duration_human": "33s",
+      "size_kb": 310
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# STPi Sovereign (self-hosted). "For Dummies" Customer Guides (4 Formats) + 7-Day Sales Contract:
+#   Interactive HTML: https://getstpi.pages.dev/guides/STPi-Photo-Guide-sovereign.html
+#   PDF Guide:        https://getstpi.pages.dev/guides/STPi-Photo-Guide-sovereign.pdf
+#   Markdown Guide:   https://getstpi.pages.dev/guides/STPi-Photo-Guide-sovereign.md
+#   Video Guide:      https://getstpi.pages.dev/videos/STPi-Customer-Onboarding-Guide.mp4
+#   7-Day Contract:   https://getstpi.pages.dev/downloads/STPi-Customer-Sales-Contract.pdf
+#   (Print, fill by hand in ink, scan & email to simalidudu@gmail.com within 7 business days; preserve physical copy)
+#   Support-First Rule: Contact STPi Support FIRST (WhatsApp +263 78 460 0904 or simalidudu@gmail.com) before panicking or using random internet advice!
+#   1. put this file and your .env in one folder (.env needs at least STPI_LICENCE_KEY + STPI_MASTER_KEY)
+#   2. docker compose up -d
+#   3. docker compose exec stpi stpi licence-status      -> should say OK
+services:
+  stpi:
+    image: ghcr.io/stpi-cloud/stpi:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      STPI_MODE: selfhosted
+    volumes:
+      - ./data:/data          # SQLite, drafts, PDFs
+      - ./config:/config      # tenants/<firm>/tenant.yaml + candidates
+    ports: ["8080:8080"]      # dashboard: http://localhost:8080 (sign in with STPI_ADMIN_TOKEN)

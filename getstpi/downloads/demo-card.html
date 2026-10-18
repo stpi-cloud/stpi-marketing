@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STPi — interactive demo card</title>
+<style>
+  body{margin:0;background:#313338;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#DBDEE1;
+       display:flex;align-items:flex-start;justify-content:center;min-height:100vh;padding:24px}
+  .wrap{max-width:1080px;width:100%}
+  .chan{color:#949BA4;font-size:14px;font-weight:700;border-bottom:1px solid #3F4147;padding-bottom:10px;margin-bottom:18px}
+  .chan b{color:#f2f4f5}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) 355px;gap:24px;align-items:start}
+  @media (max-width:820px){ .cols{grid-template-columns:1fr} }
+  .msg{display:flex;gap:14px}
+  .ava{width:44px;height:44px;border-radius:50%;background:#27548f;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+  .bot{background:#5865F2;color:#fff;font-size:10px;font-weight:700;border-radius:4px;padding:2px 5px;vertical-align:2px;margin-left:6px}
+  .name{font-weight:700;color:#f2f4f5}
+  .time{color:#949BA4;font-size:12px;margin-left:8px}
+  .content{line-height:1.65;font-size:15px}
+  .content .t{font-weight:700}
+  .match{color:#B5BAC1}
+  .link{color:#27548f;text-decoration:none;word-break:break-all}
+  .meta{color:#949BA4;font-size:13px}
+  .btns{margin:12px 0}
+  .btn{display:inline-block;border-radius:6px;padding:8px 16px;font-weight:700;font-size:14px;cursor:pointer;margin-right:10px;border:1px solid transparent;background:#2B2D31}
+  .ok{color:#23A559;border-color:#23A559}
+  .no{color:#F23F43;border-color:#F23F43}
+  .nx{color:#949BA4;font-size:12.5px;cursor:pointer;text-decoration:underline}
+  .nx:hover{color:#DBDEE1}
+  .dots{float:right;margin-top:11px;font-size:9px;letter-spacing:5px;color:#4A4C52;cursor:default}
+  .dots .on{color:#27548f}
+  a.file{display:flex;gap:12px;align-items:center;background:#2B2D31;border:1px solid #1E1F22;border-radius:8px;
+         padding:10px 14px;margin:8px 0;max-width:420px;text-decoration:none;transition:border-color .15s}
+  a.file:hover{border-color:#27548f}
+  .file .ic{width:36px;height:44px;background:#27548f;border-radius:4px;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .file .dl{margin-left:auto;color:#949BA4;font-size:12px}
+  .file .fn{color:#27548f;font-weight:600;font-size:14px}
+  .file .fs{color:#949BA4;font-size:12px}
+  #status{margin-top:16px;padding:12px 16px;border-radius:8px;font-size:14px;display:none}
+  #status.sent{display:block;background:rgba(35,165,89,.12);border:1px solid #23A559;color:#23A559}
+  #status.rej{display:block;background:rgba(242,63,67,.12);border:1px solid #F23F43;color:#F23F43}
+
+  .side{position:sticky;top:18px}
+  @media (max-width:820px){ .side{position:static} }
+  .offer{background:#2B2D31;border:1px solid #1E1F22;border-radius:12px;padding:16px 18px;margin-bottom:16px}
+  .offer h2{margin:0 0 4px;font-size:16px;color:#f2f4f5}
+  .offer p{margin:0 0 12px;color:#B5BAC1;font-size:13.5px;line-height:1.55}
+  .obtns a{display:block;border-radius:6px;padding:9px 13px;font-weight:700;font-size:13.5px;
+           text-decoration:none;margin:0 0 8px;background:#5865F2;color:#fff;text-align:center}
+  .obtns a.ghost{background:transparent;border:1px solid #5865F2;color:#DBDEE1}
+  .obtns a.green{background:#23A559;color:#04110A}
+  .rails h3{margin:0 0 8px;font-size:14px;color:#f2f4f5}
+  .rail{background:#2B2D31;border:1px solid #1E1F22;border-radius:12px;padding:13px 15px;margin-bottom:10px}
+  .rail b{color:#f2f4f5;font-size:13.5px}
+  .rail .amt{float:right;color:#23A559;font-weight:800;font-size:13.5px}
+  .rail p{margin:6px 0 8px;color:#B5BAC1;font-size:12.5px;line-height:1.5}
+  .rail .num{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px;color:#fff;background:#1E1F22;
+             border-radius:6px;padding:6px 10px;display:inline-block;margin:2px 0 8px;letter-spacing:.5px}
+  .rail a.rl{display:inline-block;font-size:12.5px;font-weight:700;color:#fff;background:#5865F2;border-radius:6px;
+             padding:6px 11px;text-decoration:none;margin:0 6px 4px 0}
+  .rail a.wa{background:#23A559;color:#04110A}
+  .rail a.ml{background:transparent;border:1px solid #5865F2;color:#DBDEE1}
+  .fine{font-size:12px;color:#949BA4;line-height:1.55;margin-top:10px}
+  .fine a{color:#27548f}
+  .foot{margin-top:22px;color:#949BA4;font-size:12.5px;line-height:1.6;border-top:1px solid #3F4147;padding-top:14px}
+  .foot a{color:#27548f}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="chan"># <b>stpi</b> — interactive demo · this card is live: taps work, PDFs download, jobs rotate</div>
+  <div class="cols">
+
+    <div><!-- LEFT: the card, as it lands in your Discord -->
+      <div class="msg">
+        <div class="ava"><svg width="26" height="26" viewBox="0 0 116 116"><g fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="27"/><path d="M59 59 L72 72"/><path d="M72 72 L108 48 L88 106 L78 84 Z"/><path d="M78 84 L108 48"/></g></svg></div>
+        <div style="min-width:0;flex:1">
+          <span class="name">STPi</span><span class="bot">BOT</span><span class="time">Today at 06:00</span>
+          <div class="dots" id="dots"></div>
+          <div class="content">
+            🔎 <span class="t">STPi — new application ready</span><br>
+            <span class="t" id="jline"></span><br>
+            <span class="match" id="mline"></span><br>
+            <a class="link" href="#" onclick="return false" id="jurl"></a><br>
+            <span class="meta" id="rline"></span>
+            <div class="btns">
+              <span class="btn ok" id="approve">✅ Approve &amp; send</span>
+              <span class="btn no" id="reject">❌ Reject</span>
+              <span class="nx" id="next">↻ next job</span>
+            </div>
+            <a class="file" id="cvlink" download><div class="ic">PDF</div><div><div class="fn" id="cvname"></div><div class="fs" id="cvsub"></div></div><div class="dl">⬇</div></a>
+            <a class="file" id="ltrlink" download><div class="ic">PDF</div><div><div class="fn" id="ltrname"></div><div class="fs">tailored cover letter · business-plain, never styled</div></div><div class="dl">⬇</div></a>
+            <div id="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+      <div class="foot">This is exactly what lands in a real coach's Discord. In production, ✅ sends the
+      application from the coach's mailbox, signed as the candidate (replies reach both), and ❌ deletes both PDFs on the spot — untouched drafts
+      self-destruct after 72 hours. Nothing ever sends without the tap. The job lines here are
+      illustrative demo ads; the downloadable PDFs are genuine STPi render output.
+      <a href="../demo.html" target="_top">stpi-marketing/demo.html</a> · <span id="ctr"></span></div>
+    </div>
+
+    <aside class="side"><!-- RIGHT: the offer, on the same plane -->
+      <div class="offer">
+        <h2>Get the pipeline behind this card</h2>
+        <p>One candidate, the full pipeline, free forever — no card, no sign-up. Cards land in your
+        Discord twice a day, Monday–Saturday; the demo is the product with a counted leash (one candidate, five sends per UTC month, free forever, enforced in code).</p>
+        <div class="obtns">
+          <a class="green" href="../demo.html" target="_top">⬇ Free demo — download page</a>
+          <a href="stpi-demo-1.0.2.zip" target="_top">⬇ Installable pack (.zip + 4-Format Guides + Contract)</a>
+          <a class="ghost" href="../guides/STPi-Photo-Guide-demo.html" target="_top">📸 Interactive HTML Guide</a>
+          <a class="ghost" href="../guides/STPi-Photo-Guide-demo.pdf" target="_top">📄 PDF Guide (.pdf)</a>
+          <a class="ghost" href="../guides/STPi-Photo-Guide-demo.md" target="_top">📝 Markdown Guide (.md)</a>
+          <a class="ghost" href="../videos/STPi-Customer-Onboarding-Guide.mp4" target="_top">🎬 Narrated Video Guide (.mp4)</a>
+          <a class="ghost" style="border-color:#F23F43;color:#fca5a5" href="STPi-Customer-Sales-Contract.pdf" target="_top">📥 7-Day Printable Sales Contract (PDF)</a>
+        </div>
+        <p class="fine"><b>⚠️ Support-First Rule:</b> Contact STPi Support FIRST via WhatsApp (<a href="https://wa.me/263784600904">+263 78 460 0904</a>) or Email (<a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> / <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a>) before panicking or using random internet advice — running to the public before contacting us results in immediate removal.<br>
+        Try a design before you pay for one:
+        <a href="../samples/cv-classic.pdf" target="_blank">classic</a> ·
+        <a href="../samples/cv-indigo.pdf" target="_blank">indigo</a> ·
+        <a href="../samples/cv-emerald.pdf" target="_blank">emerald</a> ·
+        <a href="../samples/cv-sunset.pdf" target="_blank">sunset</a> — real rendered output, ATS-parseable.</p>
+      </div>
+
+      <div class="rails">
+        <h3>💳 Paid plans — pay here, activated same day</h3>
+        <div class="rail">
+          <b>Mukuru / mobile money / EFT <span class="amt">$306 (about R4,999) · $613 (about R9,999) · $920 (about R15,000)</span></b>
+          <p>Send the tier amount — Solo $306 (about R4,999), Studio $613 (about R9,999), Sovereign $920 (about R15,000) per month, in US dollars.
+          Annual prepay saves 25%: Solo $2,754/yr (about R45,000). Reference: your name + tier. Slip screenshot below and
+          your tenant is provisioned within hours, not days.</p>
+          <span class="num">+263 78 460 0904</span><br>
+          <a class="rl wa" href="https://wa.me/263784600904?text=STPi%20payment%20%E2%80%94%20tier%3A%20(Solo%2FStudio%2FSovereign)%2C%20sent%20via%20Mukuru%2C%20proof%20attached" target="_blank" rel="noopener">📲 Send proof on WhatsApp</a>
+          <a class="rl ml" href="tel:+263784600904">☎️ Call the number</a>
+        </div>
+        <div class="rail">
+          <b>⚡ Lightning — live address</b>
+          <p>Pay <b>SharkSkin@coinos.io</b> from any Lightning wallet (Coinos, Phoenix, Cash App,
+          Muon…). Put <b>your name + tier</b> in the payment note, drop the receipt screenshot to
+          WhatsApp below and you're provisioned within hours. Verified working 2026-09-19.</p>
+          <span class="num">SharkSkin@coinos.io</span><br>
+          <a class="rl" href="lightning:SharkSkin@coinos.io">⚡ Pay in wallet</a>
+          <a class="rl wa" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Lightning%20paid%20(tier%3A%20)%2C%20receipt%20attached" target="_blank" rel="noopener">📲 Post receipt</a>
+          <a class="rl ml" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Lightning%20receipt%20attached">📲 WhatsApp</a>
+        </div>
+        <div class="rail">
+          <b>💳 Card (Whop) &amp; anything else</b>
+          <p><b>Card (Whop) &mdash; one-tap checkout LIVE</b>: <a href="https://whop.com/checkout/ch_abZZn55zTTq9VO0/" target="_blank" rel="noopener">Solo</a> &middot; <a href="https://whop.com/checkout/ch_xXwDxquSJP2Ctwu/" target="_blank" rel="noopener">Studio</a> (store: <a href="https://whop.com/jacaranda-labs" target="_blank" rel="noopener">whop.com/jacaranda-labs</a>). Sovereign by invoice &mdash; WhatsApp below.</p>
+          <a class="rl wa" href="https://wa.me/263784600904?text=Hi%20%E2%80%94%20STPi%20pricing%2Fpayment%20question" target="_blank" rel="noopener">WhatsApp +263 78 460 0904</a>
+          <a class="rl ml" href="mailto:simalidudu@gmail.com">✉️ simalidudu@gmail.com</a>
+          <a class="rl ml" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20paid%20plan">📲 WhatsApp +263 78 460 0904</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+<script>
+  var JOBS = [
+    {t:"Bookkeeper @ Elite Search & Selection",
+     u:"https://www.careerjunction.co.za/jobs/bookkeeper-johannesburg",
+     m:90, r:"SAIPA-registered, Sage Pastel and full-cycle bookkeeping match the core requirements.",
+     ref:"04aa74fbbd", mail:"apply@elitesearch.co.za", cv:"cv-classic.pdf", d:"classic"},
+    {t:"Senior Accountant @ Meridian Logistics (Pty) Ltd",
+     u:"https://www.pnet.co.za/jobs/senior-accountant-johannesburg",
+     m:88, r:"Month-end in 4 days and never-late VAT201 mirror the two must-haves; leading a 3-person desk matches your migration year.",
+     ref:"1c93ef70aa", mail:"careers@meridianlogistics.co.za", cv:"cv-indigo.pdf", d:"indigo"},
+    {t:"Financial Administrator @ Kelsall Care Group",
+     u:"https://www.careers24.com/jobs/financial-administrator-durban",
+     m:82, r:"Ledger housekeeping, payroll support and the reporting cadence line up; your C1 licence is a listed advantage.",
+     ref:"77bd02ce51", mail:"hr@kelsallcare.co.za", cv:"cv-emerald.pdf", d:"emerald"},
+    {t:"Management Accountant (Remote, EMEA) @ Zuppa Systems",
+     u:"https://weworkremotely.com/remote-jobs/management-accountant-emea",
+     m:85, r:"Multi-currency month-end and Xero automation read like your migration project, verbatim; async-first hours suit SAST.",
+     ref:"e2a5b81f30", mail:"talent@zuppa.io", cv:"cv-sunset.pdf", d:"sunset"},
+    {t:"Payroll & Accounts Clerk @ Vukile Facilities Management",
+     u:"https://www.pnet.co.za/jobs/payroll-clerk-pretoria",
+     m:79, r:"Payroll runs and supplier recon are two of your three strongest bullets; the SAP gap is flagged honestly in the letter.",
+     ref:"4f61a0d29c", mail:"recruit@vukilefm.co.za", cv:"cv-indigo.pdf", d:"indigo"},
+    {t:"Junior Financial Analyst @ Osprey Fund Managers",
+     u:"https://www.careers24.com/jobs/junior-financial-analyst-cape-town",
+     m:86, r:"B.Com Hons + six years of numbers hits the band; the Excel modelling ask is evidenced by your aged-debt rebuild.",
+     ref:"9d8c33be57", mail:"careers@ospreyfunds.co.za", cv:"cv-classic.pdf", d:"classic"}
+  ];
+  // hosted under /downloads/ the real PDFs live one level up; inside the offline kit they are next door
+  var BASE = (location.protocol === "file:") ? "samples/" : "../samples/";
+  var i = 0, timer = null, locked = false;
+  var $ = function(id){ return document.getElementById(id); };
+  var st = $("status");
+
+  function paint(){
+    var j = JOBS[i];
+    $("jline").textContent = j.t;
+    $("mline").textContent = "Match " + j.m + "% — " + j.r;
+    $("jurl").textContent = j.u;
+    $("rline").textContent = "Candidate thabo01 · ref " + j.ref;
+    var cv = $("cvlink"), lt = $("ltrlink");
+    cv.href = BASE + j.cv;   cv.setAttribute("download", j.ref + "_cv.pdf");
+    lt.href = BASE + "cover-letter-plain.pdf"; lt.setAttribute("download", j.ref + "_letter.pdf");
+    $("cvname").textContent = j.ref + "_cv.pdf";
+    $("cvsub").textContent = "country-formatted ZA CV · " + j.d + " design — the one THIS candidate chose";
+    var dots = ""; for (var k = 0; k < JOBS.length; k++) dots += "<span class='" + (k === i ? "on" : "") + "'>●</span>";
+    $("dots").innerHTML = dots;
+    $("ctr").textContent = "demo card " + (i + 1) + " of " + JOBS.length + ", rotating";
+    st.className = ""; st.innerHTML = ""; locked = false;
+    $("approve").style.opacity = $("reject").style.opacity = "1";
+  }
+  function next(){ i = (i + 1) % JOBS.length; paint(); }
+  function act(kind){
+    if (locked) return; locked = true;
+    var j = JOBS[i];
+    $("approve").style.opacity = $("reject").style.opacity = ".4";
+    st.className = (kind === "ok") ? "sent" : "rej";
+    st.innerHTML = (kind === "ok")
+      ? "✅ Sent to " + j.mail + " as \u201cThabo Nkosi (via your practice)\u201d — replies go to Thabo and to you. PDFs deleted after send (active-copy deletion; external copies have separate retention)."
+      : "❌ Rejected — both PDFs deleted on the spot. The pipeline learns your taste; rejections cost nothing.";
+    setTimeout(function(){ i = (i + 1) % JOBS.length; paint(); }, 2800);
+  }
+  $("approve").onclick = function(){ act("ok"); };
+  $("reject").onclick  = function(){ act("no"); };
+  $("next").onclick    = function(){ if (!locked) next(); };
+  function start(){ if (!timer) timer = setInterval(function(){ if (!locked) next(); }, 9000); }
+  function stop(){ clearInterval(timer); timer = null; }
+  var w = document.querySelector(".wrap");
+  w.addEventListener("mouseenter", stop);      // reading a card? rotation waits
+  w.addEventListener("mouseleave", start);
+  start();
+  paint();
+</script>
+</body>
+</html>

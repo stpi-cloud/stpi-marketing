@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 380" width="1180" height="380">
+  <rect x="0" y="0" width="300" height="300" rx="58.59375" fill="#0A1F3C"/>
+  <circle cx="150.0" cy="75.0" r="45.703125" fill="none" stroke="#2E9BFF" stroke-width="3.515625" opacity="0.35"/>
+  <rect x="145.3125" y="103.125" width="9.375" height="19.921875" rx="4.6875" fill="#2E9BFF" opacity="0.9"/>
+  <circle cx="150.0" cy="75.0" r="26.953125" fill="#2E9BFF"/>
+  <rect x="82.03125" y="130.078125" width="135.9375" height="21.09375" rx="10.546875" fill="#FFFFFF"/>
+  <rect x="58.59375" y="171.09375" width="182.8125" height="21.09375" rx="10.546875" fill="#FFFFFF"/>
+  <rect x="82.03125" y="212.109375" width="135.9375" height="21.09375" rx="10.546875" fill="#FFFFFF"/>
+  <text x="390" y="268" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-weight="bold" font-size="235.0" fill="#0A1F3C" letter-spacing="-6.0">STP</text>
+  <rect x="867.2" y="118.0" width="26.0" height="150.0" rx="13.0" fill="#2E9BFF"/>
+  <rect x="857.2" y="46.0" width="46.0" height="46.0" rx="10.0" fill="#2E9BFF"/>
+  <text x="392" y="330" font-family="'Segoe UI', Tahoma, 'DejaVu Sans', sans-serif" font-size="30.0" fill="#27548F" letter-spacing="6.4">STRATEGIC TALENT PLACEMENT INFRASTRUCTURE</text>
+</svg>

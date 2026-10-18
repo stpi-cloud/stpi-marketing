@@ -3,7 +3,7 @@ import ast
 import sys
 from pathlib import Path
 
-STPI = Path("/home/user/audit/stpi")
+STPI = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(STPI / "press"))
 import facts  # noqa: E402
 
@@ -104,6 +104,37 @@ Sovereign includes:
 - Lapsed licence = read-only, never bricked or deleted
 
 {B['sovereign_price']} billed every 30 days, or {B['sovereign_zar']} in rands, or {B['sovereign_annual']} prepaid by bank wire. Cancel any time.
+""" + FAQ,
+    },
+    "prod_pxClgqklsOstp": {
+        "title": "STPi Executive CV & Cover Letter Setup Pack",
+        "headline": "12 Executive CV & Cover Letter PDFs, YAML Truth-File & 1-seat setup ($19 once).",
+        "description": f"""For individual executives, professionals, and job seekers who want a complete, country-compliant Executive CV & Cover Letter system plus a 1-candidate hosted STPi workspace.
+
+Setup Pack includes:
+- All 12 Executive CV & Cover Letter PDF designs (Classic, Indigo, Emerald, Sunset, Modern, Aurora, Mono, Apex Executive, Slate, Onyx, Coral & Vine)
+- Structured YAML Truth-File template + 21-country ATS keyword & compliance audit
+- The 6-Prompt Executive CV & Cover Letter Kit
+- 1-candidate hosted STPi workspace (20 approved sends/month, valid 12 months)
+- 'For Dummies' Onboarding + Operational Guide in 4 formats (PDF, MD, HTML & Video)
+
+{B['setup_price']} one-time payment ($19 USD or R350 ZAR).
+""" + FAQ,
+    },
+    "prod_ZqlnkKABqd48o": {
+        "title": "STPi Done-For-You Placement",
+        "headline": "1 seat hosted on our live engine, 30 sends/mo across 21 African + remote boards.",
+        "description": f"""For individual executives and professionals who want STPi to hunt, score, and draft tailored applications twice daily across 21 African markets and remote boards.
+
+Done-For-You Placement includes:
+- 1 candidate seat hosted on our live engine
+- 30 approved sends a month
+- Twice-daily hunts across {BOARDS}
+- Tailored Executive CV + Cover Letter PDFs per vacancy
+- Web approval dashboard: nothing sends until you tap Approve
+- 'For Dummies' Onboarding + Operational Guide in 4 formats (PDF, MD, HTML & Video)
+
+{B['dfy_price']} billed every 30 days ($49 USD or R850 ZAR). Cancel any time.
 """ + FAQ,
     },
 }

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://getstpi.pages.dev/domain">
+<title>STPi — give every client their own sender address on your domain</title>
+<meta name="description" content="Applications go out as lerato.dube@yourpractice.co.za, replies land in your Gmail. Free Cloudflare Email Routing + a free sending relay; about R100–R200 a year for the domain.">
+<style>
+ :root { --purple:#27548f; --ink:#2B2B2B; --lilac:#eef4fb; --line:#dbe7f4; --ok:#137333; --warn:#B00020; }
+ * { box-sizing:border-box; }
+ body { margin:0; font:15.5px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:#fff; }
+ header { background:linear-gradient(135deg,#2B2B2B,#0f2748); color:#fff; padding:26px 20px 30px; }
+ .wrap { max-width:900px; margin:0 auto; padding:0 18px; }
+ header .wrap { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+ header svg { width:34px; height:34px; }
+ header h1 { font-size:21px; margin:0; flex:1 1 300px; }
+ header nav a { color:#fff; text-decoration:none; font-size:13.5px; opacity:.85; margin-left:14px; border-bottom:1px solid transparent; }
+ header nav a:hover { opacity:1; border-color:#fff; }
+ main { max-width:900px; margin:0 auto; padding:26px 18px 60px; }
+ h2 { font-size:20px; margin:38px 0 6px; letter-spacing:.2px; }
+ h2 .n { color:var(--purple); font-weight:800; margin-right:6px; }
+ h3 { font-size:15.5px; margin:20px 0 4px; }
+ p { margin:8px 0; } .sub { color:#666; font-size:13.5px; }
+ code, .mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; background:var(--lilac); padding:1px 5px; border-radius:4px; }
+ pre.term { background:#20272c; color:#cfdded; border-radius:10px; padding:14px 16px; overflow-x:auto; line-height:1.55; position:relative; font-size:12.8px; }
+ pre.term::before { content:"● ● ●  terminal"; position:absolute; top:0; left:0; right:0; padding:5px 16px; background:#161a1e; color:#666; border-radius:10px 10px 0 0; font-size:10.5px; letter-spacing:1.5px; }
+ pre.term { padding-top:34px; }
+ pre.term { overflow-x:auto; max-width:100%; -webkit-overflow-scrolling:touch; }
+ :not(pre) > code { overflow-wrap:anywhere; word-break:break-word; }
+ @media (max-width:520px){ pre.term { font-size:12px; } table { display:block; overflow-x:auto; } }
+ pre.term .c { color:#7ED9A0; } pre.term .dim { color:#8296ad; } pre.term .hl { color:#FFD08A; }
+ .cap { font-size:12px; color:#999; text-align:center; margin-top:4px; }
+ .btns { display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 4px; }
+ a.btn { display:inline-block; background:var(--purple); color:#fff; text-decoration:none; padding:10px 18px; border-radius:9px; font-weight:700; font-size:14.5px; }
+ a.btn.alt { background:#fff; color:var(--purple); border:2px solid var(--purple); }
+ .note { background:var(--lilac); border-left:4px solid var(--purple); padding:10px 14px; border-radius:0 10px 10px 0; margin:12px 0; font-size:14px; }
+ .warn { background:#FFF4F2; border-left:4px solid var(--warn); padding:10px 14px; border-radius:0 10px 10px 0; margin:12px 0; font-size:14px; }
+ ol { padding-left:22px; } ol li { margin:7px 0; }
+ table { border-collapse:collapse; width:100%; font-size:14px; margin:10px 0; }
+ td,th { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+ th { background:var(--lilac); }
+ footer { border-top:1px solid var(--line); margin-top:44px; padding:18px 0 6px; font-size:12.5px; color:#888; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <svg viewBox="0 0 116 116" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="27"/><path d="M59 59 L72 72"/><path d="M72 72 L108 48 L88 106 L78 84 Z"/><path d="M78 84 L108 48"/></g></svg>
+ <h1>Your own domain: one address per client<br><span style="font-weight:400;font-size:13px;opacity:.8">lerato.dube@yourpractice.co.za → replies in your inbox · ~30 minutes, once</span></h1>
+ <nav><a href="https://getstpi.pages.dev/">Home</a><a href="setup.html">Setup guide</a><a href="demo.html">Demo</a></nav>
+</div></header>
+<main>
+
+<p class="sub">Optional. Without it, STPi sends every application from your Gmail, signed
+"Candidate (via your brand)". With it, each client gets an address of their own on your domain —
+created automatically from their name, nothing to set up per client — and every reply still lands
+in one inbox you already read, with a STPi alert when an employer answers. Operators and candidates both get
+copies of outgoing applications; replies are addressed to the candidate and the operator.</p>
+<div class="warn"><b>Paid feature:</b> own-domain sending is available on Solo, Studio and Sovereign. Demo and the 7-day trial
+use a Gmail app password and send from that Gmail; they cannot connect a domain or a non-Gmail mail server.</div>
+
+<table>
+<tr><th>What employers see</th><td><b>Lerato Dube (via Momentum Careers)</b> &lt;lerato.dube@momentumcareers.co.za&gt;</td></tr>
+<tr><th>Where replies go</th><td>Your reply inbox (Cloudflare forwards the whole domain there), plus the candidate directly (Reply-To); STPi alerts the operator</td></tr>
+<tr><th>Who sees sent mail</th><td>Candidate receives a private Bcc copy; the operator has a Sent copy in Gmail/IMAP</td></tr>
+<tr><th>Who signs the mail</th><td>Your domain (DKIM through the relay), so Gmail and Outlook see a properly authenticated sender</td></tr>
+<tr><th>Cost</th><td>Relay route: the domain only (about R100–R200/year for a .co.za); Cloudflare Email Routing and the relay free tier cost R0. If you already run a mail server, STPi can use its SMTP + IMAP at no extra email-provider cost.</td></tr>
+</table>
+
+<h2><span class="n">1</span> Domain DNS</h2>
+<ol>
+ <li>Buy a domain from any registrar (a .co.za is cheapest), or use one you already own.</li>
+ <li>For the relay route, put the domain on a free Cloudflare account and change the registrar's nameservers to the two Cloudflare shows. For your own mail server, keep your existing DNS provider and MX if you prefer.</li>
+</ol>
+<div class="note">Already have a mail server (for example, your own cPanel/Exim setup)? Keep its MX and skip Cloudflare Email Routing. Your server must accept mail to the candidate addresses (catch-all or aliases), allow SMTP sending with those From addresses, and provide IMAP for STPi's reply alerts. Use its own SMTP/IMAP login in section 2 and choose “My own mail server” in section 3. STPi will save sent copies through IMAP. No separate relay subscription is required. If your existing provider is Google Workspace or Microsoft 365, it must permit the candidate aliases as send-as addresses; otherwise use a relay.</div>
+
+<h2><span class="n">2</span> Forward the whole domain to your Gmail (free)</h2>
+<ol>
+ <li>In Cloudflare: your domain → <b>Email</b> → <b>Email Routing</b> → enable. Let it add its MX and SPF records.</li>
+ <li><b>Destination addresses</b> → add your Gmail → click the link Cloudflare emails you.</li>
+ <li><b>Routing rules</b> → <b>Catch-all address</b> → action <i>Send to an email</i> → your Gmail → enable.</li>
+</ol>
+<p>Now anything@yourdomain reaches your Gmail, which is why STPi never has to create addresses one by one.</p>
+
+<h2><span class="n">3</span> A free sending relay</h2>
+<p>Cloudflare only receives. To send as your domain, pick one free relay:</p>
+<table>
+<tr><th></th><th>Brevo (recommended)</th><th>SMTP2GO</th></tr>
+<tr><td>Free tier / STPi safety cap</td><td>300/day; STPi allows up to 140 applications/day including each candidate's private copy</td><td>1,000/month; STPi allows up to 15 applications/day including each candidate's private copy</td></tr>
+<tr><td>Add your domain</td><td>Senders, domains &amp; dedicated IPs → Domains → Add a domain → Authenticate. With Cloudflare, “authenticate automatically” adds the <code>brevo-code</code> TXT, the two DKIM records (<code>brevo1/brevo2._domainkey</code>) and DMARC for you.</td><td>Sending → Verified senders → Add sender domain → add the CNAME records it lists in Cloudflare → Verify.</td></tr>
+<tr><td>STPi needs</td><td>SMTP &amp; API → SMTP tab: the <b>SMTP login</b> (…@smtp-brevo.com) and a new <b>SMTP key</b></td><td>Sending → SMTP users → add a user: its <b>username</b> and <b>password</b></td></tr>
+</table>
+<div class="warn">Paste the SMTP key, not your account password. Free tiers are for your own clients' applications,
+one at a time after you approve them. That's exactly what STPi sends, so don't use the relay for newsletters or bulk mail.</div>
+
+<h2><span class="n">4</span> Tell STPi</h2>
+<h3>Hosted (Solo, Studio, Sovereign)</h3>
+<p>In your Discord workspace press <b>🔐 Connect</b>. For Cloudflare Routing + a relay, section 2 is the Gmail (reply inbox),
+then section 3 is domain + relay credentials. For a server you already run, choose <b>My own SMTP/IMAP server</b> in section 2,
+enter its host/login/password, and select <b>My own mail server from section 2</b> in section 3. STPi tests SMTP, IMAP and DNS,
+then posts the results in your channel. If your server only supports SMTP port 465, choose 465; IMAP uses SSL port 993.</p>
+<h3>Self-hosted (Sovereign)</h3>
+<pre class="term"><span class="dim"># tenant.yaml: the relay sends, your Gmail reads replies</span>
+mailbox:
+  provider: brevo                 <span class="dim"># or smtp2go, or custom + host/port</span>
+  address: applications@momentumcareers.co.za
+  username: 9a1b2c001@smtp-brevo.com
+  display_name: Momentum Careers
+  app_password: enc:...           <span class="dim"># stpi encrypt &lt;SMTP key&gt;</span>
+inbox:
+  provider: gmail
+  address: you@gmail.com
+  app_password: enc:...           <span class="dim"># stpi encrypt &lt;Gmail app password&gt;</span>
+sender_domain: momentumcareers.co.za
+
+<span class="c">$ stpi sender-check momentum</span>
+✅ momentumcareers.co.za: ready
+✅ Receiving: MX points to Cloudflare Email Routing (set a catch-all to your Gmail).
+✅ SPF found.
+✅ Brevo ownership code published.
+✅ DKIM: relay signing key published.
+✅ DMARC found.
+  lerato01             -&gt; lerato.dube@momentumcareers.co.za
+<span class="c">$ stpi mailbox-test momentum</span></pre>
+<p><b>Already have your own SMTP/IMAP server?</b> No Brevo or SMTP2GO account is needed. In the paid hosted form choose
+“My own SMTP/IMAP server” and “My own mail server from section 2”. In self-hosted <code>tenant.yaml</code>, use:</p>
+<pre class="term">mailbox:
+  provider: custom
+  address: ops@momentumcareers.co.za
+  host: mail.momentumcareers.co.za
+  port: 465                    <span class="dim"># implicit TLS; 587 STARTTLS also works</span>
+  username: ops@momentumcareers.co.za
+  imap_host: mail.momentumcareers.co.za
+  imap_port: 993
+  app_password: enc:...        <span class="dim"># encrypt the server's mail password</span>
+inbox: null                    <span class="dim"># same server is the reply inbox</span>
+sender_domain: momentumcareers.co.za</pre>
+<p>Have your mail administrator verify catch-all/alias routing, “send as” permissions, SPF/DKIM/DMARC, and that IMAP login works.
+If you only have a domain but no mail server, choose Cloudflare routing + a free relay instead.</p>
+
+<h2><span class="n">5</span> Addresses</h2>
+<ul>
+ <li>Automatic: first and last name, lower-case, accents dropped. <i>Ruth Nyasha Mhlanga</i> becomes <code>ruth.mhlanga@</code>, and <i>Lérato Dube-Mhlanga</i> becomes <code>lerato.dube-mhlanga@</code>.</li>
+ <li>Two clients with the same name, or a preference? Set <code>send_as: ruth.m@yourdomain</code> in that candidate's profile (self-host), or ask in your help channel (hosted).</li>
+ <li>When a client finishes, nothing to delete: the address simply stops being used. Mail to it still reaches you.</li>
+ <li>Replies are matched to the right person by the address they were sent to, even when an employer answers from a
+     different system with a new subject line.</li>
+</ul>
+
+<footer><div class="wrap" style="padding:0">
+ <b>STPi Official Support &amp; Socials:</b> WhatsApp <a href="https://wa.me/263784600904">+263 78 460 0904</a> ·
+ Email <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> &amp; <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a> ·
+ <a href="https://getstpi.pages.dev/">home</a> · <a href="setup.html">4-Format Customer Guides</a> ·
+ <a href="videos/">11 Promo Videos &amp; Video Guide</a> ·
+ <a href="downloads/STPi-Customer-Sales-Contract.pdf"><b>📥 7-Day Printable Sales Contract (PDF)</b></a> ·
+ <a href="https://whop.com/stpi">Whop</a> · <a href="https://getstpi.pages.dev/g/xl/contact">X @STPi_Cloud</a> ·
+ <a href="https://getstpi.pages.dev/g/ll/contact">LinkedIn</a> · <a href="https://bsky.app/profile/stpi.bsky.social">Bluesky @stpi.bsky.social</a> ·
+ <a href="https://getstpi.pages.dev/g/tl/contact">Telegram</a> · <a href="https://getstpi.pages.dev/g/fl/contact">Facebook</a> ·
+ <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/">Pinterest</a> · <a href="https://dev.to/simali_dud_b97add4154d7a6">Dev.to</a><br>
+ <b>⚠️ Support-First Rule:</b> Always contact STPi Support FIRST before panicking or using random internet advice! Running to the public before contacting us results in immediate removal.
+</div></footer>
+<script>
+/* STPi analytics beacon (2026-10-13): anonymous pageview + conversion-click counter served by
+   our own worker (stpi-mint /px). No cookies, no fingerprints, no third party. */
+(function(){
+  var M="https://stpi-mint.stpi-cloud.workers.dev/px?kind=";
+  function px(k,t){
+    try{
+      var u=M+encodeURIComponent(k)+(t?"&tag="+encodeURIComponent(t):"")+
+        "&path="+encodeURIComponent(location.pathname+location.hash.slice(0,40))+
+        (document.referrer?"&ref="+encodeURIComponent(document.referrer.slice(0,180)):"");
+      if(navigator.sendBeacon){navigator.sendBeacon(u);}
+      else{var i=new Image();i.src=u;}
+    }catch(e){}
+  }
+  px("pageview");
+  try{
+    var q=new URLSearchParams(location.search),aff=(q.get("a")||sessionStorage.getItem("stpi_whop_aff")||sessionStorage.getItem("stpi_whop_affiliate")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+    if(aff){
+      sessionStorage.setItem("stpi_whop_aff",aff);
+      document.querySelectorAll('a[href*="whop.com"],a[href*="stpi-mint.stpi-cloud.workers.dev/g/"],a[href*="stpi-mint.stpi-cloud.workers.dev/trial"]').forEach(function(el){
+        var h=el.getAttribute("href")||"";
+        if(h&&h.indexOf("a=")===-1)el.setAttribute("href",h+(h.indexOf("?")===-1?"?":"&")+"a="+encodeURIComponent(aff));
+      });
+    }
+  }catch(e){}
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest?e.target.closest("a"):null;if(!a)return;
+    var href=a.getAttribute("href")||"";
+    var k=a.classList.contains("dl")?"download":a.classList.contains("buy")?"checkout":
+      /wa\.me/.test(href)?"whatsapp":/stpi-mint/.test(href)?"console":"click";
+    px(k,href.slice(0,120));
+  },true);
+})();
+</script>
+</main></body></html>

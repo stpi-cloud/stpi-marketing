@@ -1,0 +1,13 @@
+# Pages already serves /demo for demo.html (and 308s /demo.html -> /demo); never map
+# /demo back to /demo.html or it loops.
+/getstpi        /           301
+/getstpi/       /           301
+/getstpi/*      /           301
+/download        /demo       301
+/downloads       /demo       301
+/downloads/      /demo       301
+/downloads/STPi-* /guides/STPi-:splat 301
+/guides          /guides/STPi-Customer-Photo-Guide.html 302
+/guides/         /guides/STPi-Customer-Photo-Guide.html 302
+/trial           https://stpi-mint.stpi-cloud.workers.dev/trial 302
+/store           https://whop.com/stpi 302

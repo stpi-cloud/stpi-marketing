@@ -1,0 +1,23 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+/downloads/*.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=3600
+/guides/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=3600
+/guides/*.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=3600
+/guides/*.html
+  Content-Type: text/html; charset=utf-8
+  Cache-Control: public, max-age=3600
+/videos/*.mp4
+  Content-Type: video/mp4
+  Cache-Control: public, max-age=3600
+/brand/*
+  Cache-Control: public, max-age=86400
+/press/img/*
+  Cache-Control: public, max-age=86400
