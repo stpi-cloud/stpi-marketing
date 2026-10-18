@@ -177,4 +177,18 @@ $ stpi hunt --dry<br>
   banners are so loud you can find the exit by echo.</span>
   <p class="note">demo zip: stpi-demo-1.0.1.zip · sha256 published beside it · this page makes ZERO external requests</p>
 </div></footer>
+<script>
+(function(){
+  try{
+    var q=new URLSearchParams(location.search),aff=(q.get("a")||sessionStorage.getItem("stpi_whop_aff")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+    if(aff){
+      sessionStorage.setItem("stpi_whop_aff",aff);
+      document.querySelectorAll('a[href*="whop.com"],a[href*="stpi-mint.stpi-cloud.workers.dev/g/"],a[href*="stpi-mint.stpi-cloud.workers.dev/trial"]').forEach(function(el){
+        var h=el.getAttribute("href")||"";
+        if(h&&h.indexOf("a=")===-1)el.setAttribute("href",h+(h.indexOf("?")===-1?"?":"&")+"a="+encodeURIComponent(aff));
+      });
+    }
+  }catch(e){}
+})();
+</script>
 </body></html>

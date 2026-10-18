@@ -13,7 +13,7 @@ PLANS = ast.literal_eval(src[src.index("PLANS: dict[str, dict] = ") + 25:src.ind
 _d = (STPI / "stpi" / "demo.py").read_text()
 CAPS = ast.literal_eval(_d[_d.index("CAPS = ") + 7:].split("\n")[0])
 S, ST = PLANS["solo"], PLANS["studio"]
-BOARDS = f"{F['boards_default']} job boards by default ({F['boards_registered']} supported) across South Africa, Zimbabwe and Zambia"
+BOARDS = f"{F['boards_default']} job boards by default ({F['boards_registered']} supported) across 16 African markets (South Africa, Zimbabwe, Zambia, Kenya, Namibia, Tanzania, Botswana, Rwanda, Uganda, Malawi, Angola, DRC, Burundi, Lesotho and Eswatini)"
 
 FAQ_FULL = f"""
 FAQ

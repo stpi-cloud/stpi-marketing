@@ -245,6 +245,16 @@
       body:JSON.stringify({token:CAPTURE_TOKEN,name:nm,contact:ct,role:rl,country:co,website:hp})
     }).catch(function(){}).finally(download);
   });
+  try{
+    var q=new URLSearchParams(location.search),aff=(q.get("a")||sessionStorage.getItem("stpi_whop_aff")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+    if(aff){
+      sessionStorage.setItem("stpi_whop_aff",aff);
+      document.querySelectorAll('a[href*="whop.com"],a[href*="stpi-mint.stpi-cloud.workers.dev/g/"],a[href*="stpi-mint.stpi-cloud.workers.dev/trial"]').forEach(function(el){
+        var h=el.getAttribute("href")||"";
+        if(h&&h.indexOf("a=")===-1)el.setAttribute("href",h+(h.indexOf("?")===-1?"?":"&")+"a="+encodeURIComponent(aff));
+      });
+    }
+  }catch(e){}
 </script>
 </body>
 </html>
