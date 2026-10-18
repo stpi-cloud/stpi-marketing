@@ -43,7 +43,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "scripts" / "_data"
 STPI = Path(os.environ.get("STPI", "/home/user/sweep/stpi"))
 DOCS = Path(os.environ.get("STPI_DOCS", "/home/user/sweep/stpi-docs"))
-TODAY = "2026-10-01"
+TODAY = "2026-10-11"
 
 NAV_BEGIN = "<!-- AUTO-NAV:BEGIN -->"
 NAV_END = "<!-- AUTO-NAV:END -->"
@@ -54,6 +54,7 @@ TABS = [
     ("vault", "Copy vault"),
     ("topics", "Promo topics"),
     ("cards", "Card gallery"),
+    ("kit", "Promo kit"),
     ("media", "Media vault"),
     ("demokit", "Demo kit"),
     ("storefront", "Storefront"),
@@ -61,6 +62,10 @@ TABS = [
     ("brand2", "Brand 2.0"),
     ("playbooks", "Playbooks"),
     ("record", "Published record"),
+    ("techguide", "Technical guide"),
+    ("ownerguide", "Owner guide"),
+    ("clientguide", "Client guide"),
+    ("manuals", "Manuals"),
 ]
 
 
@@ -150,7 +155,7 @@ Solo includes:
 - 100 sends a month
 - Priority slots
 - Approve in Discord (web dashboard + Telegram when self-hosted)
-- 17 job boards by default (22 supported) across South Africa, Zimbabwe and Zambia
+- country-specific sources (keys and availability vary) across South Africa, Zimbabwe and Zambia
 - Human approval on every send
 
 $306/mo (about R4,999) billed every 30 days, or R4,999/mo in rands, or $2,754/yr
@@ -159,7 +164,7 @@ $306/mo (about R4,999) billed every 30 days, or R4,999/mo in rands, or $2,754/yr
 FAQ
 Does anything send without me? No. Each application is a Discord card; nothing goes
 out until you tap Approve.
-Can I try first? Yes, free demo pack (1 candidate, 25 drafts, 5 sends / 30 days):
+Can I try first? Yes, free demo pack (1 candidate, five sends per UTC month, free forever):
 https://getstpi.pages.dev/
 Pay in rands? Yes: rand checkouts at R4,999/mo / R9,999/mo / R15,000/mo.
 Annual: one bank-wire payment, 25% off.
@@ -175,7 +180,7 @@ Studio includes:
 - Fair-use sends
 - White-label CV and cover-letter PDFs
 - LLM fallback chain: one provider outage won't stop the run
-- 17 job boards by default (22 supported) across South Africa, Zimbabwe and Zambia
+- country-specific sources (keys and availability vary) across South Africa, Zimbabwe and Zambia
 - Human approval on every send
 
 $613/mo (about R9,999) billed every 30 days, or R9,999/mo in rands, or $5,517/yr
@@ -184,7 +189,7 @@ $613/mo (about R9,999) billed every 30 days, or R9,999/mo in rands, or $5,517/yr
 FAQ
 Does anything send without me? No. Each application is a Discord card; nothing goes
 out until you tap Approve.
-Can I try first? Yes, free demo pack (1 candidate, 25 drafts, 5 sends / 30 days):
+Can I try first? Yes, free demo pack (1 candidate, five sends per UTC month, free forever):
 https://getstpi.pages.dev/
 Pay in rands? Yes: rand checkouts at R4,999/mo / R9,999/mo / R15,000/mo.
 Annual: one bank-wire payment, 25% off.
@@ -200,7 +205,7 @@ Sovereign includes:
 - Unlimited candidates and sends
 - Signed offline licence, delivered in your Discord after checkout (WhatsApp backup)
 - Install guide + help in your private Discord channel
-- 17 job boards by default (22 supported) across South Africa, Zimbabwe and Zambia
+- country-specific sources (keys and availability vary) across South Africa, Zimbabwe and Zambia
 - Human approval on every send
 - Lapsed licence = read-only, never bricked or deleted
 
@@ -210,7 +215,7 @@ $920/mo (about R15,000) billed every 30 days, or R15,000/mo in rands, or $8,280/
 FAQ
 Does anything send without me? No. Each application is a Discord card; nothing goes
 out until you tap Approve.
-Can I try first? Yes, free demo pack (1 candidate, 25 drafts, 5 sends / 30 days):
+Can I try first? Yes, free demo pack (1 candidate, five sends per UTC month, free forever):
 https://getstpi.pages.dev/
 Pay in rands? Yes: rand checkouts at R4,999/mo / R9,999/mo / R15,000/mo.
 Annual: one bank-wire payment, 25% off.
@@ -222,7 +227,7 @@ DEMO_CTA_INVENTORY = """The demo sells at every surface (verified in stpi/demo.p
 1. CLI banner on every invocation (demo.py cli_banner(), ~L201):
    ┌──────────────────────────────────────────────────────────┐
    │  STPI · FREE DEMO BUILD — you are one upgrade from unlimited    │
-   │  Buy: https://whop.com/jacaranda-labs                    │
+   │  Buy: https://whop.com/stpi                    │
    │  ⚡ SharkSkin@coinos.io   ·   Mukuru / EFT               │
    └──────────────────────────────────────────────────────────┘
 
@@ -283,9 +288,7 @@ def sec_vault() -> str:
         ("BRAND.md", "The brand file — voice, phrases we use and never use"),
         ("whop/product_faq.md", "The Whop storefront FAQ source"),
         ("whop/faq_post.txt", "The pinned forum FAQ post, source text"),
-        ("downloads/quickstart.md", "Demo kit quickstart (ships inside the zip)"),
-        ("downloads/pricing.md", "Demo kit pricing sheet (ships inside the zip)"),
-        ("downloads/README.txt", "The zip's README — the first file a demo user reads"),
+        ("downloads/pricing.md", "Demo kit pricing sheet"),
         ("README.md", "This repo's own README — how the marketing site and bible ship"),
         ("scripts/_data/essay-pipeline.md", "OWNED PRESS — dev.to essay 1, full text (our best inbound asset)"),
         ("scripts/_data/essay-six-prompts.md", "OWNED PRESS — dev.to essay 2, full text"),
@@ -397,6 +400,62 @@ def sec_cards() -> str:
     return "\n".join(out)
 
 
+def sec_kit() -> str:
+    """The promo kit (owner 2026-10-14): 40 ready-to-post materials, every channel format,
+    cards beside the copy. Press takes these first for promo slots; the owner can lift any
+    entry straight into a social."""
+    import json as _json
+    src = ROOT / "bible-assets" / "promo-kit" / "promo-kit.json"
+    if not src.exists():
+        return "<h2>The promo kit</h2><p class='sub'>promo-kit.json missing - run press/promo_kit.py</p>"
+    mats = _json.loads(src.read_text())["materials"]
+    themes: dict[str, list] = {}
+    for m in mats:
+        themes.setdefault(m["theme"], []).append(m)
+    fmt_label = {"x": "X post", "bsky": "Bluesky", "linkedin": "LinkedIn", "facebook": "Facebook",
+                 "telegram": "Telegram channel", "whatsapp": "WhatsApp status",
+                 "pinterest": "Pinterest pin", "thread": "Thread opener", "whop_public": "Whop post"}
+    n_illus = sum(1 for m in mats if m.get("type") == "illustration")
+    out = [
+        f"<h2>The promo kit - {len(mats)} ready-to-post materials</h2>",
+        '<p class="lede">Every entry is one promotional message in nine channel formats. '
+        f"{len(mats) - n_illus} are text cards (wide for X/LinkedIn/Bluesky/Telegram/Facebook, "
+        f"pin for Pinterest) built from editor-approved copy; {n_illus} are cartoon "
+        "illustrations - hand-styled pictures with short captions, the art is the material. "
+        "Copy passes the same editor gates as authored posts: one pointer link, prices "
+        "exactly as billing writes them, no hype vocabulary. The autopilot takes the next "
+        "unused material per rail before authoring anything; a rail that burns the kit "
+        "falls back to authored promo. Rebuild with <code>python3 press/promo_kit.py</code>.</p>",
+        '<style>.pk{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;'
+        "align-items:start}.pk .box{border:1px solid var(--line,#2a3a52);border-radius:10px;"
+        "padding:12px;background:rgba(127,151,184,.05)}.pk h4{margin:0 0 6px;font-size:14px}"
+        ".pk img{width:100%;border:1px solid var(--line);border-radius:8px;display:block;margin:6px 0}"
+        ".pk pre{white-space:pre-wrap;word-break:break-word;font-size:11.5px;margin:4px 0;"
+        "padding:8px;border:1px dashed var(--line,#2a3a52);border-radius:6px}"
+        ".pk .th{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;"
+        "color:var(--muted,#7d97b8);margin-top:8px}</style>",
+    ]
+    n = 0
+    for theme in sorted(themes):
+        out.append(f'<h3 id="kit-{esc(theme)}">{esc(theme)} - {len(themes[theme])} materials</h3>')
+        out.append('<div class="pk">')
+        for m in themes[theme]:
+            n += 1
+            out.append('<div class="box">')
+            out.append(f'<h4>{n}. {esc(m["headline"])}</h4>')
+            out.append(f'<div class="th">{esc(m["id"])} · link: {esc(m["link"])}</div>')
+            out.append(f'<img loading="lazy" src="bible-assets/promo-kit/{m["id"]}-x.png" '
+                       f'alt="{esc(m["headline"])} wide card">')
+            out.append(f'<img loading="lazy" src="bible-assets/promo-kit/{m["id"]}-pin.png" '
+                       f'alt="{esc(m["headline"])} pin card" style="max-width:220px">')
+            for fmt in ("x", "linkedin", "facebook", "telegram", "whatsapp", "pinterest", "thread"):
+                out.append(f'<div class="th">{fmt_label[fmt]}</div>')
+                out.append(f"<pre>{esc(m['formats'][fmt])}</pre>")
+            out.append("</div>")
+        out.append("</div>")
+    return "\n".join(out)
+
+
 def sec_media() -> str:
     def group(title: str, cap: str, items: list[tuple[str, str]]) -> str:
         figs = "".join(fig(src, note) for src, note in items if (ROOT / src.split("/")[0] if "/" not in src else (ROOT / src)).exists())
@@ -446,7 +505,7 @@ def sec_media() -> str:
     out.append(group("The 2026 external kit (bible-assets/external/)", "Owner-supplied kit, indexed here for the first time; also mirrored on the landing as brand-logo.png.", ext))
     illus = [(f"bible-assets/illustrations/{n}", d) for n, d in [
         ("cartoon-one-tap.png", "The one-tap approval — the coach, the phone, the machine behind: for the hero slot"),
-        ("cartoon-boards-crossroads.png", "Board coverage as a night crossroads — ads and posts about the 17 boards"),
+        ("cartoon-boards-crossroads.png", "Board coverage as a night crossroads — ads and posts about the selected public sources"),
         ("cartoon-pipeline-machine.png", "The factory machine turning paper planes into approval cards — the pipeline visual"),
         ("cartoon-before-after-desk.png", "The before/after desk split — the pain visual for ads, decks and comparison posts"),
         ("cartoon-stpi-mail.png", "Under the stpi tree: the graduate, the mailbox, the paper plane — the hope shot"),
@@ -503,8 +562,8 @@ def sec_demokit() -> str:
         cb(DEMO_CTA_INVENTORY),
         "<h3>Sovereign in one file — docker-compose.sovereign.yml</h3>",
         cb(compose),
-        '<h3>The kit docs</h3><p class="sub">quickstart.md, pricing.md and README.txt ship inside the zip — '
-        'all three verbatim in the Copy vault tab.</p>',
+        '<h3>The kit photo guides</h3><p class="sub">STPi-Customer-Photo-Guide.{pdf,html} and STPi-Photo-Guide-demo.{pdf,html} ship inside the zip — '
+        'no raw-text setup guides.</p>',
     ])
 
 
@@ -561,9 +620,9 @@ never both — the lead ledger decides per lead (doc 12 addendum).""")
         f'<p class="lede">The three live product copies exactly as published (fetched {TODAY}), '
         "so nobody works from memory. Beneath them: the drift audit and the one lever still "
         "waiting on the owner.</p>",
-        "<h3>STPi Solo — whop.com/jacaranda-labs/products/stpi-solo/</h3>", cb(SOLO_COPY),
-        "<h3>STPi Studio — whop.com/jacaranda-labs/products/stpi-studio/</h3>", cb(STUDIO_COPY),
-        "<h3>STPi Sovereign — whop.com/jacaranda-labs/products/stpi-sovereign/</h3>", cb(SOVEREIGN_COPY),
+        "<h3>STPi Solo — whop.com/stpi/products/stpi-solo/</h3>", cb(SOLO_COPY),
+        "<h3>STPi Studio — whop.com/stpi/products/stpi-studio/</h3>", cb(STUDIO_COPY),
+        "<h3>STPi Sovereign — whop.com/stpi/products/stpi-sovereign/</h3>", cb(SOVEREIGN_COPY),
         "<h3>Copy drift audit (found 2026-10-01 — manual copy the machine can't write)</h3>", md(drift),
         "<h3>The hosted 7-day trial page — verbatim</h3>", cb(TRIAL_COPY),
         "<h3>Affiliates</h3>", affiliate,
@@ -622,7 +681,7 @@ def sec_machine(landing_copy: str, faqs: list) -> str:
 | Moment | What happens | Human touches |
 | --- | --- | --- |
 | Discover | Buyer hits getstpi.pages.dev from a tracked post | none |
-| Try | One tap downloads stpi-demo-1.0.1.zip (or starts the hosted 7-day trial on Whop) | none |
+| Try | One tap downloads stpi-demo-1.0.2.zip (or starts the hosted 7-day trial on Whop) | none |
 | Set up | /setup walkthrough: install, first candidate, first draft | none (the self-serve panel links every how-to) |
 | Hit the wall | Caps freeze the pipeline — visibly, with the buy link (see Demo kit) | none |
 | Buy | Whop checkout (card $, rands R, Lightning, Mukuru/EFT, annual by wire) | none |
@@ -825,6 +884,144 @@ the forum rewards shop talk, bills hype.
 **Whop paid (members)** — not a billboard: onboarding notes, status, fairness. Members
 who feel informed renew; members who feel marketed at, refund.
 
+### The 8-week sprint: $10k/mo by 2026-12-09
+
+*Day 1 is Friday 2026-10-09. The deadline is Wednesday 2026-12-09 — 61 days,
+~8.5 weeks. This is the only plan in this bible with a date on it, and the
+only one that is ordered: do the earlier thing before the later thing,
+every day. Nothing below requires budget, headcount, or product changes —
+only hours, in the right order.*
+
+**The target, stated twice.** (1) MRR run-rate ≥ $10k/mo by Dec 9 — recurring
+revenue, not vibes. (2) Cash collected along the way ≥ $10k — money in hand.
+Annual prepays count in full toward (2) and 1/12th toward (1). Both numbers
+come from the Whop dashboard, never from memory.
+
+**The arithmetic.** Whop takes ~3% + processing, so $10k net means ~$10.5k
+gross. Any of these mixes clears it:
+
+| Mix | Customers | Gross/mo |
+| --- | --- | --- |
+| Balanced: 3 Sovereign + 7 Studio + 12 Solo | 22 | $10,723 |
+| Studio-heavy: 17 Studio | 17 | $10,421 |
+| Whale: 11 Sovereign | 11 | $10,120 |
+
+That is ~3 new paying customers per week, every week, for 8 weeks. The weekly
+number is the scoreboard — not traffic, not followers, not feelings.
+
+**The cash accelerator.** One Studio annual ($5,517) plus one Sovereign annual
+($8,280) is $13,797 cash from two deals. Every quote shows the monthly price
+first and the annual second (pricing law: never discount the price, only the
+arithmetic). Sell annuals from week 1 — cash de-risks the sprint long before
+MRR compounds.
+
+**The weekly ladder.**
+
+| Week | Dates | New paying | Cumulative | Focus |
+| --- | --- | --- | --- | --- |
+| W1 | Oct 9–15 | 2 | 2 | Pipes + first blood: cold machine verified end-to-end, affiliate toggle decided, review ask scripted, trial day-1 delivery working |
+| W2 | Oct 16–22 | 2 | 4 | First repeatable close: the same script closes twice |
+| W3 | Oct 23–29 | 3 | 7 | Affiliates live: 5 active, recruited on the 30%/12-month math |
+| W4 | Oct 30–Nov 5 | 3 | 10 | Referral engine: every customer asked for a review + one name |
+| W5 | Nov 6–12 | 3 | 13 | Discover watch: first review unlocks the listing, push traffic there |
+| W6 | Nov 13–19 | 3 | 16 | Annual push: every open trial and customer gets the annual quote |
+| W7 | Nov 20–26 | 3 | 19 | Double the winner: best channel gets 2× hours |
+| W8 | Nov 27–Dec 4 | 3 | 22 | Close the gap + MRR audit; Dec 5–9 is buffer for stragglers |
+
+**The daily workflow (CAT, in order — no skipping ahead).**
+
+1. **07:30 — Reply queue to zero.** Every reply less than 24h old gets
+   answered before anything else. Money before machine.
+2. **08:00 — Cold machine.** Pull 30 leads (BATCH_CAP 30), QA each one (right
+   person, right company, no dupes), confirm the 08:21 compose is queued.
+   Caps live in scripts/outreach.py: DRIP_PER_RUN 5, DAILY_CAP 50/mailbox.
+3. **09:00 — Founder selling, 2 hours.** Follow-ups, demos, trial check-ins
+   (day 1/3/7 of every trial). No building in this block.
+4. **11:00 — Content batch.** Owner non-negotiables: X (3 posts × 2 personas
+   + replies), LinkedIn (3) — every link tracked (?src=). The press autopilot
+   runs the scheduled rails (X, LinkedIn, Pinterest, Bluesky, Nostr, Whop —
+   see the Press ledger); the owner covers replies and re-posts anything the
+   witness log flags failed.
+5. **12:00 — Whop forum.** One value post, answer every open thread, recruit
+   affiliates (5 new/week — the pitch is the math: one Studio referral pays
+   $184/mo for 12 months, $2,207 total).
+6. **14:00 — Long rails.** dev.to (manual, per-persona — sprint floor is 3
+   posts/week); Pinterest top-up from cards.py; queue Bluesky/Nostr.
+7. **15:00 — Pipeline hygiene, 30 min.** Move stages, kill dead leads, prep
+   tomorrow's 30.
+8. **Friday 15:00 — Weekly review** (scoreboard below) instead of hygiene.
+
+**Lean mode: the same sprint in ~3h/day (switch after W1, not before).**
+
+*Full mode above is ≈7h/day. Once every automation below has been green for 7
+straight days, the same machine runs lean: ≈3h on normal days, ≈5h on Tue/Thu
+call days, Friday +review. Nothing is dropped — volume moves to machines, the
+owner keeps judgment. Run full mode in W1 so you learn what green looks like;
+switch to lean only when you can tell green from silent.*
+
+*What the machines already carry (verified 2026-10-09): lead intake fills D1
+twice daily (leads-hunt.yml 07:23/14:23 SAST); the 08:21 weekday compose queues
+the batch and posts its card (outreach.yml); replies are triaged 3×/day —
+opt-outs→DNC, bounces→dead, real replies→owner ping; the press autopilot
+publishes 4 slots/day, 7 days/week (press.yml, recent runs all green).*
+
+| # | Lean block | Minutes |
+| --- | --- | --- |
+| 1 | Overnight pings: answer what triage flagged (09:23/14:23/19:23 handle the rest) | 15 |
+| 2 | Cold QA: scan the auto-pulled batch, confirm the 08:21 card | 15 |
+| 3 | Async selling: follow-ups + trial check-ins (protects the <24h rule) | 30 |
+| 4 | Social replies + autopilot skim on the Actions tab | 30 |
+| 5 | Forum: post (from Monday's batch draft), answer threads, recruit | 30 |
+| 6 | Long rails Mon/Wed/Fri only (dev.to floor is 3/week; pins + short rails ride the autopilot) | ~25/day avg |
+| 7 | EOD sweep: tracker true, tomorrow's exceptions noted | 15 |
+| — | Call batches Tue/Thu (prospects take scheduled slots; async covers the gaps) | +2h those days |
+
+*Non-negotiables — never cut: <24h follow-up, daily cold QA, daily replies,
+daily forum, Friday scoreboard. Exception paths: intake short of 30 → owner
+tops up manually that morning (intake was deliberately shrunk 2026-10-09, so
+watch this); any autopilot run red → owner hand-posts that day's rails; a trial
+waiting on delivery jumps the whole queue — day-1 first-pack is the conversion
+lever. Banked time goes to delivery speed first, a third call batch second,
+never to product work (the feature freeze stands). Note: the bible's Press
+ledger reads the main-branch snapshot and lags — the live ledger commits to
+the press-state branch, and the Actions tab is the day-to-day truth.*
+
+**The honest funnel note.** 150 cold touches/week × 8 weeks ≈ 1,200 touches.
+At a 3% reply rate that is ~36 conversations → ~9 calls → ~3 closes from pure
+cold. Cold alone does NOT reach 22 — it feeds the pipe; founder selling,
+affiliates, referrals, and Discover close the gap. If cold is the only channel
+working by end of W3, the ladder is in danger: escalate to the Friday rules.
+
+**Closing rules.**
+
+1. Follow-up inside 24 hours, always — speed is the entire edge.
+2. The trial aha-moment is the first pack delivered fast; the Whop review ask
+   happens AT delivery, not later (reviews unlock Discover).
+3. Every quote: monthly first, annual second. Never discount the price, only
+   the arithmetic.
+4. The affiliate rate is 30% recurring for 12 months — recruit on that math,
+   never by cutting price.
+5. Every happy customer gets asked twice: a Whop review, and one referral name.
+6. No link ships without ?src= — untracked links make Fridays blind.
+
+**The Friday scoreboard (kill / scale).** Track seven numbers: new paying
+(target: 3), cold reply %, trial→paid %, active affiliates, review count, MRR,
+cash collected. Then apply the rules: cold reply under 2% two weeks running →
+rewrite the opener AND change the list source; trial→paid under 15% → fix
+day-1 onboarding before chasing more traffic (there is no ad budget — fix
+onboarding); fewer than 5 active affiliates by end of W4 → double forum
+recruiting; any channel at ≥1 customer/week → double its time block next week;
+any channel at zero after two weeks → kill it and move the hours to the winner.
+
+**What can break this.** (1) Building instead of selling — feature freeze for
+the full sprint: no product work unless a named deal needs it. (2) Zero public
+reviews — Discover stays locked; the review ask is part of delivery, not an
+afterthought. (3) The affiliate toggle still open (first-month vs 12-month is
+an owner setting) — decide in W1; this bible's pricing truth is 30% recurring
+for 12 months. (4) Slow first pack — trials that wait, churn; day-1 delivery
+is the conversion lever. (5) Untracked links — if ?src= is missing, the Friday
+review is guesswork.
+
 ## What never leaves this building (reminders that outrank any playbook)
 
 Nothing sends without a human tap - that is the product, so it is also the pitch.
@@ -904,10 +1101,377 @@ def sec_record() -> str:
 
 
 
+# ----------------------------------------------------------------------------- guides (2026-10-11)
+
+TECH_LEDE = "The whole machine on one page: the four workers, the engine, the automation mesh, how they talk, and where every secret lives (names only — values never leave the vault)."
+OWNER_LEDE = "The owner's chair: every control on the /owner console, what each button does, and the order to work them in. Nothing here needs the command line."
+CLIENT_LEDE = "The client's chair: your /t/ workspace view by view. Read this once and the workspace needs no further explanation."
+MANUALS_LEDE = "The procedures: onboarding, the daily rhythm, troubleshooting, keys, and the content rails. If it happens more than twice, it lives here."
+
+TECHGUIDE_MD = """
+## The system in one picture
+
+Four Cloudflare workers, one Python engine, one monorepo, one Actions mesh.
+Everything is free-tier infrastructure; the whole fleet costs $0/month to run.
+
+| Piece | Where | What it does |
+|---|---|---|
+| Core engine | `stpi/` (Python) | Boards → leads → rounds → tailored packs → approved sends |
+| Mint | `edge/` → worker `stpi-mint` | Client workspaces `/t/<id>`, owner console `/owner`, trial, hooks, slots |
+| Leads service | `leads/worker/` → worker `stpi-leads` | D1-backed lead hunter + selling config (`/config`) |
+| Licence service | `licence-worker/` → worker `stpi-licence` | Stateless signed-licence verification (Sovereign) |
+| Dashboard | `dashboard-worker/` → worker `stpi-dashboard` | Rendered dashboards, D1-backed |
+| Automation | `.github/workflows/` (29 files) | Scheduled autopilots, CI, deploys, manual ops |
+| This bible | `marketing/` → `stpi-bible.pages.dev` | Internal: copy, proof, and now these guides |
+| Storefront | Whop + `getstpi.pages.dev` | Public: pricing, checkout, trial entry |
+
+## The four workers
+
+| Worker | D1 database | Job |
+|---|---|---|
+| `stpi-mint` | `stpi-mint` | Serves every workspace page and API: Pipeline/Rounds/Activity/Settings views, approve/pass/applied ops, mailbox connect, candidates, certs, trial lifecycle, owner console + its 7 APIs (`state`, `hunt`, `grant`, `mailbox`, `outreach`, `config`, `dnc`), slot claims, scheduler ticks |
+| `stpi-leads` | `stpi-leads` | Nightly lead hunting into D1; selling config store (`POST /config`, `config` inside `/stats`); console overrides for caps |
+| `stpi-licence` | none (stateless) | Verifies signed offline licences. Lapsed licence = read-only, never bricked or deleted |
+| `stpi-dashboard` | `stpi-dashboard` | Dashboard rendering worker |
+
+Mint relays owner selling-config writes to the leads worker over HTTPS; the two
+values that authorise that hop are the `LEADS_ADMIN_URL` / `LEADS_ADMIN_KEY` secrets.
+
+## The core engine (`stpi/`)
+
+The Python package does the actual hunting: selected public sources on by default (22
+supported) across South Africa, Zimbabwe and Zambia; vacancies scored against
+each candidate CV; tailored CV + cover letter drafted per round; nothing sent
+until a human taps Approve. The demo build (`demo.py`) carries the leash —
+1 candidate, one candidate, five sends per UTC month, free forever — and the leash *is* the buy
+message: the 26th draft is the store link, not an error.
+
+## The automation mesh
+
+Scheduled autopilots (all UTC; SAST = UTC+2):
+
+| Workflow | Schedule | Job |
+|---|---|---|
+| `leads-hunt.yml` | daily 05:23 | Nightly lead hunt into D1 |
+| `outreach.yml` | weekdays 06:21 | Compose the day's cold batch, post the approval card |
+| `press.yml` | 4× daily across reader hours | Press autopilot: write → publish → ledger |
+| `smoke.yml` | daily 05:41 | Live smoke over every surface + scheduler heartbeat |
+| `topic-factory.yml` | Mon 05:00 | Keep the promo pool ahead of the 9-a-day burn |
+| `e2e.yml` | Mon 06:33 | Weekly end-to-end pass |
+| `hunt.yml` / `decide.yml` | scheduled + dispatch | Tenant hunts; decide exists to catch a missed dispatch |
+
+Push-triggered: `ci.yml` (Python suites), `ci-mint.yml` (worker tests),
+`deploy-mint.yml`, `cf-pages.yml` (this bible), `pages-deploy.yml` (landing),
+`release.yml`. Manual dispatch only: `send`, `approve`, `billing`, `provision`,
+`preflight`, `founder-promote`, `mail-preview`, `mailbox-rotate`, and the
+`whop-*` storefront set. Cron hygiene is measured, not guessed: top-of-hour
+slots were dropped for days (Sep 21–26), so every schedule sits off the hour.
+
+## How the pieces talk
+
+- **Slot claims.** Scheduled runs claim a mint slot first (`/hook/slot/claim`,
+  fails open): one run per slot period, no stampedes after a GitHub outage.
+- **Scheduler heartbeat.** An external cron ticks mint (`/hook/tick`); the
+  daily smoke warns if the tick goes stale.
+- **Selling config.** Owner console → mint → leads worker. Resolution order is
+  environment value → console override → code default, resolved at call time.
+- **Approvals.** Outreach compose posts a card; the send only happens after a
+  human tap (console Resume / client Approve). Same rule as the product.
+- **Discord is a pager, not a workplace.** Failure notifications only. Packs,
+  cards, letters and reviews all live in the web UI.
+
+## Secrets inventory — names only
+
+Values never leave their vault (worker secrets, GitHub secrets, D1 rows). The
+names, so a new operator knows what exists:
+
+| Secret / credential | Lives in | Used by |
+|---|---|---|
+| `CLOUDFLARE_API_TOKEN` (+ account id) | GitHub secrets | Pages + worker deploys |
+| GitHub PAT (repo + actions scope) | Owner's vault | Dispatches, API-driven ops |
+| `LEADS_ADMIN_URL` / `LEADS_ADMIN_KEY` | Mint worker secrets | Mint → leads relay |
+| Owner admin token | Mint worker secrets | `/owner` console gate |
+| Tenant mailbox app-passwords | D1 (per tenant) | Send path, rotation workflow |
+| Per-connector keys (press rails, billing, mail) | GitHub / worker secrets | Their workflows only |
+
+Full map: the runbooks index (The machine tab) plus the `wrangler.toml` files.
+Rotation procedure: Manuals tab, M4.
+
+## Testing and deploys
+
+- Python suites (`pytest`, dozens of tests incl. outreach overrides + resume).
+- Worker suites (`node --test`, 165 tests on mint: routes, shells, validation).
+- `smoke.yml` hits the live surfaces daily; deploy workflows re-run smoke as a
+  gate before they go green. Deploys are poll-verified: the gate waits for the
+  new shape, it never trusts the first 200 after a push (edge propagation lags).
+- Cost strip: Workers, Pages, D1 and Actions free tiers. If a bill ever
+  appears, something drifted — treat it as an incident.
+
+## Where to look first
+
+New to the repo? Read in this order: `docs/AGENT-HANDOVER.md` (the running
+record), `edge/src/index.js` (mint routes), `edge/src/ui_shell.js` and
+`edge/src/owner_shell.js` (the two workspaces), `leads/worker/` (hunter +
+config), `scripts/outreach.py` (the selling rail), `press/auto/` (the press
+rail), then these guides again — they will read differently the second time.
+"""
+
+OWNERGUIDE_MD = """
+## Opening the console
+
+Open `/owner` on the mint worker. It is gated by the owner admin token — no
+token, no console, no data. Hit **Refresh** first after opening; every panel
+below renders from one state fetch, so Refresh is always step zero.
+
+## Run hunt now · All tenants
+
+- **Run hunt now** asks for confirmation, then dispatches the hunt across every
+  live tenant (`POST /owner/api/hunt`). It is the manual override for "the
+  schedule missed" — not the daily driver; the cron owns the daily run.
+- **All tenants** lists every workspace with two per-row actions:
+  - **Test mailbox** — verifies that tenant's sending mailbox right now.
+    Red here means re-verify credentials (Manuals M3), not a product bug.
+  - **Grant days** — extends paid time without touching billing. Use for
+    goodwill, outage make-goods, and affiliate review copies.
+
+## Fleet analytics · last 14 days
+
+Two weeks of fleet movement in one glance. Read it every morning before
+touching anything: sends, approvals, bounces and replies trending together
+means healthy; any line flat at zero for 48h means a rail stopped — check the
+Actions tab for that rail's workflow before assuming demand dried up.
+
+## Selling machine → Outreach
+
+The cold rail, fully drivable from the console:
+
+- The **14-day chart** shows batch volume vs caps. Spikes at the cap line mean
+  demand for touches exceeds the cap — raise deliberately, never by accident.
+- **Cap rows** (`daily_cap`, `weekly_cap`, …): type a value, **Save** writes a
+  console override, **Reset** deletes it. Remember the resolution order:
+  environment value beats console, console beats code default. A Reset returns
+  that key to whatever the environment says.
+- **Compose now** builds today's batch on demand (same path the 06:21 cron
+  takes). Use when the cron was dropped or the batch needs rebuilding.
+- **Hold latest** freezes the newest batch before it sends; **Resume & send**
+  releases it. Hold is the emergency brake — batch held is batch unsent.
+- **Suppress (do-not-contact)**: add an address or domain once and the rail
+  never touches it again. Every suppression is acknowledged in the UI.
+
+## Selling machine → Press
+
+Read-only by design: **Press · posts shipped** shows what the autopilot has
+published, and the schedule strip shows the next runs of `outreach.yml`,
+`leads-hunt.yml` and `press.yml`. The autopilot owns the press rails — if the
+shipped list stalls, the fix is in the `press.yml` runs (Actions tab), not in
+this console.
+
+## Selling machine → Settings
+
+The raw cap table behind the Outreach rows: every key, its effective value,
+and which layer set it. When Outreach behaviour surprises you, look here first
+— nine times in ten an old override is still sitting on the key.
+
+## Needs attention
+
+The hot list. Work it top to bottom: each entry is already triaged as
+owner-worthy (stuck customer, failing rail, trial waiting on delivery). A
+trial waiting on its first pack jumps everything — day-1 delivery is the
+conversion lever, and this list is where you see it slipping.
+
+## The owner day, in order
+
+1. Refresh the console; read Fleet analytics (30 seconds, trends only).
+2. Work Needs attention top to bottom.
+3. Check the outreach card: today's batch composed? Approve or Hold.
+4. Glance at Press shipped — autopilot moving?
+5. Tenants: any mailbox red? Test, then re-verify or rotate.
+6. Close the loop in the Daily ops tab / Manuals M2 (forum, replies, EOD sweep).
+
+Failures page you on Discord — that channel is the pager, nothing else. If a
+morning starts with a page, it outranks this whole list.
+"""
+
+CLIENTGUIDE_MD = """
+## Your workspace
+
+Your workspace lives at `/t/<your-id>` — Pipeline, Rounds, Activity and
+Settings, one click apart. Everything below happens here; nothing about your
+job hunt requires email, chat, or a phone call.
+
+## Pipeline — decide what sends
+
+The Pipeline is the inbox of your hunt. Filter chips across the top slice it:
+**All · Sent · Replied · Bounced · Passed**. Each application card carries the
+tailored CV and cover letter for one vacancy, and four possible moves:
+
+- **Approve & send** — the application goes out with your tailored pack.
+- **Pass** — removes it from your queue. Passing is free and final for that card.
+- **Mark applied** — for applications you sent yourself: records it so the
+  ledger stays honest and the engine stops chasing that vacancy.
+- **View reply** — appears when an employer answers; the reply reads inline.
+
+Each round also offers **Approve all & send (n)** and **Pass all** for bulk
+decisions. Nothing — no draft, no send, no follow-up — moves without your tap.
+
+## Rounds — the hunt in batches
+
+Rounds groups the hunt the way the engine runs it: one round per hunt cycle,
+newest first. Open a round to see its cards, its apply-pack (Copy letter for
+your records), and the round-level approve/pass actions. A quiet round usually
+means the boards were thin that cycle, not that anything broke — Activity will
+confirm.
+
+## Activity — the ledger
+
+Every event the engine records about your hunt, newest first: drafts written,
+approvals, sends, bounces, replies, mailbox checks. When anything looks off,
+read Activity before worrying — the answer is almost always one line down.
+
+## Settings → Profiles — who hunts
+
+**+ Add profile** creates a candidate (name, CV, search, mailbox). Each
+profile row offers:
+
+- **Edit search** — keywords and the avoid-list. The avoid-list is powerful:
+  one noisy keyword excluded beats ten good ones added.
+- **Pause / Resume** — stops new drafts for that profile without deleting
+  anything. Paused profiles keep their history.
+- **CV** — replace the base CV; future drafts use the new one immediately.
+- **Certificates** — up to 3 files per attach, 8 MB each, PDF/JPG/PNG. They
+  merge with the current set by name (or tick *Replace the current set* to
+  swap wholesale). Certificates ride with every application — **a profile
+  without any cannot send.**
+- **Connect mailbox** — Verify & connect with an app-specific password (8+
+  characters); Test connection anytime; Replace or Disconnect from the same
+  menu. Each profile sends through its own mailbox.
+
+## Settings → Plan — what you pay
+
+Plan shows the vendor (plan changes live with them, e.g. Whop — not here),
+the plan name, what it includes (candidate profiles, sends/month), active
+profiles against the limit, the renewal date, and how long the workspace has
+been live. Hitting a limit mid-hunt? Upgrade at the vendor; the workspace
+picks it up without losing a single draft.
+
+## The one rule
+
+Nothing sends without your tap. Not the first application, not a follow-up,
+not a retry after a bounce. The engine drafts, scores and queues — you decide.
+That is the product, and it is also the promise.
+"""
+
+MANUALS_MD = """
+## M1 · Onboarding — stranger to sending in a day
+
+1. **Trial starts** at the storefront or landing page: 7 days, 1 candidate,
+   normal draft rate limits, five sends. The workspace is live immediately — no waiting room.
+2. **Connect the mailbox first**, add the CV, attach certificates. A profile
+   with no certificates cannot send; catch that in the first session, not the
+   first round.
+3. **Day-1 first pack.** The trial's aha-moment is a delivered pack on day
+   one. A trial waiting on delivery jumps every other queue — owner rule.
+4. **Paid upgrade** happens at the vendor with the *same email*: the workspace
+   upgrades in place, drafts and history intact. Nothing to migrate, ever.
+5. **The review ask happens AT delivery**, not later: a Whop review plus one
+   referral name, every happy customer, every time. Reviews unlock Discover.
+
+## M2 · Daily operations — the rhythm
+
+**Morning (owner, ~30 min):** Refresh `/owner` → Fleet analytics trends →
+Needs attention top-down → outreach card approve/hold → Press shipped glance →
+mailbox reds. Then replies, then the forum (two value posts per promo).
+
+**Selling days:** call batches Tue/Thu; async covers the gaps. Cold QA daily:
+every touch on-rail, every link carrying `?src=`.
+
+**EOD sweep (15 min):** tracker true for tomorrow, exceptions noted, red
+workflows acknowledged with a next step. Banked time goes to delivery speed
+first, a third call batch second — never to product work during the freeze.
+
+Non-negotiables: follow-up inside 24h, daily replies, daily forum, Friday
+scoreboard. Full numbers game: the Playbooks tab.
+
+## M3 · Troubleshooting — symptom to fix
+
+| Symptom | First check | Fix |
+|---|---|---|
+| Workflow run red | That run's logs (Actions tab) | Re-run once; red twice = real bug, read the trace |
+| Press shipped stalls | `press.yml` recent runs | Hand-post that day's rails; fix the runner after |
+| Mailbox test red | Credentials (owner: Test mailbox) | Re-verify / rotate the app-password; provider-side first |
+| Licence lapsed | Licence status | Renew — workspace went read-only, nothing deleted |
+| Demo freeze (26th draft / 6th send) | Caps in Plan | By design: that wall IS the buy message |
+| Empty round / thin pipeline | Activity ledger | Boards were thin, or search too narrow — widen keywords |
+| Cap surprise (over/under sending) | Selling machine → Settings | Stale console override on the key; Reset it |
+| Owner console error | Refresh, then mint deploy status | State fetch failed — retry; still red, check the deploy |
+
+Golden rule: **Activity / ledger / Actions tab before worry.** The system
+witnesses everything; the answer is already logged.
+
+## M4 · Keys and secrets — rotation without drama
+
+- **Cloudflare API token:** rotate in the CF dashboard, update the GitHub
+  secret, re-run one deploy to prove it. Old token dies only after green.
+- **GitHub PAT:** same pattern — mint new, update the vault, prove with a
+  dispatch, revoke old.
+- **Worker secrets** (`wrangler secret put`): one at a time, smoke after each.
+  `LEADS_ADMIN_URL`/`LEADS_ADMIN_KEY` rotate as a pair.
+- **Mailbox app-passwords:** rotate at the provider, re-verify in the
+    workspace (Test connection), decommission the old one.
+- **The names-only rule:** secret *names* appear in guides and runbooks;
+  secret *values* appear nowhere but their vault. Not in chat, not in logs,
+  not in screenshots, not in this bible.
+
+## M5 · Content rails — what ships, and how often
+
+- **Outreach rail:** compose (06:21 weekdays or Compose now) → approval card
+  → human tap → send → ledger. Caps bound it, DNC excludes, Hold freezes.
+- **Press rail:** four autopilot slots daily across reader hours → publish →
+  ledger + witness. Failures are witnessed, never silent.
+- **Forum:** two value posts per promo, daily presence. The forum is the
+  affiliate-recruiting floor (30% recurring, 12 months).
+- **dev.to:** the long-form record; stpi-era posts carry the mission.
+- **Every link carries `?src=`.** Untracked links make Fridays blind — no
+  source tag, no ship.
+"""
+
+def sec_techguide() -> str:
+    return "\\n".join([
+        "<h2>Technical guide — how the machine is built</h2>",
+        "<p class='lede'>" + TECH_LEDE + "</p>",
+        md(TECHGUIDE_MD),
+    ])
+
+
+def sec_ownerguide() -> str:
+    return "\\n".join([
+        "<h2>Owner guide — running STPi from /owner</h2>",
+        "<p class='lede'>" + OWNER_LEDE + "</p>",
+        md(OWNERGUIDE_MD),
+    ])
+
+
+def sec_clientguide() -> str:
+    return "\\n".join([
+        "<h2>Client guide — your /t/ workspace</h2>",
+        "<p class='lede'>" + CLIENT_LEDE + "</p>",
+        md(CLIENTGUIDE_MD),
+    ])
+
+
+def sec_manuals() -> str:
+    return "\\n".join([
+        "<h2>Manuals — the procedures</h2>",
+        "<p class='lede'>" + MANUALS_LEDE + "</p>",
+        md(MANUALS_MD),
+    ])
+
+
 BUILDERS = {
     "vault": sec_vault,
     "topics": lambda: sec_topics(load_topics()),
     "cards": sec_cards,
+    "kit": sec_kit,
     "media": sec_media,
     "demokit": sec_demokit,
     "storefront": sec_storefront,
@@ -915,6 +1479,10 @@ BUILDERS = {
     "brand2": sec_brand2,
     "playbooks": sec_playbooks,
     "record": sec_record,
+    "techguide": sec_techguide,
+    "ownerguide": sec_ownerguide,
+    "clientguide": sec_clientguide,
+    "manuals": sec_manuals,
 }
 
 
@@ -945,12 +1513,13 @@ def main() -> None:
         text = text.replace("</main>", block + "\n</main>", 1)
 
     text = re.sub(r"the marketing bible · v[0-9.]+[^<]*(?=</span>)",
-                  "the marketing bible · v3.3 · 2026-10-05 — vault + published record + cartoon illustrations + "
-                  "copy expansion: 92 topics · 129 cards · 400-post dev.to index · 9 cartoons (6 recompressed ~60 percent lighter) · "
+                  "the marketing bible · v3.7 · 2026-10-14 — promo kit: 60 materials x 9 formats (20 cartoon illustrations); "
+                  "vault + published record + cartoon illustrations + "
+                  "guides + vault + record · 92 topics · 129 cards · promo kit 40 · 400-post dev.to index · 9 cartoons · "
                   "advanced scripts/outreach/social/lifecycle vol.2",
                   text, count=1)
     text = re.sub(r"the bible v[0-9.]+ \([^)]*\)",
-                  "the bible v3.3 (2026-10-05: vault + record + illustrations + copy vol.2 + 3 promo cartoons, all recompressed)", text, count=1)
+                  "the bible v3.4 (2026-10-11: technical/owner/client guides + operating manuals)", text, count=1)
 
     page.write_text(text, encoding="utf-8")
     total = words_of(re.sub(r"data:image/[^\"]{80,}", "", text))

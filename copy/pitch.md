@@ -7,7 +7,7 @@ Official tagline (README): **“Jobs found. Applications drafted. You tap approv
 ## Elevator pitch (30 s)
 
 STPi is a job-hunting copilot for career coaches in South Africa, Zimbabwe and Zambia.
-It sweeps 17 job boards by default (22 supported) on a schedule — PNet, CareerJunction, JobMail, VacancyMail,
+It sweeps country-specific sources (keys and availability vary) on a schedule — PNet, CareerJunction, JobMail, VacancyMail,
 iHarareJobs, GoZambiaJobs and more — matches every ad against your candidate's real profile,
 scores the fit, then drafts a tailored cover letter and a country-formatted CV as PDFs.
 The whole thing lands in your Discord as a single card with a ✅ and a ❌. Tap approve and it

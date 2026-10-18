@@ -1,0 +1,1507 @@
+{
+ "version": 1,
+ "count": 60,
+ "note": "ready-to-post promo materials; press takes these first for promo slots; copy passes the same editor gates as authored posts",
+ "materials": [
+  {
+   "id": "kit-demo-try",
+   "theme": "demo",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Try the whole job-hunt machine before you pay a cent",
+   "hook": "The demo pack is the real pipeline, shrunk: hunt boards, draft, approve, send.",
+   "body": "Same flow, same documents, sample data. You approve every send in the demo too, because that habit is the product.",
+   "cta": "The demo pack is free, no email asked:",
+   "formats": {
+    "x": "Try the whole job-hunt machine before you pay a cent\n\nThe demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "bsky": "Try the whole job-hunt machine before you pay a cent\n\nThe demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "linkedin": "The demo pack is the real pipeline, shrunk: hunt boards, draft, approve, send.\n\nSame flow, same documents, sample data. You approve every send in the demo too, because that habit is the product.\n\nThe demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "facebook": "The demo pack is the real pipeline, shrunk: hunt boards, draft, approve, send.\n\nSame flow, same documents, sample data. You approve every send in the demo too, because that habit is the product.\n\nThe demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "telegram": "*Try the whole job-hunt machine before you pay a cent*\n\nSame flow, same documents, sample data. You approve every send in the demo too, because that habit is the product.\n\nThe demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "whatsapp": "Try the whole job-hunt machine before you pay a cent. The demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "pinterest": "Try the whole job-hunt machine before you pay a cent - Same flow, same documents, sample data. You approve every send in the demo too, because that habit is the product. The demo pack is free, no email asked: https://getstpi.pages.dev/",
+    "thread": "The demo pack is the real pipeline, shrunk: hunt boards, draft, approve, send.\n\n1. Try the whole job-hunt machine before you pay a cent\n2. Same flow, same documents, sample data. You approve every send in the demo too, because that habit is the product.\n3. The demo pack is free, no email asked and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Try the whole job-hunt machine before you pay a cent\n\nSame flow, same documents, sample data. You approve every send in the demo too, because that habit is the product.\n\nThe demo pack is free, no email asked: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-demo-try-x.png",
+    "pin": "promo-kit/img/kit-demo-try-pin.png"
+   }
+  },
+  {
+   "id": "kit-demo-nomail",
+   "theme": "demo",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "A demo download that never asks for your email",
+   "hook": "No gate, no drip list, no 'check your inbox'. The zip is just there.",
+   "body": "We hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends.",
+   "cta": "Take the demo:",
+   "formats": {
+    "x": "A demo download that never asks for your email\n\nTake the demo: https://getstpi.pages.dev/",
+    "bsky": "A demo download that never asks for your email\n\nTake the demo: https://getstpi.pages.dev/",
+    "linkedin": "No gate, no drip list, no 'check your inbox'. The zip is just there.\n\nWe hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends.\n\nTake the demo: https://getstpi.pages.dev/",
+    "facebook": "No gate, no drip list, no 'check your inbox'. The zip is just there.\n\nWe hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends.\n\nTake the demo: https://getstpi.pages.dev/",
+    "telegram": "*A demo download that never asks for your email*\n\nWe hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends.\n\nTake the demo: https://getstpi.pages.dev/",
+    "whatsapp": "A demo download that never asks for your email. Take the demo: https://getstpi.pages.dev/",
+    "pinterest": "A demo download that never asks for your email - We hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends. Take the demo: https://getstpi.pages.dev/",
+    "thread": "No gate, no drip list, no 'check your inbox'. The zip is just there.\n\n1. A demo download that never asks for your email\n2. We hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends.\n3. Take the demo and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "A demo download that never asks for your email\n\nWe hate the email wall more than you do. The demo zip carries sample boards, sample candidates and the one-file document pack, and the page says exactly what it sends and what it never sends.\n\nTake the demo: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-demo-nomail-x.png",
+    "pin": "promo-kit/img/kit-demo-nomail-pin.png"
+   }
+  },
+  {
+   "id": "kit-demo-decide",
+   "theme": "demo",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Decide with the demo, not with a sales call",
+   "hook": "Ten minutes with the demo pack answers what a whole discovery call would.",
+   "body": "Does it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching.",
+   "cta": "Free demo:",
+   "formats": {
+    "x": "Decide with the demo, not with a sales call\n\nFree demo: https://getstpi.pages.dev/",
+    "bsky": "Decide with the demo, not with a sales call\n\nFree demo: https://getstpi.pages.dev/",
+    "linkedin": "Ten minutes with the demo pack answers what a whole discovery call would.\n\nDoes it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching.\n\nFree demo: https://getstpi.pages.dev/",
+    "facebook": "Ten minutes with the demo pack answers what a whole discovery call would.\n\nDoes it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching.\n\nFree demo: https://getstpi.pages.dev/",
+    "telegram": "*Decide with the demo, not with a sales call*\n\nDoes it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching.\n\nFree demo: https://getstpi.pages.dev/",
+    "whatsapp": "Decide with the demo, not with a sales call. Free demo: https://getstpi.pages.dev/",
+    "pinterest": "Decide with the demo, not with a sales call - Does it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching. Free demo: https://getstpi.pages.dev/",
+    "thread": "Ten minutes with the demo pack answers what a whole discovery call would.\n\n1. Decide with the demo, not with a sales call\n2. Does it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching.\n3. Free demo and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Decide with the demo, not with a sales call\n\nDoes it hunt your boards? Does the draft read like you? Is the one-file package what your candidates need? All three are answerable from the demo, at your own desk, with nobody watching.\n\nFree demo: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-demo-decide-x.png",
+    "pin": "promo-kit/img/kit-demo-decide-pin.png"
+   }
+  },
+  {
+   "id": "kit-pipeline-essay",
+   "theme": "pipeline",
+   "link": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+   "type": "text",
+   "headline": "A CV is not the work. The pipeline is the work.",
+   "hook": "Treating applications as a pipeline instead of a resume problem changed everything about how we hunt jobs.",
+   "body": "The full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical.",
+   "cta": "Read the essay:",
+   "formats": {
+    "x": "A CV is not the work. The pipeline is the work.\n\nRead the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "bsky": "A CV is not the work. The pipeline is the work.\n\nRead the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "linkedin": "Treating applications as a pipeline instead of a resume problem changed everything about how we hunt jobs.\n\nThe full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical.\n\nRead the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "facebook": "Treating applications as a pipeline instead of a resume problem changed everything about how we hunt jobs.\n\nThe full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical.\n\nRead the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "telegram": "*A CV is not the work. The pipeline is the work.*\n\nThe full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical.\n\nRead the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whatsapp": "A CV is not the work. The pipeline is the work.. Read the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "pinterest": "A CV is not the work. The pipeline is the work. - The full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical. Read the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "thread": "Treating applications as a pipeline instead of a resume problem changed everything about how we hunt jobs.\n\n1. A CV is not the work. The pipeline is the work.\n2. The full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical.\n3. Read the essay and the whole pipeline runs on approval-first discipline.\nhttps://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whop_public": "A CV is not the work. The pipeline is the work.\n\nThe full essay walks the mechanism: boards in, deadlines tracked, drafts raised, human approves, machine sends, every step logged. It is the thinking STPi was built to make practical.\n\nRead the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pipeline-essay-x.png",
+    "pin": "promo-kit/img/kit-pipeline-essay-pin.png"
+   }
+  },
+  {
+   "id": "kit-pipeline-boring",
+   "theme": "pipeline",
+   "link": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+   "type": "text",
+   "headline": "The part of job hunting that actually pays is boring on purpose",
+   "hook": "Deadline tracking and send logs win jobs. Adrenaline does not.",
+   "body": "Every placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end.",
+   "cta": "The mechanism, written plainly:",
+   "formats": {
+    "x": "The part of job hunting that actually pays is boring on purpose\n\nThe mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "bsky": "The part of job hunting that actually pays is boring on purpose\n\nThe mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "linkedin": "Deadline tracking and send logs win jobs. Adrenaline does not.\n\nEvery placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end.\n\nThe mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "facebook": "Deadline tracking and send logs win jobs. Adrenaline does not.\n\nEvery placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end.\n\nThe mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "telegram": "*The part of job hunting that actually pays is boring on purpose*\n\nEvery placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end.\n\nThe mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whatsapp": "The part of job hunting that actually pays is boring on purpose. The mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "pinterest": "The part of job hunting that actually pays is boring on purpose - Every placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end. The mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "thread": "Deadline tracking and send logs win jobs. Adrenaline does not.\n\n1. The part of job hunting that actually pays is boring on purpose\n2. Every placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end.\n3. The mechanism, written plainly and the whole pipeline runs on approval-first discipline.\nhttps://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whop_public": "The part of job hunting that actually pays is boring on purpose\n\nEvery placement we have seen came from process: the right ad found early, the closing date respected, the application in before the crowd, the follow-up remembered. The essay lays out that machine end to end.\n\nThe mechanism, written plainly: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pipeline-boring-x.png",
+    "pin": "promo-kit/img/kit-pipeline-boring-pin.png"
+   }
+  },
+  {
+   "id": "kit-pipeline-mirror",
+   "theme": "pipeline",
+   "link": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+   "type": "text",
+   "headline": "The machine you can watch working before you buy it",
+   "hook": "We publish daily from the exact machine we sell. The feed is the demo.",
+   "body": "The essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all.",
+   "cta": "Start with the essay:",
+   "formats": {
+    "x": "The machine you can watch working before you buy it\n\nStart with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "bsky": "The machine you can watch working before you buy it\n\nStart with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "linkedin": "We publish daily from the exact machine we sell. The feed is the demo.\n\nThe essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all.\n\nStart with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "facebook": "We publish daily from the exact machine we sell. The feed is the demo.\n\nThe essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all.\n\nStart with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "telegram": "*The machine you can watch working before you buy it*\n\nThe essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all.\n\nStart with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whatsapp": "The machine you can watch working before you buy it. Start with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "pinterest": "The machine you can watch working before you buy it - The essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all. Start with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "thread": "We publish daily from the exact machine we sell. The feed is the demo.\n\n1. The machine you can watch working before you buy it\n2. The essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all.\n3. Start with the essay and the whole pipeline runs on approval-first discipline.\nhttps://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whop_public": "The machine you can watch working before you buy it\n\nThe essay explains the pipeline; our social rails run on it. What you see posted every day is the product doing its own marketing, caps and all.\n\nStart with the essay: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pipeline-mirror-x.png",
+    "pin": "promo-kit/img/kit-pipeline-mirror-pin.png"
+   }
+  },
+  {
+   "id": "kit-deadline-closed",
+   "theme": "deadlines",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "We refuse to work on ads that already closed",
+   "hook": "A beautiful draft for a dead ad is a waste of your hope.",
+   "body": "The machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through.",
+   "cta": "Hunt with the clock:",
+   "formats": {
+    "x": "We refuse to work on ads that already closed\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "bsky": "We refuse to work on ads that already closed\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "linkedin": "A beautiful draft for a dead ad is a waste of your hope.\n\nThe machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through.\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "facebook": "A beautiful draft for a dead ad is a waste of your hope.\n\nThe machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through.\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "telegram": "*We refuse to work on ads that already closed*\n\nThe machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through.\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "whatsapp": "We refuse to work on ads that already closed. Hunt with the clock: https://getstpi.pages.dev/",
+    "pinterest": "We refuse to work on ads that already closed - The machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through. Hunt with the clock: https://getstpi.pages.dev/",
+    "thread": "A beautiful draft for a dead ad is a waste of your hope.\n\n1. We refuse to work on ads that already closed\n2. The machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through.\n3. Hunt with the clock and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "We refuse to work on ads that already closed\n\nThe machine reads closing dates and drops expired ads on sight. The Sep 11 ad that surfaced on Oct 9 taught us this the hard way; now the funnel guard never lets a past-closing ad through.\n\nHunt with the clock: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-deadline-closed-x.png",
+    "pin": "promo-kit/img/kit-deadline-closed-pin.png"
+   }
+  },
+  {
+   "id": "kit-deadline-chip",
+   "theme": "deadlines",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Deadlines sit on the dashboard in red before they bite",
+   "hook": "Two days left turns red. The day an ad closes, the pending application expires itself.",
+   "body": "Candidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered.",
+   "cta": "See the clock:",
+   "formats": {
+    "x": "Deadlines sit on the dashboard in red before they bite\n\nSee the clock: https://getstpi.pages.dev/",
+    "bsky": "Deadlines sit on the dashboard in red before they bite\n\nSee the clock: https://getstpi.pages.dev/",
+    "linkedin": "Two days left turns red. The day an ad closes, the pending application expires itself.\n\nCandidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered.\n\nSee the clock: https://getstpi.pages.dev/",
+    "facebook": "Two days left turns red. The day an ad closes, the pending application expires itself.\n\nCandidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered.\n\nSee the clock: https://getstpi.pages.dev/",
+    "telegram": "*Deadlines sit on the dashboard in red before they bite*\n\nCandidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered.\n\nSee the clock: https://getstpi.pages.dev/",
+    "whatsapp": "Deadlines sit on the dashboard in red before they bite. See the clock: https://getstpi.pages.dev/",
+    "pinterest": "Deadlines sit on the dashboard in red before they bite - Candidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered. See the clock: https://getstpi.pages.dev/",
+    "thread": "Two days left turns red. The day an ad closes, the pending application expires itself.\n\n1. Deadlines sit on the dashboard in red before they bite\n2. Candidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered.\n3. See the clock and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Deadlines sit on the dashboard in red before they bite\n\nCandidates see the closing date on every item. Owners see the same clock. Nobody discovers a missed deadline on the day it mattered.\n\nSee the clock: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-deadline-chip-x.png",
+    "pin": "promo-kit/img/kit-deadline-chip-pin.png"
+   }
+  },
+  {
+   "id": "kit-deadline-early",
+   "theme": "deadlines",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Early beats polished when the ad closes Friday",
+   "hook": "The hiring manager reads applications in the order they arrive, roughly.",
+   "body": "The pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides.",
+   "cta": "Same-day hunting:",
+   "formats": {
+    "x": "Early beats polished when the ad closes Friday\n\nSame-day hunting: https://getstpi.pages.dev/",
+    "bsky": "Early beats polished when the ad closes Friday\n\nSame-day hunting: https://getstpi.pages.dev/",
+    "linkedin": "The hiring manager reads applications in the order they arrive, roughly.\n\nThe pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides.\n\nSame-day hunting: https://getstpi.pages.dev/",
+    "facebook": "The hiring manager reads applications in the order they arrive, roughly.\n\nThe pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides.\n\nSame-day hunting: https://getstpi.pages.dev/",
+    "telegram": "*Early beats polished when the ad closes Friday*\n\nThe pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides.\n\nSame-day hunting: https://getstpi.pages.dev/",
+    "whatsapp": "Early beats polished when the ad closes Friday. Same-day hunting: https://getstpi.pages.dev/",
+    "pinterest": "Early beats polished when the ad closes Friday - The pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides. Same-day hunting: https://getstpi.pages.dev/",
+    "thread": "The hiring manager reads applications in the order they arrive, roughly.\n\n1. Early beats polished when the ad closes Friday\n2. The pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides.\n3. Same-day hunting and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Early beats polished when the ad closes Friday\n\nThe pipeline hunts daily and surfaces fresh ads the same day, so the application leaves while the window is genuinely open. Polish matters; timing decides.\n\nSame-day hunting: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-deadline-early-x.png",
+    "pin": "promo-kit/img/kit-deadline-early-pin.png"
+   }
+  },
+  {
+   "id": "kit-onefile-package",
+   "theme": "onefile",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Letter, CV and certificates travel as ONE file",
+   "hook": "Hiring staff open one attachment, not three.",
+   "body": "The application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends.",
+   "cta": "See the package:",
+   "formats": {
+    "x": "Letter, CV and certificates travel as ONE file\n\nSee the package: https://getstpi.pages.dev/",
+    "bsky": "Letter, CV and certificates travel as ONE file\n\nSee the package: https://getstpi.pages.dev/",
+    "linkedin": "Hiring staff open one attachment, not three.\n\nThe application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends.\n\nSee the package: https://getstpi.pages.dev/",
+    "facebook": "Hiring staff open one attachment, not three.\n\nThe application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends.\n\nSee the package: https://getstpi.pages.dev/",
+    "telegram": "*Letter, CV and certificates travel as ONE file*\n\nThe application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends.\n\nSee the package: https://getstpi.pages.dev/",
+    "whatsapp": "Letter, CV and certificates travel as ONE file. See the package: https://getstpi.pages.dev/",
+    "pinterest": "Letter, CV and certificates travel as ONE file - The application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends. See the package: https://getstpi.pages.dev/",
+    "thread": "Hiring staff open one attachment, not three.\n\n1. Letter, CV and certificates travel as ONE file\n2. The application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends.\n3. See the package and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Letter, CV and certificates travel as ONE file\n\nThe application package renders as a single PDF: the letter on page one, the CV behind it, certificates behind that. Nothing gets lost in an inbox shuffle, and a buyer can preview the whole pack before it sends.\n\nSee the package: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-onefile-package-x.png",
+    "pin": "promo-kit/img/kit-onefile-package-pin.png"
+   }
+  },
+  {
+   "id": "kit-onefile-letter",
+   "theme": "onefile",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "The letter matches the CV. Same design, same file.",
+   "hook": "A scraped-together application reads like one. A matched package reads like a professional.",
+   "body": "One design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it.",
+   "cta": "Look at a matched pack:",
+   "formats": {
+    "x": "The letter matches the CV. Same design, same file.\n\nLook at a matched pack: https://getstpi.pages.dev/",
+    "bsky": "The letter matches the CV. Same design, same file.\n\nLook at a matched pack: https://getstpi.pages.dev/",
+    "linkedin": "A scraped-together application reads like one. A matched package reads like a professional.\n\nOne design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it.\n\nLook at a matched pack: https://getstpi.pages.dev/",
+    "facebook": "A scraped-together application reads like one. A matched package reads like a professional.\n\nOne design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it.\n\nLook at a matched pack: https://getstpi.pages.dev/",
+    "telegram": "*The letter matches the CV. Same design, same file.*\n\nOne design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it.\n\nLook at a matched pack: https://getstpi.pages.dev/",
+    "whatsapp": "The letter matches the CV. Same design, same file.. Look at a matched pack: https://getstpi.pages.dev/",
+    "pinterest": "The letter matches the CV. Same design, same file. - One design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it. Look at a matched pack: https://getstpi.pages.dev/",
+    "thread": "A scraped-together application reads like one. A matched package reads like a professional.\n\n1. The letter matches the CV. Same design, same file.\n2. One design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it.\n3. Look at a matched pack and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The letter matches the CV. Same design, same file.\n\nOne design language across the letter and the CV, one accent, one file. Pick the design once and every document in the package follows it.\n\nLook at a matched pack: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-onefile-letter-x.png",
+    "pin": "promo-kit/img/kit-onefile-letter-pin.png"
+   }
+  },
+  {
+   "id": "kit-onefile-preview",
+   "theme": "onefile",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Preview the exact file the employer will receive",
+   "hook": "What you approve is literally what sends.",
+   "body": "The approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion.",
+   "cta": "Preview before sending:",
+   "formats": {
+    "x": "Preview the exact file the employer will receive\n\nPreview before sending: https://getstpi.pages.dev/",
+    "bsky": "Preview the exact file the employer will receive\n\nPreview before sending: https://getstpi.pages.dev/",
+    "linkedin": "What you approve is literally what sends.\n\nThe approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion.\n\nPreview before sending: https://getstpi.pages.dev/",
+    "facebook": "What you approve is literally what sends.\n\nThe approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion.\n\nPreview before sending: https://getstpi.pages.dev/",
+    "telegram": "*Preview the exact file the employer will receive*\n\nThe approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion.\n\nPreview before sending: https://getstpi.pages.dev/",
+    "whatsapp": "Preview the exact file the employer will receive. Preview before sending: https://getstpi.pages.dev/",
+    "pinterest": "Preview the exact file the employer will receive - The approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion. Preview before sending: https://getstpi.pages.dev/",
+    "thread": "What you approve is literally what sends.\n\n1. Preview the exact file the employer will receive\n2. The approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion.\n3. Preview before sending and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Preview the exact file the employer will receive\n\nThe approval dashboard shows the one-file package as the buyer will see it. No surprise formatting, no missing attachment, no version confusion.\n\nPreview before sending: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-onefile-preview-x.png",
+    "pin": "promo-kit/img/kit-onefile-preview-pin.png"
+   }
+  },
+  {
+   "id": "kit-extract-upload",
+   "theme": "extraction",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Upload a CV. The machine reads it and starts.",
+   "hook": "No forms with thirty fields. The CV you already have is the intake.",
+   "body": "Auto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens.",
+   "cta": "Point it at a CV:",
+   "formats": {
+    "x": "Upload a CV. The machine reads it and starts.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "bsky": "Upload a CV. The machine reads it and starts.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "linkedin": "No forms with thirty fields. The CV you already have is the intake.\n\nAuto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "facebook": "No forms with thirty fields. The CV you already have is the intake.\n\nAuto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "telegram": "*Upload a CV. The machine reads it and starts.*\n\nAuto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "whatsapp": "Upload a CV. The machine reads it and starts.. Point it at a CV: https://getstpi.pages.dev/",
+    "pinterest": "Upload a CV. The machine reads it and starts. - Auto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens. Point it at a CV: https://getstpi.pages.dev/",
+    "thread": "No forms with thirty fields. The CV you already have is the intake.\n\n1. Upload a CV. The machine reads it and starts.\n2. Auto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens.\n3. Point it at a CV and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Upload a CV. The machine reads it and starts.\n\nAuto-extraction pulls the work history, skills and education out of the document you upload, then a human confirms the read. Editing happens in one place, not scattered across screens.\n\nPoint it at a CV: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-extract-upload-x.png",
+    "pin": "promo-kit/img/kit-extract-upload-pin.png"
+   }
+  },
+  {
+   "id": "kit-extract-onplace",
+   "theme": "extraction",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Everything about a candidate lives in one place",
+   "hook": "One screen: the CV read, the documents, the sends, the state.",
+   "body": "The extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it.",
+   "cta": "See the one screen:",
+   "formats": {
+    "x": "Everything about a candidate lives in one place\n\nSee the one screen: https://getstpi.pages.dev/",
+    "bsky": "Everything about a candidate lives in one place\n\nSee the one screen: https://getstpi.pages.dev/",
+    "linkedin": "One screen: the CV read, the documents, the sends, the state.\n\nThe extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it.\n\nSee the one screen: https://getstpi.pages.dev/",
+    "facebook": "One screen: the CV read, the documents, the sends, the state.\n\nThe extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it.\n\nSee the one screen: https://getstpi.pages.dev/",
+    "telegram": "*Everything about a candidate lives in one place*\n\nThe extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it.\n\nSee the one screen: https://getstpi.pages.dev/",
+    "whatsapp": "Everything about a candidate lives in one place. See the one screen: https://getstpi.pages.dev/",
+    "pinterest": "Everything about a candidate lives in one place - The extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it. See the one screen: https://getstpi.pages.dev/",
+    "thread": "One screen: the CV read, the documents, the sends, the state.\n\n1. Everything about a candidate lives in one place\n2. The extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it.\n3. See the one screen and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Everything about a candidate lives in one place\n\nThe extraction builds the profile; the profile carries the whole hunt. Change a detail once and every future draft inherits it.\n\nSee the one screen: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-extract-onplace-x.png",
+    "pin": "promo-kit/img/kit-extract-onplace-pin.png"
+   }
+  },
+  {
+   "id": "kit-boards-48",
+   "theme": "coverage",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Your country-specific sources, with availability visible",
+   "hook": "Selected countries, selected sources, no promise that every source is always live.",
+   "body": "Sources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs.",
+   "cta": "Check the board list:",
+   "formats": {
+    "x": "Your country-specific sources, with availability visible\n\nCheck the board list: https://getstpi.pages.dev/",
+    "bsky": "Your country-specific sources, with availability visible\n\nCheck the board list: https://getstpi.pages.dev/",
+    "linkedin": "Selected countries, selected sources, no promise that every source is always live.\n\nSources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs.\n\nCheck the board list: https://getstpi.pages.dev/",
+    "facebook": "Selected countries, selected sources, no promise that every source is always live.\n\nSources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs.\n\nCheck the board list: https://getstpi.pages.dev/",
+    "telegram": "*Your country-specific sources, with availability visible*\n\nSources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs.\n\nCheck the board list: https://getstpi.pages.dev/",
+    "whatsapp": "Your country-specific sources, with availability visible. Check the board list: https://getstpi.pages.dev/",
+    "pinterest": "Your country-specific sources, with availability visible - Sources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs. Check the board list: https://getstpi.pages.dev/",
+    "thread": "Selected countries, selected sources, no promise that every source is always live.\n\n1. Your country-specific sources, with availability visible\n2. Sources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs.\n3. Check the board list and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Your country-specific sources, with availability visible\n\nSources depend on the candidate's country, required keys and live access. Disabled, deferred, blocked and genuinely empty results are distinct. Hunts run twice daily Monday-Saturday; cards need suitable new jobs.\n\nCheck the board list: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-boards-48-x.png",
+    "pin": "promo-kit/img/kit-boards-48-pin.png"
+   }
+  },
+  {
+   "id": "kit-boards-country",
+   "theme": "coverage",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Country first, city second, one search that respects both",
+   "hook": "Most job tools search keywords and hope. Region is our first-class filter.",
+   "body": "Pick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose.",
+   "cta": "Hunt your region:",
+   "formats": {
+    "x": "Country first, city second, one search that respects both\n\nHunt your region: https://getstpi.pages.dev/",
+    "bsky": "Country first, city second, one search that respects both\n\nHunt your region: https://getstpi.pages.dev/",
+    "linkedin": "Most job tools search keywords and hope. Region is our first-class filter.\n\nPick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose.\n\nHunt your region: https://getstpi.pages.dev/",
+    "facebook": "Most job tools search keywords and hope. Region is our first-class filter.\n\nPick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose.\n\nHunt your region: https://getstpi.pages.dev/",
+    "telegram": "*Country first, city second, one search that respects both*\n\nPick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose.\n\nHunt your region: https://getstpi.pages.dev/",
+    "whatsapp": "Country first, city second, one search that respects both. Hunt your region: https://getstpi.pages.dev/",
+    "pinterest": "Country first, city second, one search that respects both - Pick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose. Hunt your region: https://getstpi.pages.dev/",
+    "thread": "Most job tools search keywords and hope. Region is our first-class filter.\n\n1. Country first, city second, one search that respects both\n2. Pick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose.\n3. Hunt your region and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Country first, city second, one search that respects both\n\nPick the country, then the cities, individually or all at once. The hunt stays inside your region unless you widen it on purpose.\n\nHunt your region: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-boards-country-x.png",
+    "pin": "promo-kit/img/kit-boards-country-pin.png"
+   }
+  },
+  {
+   "id": "kit-boards-fresh",
+   "theme": "coverage",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "The same ad, found once, never resurfaced as 'new' a month later",
+   "hook": "Board noise is mostly repeats and ghosts.",
+   "body": "Deduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached.",
+   "cta": "See a daily hunt:",
+   "formats": {
+    "x": "The same ad, found once, never resurfaced as 'new' a month later\n\nSee a daily hunt: https://getstpi.pages.dev/",
+    "bsky": "The same ad, found once, never resurfaced as 'new' a month later\n\nSee a daily hunt: https://getstpi.pages.dev/",
+    "linkedin": "Board noise is mostly repeats and ghosts.\n\nDeduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached.\n\nSee a daily hunt: https://getstpi.pages.dev/",
+    "facebook": "Board noise is mostly repeats and ghosts.\n\nDeduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached.\n\nSee a daily hunt: https://getstpi.pages.dev/",
+    "telegram": "*The same ad, found once, never resurfaced as 'new' a month later*\n\nDeduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached.\n\nSee a daily hunt: https://getstpi.pages.dev/",
+    "whatsapp": "The same ad, found once, never resurfaced as 'new' a month later. See a daily hunt: https://getstpi.pages.dev/",
+    "pinterest": "The same ad, found once, never resurfaced as 'new' a month later - Deduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached. See a daily hunt: https://getstpi.pages.dev/",
+    "thread": "Board noise is mostly repeats and ghosts.\n\n1. The same ad, found once, never resurfaced as 'new' a month later\n2. Deduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached.\n3. See a daily hunt and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The same ad, found once, never resurfaced as 'new' a month later\n\nDeduplication runs across boards and days. The daily list is what is genuinely new in your countries, with closing dates attached.\n\nSee a daily hunt: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-boards-fresh-x.png",
+    "pin": "promo-kit/img/kit-boards-fresh-pin.png"
+   }
+  },
+  {
+   "id": "kit-pricing-tiers",
+   "theme": "pricing",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.",
+   "hook": "No sales call to hear a price. It is printed, in dollars or rand.",
+   "body": "Solo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank.",
+   "cta": "The store:",
+   "formats": {
+    "x": "Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "No sales call to hear a price. It is printed, in dollars or rand.\n\nSolo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "No sales call to hear a price. It is printed, in dollars or rand.\n\nSolo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.*\n\nSolo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.. The store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu. - Solo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank. The store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "No sales call to hear a price. It is printed, in dollars or rand.\n\n1. Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.\n2. Solo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank.\n3. The store and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Solo $306/mo, Studio $613/mo, Sovereign $920/mo. That is the whole menu.\n\nSolo for one operator with three candidate chairs. Studio for agencies: fifteen chairs, white-label documents. Sovereign for the outfit that wants to own every byte: self-hosted on your own keys. About R4,999 to R15,000 a month, cards or bank.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pricing-tiers-x.png",
+    "pin": "promo-kit/img/kit-pricing-tiers-pin.png"
+   }
+  },
+  {
+   "id": "kit-pricing-annual",
+   "theme": "pricing",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Pay annually, save a quarter. The math is on the page.",
+   "hook": "Annual is $918 for Solo, $2,754 for Studio, $8,280 for Sovereign.",
+   "body": "One payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email.",
+   "cta": "Prices, plainly:",
+   "formats": {
+    "x": "Pay annually, save a quarter. The math is on the page.\n\nPrices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Pay annually, save a quarter. The math is on the page.\n\nPrices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Annual is $918 for Solo, $2,754 for Studio, $8,280 for Sovereign.\n\nOne payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email.\n\nPrices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Annual is $918 for Solo, $2,754 for Studio, $8,280 for Sovereign.\n\nOne payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email.\n\nPrices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Pay annually, save a quarter. The math is on the page.*\n\nOne payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email.\n\nPrices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Pay annually, save a quarter. The math is on the page.. Prices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Pay annually, save a quarter. The math is on the page. - One payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email. Prices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Annual is $918 for Solo, $2,754 for Studio, $8,280 for Sovereign.\n\n1. Pay annually, save a quarter. The math is on the page.\n2. One payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email.\n3. Prices, plainly and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Pay annually, save a quarter. The math is on the page.\n\nOne payment, twelve months, one quarter off. Whop takes cards; bigger amounts go by bank wire or Mukuru/EFT. Nothing is hidden in a follow-up email.\n\nPrices, plainly: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pricing-annual-x.png",
+    "pin": "promo-kit/img/kit-pricing-annual-pin.png"
+   }
+  },
+  {
+   "id": "kit-pricing-zar",
+   "theme": "pricing",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Rands welcome: about R4,999 a month to run a hiring desk",
+   "hook": "Regional buyers should not need a dollar account to buy regional tooling.",
+   "body": "Card checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support.",
+   "cta": "Buy in your money:",
+   "formats": {
+    "x": "Rands welcome: about R4,999 a month to run a hiring desk\n\nBuy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Rands welcome: about R4,999 a month to run a hiring desk\n\nBuy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Regional buyers should not need a dollar account to buy regional tooling.\n\nCard checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support.\n\nBuy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Regional buyers should not need a dollar account to buy regional tooling.\n\nCard checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support.\n\nBuy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Rands welcome: about R4,999 a month to run a hiring desk*\n\nCard checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support.\n\nBuy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Rands welcome: about R4,999 a month to run a hiring desk. Buy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Rands welcome: about R4,999 a month to run a hiring desk - Card checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support. Buy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Regional buyers should not need a dollar account to buy regional tooling.\n\n1. Rands welcome: about R4,999 a month to run a hiring desk\n2. Card checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support.\n3. Buy in your money and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Rands welcome: about R4,999 a month to run a hiring desk\n\nCard checkout in dollars, or Mukuru and EFT rails for rand buyers. Studio runs about R9,999 and Sovereign about R15,000. Same product, same support.\n\nBuy in your money: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pricing-zar-x.png",
+    "pin": "promo-kit/img/kit-pricing-zar-pin.png"
+   }
+  },
+  {
+   "id": "kit-pricing-lightning",
+   "theme": "pricing",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Lightning accepted. SharkSkin@coinos.io if that is your rail.",
+   "hook": "Some of our first buyers live on Lightning.",
+   "body": "Cards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same.",
+   "cta": "Checkout options:",
+   "formats": {
+    "x": "Lightning accepted. SharkSkin@coinos.io if that is your rail.\n\nCheckout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Lightning accepted. SharkSkin@coinos.io if that is your rail.\n\nCheckout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Some of our first buyers live on Lightning.\n\nCards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same.\n\nCheckout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Some of our first buyers live on Lightning.\n\nCards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same.\n\nCheckout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Lightning accepted. SharkSkin@coinos.io if that is your rail.*\n\nCards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same.\n\nCheckout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Lightning accepted. SharkSkin@coinos.io if that is your rail.. Checkout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Lightning accepted. SharkSkin@coinos.io if that is your rail. - Cards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same. Checkout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Some of our first buyers live on Lightning.\n\n1. Lightning accepted. SharkSkin@coinos.io if that is your rail.\n2. Cards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same.\n3. Checkout options and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Lightning accepted. SharkSkin@coinos.io if that is your rail.\n\nCards at the store, bank transfers for the big ones, Lightning for the sovereign-minded. Pick the rail; the licence is the same.\n\nCheckout options: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-pricing-lightning-x.png",
+    "pin": "promo-kit/img/kit-pricing-lightning-pin.png"
+   }
+  },
+  {
+   "id": "kit-honest-caps",
+   "theme": "honesty",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Daily send caps are a feature, not a limitation",
+   "hook": "A machine that can spam a thousand inboxes is a liability with a dashboard.",
+   "body": "Caps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo.",
+   "cta": "The caps, in writing:",
+   "formats": {
+    "x": "Daily send caps are a feature, not a limitation\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "bsky": "Daily send caps are a feature, not a limitation\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "linkedin": "A machine that can spam a thousand inboxes is a liability with a dashboard.\n\nCaps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo.\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "facebook": "A machine that can spam a thousand inboxes is a liability with a dashboard.\n\nCaps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo.\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "telegram": "*Daily send caps are a feature, not a limitation*\n\nCaps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo.\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "whatsapp": "Daily send caps are a feature, not a limitation. The caps, in writing: https://getstpi.pages.dev/",
+    "pinterest": "Daily send caps are a feature, not a limitation - Caps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo. The caps, in writing: https://getstpi.pages.dev/",
+    "thread": "A machine that can spam a thousand inboxes is a liability with a dashboard.\n\n1. Daily send caps are a feature, not a limitation\n2. Caps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo.\n3. The caps, in writing and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Daily send caps are a feature, not a limitation\n\nCaps keep the send reputation clean and the candidates' mailboxes safe. The landing says it, the code enforces it, and the upgrade banners are so loud you can find the exit by echo.\n\nThe caps, in writing: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-honest-caps-x.png",
+    "pin": "promo-kit/img/kit-honest-caps-pin.png"
+   }
+  },
+  {
+   "id": "kit-honest-approval",
+   "theme": "honesty",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Candidate applications require your approval.",
+   "hook": "Autopilot for the hunt, human hands on the send button.",
+   "body": "Drafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers.",
+   "cta": "See the approval flow:",
+   "formats": {
+    "x": "Candidate applications require your approval.\n\nSee the approval flow: https://getstpi.pages.dev/",
+    "bsky": "Candidate applications require your approval.\n\nSee the approval flow: https://getstpi.pages.dev/",
+    "linkedin": "Autopilot for the hunt, human hands on the send button.\n\nDrafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers.\n\nSee the approval flow: https://getstpi.pages.dev/",
+    "facebook": "Autopilot for the hunt, human hands on the send button.\n\nDrafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers.\n\nSee the approval flow: https://getstpi.pages.dev/",
+    "telegram": "*Candidate applications require your approval.*\n\nDrafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers.\n\nSee the approval flow: https://getstpi.pages.dev/",
+    "whatsapp": "Candidate applications require your approval.. See the approval flow: https://getstpi.pages.dev/",
+    "pinterest": "Candidate applications require your approval. - Drafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers. See the approval flow: https://getstpi.pages.dev/",
+    "thread": "Autopilot for the hunt, human hands on the send button.\n\n1. Candidate applications require your approval.\n2. Drafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers.\n3. See the approval flow and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Candidate applications require your approval.\n\nDrafts queue up with the full package attached. You approve, it sends, the log records exactly what left and when. That discipline is why the machine is safe to point at real employers.\n\nSee the approval flow: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-honest-approval-x.png",
+    "pin": "promo-kit/img/kit-honest-approval-pin.png"
+   }
+  },
+  {
+   "id": "kit-honest-silent",
+   "theme": "honesty",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Our own rails go silent when their keys are missing",
+   "hook": "The distribution machine obeys the same caps and honesty rules it sells.",
+   "body": "Rails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves.",
+   "cta": "The doctrine:",
+   "formats": {
+    "x": "Our own rails go silent when their keys are missing\n\nThe doctrine: https://getstpi.pages.dev/",
+    "bsky": "Our own rails go silent when their keys are missing\n\nThe doctrine: https://getstpi.pages.dev/",
+    "linkedin": "The distribution machine obeys the same caps and honesty rules it sells.\n\nRails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves.\n\nThe doctrine: https://getstpi.pages.dev/",
+    "facebook": "The distribution machine obeys the same caps and honesty rules it sells.\n\nRails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves.\n\nThe doctrine: https://getstpi.pages.dev/",
+    "telegram": "*Our own rails go silent when their keys are missing*\n\nRails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves.\n\nThe doctrine: https://getstpi.pages.dev/",
+    "whatsapp": "Our own rails go silent when their keys are missing. The doctrine: https://getstpi.pages.dev/",
+    "pinterest": "Our own rails go silent when their keys are missing - Rails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves. The doctrine: https://getstpi.pages.dev/",
+    "thread": "The distribution machine obeys the same caps and honesty rules it sells.\n\n1. Our own rails go silent when their keys are missing\n2. Rails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves.\n3. The doctrine and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Our own rails go silent when their keys are missing\n\nRails without credentials stay quiet instead of shouting errors. The ECU surfaces silent failures to the owner, not to your feed. We built the discipline into the product because we needed it ourselves.\n\nThe doctrine: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-honest-silent-x.png",
+    "pin": "promo-kit/img/kit-honest-silent-pin.png"
+   }
+  },
+  {
+   "id": "kit-store-live",
+   "theme": "store",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "The store is open: one-tap checkout, three tiers",
+   "hook": "Solo, Studio, Sovereign. Pick, pay, provision.",
+   "body": "Checkout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off.",
+   "cta": "The store:",
+   "formats": {
+    "x": "The store is open: one-tap checkout, three tiers\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "The store is open: one-tap checkout, three tiers\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Solo, Studio, Sovereign. Pick, pay, provision.\n\nCheckout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Solo, Studio, Sovereign. Pick, pay, provision.\n\nCheckout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*The store is open: one-tap checkout, three tiers*\n\nCheckout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "The store is open: one-tap checkout, three tiers. The store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "The store is open: one-tap checkout, three tiers - Checkout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off. The store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Solo, Studio, Sovereign. Pick, pay, provision.\n\n1. The store is open: one-tap checkout, three tiers\n2. Checkout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off.\n3. The store and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "The store is open: one-tap checkout, three tiers\n\nCheckout runs through our own mint worker into Whop. Licences land in minutes, and the setup guide walks the first hunt. Annual plans are one payment with a quarter off.\n\nThe store: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-store-live-x.png",
+    "pin": "promo-kit/img/kit-store-live-pin.png"
+   }
+  },
+  {
+   "id": "kit-store-whop",
+   "theme": "store",
+   "link": "https://whop.com/stpi",
+   "type": "text",
+   "headline": "Live on Whop as STPi. Search it, check the reviews, buy it.",
+   "hook": "The storefront shows the machine's own feed beside the products.",
+   "body": "whop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars.",
+   "cta": "Visit the storefront:",
+   "formats": {
+    "x": "Live on Whop as STPi. Search it, check the reviews, buy it.\n\nVisit the storefront: https://whop.com/stpi",
+    "bsky": "Live on Whop as STPi. Search it, check the reviews, buy it.\n\nVisit the storefront: https://whop.com/stpi",
+    "linkedin": "The storefront shows the machine's own feed beside the products.\n\nwhop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars.\n\nVisit the storefront: https://whop.com/stpi",
+    "facebook": "The storefront shows the machine's own feed beside the products.\n\nwhop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars.\n\nVisit the storefront: https://whop.com/stpi",
+    "telegram": "*Live on Whop as STPi. Search it, check the reviews, buy it.*\n\nwhop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars.\n\nVisit the storefront: https://whop.com/stpi",
+    "whatsapp": "Live on Whop as STPi. Search it, check the reviews, buy it.. Visit the storefront: https://whop.com/stpi",
+    "pinterest": "Live on Whop as STPi. Search it, check the reviews, buy it. - whop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars. Visit the storefront: https://whop.com/stpi",
+    "thread": "The storefront shows the machine's own feed beside the products.\n\n1. Live on Whop as STPi. Search it, check the reviews, buy it.\n2. whop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars.\n3. Visit the storefront and the whole pipeline runs on approval-first discipline.\nhttps://whop.com/stpi",
+    "whop_public": "Live on Whop as STPi. Search it, check the reviews, buy it.\n\nwhop.com/stpi carries the three plans, the daily posts written by the machine you would be buying, and one-tap checkout in dollars.\n\nVisit the storefront: https://whop.com/stpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-store-whop-x.png",
+    "pin": "promo-kit/img/kit-store-whop-pin.png"
+   }
+  },
+  {
+   "id": "kit-apex-suite",
+   "theme": "apex",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "The Apex Executive Suite: application packages that look senior",
+   "hook": "Five band designs, display serif, the letter matched to the CV.",
+   "body": "Premium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows.",
+   "cta": "See the suite:",
+   "formats": {
+    "x": "The Apex Executive Suite: application packages that look senior\n\nSee the suite: https://getstpi.pages.dev/",
+    "bsky": "The Apex Executive Suite: application packages that look senior\n\nSee the suite: https://getstpi.pages.dev/",
+    "linkedin": "Five band designs, display serif, the letter matched to the CV.\n\nPremium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows.\n\nSee the suite: https://getstpi.pages.dev/",
+    "facebook": "Five band designs, display serif, the letter matched to the CV.\n\nPremium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows.\n\nSee the suite: https://getstpi.pages.dev/",
+    "telegram": "*The Apex Executive Suite: application packages that look senior*\n\nPremium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows.\n\nSee the suite: https://getstpi.pages.dev/",
+    "whatsapp": "The Apex Executive Suite: application packages that look senior. See the suite: https://getstpi.pages.dev/",
+    "pinterest": "The Apex Executive Suite: application packages that look senior - Premium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows. See the suite: https://getstpi.pages.dev/",
+    "thread": "Five band designs, display serif, the letter matched to the CV.\n\n1. The Apex Executive Suite: application packages that look senior\n2. Premium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows.\n3. See the suite and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The Apex Executive Suite: application packages that look senior\n\nPremium one-file packages with a header band, circular photo slot, accent rules and an initials monogram fallback. Tune the accent, flip light or dark, and every document follows.\n\nSee the suite: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-apex-suite-x.png",
+    "pin": "promo-kit/img/kit-apex-suite-pin.png"
+   }
+  },
+  {
+   "id": "kit-apex-demo-bench",
+   "theme": "apex",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Design your application package live, then download the preview",
+   "hook": "The demo bench renders all eight customisable designs in your browser.",
+   "body": "Pick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine.",
+   "cta": "Sit at the bench:",
+   "formats": {
+    "x": "Design your application package live, then download the preview\n\nSit at the bench: https://getstpi.pages.dev/",
+    "bsky": "Design your application package live, then download the preview\n\nSit at the bench: https://getstpi.pages.dev/",
+    "linkedin": "The demo bench renders all eight customisable designs in your browser.\n\nPick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine.\n\nSit at the bench: https://getstpi.pages.dev/",
+    "facebook": "The demo bench renders all eight customisable designs in your browser.\n\nPick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine.\n\nSit at the bench: https://getstpi.pages.dev/",
+    "telegram": "*Design your application package live, then download the preview*\n\nPick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine.\n\nSit at the bench: https://getstpi.pages.dev/",
+    "whatsapp": "Design your application package live, then download the preview. Sit at the bench: https://getstpi.pages.dev/",
+    "pinterest": "Design your application package live, then download the preview - Pick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine. Sit at the bench: https://getstpi.pages.dev/",
+    "thread": "The demo bench renders all eight customisable designs in your browser.\n\n1. Design your application package live, then download the preview\n2. Pick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine.\n3. Sit at the bench and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Design your application package live, then download the preview\n\nPick a design, tune the accent, flip the theme, and the bench renders the CV and the letter together. One click exports a preview PDF. The real deliverable stays a text-based, ATS-parseable one-file package from the engine.\n\nSit at the bench: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-apex-demo-bench-x.png",
+    "pin": "promo-kit/img/kit-apex-demo-bench-pin.png"
+   }
+  },
+  {
+   "id": "kit-apex-monogram",
+   "theme": "apex",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "No photo yet? The monogram slot keeps the package whole.",
+   "hook": "A photo slot that fails gracefully is a small thing done right.",
+   "body": "Every Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo.",
+   "cta": "The details:",
+   "formats": {
+    "x": "No photo yet? The monogram slot keeps the package whole.\n\nThe details: https://getstpi.pages.dev/",
+    "bsky": "No photo yet? The monogram slot keeps the package whole.\n\nThe details: https://getstpi.pages.dev/",
+    "linkedin": "A photo slot that fails gracefully is a small thing done right.\n\nEvery Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo.\n\nThe details: https://getstpi.pages.dev/",
+    "facebook": "A photo slot that fails gracefully is a small thing done right.\n\nEvery Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo.\n\nThe details: https://getstpi.pages.dev/",
+    "telegram": "*No photo yet? The monogram slot keeps the package whole.*\n\nEvery Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo.\n\nThe details: https://getstpi.pages.dev/",
+    "whatsapp": "No photo yet? The monogram slot keeps the package whole.. The details: https://getstpi.pages.dev/",
+    "pinterest": "No photo yet? The monogram slot keeps the package whole. - Every Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo. The details: https://getstpi.pages.dev/",
+    "thread": "A photo slot that fails gracefully is a small thing done right.\n\n1. No photo yet? The monogram slot keeps the package whole.\n2. Every Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo.\n3. The details and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "No photo yet? The monogram slot keeps the package whole.\n\nEvery Apex design carries a circular photo slot with an initials monogram fallback, bordered in the accent you chose. The package never looks unfinished while a candidate decides on a photo.\n\nThe details: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-apex-monogram-x.png",
+    "pin": "promo-kit/img/kit-apex-monogram-pin.png"
+   }
+  },
+  {
+   "id": "kit-studio-white-label",
+   "theme": "studio",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Agencies: the documents can carry YOUR brand, not ours",
+   "hook": "Studio tier renders white-label PDFs for your candidates.",
+   "body": "Fifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath.",
+   "cta": "Studio is $613/mo:",
+   "formats": {
+    "x": "Agencies: the documents can carry YOUR brand, not ours\n\nStudio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Agencies: the documents can carry YOUR brand, not ours\n\nStudio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Studio tier renders white-label PDFs for your candidates.\n\nFifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath.\n\nStudio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Studio tier renders white-label PDFs for your candidates.\n\nFifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath.\n\nStudio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Agencies: the documents can carry YOUR brand, not ours*\n\nFifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath.\n\nStudio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Agencies: the documents can carry YOUR brand, not ours. Studio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Agencies: the documents can carry YOUR brand, not ours - Fifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath. Studio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Studio tier renders white-label PDFs for your candidates.\n\n1. Agencies: the documents can carry YOUR brand, not ours\n2. Fifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath.\n3. Studio is $613/mo and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Agencies: the documents can carry YOUR brand, not ours\n\nFifteen candidate chairs, fair-use sends, and every package dressed in your identity. Your clients see your shop; the machine stays underneath.\n\nStudio is $613/mo: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-studio-white-label-x.png",
+    "pin": "promo-kit/img/kit-studio-white-label-pin.png"
+   }
+  },
+  {
+   "id": "kit-studio-chairs",
+   "theme": "studio",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Fifteen chairs, one desk, every candidate visible at a glance",
+   "hook": "The dashboard is built for the agency juggling many hunts at once.",
+   "body": "State per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk.",
+   "cta": "Run the desk:",
+   "formats": {
+    "x": "Fifteen chairs, one desk, every candidate visible at a glance\n\nRun the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Fifteen chairs, one desk, every candidate visible at a glance\n\nRun the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "The dashboard is built for the agency juggling many hunts at once.\n\nState per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk.\n\nRun the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "The dashboard is built for the agency juggling many hunts at once.\n\nState per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk.\n\nRun the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Fifteen chairs, one desk, every candidate visible at a glance*\n\nState per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk.\n\nRun the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Fifteen chairs, one desk, every candidate visible at a glance. Run the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Fifteen chairs, one desk, every candidate visible at a glance - State per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk. Run the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "The dashboard is built for the agency juggling many hunts at once.\n\n1. Fifteen chairs, one desk, every candidate visible at a glance\n2. State per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk.\n3. Run the desk and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Fifteen chairs, one desk, every candidate visible at a glance\n\nState per candidate, deadlines per ad, approvals queued in one place. Studio exists because three chairs was never going to fit a real desk.\n\nRun the desk: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-studio-chairs-x.png",
+    "pin": "promo-kit/img/kit-studio-chairs-pin.png"
+   }
+  },
+  {
+   "id": "kit-sovereign-own",
+   "theme": "sovereign",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Sovereign: self-hosted on your own keys, unlimited chairs",
+   "hook": "For the outfit that wants to own every byte and every log.",
+   "body": "Your servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo.",
+   "cta": "Own the machine:",
+   "formats": {
+    "x": "Sovereign: self-hosted on your own keys, unlimited chairs\n\nOwn the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Sovereign: self-hosted on your own keys, unlimited chairs\n\nOwn the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "For the outfit that wants to own every byte and every log.\n\nYour servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo.\n\nOwn the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "For the outfit that wants to own every byte and every log.\n\nYour servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo.\n\nOwn the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Sovereign: self-hosted on your own keys, unlimited chairs*\n\nYour servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo.\n\nOwn the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Sovereign: self-hosted on your own keys, unlimited chairs. Own the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Sovereign: self-hosted on your own keys, unlimited chairs - Your servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo. Own the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "For the outfit that wants to own every byte and every log.\n\n1. Sovereign: self-hosted on your own keys, unlimited chairs\n2. Your servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo.\n3. Own the machine and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Sovereign: self-hosted on your own keys, unlimited chairs\n\nYour servers, your API keys, your data. The signed licence and install steps arrive on purchase; the compose file is one page. Founding-member pricing at $920/mo.\n\nOwn the machine: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-sovereign-own-x.png",
+    "pin": "promo-kit/img/kit-sovereign-own-pin.png"
+   }
+  },
+  {
+   "id": "kit-sovereign-why",
+   "theme": "sovereign",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "text",
+   "headline": "Some buyers ask one question: whose computer does it run on?",
+   "hook": "Sovereign is the honest answer: yours.",
+   "body": "Nothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep.",
+   "cta": "The self-hosted tier:",
+   "formats": {
+    "x": "Some buyers ask one question: whose computer does it run on?\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Some buyers ask one question: whose computer does it run on?\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Sovereign is the honest answer: yours.\n\nNothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Sovereign is the honest answer: yours.\n\nNothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Some buyers ask one question: whose computer does it run on?*\n\nNothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Some buyers ask one question: whose computer does it run on?. The self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Some buyers ask one question: whose computer does it run on? - Nothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep. The self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Sovereign is the honest answer: yours.\n\n1. Some buyers ask one question: whose computer does it run on?\n2. Nothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep.\n3. The self-hosted tier and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Some buyers ask one question: whose computer does it run on?\n\nNothing phones home. The hunt, the drafts, the documents and the logs live where you put them. We sell the licence and the updates; the runtime is yours to keep.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-sovereign-why-x.png",
+    "pin": "promo-kit/img/kit-sovereign-why-pin.png"
+   }
+  },
+  {
+   "id": "kit-agency-admin",
+   "theme": "agency",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Scale a placement desk without hiring an admin floor",
+   "hook": "The machine does the finding and the drafting; your people do the judging.",
+   "body": "Boards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch.",
+   "cta": "See the desk:",
+   "formats": {
+    "x": "Scale a placement desk without hiring an admin floor\n\nSee the desk: https://getstpi.pages.dev/",
+    "bsky": "Scale a placement desk without hiring an admin floor\n\nSee the desk: https://getstpi.pages.dev/",
+    "linkedin": "The machine does the finding and the drafting; your people do the judging.\n\nBoards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch.\n\nSee the desk: https://getstpi.pages.dev/",
+    "facebook": "The machine does the finding and the drafting; your people do the judging.\n\nBoards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch.\n\nSee the desk: https://getstpi.pages.dev/",
+    "telegram": "*Scale a placement desk without hiring an admin floor*\n\nBoards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch.\n\nSee the desk: https://getstpi.pages.dev/",
+    "whatsapp": "Scale a placement desk without hiring an admin floor. See the desk: https://getstpi.pages.dev/",
+    "pinterest": "Scale a placement desk without hiring an admin floor - Boards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch. See the desk: https://getstpi.pages.dev/",
+    "thread": "The machine does the finding and the drafting; your people do the judging.\n\n1. Scale a placement desk without hiring an admin floor\n2. Boards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch.\n3. See the desk and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Scale a placement desk without hiring an admin floor\n\nBoards swept daily, candidates profiled once, packages drafted per ad, approvals in one queue. That is the work three interns used to do, done before lunch.\n\nSee the desk: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-agency-admin-x.png",
+    "pin": "promo-kit/img/kit-agency-admin-pin.png"
+   }
+  },
+  {
+   "id": "kit-coach-kit",
+   "theme": "agency",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Career coaches: give every client the same disciplined pipeline",
+   "hook": "Your method, applied consistently across every client you carry.",
+   "body": "Set the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends.",
+   "cta": "The coach's view:",
+   "formats": {
+    "x": "Career coaches: give every client the same disciplined pipeline\n\nThe coach's view: https://getstpi.pages.dev/",
+    "bsky": "Career coaches: give every client the same disciplined pipeline\n\nThe coach's view: https://getstpi.pages.dev/",
+    "linkedin": "Your method, applied consistently across every client you carry.\n\nSet the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends.\n\nThe coach's view: https://getstpi.pages.dev/",
+    "facebook": "Your method, applied consistently across every client you carry.\n\nSet the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends.\n\nThe coach's view: https://getstpi.pages.dev/",
+    "telegram": "*Career coaches: give every client the same disciplined pipeline*\n\nSet the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends.\n\nThe coach's view: https://getstpi.pages.dev/",
+    "whatsapp": "Career coaches: give every client the same disciplined pipeline. The coach's view: https://getstpi.pages.dev/",
+    "pinterest": "Career coaches: give every client the same disciplined pipeline - Set the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends. The coach's view: https://getstpi.pages.dev/",
+    "thread": "Your method, applied consistently across every client you carry.\n\n1. Career coaches: give every client the same disciplined pipeline\n2. Set the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends.\n3. The coach's view and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Career coaches: give every client the same disciplined pipeline\n\nSet the boards and the voice once; every client hunts inside the same structure. The one-file packages come out matched and professional, and you approve before anything sends.\n\nThe coach's view: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-coach-kit-x.png",
+    "pin": "promo-kit/img/kit-coach-kit-pin.png"
+   }
+  },
+  {
+   "id": "kit-grind-daily",
+   "theme": "machine",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Twice daily Monday-Saturday, quietly, the machine hunts",
+   "hook": "Two scheduled hunts: sources, dedupe, deadlines, no guaranteed card.",
+   "body": "Cadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient.",
+   "cta": "The cadence:",
+   "formats": {
+    "x": "Twice daily Monday-Saturday, quietly, the machine hunts\n\nThe cadence: https://getstpi.pages.dev/",
+    "bsky": "Twice daily Monday-Saturday, quietly, the machine hunts\n\nThe cadence: https://getstpi.pages.dev/",
+    "linkedin": "Two scheduled hunts: sources, dedupe, deadlines, no guaranteed card.\n\nCadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/",
+    "facebook": "Two scheduled hunts: sources, dedupe, deadlines, no guaranteed card.\n\nCadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/",
+    "telegram": "*Twice daily Monday-Saturday, quietly, the machine hunts*\n\nCadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/",
+    "whatsapp": "Twice daily Monday-Saturday, quietly, the machine hunts. The cadence: https://getstpi.pages.dev/",
+    "pinterest": "Twice daily Monday-Saturday, quietly, the machine hunts - Cadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient. The cadence: https://getstpi.pages.dev/",
+    "thread": "Two scheduled hunts: sources, dedupe, deadlines, no guaranteed card.\n\n1. Twice daily Monday-Saturday, quietly, the machine hunts\n2. Cadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient.\n3. The cadence and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Twice daily Monday-Saturday, quietly, the machine hunts\n\nCadence over bursts. The pipeline works daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-grind-daily-x.png",
+    "pin": "promo-kit/img/kit-grind-daily-pin.png"
+   }
+  },
+  {
+   "id": "kit-grind-ecu",
+   "theme": "machine",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "The machine watches itself so you do not have to babysit it",
+   "hook": "An ECU page checks the whole pipeline and surfaces silent failures.",
+   "body": "Rails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed.",
+   "cta": "How it watches:",
+   "formats": {
+    "x": "The machine watches itself so you do not have to babysit it\n\nHow it watches: https://getstpi.pages.dev/",
+    "bsky": "The machine watches itself so you do not have to babysit it\n\nHow it watches: https://getstpi.pages.dev/",
+    "linkedin": "An ECU page checks the whole pipeline and surfaces silent failures.\n\nRails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed.\n\nHow it watches: https://getstpi.pages.dev/",
+    "facebook": "An ECU page checks the whole pipeline and surfaces silent failures.\n\nRails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed.\n\nHow it watches: https://getstpi.pages.dev/",
+    "telegram": "*The machine watches itself so you do not have to babysit it*\n\nRails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed.\n\nHow it watches: https://getstpi.pages.dev/",
+    "whatsapp": "The machine watches itself so you do not have to babysit it. How it watches: https://getstpi.pages.dev/",
+    "pinterest": "The machine watches itself so you do not have to babysit it - Rails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed. How it watches: https://getstpi.pages.dev/",
+    "thread": "An ECU page checks the whole pipeline and surfaces silent failures.\n\n1. The machine watches itself so you do not have to babysit it\n2. Rails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed.\n3. How it watches and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The machine watches itself so you do not have to babysit it\n\nRails that go quiet, hunts that stall, sends that dip: the owner console shows what, where, why and when, with the fix attached. Self-healing first, alarm only when needed.\n\nHow it watches: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-grind-ecu-x.png",
+    "pin": "promo-kit/img/kit-grind-ecu-pin.png"
+   }
+  },
+  {
+   "id": "kit-grind-log",
+   "theme": "machine",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "Every send is logged with the timestamp and the exact file",
+   "hook": "If you cannot answer 'did we apply to that?', you do not have a pipeline.",
+   "body": "The published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.",
+   "cta": "The ledger:",
+   "formats": {
+    "x": "Every send is logged with the timestamp and the exact file\n\nThe ledger: https://getstpi.pages.dev/",
+    "bsky": "Every send is logged with the timestamp and the exact file\n\nThe ledger: https://getstpi.pages.dev/",
+    "linkedin": "If you cannot answer 'did we apply to that?', you do not have a pipeline.\n\nThe published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/",
+    "facebook": "If you cannot answer 'did we apply to that?', you do not have a pipeline.\n\nThe published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/",
+    "telegram": "*Every send is logged with the timestamp and the exact file*\n\nThe published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/",
+    "whatsapp": "Every send is logged with the timestamp and the exact file. The ledger: https://getstpi.pages.dev/",
+    "pinterest": "Every send is logged with the timestamp and the exact file - The published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened. The ledger: https://getstpi.pages.dev/",
+    "thread": "If you cannot answer 'did we apply to that?', you do not have a pipeline.\n\n1. Every send is logged with the timestamp and the exact file\n2. The published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n3. The ledger and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Every send is logged with the timestamp and the exact file\n\nThe published ledger records every piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-grind-log-x.png",
+    "pin": "promo-kit/img/kit-grind-log-pin.png"
+   }
+  },
+  {
+   "id": "kit-contact-whatsapp",
+   "theme": "contact",
+   "link": "https://wa.me/263784600904",
+   "type": "text",
+   "headline": "Questions before buying? WhatsApp the desk: +263 78 460 0904",
+   "hook": "A human answers, usually the same day.",
+   "body": "Whether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers.",
+   "cta": "Message the desk:",
+   "formats": {
+    "x": "Questions before buying? WhatsApp the desk: +263 78 460 0904\n\nMessage the desk: https://wa.me/263784600904",
+    "bsky": "Questions before buying? WhatsApp the desk: +263 78 460 0904\n\nMessage the desk: https://wa.me/263784600904",
+    "linkedin": "A human answers, usually the same day.\n\nWhether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers.\n\nMessage the desk: https://wa.me/263784600904",
+    "facebook": "A human answers, usually the same day.\n\nWhether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers.\n\nMessage the desk: https://wa.me/263784600904",
+    "telegram": "*Questions before buying? WhatsApp the desk: +263 78 460 0904*\n\nWhether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers.\n\nMessage the desk: https://wa.me/263784600904",
+    "whatsapp": "Questions before buying? WhatsApp the desk: +263 78 460 0904. Message the desk: https://wa.me/263784600904",
+    "pinterest": "Questions before buying? WhatsApp the desk: +263 78 460 0904 - Whether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers. Message the desk: https://wa.me/263784600904",
+    "thread": "A human answers, usually the same day.\n\n1. Questions before buying? WhatsApp the desk: +263 78 460 0904\n2. Whether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers.\n3. Message the desk and the whole pipeline runs on approval-first discipline.\nhttps://wa.me/263784600904",
+    "whop_public": "Questions before buying? WhatsApp the desk: +263 78 460 0904\n\nWhether it is a question about boards in Lusaka or payment by Mukuru, the fastest rail is WhatsApp. No bot scripts, no ticket numbers.\n\nMessage the desk: https://wa.me/263784600904"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-contact-whatsapp-x.png",
+    "pin": "promo-kit/img/kit-contact-whatsapp-pin.png"
+   }
+  },
+  {
+   "id": "kit-contact-setup",
+   "theme": "contact",
+   "link": "https://getstpi.pages.dev/",
+   "type": "text",
+   "headline": "From purchase to first hunt in one afternoon",
+   "hook": "The setup guide is written for the person who will actually do it.",
+   "body": "Licence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest.",
+   "cta": "See the setup path:",
+   "formats": {
+    "x": "From purchase to first hunt in one afternoon\n\nSee the setup path: https://getstpi.pages.dev/",
+    "bsky": "From purchase to first hunt in one afternoon\n\nSee the setup path: https://getstpi.pages.dev/",
+    "linkedin": "The setup guide is written for the person who will actually do it.\n\nLicence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest.\n\nSee the setup path: https://getstpi.pages.dev/",
+    "facebook": "The setup guide is written for the person who will actually do it.\n\nLicence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest.\n\nSee the setup path: https://getstpi.pages.dev/",
+    "telegram": "*From purchase to first hunt in one afternoon*\n\nLicence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest.\n\nSee the setup path: https://getstpi.pages.dev/",
+    "whatsapp": "From purchase to first hunt in one afternoon. See the setup path: https://getstpi.pages.dev/",
+    "pinterest": "From purchase to first hunt in one afternoon - Licence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest. See the setup path: https://getstpi.pages.dev/",
+    "thread": "The setup guide is written for the person who will actually do it.\n\n1. From purchase to first hunt in one afternoon\n2. Licence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest.\n3. See the setup path and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "From purchase to first hunt in one afternoon\n\nLicence lands, keys go in, boards switch on, first sweep runs. The guide holds your hand through the boring parts, and WhatsApp is there for the rest.\n\nSee the setup path: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-contact-setup-x.png",
+    "pin": "promo-kit/img/kit-contact-setup-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-conveyor",
+   "theme": "illustrated",
+   "link": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+   "type": "illustration",
+   "headline": "The application assembly line, drawn",
+   "hook": "Hunt, examine, stamp, file: one belt, no shortcuts.",
+   "body": "This is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent.",
+   "cta": "The essay behind the drawing:",
+   "formats": {
+    "x": "The application assembly line, drawn\n\nThe essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "bsky": "The application assembly line, drawn\n\nThe essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "linkedin": "Hunt, examine, stamp, file: one belt, no shortcuts.\n\nThis is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent.\n\nThe essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "facebook": "Hunt, examine, stamp, file: one belt, no shortcuts.\n\nThis is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent.\n\nThe essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "telegram": "*The application assembly line, drawn*\n\nThis is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent.\n\nThe essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whatsapp": "The application assembly line, drawn. The essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "pinterest": "The application assembly line, drawn - This is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent. The essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "thread": "Hunt, examine, stamp, file: one belt, no shortcuts.\n\n1. The application assembly line, drawn\n2. This is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent.\n3. The essay behind the drawing and the whole pipeline runs on approval-first discipline.\nhttps://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+    "whop_public": "The application assembly line, drawn\n\nThis is the pipeline idea as a picture: the machine carries every application through the same stations, and a human watches the belt. The essay behind it pays the rent.\n\nThe essay behind the drawing: https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-conveyor-x.png",
+    "pin": "promo-kit/img/kit-illus-conveyor-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-clockwolf",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "Race the clock, not the other candidates",
+   "hook": "The ad closes whether you are ready or not.",
+   "body": "The machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs.",
+   "cta": "Hunt with the clock:",
+   "formats": {
+    "x": "Race the clock, not the other candidates\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "bsky": "Race the clock, not the other candidates\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "linkedin": "The ad closes whether you are ready or not.\n\nThe machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs.\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "facebook": "The ad closes whether you are ready or not.\n\nThe machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs.\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "telegram": "*Race the clock, not the other candidates*\n\nThe machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs.\n\nHunt with the clock: https://getstpi.pages.dev/",
+    "whatsapp": "Race the clock, not the other candidates. Hunt with the clock: https://getstpi.pages.dev/",
+    "pinterest": "Race the clock, not the other candidates - The machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs. Hunt with the clock: https://getstpi.pages.dev/",
+    "thread": "The ad closes whether you are ready or not.\n\n1. Race the clock, not the other candidates\n2. The machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs.\n3. Hunt with the clock and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Race the clock, not the other candidates\n\nThe machine reads closing dates, marks the calendar and gets the application in while the window is open. The drawing is cute; the habit wins jobs.\n\nHunt with the clock: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-clockwolf-x.png",
+    "pin": "promo-kit/img/kit-illus-clockwolf-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-onefile",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "One envelope. Letter, CV, certificates. Done.",
+   "hook": "Three attachments is two chances to get lost.",
+   "body": "The whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies.",
+   "cta": "See a real package:",
+   "formats": {
+    "x": "One envelope. Letter, CV, certificates. Done.\n\nSee a real package: https://getstpi.pages.dev/",
+    "bsky": "One envelope. Letter, CV, certificates. Done.\n\nSee a real package: https://getstpi.pages.dev/",
+    "linkedin": "Three attachments is two chances to get lost.\n\nThe whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies.\n\nSee a real package: https://getstpi.pages.dev/",
+    "facebook": "Three attachments is two chances to get lost.\n\nThe whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies.\n\nSee a real package: https://getstpi.pages.dev/",
+    "telegram": "*One envelope. Letter, CV, certificates. Done.*\n\nThe whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies.\n\nSee a real package: https://getstpi.pages.dev/",
+    "whatsapp": "One envelope. Letter, CV, certificates. Done.. See a real package: https://getstpi.pages.dev/",
+    "pinterest": "One envelope. Letter, CV, certificates. Done. - The whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies. See a real package: https://getstpi.pages.dev/",
+    "thread": "Three attachments is two chances to get lost.\n\n1. One envelope. Letter, CV, certificates. Done.\n2. The whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies.\n3. See a real package and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "One envelope. Letter, CV, certificates. Done.\n\nThe whole application travels as one sealed file: the letter first, the CV behind it, the proof behind that. That is how a professional applies.\n\nSee a real package: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-onefile-x.png",
+    "pin": "promo-kit/img/kit-illus-onefile-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-radar",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "The radar sweeps Zimbabwe, South Africa and Zambia daily",
+   "hook": "Every board on the map, once a day, before you ask.",
+   "body": "Forty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list.",
+   "cta": "Check the coverage:",
+   "formats": {
+    "x": "The radar sweeps Zimbabwe, South Africa and Zambia daily\n\nCheck the coverage: https://getstpi.pages.dev/",
+    "bsky": "The radar sweeps Zimbabwe, South Africa and Zambia daily\n\nCheck the coverage: https://getstpi.pages.dev/",
+    "linkedin": "Every board on the map, once a day, before you ask.\n\nForty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list.\n\nCheck the coverage: https://getstpi.pages.dev/",
+    "facebook": "Every board on the map, once a day, before you ask.\n\nForty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list.\n\nCheck the coverage: https://getstpi.pages.dev/",
+    "telegram": "*The radar sweeps Zimbabwe, South Africa and Zambia daily*\n\nForty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list.\n\nCheck the coverage: https://getstpi.pages.dev/",
+    "whatsapp": "The radar sweeps Zimbabwe, South Africa and Zambia daily. Check the coverage: https://getstpi.pages.dev/",
+    "pinterest": "The radar sweeps Zimbabwe, South Africa and Zambia daily - Forty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list. Check the coverage: https://getstpi.pages.dev/",
+    "thread": "Every board on the map, once a day, before you ask.\n\n1. The radar sweeps Zimbabwe, South Africa and Zambia daily\n2. Forty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list.\n3. Check the coverage and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The radar sweeps Zimbabwe, South Africa and Zambia daily\n\nForty-eight boards on the default sweep, deduplicated, closing dates attached. When something new lands in your region, it lands on your list.\n\nCheck the coverage: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-radar-x.png",
+    "pin": "promo-kit/img/kit-illus-radar-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-stampdesk",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "The robot that refuses to stamp",
+   "hook": "Our machine drafts all day and never sends a thing.",
+   "body": "The stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers.",
+   "cta": "See the approval desk:",
+   "formats": {
+    "x": "The robot that refuses to stamp\n\nSee the approval desk: https://getstpi.pages.dev/",
+    "bsky": "The robot that refuses to stamp\n\nSee the approval desk: https://getstpi.pages.dev/",
+    "linkedin": "Our machine drafts all day and never sends a thing.\n\nThe stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers.\n\nSee the approval desk: https://getstpi.pages.dev/",
+    "facebook": "Our machine drafts all day and never sends a thing.\n\nThe stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers.\n\nSee the approval desk: https://getstpi.pages.dev/",
+    "telegram": "*The robot that refuses to stamp*\n\nThe stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers.\n\nSee the approval desk: https://getstpi.pages.dev/",
+    "whatsapp": "The robot that refuses to stamp. See the approval desk: https://getstpi.pages.dev/",
+    "pinterest": "The robot that refuses to stamp - The stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers. See the approval desk: https://getstpi.pages.dev/",
+    "thread": "Our machine drafts all day and never sends a thing.\n\n1. The robot that refuses to stamp\n2. The stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers.\n3. See the approval desk and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The robot that refuses to stamp\n\nThe stamp stays in human hands. Approval first, always: that single discipline is why the machine is safe to point at real employers.\n\nSee the approval desk: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-stampdesk-x.png",
+    "pin": "promo-kit/img/kit-illus-stampdesk-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-capshield",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "The dial is capped on purpose",
+   "hook": "A machine with no limits is a liability with a dashboard.",
+   "body": "Daily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting.",
+   "cta": "The caps, in writing:",
+   "formats": {
+    "x": "The dial is capped on purpose\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "bsky": "The dial is capped on purpose\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "linkedin": "A machine with no limits is a liability with a dashboard.\n\nDaily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting.\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "facebook": "A machine with no limits is a liability with a dashboard.\n\nDaily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting.\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "telegram": "*The dial is capped on purpose*\n\nDaily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting.\n\nThe caps, in writing: https://getstpi.pages.dev/",
+    "whatsapp": "The dial is capped on purpose. The caps, in writing: https://getstpi.pages.dev/",
+    "pinterest": "The dial is capped on purpose - Daily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting. The caps, in writing: https://getstpi.pages.dev/",
+    "thread": "A machine with no limits is a liability with a dashboard.\n\n1. The dial is capped on purpose\n2. Daily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting.\n3. The caps, in writing and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The dial is capped on purpose\n\nDaily send caps keep candidate mailboxes safe and sender reputation clean. Slow and steady is not a slogan here; it is the setting.\n\nThe caps, in writing: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-capshield-x.png",
+    "pin": "promo-kit/img/kit-illus-capshield-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-workbench",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "Pull the lever before you buy the machine",
+   "hook": "The demo workbench is untied and free.",
+   "body": "Same flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call.",
+   "cta": "Sit at the bench:",
+   "formats": {
+    "x": "Pull the lever before you buy the machine\n\nSit at the bench: https://getstpi.pages.dev/",
+    "bsky": "Pull the lever before you buy the machine\n\nSit at the bench: https://getstpi.pages.dev/",
+    "linkedin": "The demo workbench is untied and free.\n\nSame flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call.\n\nSit at the bench: https://getstpi.pages.dev/",
+    "facebook": "The demo workbench is untied and free.\n\nSame flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call.\n\nSit at the bench: https://getstpi.pages.dev/",
+    "telegram": "*Pull the lever before you buy the machine*\n\nSame flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call.\n\nSit at the bench: https://getstpi.pages.dev/",
+    "whatsapp": "Pull the lever before you buy the machine. Sit at the bench: https://getstpi.pages.dev/",
+    "pinterest": "Pull the lever before you buy the machine - Same flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call. Sit at the bench: https://getstpi.pages.dev/",
+    "thread": "The demo workbench is untied and free.\n\n1. Pull the lever before you buy the machine\n2. Same flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call.\n3. Sit at the bench and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Pull the lever before you buy the machine\n\nSame flow, sample data: hunt boards, raise drafts, press approve. Ten honest minutes at the bench beats any sales call.\n\nSit at the bench: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-workbench-x.png",
+    "pin": "promo-kit/img/kit-illus-workbench-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-priceshelf",
+   "theme": "illustrated",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "illustration",
+   "headline": "Three boxes, three plain price tags",
+   "hook": "Solo $306, Studio $613, Sovereign $920 a month. Printed, not whispered.",
+   "body": "Dollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze.",
+   "cta": "The shelf:",
+   "formats": {
+    "x": "Three boxes, three plain price tags\n\nThe shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Three boxes, three plain price tags\n\nThe shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Solo $306, Studio $613, Sovereign $920 a month. Printed, not whispered.\n\nDollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze.\n\nThe shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Solo $306, Studio $613, Sovereign $920 a month. Printed, not whispered.\n\nDollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze.\n\nThe shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Three boxes, three plain price tags*\n\nDollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze.\n\nThe shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Three boxes, three plain price tags. The shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Three boxes, three plain price tags - Dollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze. The shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Solo $306, Studio $613, Sovereign $920 a month. Printed, not whispered.\n\n1. Three boxes, three plain price tags\n2. Dollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze.\n3. The shelf and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Three boxes, three plain price tags\n\nDollars or rand, card or bank, annual saves a quarter. The shelf has exactly three products and no upsell maze.\n\nThe shelf: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-priceshelf-x.png",
+    "pin": "promo-kit/img/kit-illus-priceshelf-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-tailor",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "Application packages, tailored like a suit",
+   "hook": "The Apex Executive Suite fits the document to the candidate.",
+   "body": "Five band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did.",
+   "cta": "See the fitting:",
+   "formats": {
+    "x": "Application packages, tailored like a suit\n\nSee the fitting: https://getstpi.pages.dev/",
+    "bsky": "Application packages, tailored like a suit\n\nSee the fitting: https://getstpi.pages.dev/",
+    "linkedin": "The Apex Executive Suite fits the document to the candidate.\n\nFive band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did.\n\nSee the fitting: https://getstpi.pages.dev/",
+    "facebook": "The Apex Executive Suite fits the document to the candidate.\n\nFive band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did.\n\nSee the fitting: https://getstpi.pages.dev/",
+    "telegram": "*Application packages, tailored like a suit*\n\nFive band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did.\n\nSee the fitting: https://getstpi.pages.dev/",
+    "whatsapp": "Application packages, tailored like a suit. See the fitting: https://getstpi.pages.dev/",
+    "pinterest": "Application packages, tailored like a suit - Five band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did. See the fitting: https://getstpi.pages.dev/",
+    "thread": "The Apex Executive Suite fits the document to the candidate.\n\n1. Application packages, tailored like a suit\n2. Five band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did.\n3. See the fitting and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Application packages, tailored like a suit\n\nFive band designs, a matched letter, the accent of your choosing. The package arrives looking like it cost attention, because it did.\n\nSee the fitting: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-tailor-x.png",
+    "pin": "promo-kit/img/kit-illus-tailor-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-monogram",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "No photo yet? The frame stays elegant anyway",
+   "hook": "An initials monogram keeps the package whole.",
+   "body": "Every Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished.",
+   "cta": "The details:",
+   "formats": {
+    "x": "No photo yet? The frame stays elegant anyway\n\nThe details: https://getstpi.pages.dev/",
+    "bsky": "No photo yet? The frame stays elegant anyway\n\nThe details: https://getstpi.pages.dev/",
+    "linkedin": "An initials monogram keeps the package whole.\n\nEvery Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished.\n\nThe details: https://getstpi.pages.dev/",
+    "facebook": "An initials monogram keeps the package whole.\n\nEvery Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished.\n\nThe details: https://getstpi.pages.dev/",
+    "telegram": "*No photo yet? The frame stays elegant anyway*\n\nEvery Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished.\n\nThe details: https://getstpi.pages.dev/",
+    "whatsapp": "No photo yet? The frame stays elegant anyway. The details: https://getstpi.pages.dev/",
+    "pinterest": "No photo yet? The frame stays elegant anyway - Every Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished. The details: https://getstpi.pages.dev/",
+    "thread": "An initials monogram keeps the package whole.\n\n1. No photo yet? The frame stays elegant anyway\n2. Every Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished.\n3. The details and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "No photo yet? The frame stays elegant anyway\n\nEvery Apex design carries a circular photo slot with a graceful fallback, ringed in your accent. Nothing about the application looks unfinished.\n\nThe details: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-monogram-x.png",
+    "pin": "promo-kit/img/kit-illus-monogram-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-chameleon",
+   "theme": "illustrated",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "illustration",
+   "headline": "Documents that wear your coat, not ours",
+   "hook": "Studio renders every package in your brand colors.",
+   "body": "The chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath.",
+   "cta": "White-label with Studio:",
+   "formats": {
+    "x": "Documents that wear your coat, not ours\n\nWhite-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Documents that wear your coat, not ours\n\nWhite-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Studio renders every package in your brand colors.\n\nThe chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath.\n\nWhite-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Studio renders every package in your brand colors.\n\nThe chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath.\n\nWhite-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Documents that wear your coat, not ours*\n\nThe chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath.\n\nWhite-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Documents that wear your coat, not ours. White-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Documents that wear your coat, not ours - The chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath. White-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Studio renders every package in your brand colors.\n\n1. Documents that wear your coat, not ours\n2. The chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath.\n3. White-label with Studio and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Documents that wear your coat, not ours\n\nThe chameleon treatment: your logo's palette on the letter, the CV and the certificates. Your clients see your shop; the machine stays underneath.\n\nWhite-label with Studio: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-chameleon-x.png",
+    "pin": "promo-kit/img/kit-illus-chameleon-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-castlekeys",
+   "theme": "illustrated",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "illustration",
+   "headline": "Your castle, your keys, your data",
+   "hook": "Sovereign hands you the only key to the machine.",
+   "body": "Self-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention.",
+   "cta": "The self-hosted tier:",
+   "formats": {
+    "x": "Your castle, your keys, your data\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Your castle, your keys, your data\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Sovereign hands you the only key to the machine.\n\nSelf-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Sovereign hands you the only key to the machine.\n\nSelf-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Your castle, your keys, your data*\n\nSelf-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Your castle, your keys, your data. The self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Your castle, your keys, your data - Self-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention. The self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Sovereign hands you the only key to the machine.\n\n1. Your castle, your keys, your data\n2. Self-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention.\n3. The self-hosted tier and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Your castle, your keys, your data\n\nSelf-hosted on your own hardware: the hunt, the drafts and every log stay on your infrastructure. Your configured providers and backup policy still determine data flows and retention.\n\nThe self-hosted tier: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-castlekeys-x.png",
+    "pin": "promo-kit/img/kit-illus-castlekeys-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-clipboardcoach",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "One coach, one path, every client on it",
+   "hook": "Your method, applied the same way every single time.",
+   "body": "Set the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish.",
+   "cta": "The coach's bench:",
+   "formats": {
+    "x": "One coach, one path, every client on it\n\nThe coach's bench: https://getstpi.pages.dev/",
+    "bsky": "One coach, one path, every client on it\n\nThe coach's bench: https://getstpi.pages.dev/",
+    "linkedin": "Your method, applied the same way every single time.\n\nSet the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish.\n\nThe coach's bench: https://getstpi.pages.dev/",
+    "facebook": "Your method, applied the same way every single time.\n\nSet the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish.\n\nThe coach's bench: https://getstpi.pages.dev/",
+    "telegram": "*One coach, one path, every client on it*\n\nSet the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish.\n\nThe coach's bench: https://getstpi.pages.dev/",
+    "whatsapp": "One coach, one path, every client on it. The coach's bench: https://getstpi.pages.dev/",
+    "pinterest": "One coach, one path, every client on it - Set the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish. The coach's bench: https://getstpi.pages.dev/",
+    "thread": "Your method, applied the same way every single time.\n\n1. One coach, one path, every client on it\n2. Set the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish.\n3. The coach's bench and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "One coach, one path, every client on it\n\nSet the boards and the voice once; every client hunts inside the same disciplined structure. The drawing is the pitch: same flags, same finish.\n\nThe coach's bench: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-clipboardcoach-x.png",
+    "pin": "promo-kit/img/kit-illus-clipboardcoach-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-manychairs",
+   "theme": "illustrated",
+   "link": "https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+   "type": "illustration",
+   "headline": "Fifteen chairs, one desk, zero chaos",
+   "hook": "Every candidate visible at a glance, none forgotten.",
+   "body": "The agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room.",
+   "cta": "Run the room:",
+   "formats": {
+    "x": "Fifteen chairs, one desk, zero chaos\n\nRun the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "bsky": "Fifteen chairs, one desk, zero chaos\n\nRun the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "linkedin": "Every candidate visible at a glance, none forgotten.\n\nThe agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room.\n\nRun the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "facebook": "Every candidate visible at a glance, none forgotten.\n\nThe agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room.\n\nRun the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "telegram": "*Fifteen chairs, one desk, zero chaos*\n\nThe agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room.\n\nRun the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whatsapp": "Fifteen chairs, one desk, zero chaos. Run the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "pinterest": "Fifteen chairs, one desk, zero chaos - The agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room. Run the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "thread": "Every candidate visible at a glance, none forgotten.\n\n1. Fifteen chairs, one desk, zero chaos\n2. The agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room.\n3. Run the room and the whole pipeline runs on approval-first discipline.\nhttps://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi",
+    "whop_public": "Fifteen chairs, one desk, zero chaos\n\nThe agency view: state per candidate, deadlines per ad, approvals in one queue. Studio was built for exactly this room.\n\nRun the room: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-manychairs-x.png",
+    "pin": "promo-kit/img/kit-illus-manychairs-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-nightsweep",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "Twice daily Monday-Saturday, quietly, the sweep runs",
+   "hook": "Two scheduled hunts, with fresh suitable jobs needed for a card.",
+   "body": "Cadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient.",
+   "cta": "The cadence:",
+   "formats": {
+    "x": "Twice daily Monday-Saturday, quietly, the sweep runs\n\nThe cadence: https://getstpi.pages.dev/",
+    "bsky": "Twice daily Monday-Saturday, quietly, the sweep runs\n\nThe cadence: https://getstpi.pages.dev/",
+    "linkedin": "Two scheduled hunts, with fresh suitable jobs needed for a card.\n\nCadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/",
+    "facebook": "Two scheduled hunts, with fresh suitable jobs needed for a card.\n\nCadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/",
+    "telegram": "*Twice daily Monday-Saturday, quietly, the sweep runs*\n\nCadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/",
+    "whatsapp": "Twice daily Monday-Saturday, quietly, the sweep runs. The cadence: https://getstpi.pages.dev/",
+    "pinterest": "Twice daily Monday-Saturday, quietly, the sweep runs - Cadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient. The cadence: https://getstpi.pages.dev/",
+    "thread": "Two scheduled hunts, with fresh suitable jobs needed for a card.\n\n1. Twice daily Monday-Saturday, quietly, the sweep runs\n2. Cadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient.\n3. The cadence and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Twice daily Monday-Saturday, quietly, the sweep runs\n\nCadence over bursts: the machine hunts daily because placement is a numbers game played patiently, and the machine is very patient.\n\nThe cadence: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-nightsweep-x.png",
+    "pin": "promo-kit/img/kit-illus-nightsweep-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-gaugemechanic",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "The machine checks its own gauges",
+   "hook": "Green lights, and a mechanic who knows why.",
+   "body": "The console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature.",
+   "cta": "See the console:",
+   "formats": {
+    "x": "The machine checks its own gauges\n\nSee the console: https://getstpi.pages.dev/",
+    "bsky": "The machine checks its own gauges\n\nSee the console: https://getstpi.pages.dev/",
+    "linkedin": "Green lights, and a mechanic who knows why.\n\nThe console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature.\n\nSee the console: https://getstpi.pages.dev/",
+    "facebook": "Green lights, and a mechanic who knows why.\n\nThe console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature.\n\nSee the console: https://getstpi.pages.dev/",
+    "telegram": "*The machine checks its own gauges*\n\nThe console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature.\n\nSee the console: https://getstpi.pages.dev/",
+    "whatsapp": "The machine checks its own gauges. See the console: https://getstpi.pages.dev/",
+    "pinterest": "The machine checks its own gauges - The console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature. See the console: https://getstpi.pages.dev/",
+    "thread": "Green lights, and a mechanic who knows why.\n\n1. The machine checks its own gauges\n2. The console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature.\n3. See the console and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The machine checks its own gauges\n\nThe console watches every rail and surfaces the silent failures: what, where, why and when, with the fix attached. Calm is a feature.\n\nSee the console: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-gaugemechanic-x.png",
+    "pin": "promo-kit/img/kit-illus-gaugemechanic-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-ledgerbook",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "Application outcomes recorded, with defined retention",
+   "hook": "If you cannot answer 'did we apply there?', you have no pipeline.",
+   "body": "The ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.",
+   "cta": "The ledger:",
+   "formats": {
+    "x": "Application outcomes recorded, with defined retention\n\nThe ledger: https://getstpi.pages.dev/",
+    "bsky": "Application outcomes recorded, with defined retention\n\nThe ledger: https://getstpi.pages.dev/",
+    "linkedin": "If you cannot answer 'did we apply there?', you have no pipeline.\n\nThe ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/",
+    "facebook": "If you cannot answer 'did we apply there?', you have no pipeline.\n\nThe ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/",
+    "telegram": "*Application outcomes recorded, with defined retention*\n\nThe ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/",
+    "whatsapp": "Application outcomes recorded, with defined retention. The ledger: https://getstpi.pages.dev/",
+    "pinterest": "Application outcomes recorded, with defined retention - The ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened. The ledger: https://getstpi.pages.dev/",
+    "thread": "If you cannot answer 'did we apply there?', you have no pipeline.\n\n1. Application outcomes recorded, with defined retention\n2. The ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n3. The ledger and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Application outcomes recorded, with defined retention\n\nThe ledger records each piece: what, where, when, approved by whom. Audits take minutes because the record was kept as it happened.\n\nThe ledger: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-ledgerbook-x.png",
+    "pin": "promo-kit/img/kit-illus-ledgerbook-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-phonehandshake",
+   "theme": "illustrated",
+   "link": "https://wa.me/263784600904",
+   "type": "illustration",
+   "headline": "A human answers this phone",
+   "hook": "Questions before buying? WhatsApp +263 78 460 0904.",
+   "body": "Boards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script.",
+   "cta": "Message the desk:",
+   "formats": {
+    "x": "A human answers this phone\n\nMessage the desk: https://wa.me/263784600904",
+    "bsky": "A human answers this phone\n\nMessage the desk: https://wa.me/263784600904",
+    "linkedin": "Questions before buying? WhatsApp +263 78 460 0904.\n\nBoards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script.\n\nMessage the desk: https://wa.me/263784600904",
+    "facebook": "Questions before buying? WhatsApp +263 78 460 0904.\n\nBoards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script.\n\nMessage the desk: https://wa.me/263784600904",
+    "telegram": "*A human answers this phone*\n\nBoards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script.\n\nMessage the desk: https://wa.me/263784600904",
+    "whatsapp": "A human answers this phone. Message the desk: https://wa.me/263784600904",
+    "pinterest": "A human answers this phone - Boards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script. Message the desk: https://wa.me/263784600904",
+    "thread": "Questions before buying? WhatsApp +263 78 460 0904.\n\n1. A human answers this phone\n2. Boards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script.\n3. Message the desk and the whole pipeline runs on approval-first discipline.\nhttps://wa.me/263784600904",
+    "whop_public": "A human answers this phone\n\nBoards in Lusaka, payment by Mukuru, or whether the demo fits your desk: the fastest rail is WhatsApp, and it is a person, not a script.\n\nMessage the desk: https://wa.me/263784600904"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-phonehandshake-x.png",
+    "pin": "promo-kit/img/kit-illus-phonehandshake-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-sieve",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "The sieve keeps one truth per ad",
+   "hook": "Board noise is mostly repeats and ghosts.",
+   "body": "Deduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new.",
+   "cta": "See a daily list:",
+   "formats": {
+    "x": "The sieve keeps one truth per ad\n\nSee a daily list: https://getstpi.pages.dev/",
+    "bsky": "The sieve keeps one truth per ad\n\nSee a daily list: https://getstpi.pages.dev/",
+    "linkedin": "Board noise is mostly repeats and ghosts.\n\nDeduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new.\n\nSee a daily list: https://getstpi.pages.dev/",
+    "facebook": "Board noise is mostly repeats and ghosts.\n\nDeduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new.\n\nSee a daily list: https://getstpi.pages.dev/",
+    "telegram": "*The sieve keeps one truth per ad*\n\nDeduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new.\n\nSee a daily list: https://getstpi.pages.dev/",
+    "whatsapp": "The sieve keeps one truth per ad. See a daily list: https://getstpi.pages.dev/",
+    "pinterest": "The sieve keeps one truth per ad - Deduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new. See a daily list: https://getstpi.pages.dev/",
+    "thread": "Board noise is mostly repeats and ghosts.\n\n1. The sieve keeps one truth per ad\n2. Deduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new.\n3. See a daily list and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "The sieve keeps one truth per ad\n\nDeduplication runs across boards and days: the same ad, found once, never resurfaces as new a month later. Your list is what is genuinely new.\n\nSee a daily list: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-sieve-x.png",
+    "pin": "promo-kit/img/kit-illus-sieve-pin.png"
+   }
+  },
+  {
+   "id": "kit-illus-extractor",
+   "theme": "illustrated",
+   "link": "https://getstpi.pages.dev/",
+   "type": "illustration",
+   "headline": "Upload the CV. The lens does the typing.",
+   "hook": "No thirty-field forms. The document you already have is the intake.",
+   "body": "The extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that.",
+   "cta": "Point it at a CV:",
+   "formats": {
+    "x": "Upload the CV. The lens does the typing.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "bsky": "Upload the CV. The lens does the typing.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "linkedin": "No thirty-field forms. The document you already have is the intake.\n\nThe extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "facebook": "No thirty-field forms. The document you already have is the intake.\n\nThe extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "telegram": "*Upload the CV. The lens does the typing.*\n\nThe extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that.\n\nPoint it at a CV: https://getstpi.pages.dev/",
+    "whatsapp": "Upload the CV. The lens does the typing.. Point it at a CV: https://getstpi.pages.dev/",
+    "pinterest": "Upload the CV. The lens does the typing. - The extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that. Point it at a CV: https://getstpi.pages.dev/",
+    "thread": "No thirty-field forms. The document you already have is the intake.\n\n1. Upload the CV. The lens does the typing.\n2. The extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that.\n3. Point it at a CV and the whole pipeline runs on approval-first discipline.\nhttps://getstpi.pages.dev/",
+    "whop_public": "Upload the CV. The lens does the typing.\n\nThe extractor lifts history, skills and education out of the uploaded CV, a human confirms the read, and everything lives in one place after that.\n\nPoint it at a CV: https://getstpi.pages.dev/"
+   },
+   "img": {
+    "wide": "promo-kit/img/kit-illus-extractor-x.png",
+    "pin": "promo-kit/img/kit-illus-extractor-pin.png"
+   }
+  }
+ ]
+}

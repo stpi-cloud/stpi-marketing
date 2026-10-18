@@ -88,7 +88,7 @@ how polish becomes a retainer."
 
 **The pitch.** Studio: fifteen candidates, white-label documents, your firm's
 name on everything the client opens. Your consultants keep client-facing
-judgment; the machine reads 17 boards by default, 22 supported, every
+judgment; the machine reads country-specific sources (keys and availability vary), every
 morning before your kettle boils.
 
 **The land-and-expand line.** "Start with your three most senior retainer

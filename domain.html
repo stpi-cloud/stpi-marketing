@@ -147,7 +147,49 @@ If you only have a domain but no mail server, choose Cloudflare routing + a free
 </ul>
 
 <footer><div class="wrap" style="padding:0">
- STPi · support: <b>simalidudu@gmail.com</b> · <b>+263 78 460 0904</b> (WhatsApp) ·
- <a href="https://getstpi.pages.dev/">home</a> · <a href="setup.html">setup guide</a>
+ <b>STPi Official Support &amp; Socials:</b> WhatsApp <a href="https://wa.me/263784600904">+263 78 460 0904</a> ·
+ Email <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> &amp; <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a> ·
+ <a href="https://getstpi.pages.dev/">home</a> · <a href="setup.html">4-Format Customer Guides</a> ·
+ <a href="videos/">11 Promo Videos &amp; Video Guide</a> ·
+ <a href="downloads/STPi-Customer-Sales-Contract.pdf"><b>📥 7-Day Printable Sales Contract (PDF)</b></a> ·
+ <a href="https://whop.com/stpi">Whop</a> · <a href="https://getstpi.pages.dev/g/xl/contact">X @STPi_Cloud</a> ·
+ <a href="https://getstpi.pages.dev/g/ll/contact">LinkedIn</a> · <a href="https://bsky.app/profile/stpi.bsky.social">Bluesky @stpi.bsky.social</a> ·
+ <a href="https://getstpi.pages.dev/g/tl/contact">Telegram</a> · <a href="https://getstpi.pages.dev/g/fl/contact">Facebook</a> ·
+ <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/">Pinterest</a> · <a href="https://dev.to/simali_dud_b97add4154d7a6">Dev.to</a><br>
+ <b>⚠️ Support-First Rule:</b> Always contact STPi Support FIRST before panicking or using random internet advice! Running to the public before contacting us results in immediate removal.
 </div></footer>
+<script>
+/* STPi analytics beacon (2026-10-13): anonymous pageview + conversion-click counter served by
+   our own worker (stpi-mint /px). No cookies, no fingerprints, no third party. */
+(function(){
+  var M="https://stpi-mint.stpi-cloud.workers.dev/px?kind=";
+  function px(k,t){
+    try{
+      var u=M+encodeURIComponent(k)+(t?"&tag="+encodeURIComponent(t):"")+
+        "&path="+encodeURIComponent(location.pathname+location.hash.slice(0,40))+
+        (document.referrer?"&ref="+encodeURIComponent(document.referrer.slice(0,180)):"");
+      if(navigator.sendBeacon){navigator.sendBeacon(u);}
+      else{var i=new Image();i.src=u;}
+    }catch(e){}
+  }
+  px("pageview");
+  try{
+    var q=new URLSearchParams(location.search),aff=(q.get("a")||sessionStorage.getItem("stpi_whop_aff")||sessionStorage.getItem("stpi_whop_affiliate")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+    if(aff){
+      sessionStorage.setItem("stpi_whop_aff",aff);
+      document.querySelectorAll('a[href*="whop.com"],a[href*="stpi-mint.stpi-cloud.workers.dev/g/"],a[href*="stpi-mint.stpi-cloud.workers.dev/trial"]').forEach(function(el){
+        var h=el.getAttribute("href")||"";
+        if(h&&h.indexOf("a=")===-1)el.setAttribute("href",h+(h.indexOf("?")===-1?"?":"&")+"a="+encodeURIComponent(aff));
+      });
+    }
+  }catch(e){}
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest?e.target.closest("a"):null;if(!a)return;
+    var href=a.getAttribute("href")||"";
+    var k=a.classList.contains("dl")?"download":a.classList.contains("buy")?"checkout":
+      /wa\.me/.test(href)?"whatsapp":/stpi-mint/.test(href)?"console":"click";
+    px(k,href.slice(0,120));
+  },true);
+})();
+</script>
 </main></body></html>

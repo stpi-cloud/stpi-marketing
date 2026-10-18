@@ -10,7 +10,7 @@ same beats.
 **T1 · email.**
 Subject: the 06:00 shift you don't staff
 Your consultants start reading boards at 08:00. The adverts were posted at
-06:00, and three hundred applications landed by lunch. STPi hunts 17 boards
+06:00, and three hundred applications landed by lunch. STPi hunts selected public sources
 by default on a schedule, scores each against your candidate's real CV, and
 drafts the tailoring pass overnight — your consultants keep the yes/no.
 One candidate, free forever, self-hosted: getstpi.pages.dev
@@ -91,10 +91,9 @@ we talk or not. If the timing's wrong, "later" is a complete sentence.
 
 ## Reactivation mini-sequence (dormant demo users, 2 touches)
 
-**R1 · day 0.** "Your demo queue froze at the caps — that freeze is the pitch:
-25 drafts and 5 sends, then it asks. Two minutes unmutes it for a real
-candidate: [upgrade link]. If the caps annoyed you, the trial is clocking
-you honestly."
+**R1 · day 0.** "If you have used this month's five demo sends, the allowance
+renews next UTC calendar month. The downloadable demo keeps working. If you need more
+capacity now, the paid plans are optional: [upgrade link]."
 
-**R2 · day 5.** "No nudge left after this one: the queue keeps for 30 days,
-then drafts expire. Want me to keep the lights on?" Stop completely after R2.
+**R2 · day 5.** "No nudge after this one. Keep the free demo either way. Reply if you want
+help; otherwise I'll close this follow-up." Stop completely after R2 or any earlier reply.

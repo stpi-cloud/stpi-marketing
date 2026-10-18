@@ -282,7 +282,7 @@
       "kind": "promo",
       "format": "short",
       "title": "The demo is the whole wheel, leashed",
-      "angle": "Same code path as paid, caps smaller: 25 drafts, 5 sends, 30 days.",
+      "angle": "Same code path as paid, caps smaller: one candidate, five sends per UTC month, free forever.",
       "beats": [
         "What the demo runs on: your machine, your free-tier key",
         "What the leash means and why it exists",
@@ -1205,7 +1205,7 @@
       "angle": "Affiliates do not sell ads or claims; they hand people a working demo whose leash ends where the invoice begins.",
       "beats": [
         "Affiliates share the store; the store shares the demo.",
-        "25 drafts and 5 sends prove the pipeline before any invoice.",
+        "One candidate and five monthly sends; the downloadable demo never expires.",
         "Referrals are tracked and paid by the platform, not by us."
       ],
       "asset": "https://whop.com/stpi/",

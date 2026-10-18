@@ -22,7 +22,7 @@ cover letter for the 30th time, attach, send, repeat.
 
 That's the job nobody bills for.
 
-I run a small tool called STPi that does that part. It checks 17 job boards by default (22 supported) across
+I run a small tool called STPi that does that part. It checks country-specific sources (keys and availability vary) across
 South Africa, Zimbabwe and Zambia on a schedule, matches every advert against each
 candidate's real profile, scores the fit, and drafts a tailored cover letter + a
 country-formatted CV as PDFs.

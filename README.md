@@ -1,9 +1,6 @@
-# stpi-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch
+> **Current operating baseline · 16 October 2026:** [read this first](../docs/60-current-operations-2026-10-16.md). Jacaranda Labs owns STPI and its think tank. Hosted onboarding/control is web-first; candidate applications require approval, eligible researched STPI sales remains automatic. Two candidate hunts/day and the forever-download/separate-hosted-trial contracts supersede conflicting older examples. Owner access was repaired and reset only on primary Mint; do not change tenant, runner, mailbox or persona credentials incidentally. Usage scope/unknown states and provider-delivery limitations remain explicit. Dated material below is reference, not a new production acceptance claim. Never copy populated access links into documentation/publications.
 
-> **2026-10-14 — this bible is a FROZEN SNAPSHOT.** The canonical, only-deployed bible is
-> `marketing/index.html` in **stpi-cloud/stpi** (77k+ words, 15 tabs incl. Technical/Owner/Client
-> guides + Manuals). This repo's copy (57k words, 10 tabs) is kept for history and its `copy/`
-> source files; its Cloudflare deploy is disabled. Decision + scoring: stpi-docs doc 53.
+# stpi-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch
 
 Everything to market STPi, plus the public door for the **free-for-everyone demo**.
 
@@ -28,8 +25,6 @@ graphics/       discord mockup · hero card · before/after (PNG masters; index 
 samples/        sample CV + letter (.pdf real-engine output, .html mirrors)
 copy/           pitch · social · cold-outreach · email-sequences · demo-script
                 faq-objections · sales-scripts (the full library) · pricing (decided)
-                emotion-engine · sales-scripts-emotion · cold-outreach-emotion-rotation
-                one-pager-partner · emotional-scorecard (the AFGR selling layer, 2026-10-14)
 BRAND.md        palette, type, logo rules, voice
 ```
 
@@ -41,12 +36,12 @@ All CTAs point at `demo.html`. Paid (USD/mo, confirmed by owner 2026-09-19): Sol
 
 ## Before any campaign
 
-- Live: downloads/stpi-demo-1.0.1.zip (+.sha256) · setup.html (screenshot guide + §12
+- Live: downloads/stpi-demo-1.0.2.zip (+.sha256) · setup.html (screenshot guide + §12
   conversion playbook) · samples/cv-{classic,indigo,emerald,sunset}.pdf — CV designs are a
   per-candidate field, four looks.
 - Numbers: state-store-verified 2026-09-19 (runs 09-16→18: 72 drafted, 3 candidates, 0 auto-sends).
   Board ad ranges dated 2026-09-17 — refresh from a fresh hunt log before each campaign.
-- Demo caps as shipped: 25 drafts + 5 sends per rolling 30 days, in the same wheel as paid.
+- Demo caps as shipped: one candidate, five sends per UTC month, free forever, in the same wheel as paid.
 - Billing rails LIVE: Whop tier checkouts ($306 (about R4,999)/$613 (about R9,999)/$920 (about R15,000) USD monthly) + Lightning + Mukuru/EFT.
 - One CTA per post: the demo link.
 - Read the house rules (Start tab) and the "never" list (Brand tab).

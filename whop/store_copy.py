@@ -3,8 +3,7 @@ import ast
 import sys
 from pathlib import Path
 
-_ROOT = Path(__file__).resolve().parent.parent.parent
-STPI = _ROOT if (_ROOT / "press").is_dir() else Path("/home/user/stpi")
+STPI = Path("/home/user/audit/stpi")
 sys.path.insert(0, str(STPI / "press"))
 import facts  # noqa: E402
 
@@ -35,7 +34,7 @@ No card?
 Pay by Lightning ({B['lightning']}, name and tier in the memo) or Mukuru / EFT to {B['mukuru'].split(': ')[1].split(' ·')[0]} (reference: your tenant id). Your licence is issued once payment lands.
 
 What happens after checkout?
-You are sent to your post-purchase page and receive your step-by-step screenshot Customer Photo Guides in both PDF and Interactive HTML formats (mirrored on stpi-bible.pages.dev/guides/). Your job seekers get a private intake link; they never need to join your Discord.
+You are sent to a short setup page. Your job seekers get a private intake link; they never need to join your Discord.
 
 Can I pay yearly?
 Yes, 25% off in one payment by bank wire on Whop (Whop only takes cards up to $2,500): Solo {B['solo_annual']}, Studio {B['studio_annual']}, Sovereign {B['sovereign_annual']}. Pick the annual option at checkout or on {B['site']}.
@@ -68,7 +67,6 @@ Solo includes:
 - {S['sends_month']} sends a month
 - Priority slots
 - Approve in Discord (web dashboard + Telegram when self-hosted)
-- Step-by-step screenshot Customer Photo Guides (PDF + Interactive HTML)
 - {BOARDS}
 - Human approval on every send
 
@@ -85,7 +83,6 @@ Studio includes:
 - Fair-use sends
 - White-label CV and cover-letter PDFs
 - LLM fallback chain: one provider outage won't stop the run
-- Step-by-step screenshot Customer Photo Guides (PDF + Interactive HTML)
 - {BOARDS}
 - Human approval on every send
 
@@ -98,10 +95,10 @@ Studio includes:
         "description": f"""For agencies and institutions that need the pipeline on their own infrastructure.
 
 Sovereign includes:
-- Self-hosted Docker deployment on your own box + Hosted Cloud Dashboard
+- Self-hosted Docker deployment on your own box
 - Unlimited candidates and sends
 - Signed offline licence, delivered in your Discord after checkout (WhatsApp backup)
-- Step-by-step screenshot Customer Photo Guides (PDF + Interactive HTML)
+- Install guide + help in your private Discord channel
 - {BOARDS}
 - Human approval on every send
 - Lapsed licence = read-only, never bricked or deleted

@@ -1,4 +1,4 @@
--- extracted 2026-10-01 from stpi/landing/index.html --
+-- extracted 2026-10-09 from stpi/landing/index.html --
 STPi — Strategic Talent Placement Infrastructure — find jobs, write the paperwork, send them. Free demo, no email needed
 What it does while you sleep
 Hunts PNet · CareerJunction · Careers24 · Bizcommunity · iHarareJobs · VacancyMail · JobsZimbabwe · GoZambiaJobs · UNjobs · Impactpool — per-candidate keywords, excludes and city prefs.
@@ -52,7 +52,7 @@ Simple pricing. Pay how you want.
 Solo
 $306/mo
 about R4,999
-1 tenant · 5 candidates
+1 tenant · 3 candidates · 100 sends/mo
 hosted on your GitHub Actions
 dashboard + Telegram/webhook notifications
 $2,754/yr (about R45,000) — save $918
@@ -60,7 +60,7 @@ Buy Solo on Whop
 Studio ⭐ most popular
 $613/mo
 about R9,999
-1 tenant · 25 candidates
+1 tenant · 15 candidates · fair-use sends
 LLM failover chain (never rate-limited mid-hunt)
 queue paging + priority support
 $5,517/yr (about R90,000)

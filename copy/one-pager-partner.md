@@ -1,51 +1,25 @@
-# STPi — the one-pager (for the person who wasn't on the call)
+# STPI · Portable decision brief
 
-Send this when a prospect says "I need to ask my partner / principal / spouse."
-That person never felt the call's emotion — they only get logic. So this page
-is built for them: the owner's own numbers, one payback line, one safety
-paragraph, one exit. Print it, WhatsApp it, or paste it into an email.
-Replace every [bracket] with the prospect's **own** numbers from the call
-(`sales-scripts-emotion.md` §3). If you don't have their numbers, don't send
-the page — book the 10-minute numbers call instead.
+Use this after a conversation only with appropriate permission. Replace fields with dated, supported information. Do not include private workspace links, credentials or real candidate records. A brief should support an informed no as well as a yes.
 
----
+**Decision proposed:** [synthetic evaluation / bounded pilot / paid service / other exact scope].
 
-**[Owner name], [practice/agency], [town] — STPi in one page**
+**Current workflow and objective:** [their corrected account; reported estimates clearly labeled].
 
-**The problem, in [owner]'s words:** "[their anger quote, verbatim]"
-Today the hunt-and-rewrite takes ±[N] hours a week. At [owner]'s rate that's
-±R[X] a month spent typing — and every new candidate makes it heavier.
+**What STPI can support:** relevant vacancy research, fact-bound preparation and candidate applications that require human approval. Eligible researched STPI business sales is a separate automatic loop under safeguards. Normal candidate hunts are twice daily Monday–Saturday, not a guarantee of a qualified result.
 
-**What STPi does:** It hunts 17 job boards (22 supported) across South Africa, Zimbabwe and
-Zambia four times a day, scores every ad against each candidate's real
-profile, and drafts a tailored cover letter + country-formatted CV. Each one
-arrives as a card. [Owner] taps ✅ to send or ❌ to delete. **Nothing is ever
-sent without that tap — there is no automatic mode.** The writer may only use
-facts already on the candidate's profile; it is forbidden from inventing
-experience, and drafts delete themselves after 72 hours.
+**What remains conditional:** profile/extraction accuracy, source access, eligibility, provider allowances, deliverability and outcomes. Active-content age limits do not erase every external copy.
 
-**The maths (conservative, [owner]'s own figures):**
-- Typing removed: ±[N] hrs/week ≈ ±R[X]/month of billable time back.
-- Cost: Solo **$306/month (about R4,999)** — 3 candidates, 100 sends/month.
-- Payback: one CV-and-letter bundle sells for R600–R1,500; one placement is
-  worth [R fee]. **[One placement covers ±[ ] months of STPi.]** If it doesn't
-  earn its keep, it should be cancelled — and can be, in two clicks.
+**Economics:** [baseline hours/range and period] × [realistic removable fraction] minus [added review/maintenance]. Separate capacity, cash saving and possible revenue. Include full incremental cost, currency/date, conservative scenario and nonfinancial objectives. No placement attribution is implied.
 
-**Safety, in one paragraph:** Applications go out from your own mailbox,
-signed as the candidate, capped at 20 per candidate per day so the mailbox
-stays clean. Candidate data lives in a file you own — delete the file and
-it's gone. No LinkedIn login, no profile scraping, no data sold or shared.
+**Alternatives:** [continue/improve current process, narrower tool, defer].
 
-**How starting works:** The demo is **free forever** (1 candidate, full
-pipeline) — no card. Setup takes ~10 minutes on a call; the team does it
-with you. Paid plans run month-to-month on Whop; annual is 25% off by bank
-wire. Mukuru/EFT and Lightning are accepted for ZA/ZW buyers.
+**Implementation and authority:** [who supplies verified input, connects providers, reviews, monitors exceptions and can stop]. No external sends or real data beyond the authorized scope.
 
-**The decision we'd like:** [ ] Run the free demo on one candidate this week
-[ ] Start Solo ($306 (about R4,999)) [ ] Talk again on [date]
-Contact: [seller name, WhatsApp]
+**Offer:** downloadable demo free forever, one active candidate/five counted monthly deliveries; hosted seven-day trial separate. Use current verified checkout for any paid price, not an old approximate exchange rate.
 
----
+**Exit and limits:** [actual cancellation/export/retention terms, residual copies and unknowns].
 
-*Numbers marked "±" are [owner]'s own estimates from our call on [date],
-not STPi claims. Prices: USD billed on Whop, rand figures approximate.*
+**Evidence and next step:** [what was tested, what was simulated, what remains open, wanted follow-up/stop preference].
+
+The recipient should be able to explain the decision without attending the original demonstration. If they infer a guarantee not supported here, revise the brief before forwarding it.

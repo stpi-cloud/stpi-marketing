@@ -50,6 +50,9 @@ HEADERS = """/*
 /guides/*.pdf
   Content-Type: application/pdf
   Cache-Control: public, max-age=3600
+/guides/*.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=3600
 /guides/*.html
   Content-Type: text/html; charset=utf-8
   Cache-Control: public, max-age=3600
@@ -81,7 +84,8 @@ def build() -> Path:
         shutil.copyfile(ROOT / src, OUT / dst)
     for d in DIRS:
         if (ROOT / d).is_dir():
-            shutil.copytree(ROOT / d, OUT / d, ignore=shutil.ignore_patterns("raw", "*.md"))
+            ign = shutil.ignore_patterns("raw") if d == "guides" else shutil.ignore_patterns("raw", "*.md")
+            shutil.copytree(ROOT / d, OUT / d, ignore=ign)
     for f in FILES:
         if (ROOT / f).exists():
             shutil.copyfile(ROOT / f, OUT / f)
@@ -90,15 +94,15 @@ def build() -> Path:
     (OUT / "_headers").write_text(HEADERS)
     (OUT / "robots.txt").write_text(ROBOTS)
     (OUT / "sitemap.xml").write_text(sitemap())
-    # guard: nothing on the public site may point back at GitHub Pages or the private repo
+    # guard: nothing on the public customer site may point back at GitHub Pages, the private repo, or stpi-bible / operator video
     bad = []
     for p in OUT.rglob("*.html"):
         t = p.read_text(encoding="utf-8", errors="ignore")
-        for needle in ("github.io/stpi-marketing", "github.com/stpi-cloud/stpi\""):
+        for needle in ("github.io/stpi-marketing", "github.com/stpi-cloud/stpi\"", "stpi-bible.pages.dev", "STPi-Operator-Video-Guide"):
             if needle in t.replace("GH_REDIRECT_OK", ""):
                 bad.append(f"{p.relative_to(OUT)}: {needle}")
     if bad:
-        raise SystemExit("public site still links to GitHub Pages / private repo:\n" + "\n".join(bad))
+        raise SystemExit("public site still links to GitHub Pages / private repo / stpi-bible:\n" + "\n".join(bad))
     return OUT
 
 

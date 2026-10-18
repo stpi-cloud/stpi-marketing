@@ -1,48 +1,43 @@
-# STPi — pricing (decided 2026-09-17, founder-approved mandate)
+# STPi — Official Customer Pricing, Guides & 7-Day Contract Schedule
 
-Currency: **US dollars, set to the rand value** (owner decision 2026-09-27: Whop bills USD; rand
-figures are approximate at R16.31 per $1). ZA/ZW/ZM buyers can also pay sats via Lightning or
-Mukuru/EFT at the day's rate.
-Bill monthly via **Whop**; annual = 25% off (the cash lever that funds the build); affiliates 30% recurring 12 months.
+| Edition / Plan | Monthly USD | ≈ ZAR | Annual (25% Off) | Candidate Seats | Monthly Sends | Customer Guide Link |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Free Forever Demo** | **$0** | R0 | $0 forever | 1 seat | 5 real sends/mo | [`STPi-Photo-Guide-demo.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-demo.html) |
+| **7-Day Hosted Trial** | **$0** (7 days) | R0 | — | 1 seat | 10 sends (7 days) | [`STPi-Photo-Guide-trial.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-trial.html) |
+| **Executive CV Setup** | **$19** one-off | ≈ R310 | — | 1 seat | 50 sends (30 days) | [`STPi-Photo-Guide-setup.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-setup.html) |
+| **Done-For-You Retainer** | **$49/mo** | ≈ R799 | — | 1 managed seat | 300 sends/mo | [`STPi-Photo-Guide-dfy.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-dfy.html) |
+| **STPi Solo (Hosted)** | **$306/mo** | ≈ R4,999 | **$2,754/yr** | Up to 3 seats | 100 sends/mo | [`STPi-Photo-Guide-solo.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-solo.html) |
+| **STPi Studio (Agency)** | **$613/mo** | ≈ R9,999 | **$5,517/yr** | Up to 15 seats | 1,000 sends/mo | [`STPi-Photo-Guide-studio.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-studio.html) |
+| **STPi Sovereign (Docker)** | **$920/mo** | ≈ R15,000 | **$8,280/yr** | **Unlimited** | **Unlimited** | [`STPi-Photo-Guide-sovereign.html`](https://getstpi.pages.dev/guides/STPi-Photo-Guide-sovereign.html) |
 
-| Tier | USD/mo | ≈ ZAR | Candidates | Sends | Extras |
-|---|---|---|---|---|---|
-| **Demo** | $0 forever | R0 | 1 | 5/mo | full pipeline, Discord card, PDFs, 72 h purge |
-| **Solo** | $306 | ≈ R4,999 | 3 | 100/mo | priority hunt slots |
-| **Studio** | $613 | ≈ R9,999 | 15 | fair-use (20/day/candidate guard-rail) | white-label PDFs, brand header |
-| **Sovereign** | $920 | ≈ R15,000 | unlimited | guard-rail | self-hosted, onboarding day, data never leaves |
+## 📦 All 4 "For Dummies" Customer Guide Formats + Mandatory 7-Day Sales Contract
 
-## Why these numbers
+- **Interactive Browser Guide (HTML):** <https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.html>
+- **Printable Visual Handbook (PDF):** <https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.pdf>
+- **Annotated Markdown Guide (MD):** <https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.md>
+- **Narrated Video Walkthrough (MP4):** <https://getstpi.pages.dev/videos/STPi-Customer-Onboarding-Guide.mp4>
+- **11 Social Media Promotional Videos:** <https://getstpi.pages.dev/videos/>
+- **Mandatory 7-Day Printable Sales Contract (PDF):** <https://getstpi.pages.dev/downloads/STPi-Customer-Sales-Contract.pdf>
 
-- **Demo R0/forever** is the marketing budget. 1 candidate × 5 sends shows the whole loop
-  (hunt → card → tap → send) without costing us anything: ~1 hunt-minute/day on Actions,
-  cents of LLM on the customer's own key. The upgrade trigger is natural: the *second*
-  candidate. "You upgrade when your bench asks" is the honest funnel.
-- **Solo $306 (about R4,999)** ≈ two-to-three bundled CV-and-letter sales at prevailing coach rates
-  (R600–R1 500), plus the 8–12 h of hunt-and-rewrite it deletes. If STPi doesn't earn its keep
-  the customer cancels in-app and is right to. Annual $2,754 (about R45,000, 25% off) is the prepay close —
-  one deal ≈ six months of runway, cash now.
-- **Studio $613 (about R9,999)** is priced for throughput, not seats: a CV studio that triples writer
-  output earns it back in one extra order a week. White-label is the wedge — studios sell
-  their brand, so the PDF header carrying *their* logo is the feature they'll pay the jump for.
-- **Sovereign $920 (about R15,000)** undercuts one junior-recruiter-day and removes the two objections
-  agencies actually have (data residency, vendor lock-in). Onboarding day included because
-  self-host failures are support tickets; a guided day is cheaper.
-- **Prices are USD at the rand value of the 2026-09-23 service-first memo tiers (owner decision 2026-09-27): Solo $306 / Studio $613 / Sovereign $920 monthly (about R4,999 / R9,999 / R15,000); annual 25% off.** ZW/ZM buyers can pay sats via coinos or Mukuru/EFT at the day's rate. Billing is enforced fail-closed (`stpi billing grant`).
-- **Affiliates 30% / 12 months** because coaches talk to coaches; Whop runs it natively and
-  30% is the number that makes a coach mention you unprompted.
+## 📝 Mandatory 7-Business-Day Hand-Filled PDF Sales Contract Rule
 
-## Lines to use verbatim
+Every paying customer must download [`STPi-Customer-Sales-Contract.pdf`](https://getstpi.pages.dev/downloads/STPi-Customer-Sales-Contract.pdf), **print it on paper, fill it in by hand in blue or black ink, scan all pages, and email the signed copy to `simalidudu@gmail.com` (or WhatsApp `+263 78 460 0904`) within the first seven (7) business days after making a payment**. You must **preserve your physical wet-ink copy** in a safe place, as STPi may request it at any time.
 
-- "The demo is free forever. You upgrade when your second candidate asks for it — that's
-  the whole sales funnel."
-- "Solo is $306 a month (about R4,999) — two or three CV bundles at your rates, and the ten hours of typing is gone.
-  If it doesn't earn its keep, cancel in the app, no retention call."
-- "Annual prepay is $2,754 (about R45,000) — three months free, one payment, provisioned same day."
-- "Sovereign costs less than a junior recruiter's Tuesday."
+## ⚠️ Mandatory Support-First Policy (Immediate Removal Rule)
 
-## Never
+If anything ever looks unfamiliar or if you have a question at any step, **contact STPi Support FIRST** before panicking or following random internet advice. **If we find that you ran to the public before contacting us first, we will immediately remove you and terminate your workspace.**
 
-- Discount in public. Discount in private for: universities, NGOs, cohorts of ≥10 coaches.
-- "Cheap" as a selling point. The selling point is hours; the price is just not a barrier.
-- Per-send pricing. It incentivises spam and contradicts the 20/day guard-rail story.
+## 📞 Official STPi Company Social Accounts & Direct Support Directory
+
+- **WhatsApp 24/7 Priority Line:** `+263 78 460 0904` (<https://wa.me/263784600904>)
+- **Primary Support & Contract Email:** `simalidudu@gmail.com`
+- **Customer Care & Onboarding Email:** `tafadzwamchikanya@gmail.com`
+- **Official Portal:** <https://getstpi.pages.dev>
+- **Whop Storefront:** <https://whop.com/stpi>
+- **X (Twitter):** `@STPi_Cloud` (<https://getstpi.pages.dev/g/xl/contact>)
+- **LinkedIn:** `STPi Placement` (<https://getstpi.pages.dev/g/ll/contact>)
+- **Bluesky:** `@stpi.bsky.social` (<https://bsky.app/profile/stpi.bsky.social>) & `@tariromalajila.bsky.social` (<https://bsky.app/profile/tariromalajila.bsky.social>)
+- **Telegram:** <https://getstpi.pages.dev/g/tl/contact>
+- **Facebook:** <https://getstpi.pages.dev/g/fl/contact>
+- **Pinterest:** <https://www.pinterest.com/tafadzwamchikanya/stpi-board/>
+- **Dev.to:** <https://dev.to/simali_dud_b97add4154d7a6>

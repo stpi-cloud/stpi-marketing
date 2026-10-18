@@ -11,7 +11,7 @@ Q: Can I pay yearly?
 A: Yes, 25% off in one bank-wire payment: Solo $2,754, Studio $5,517, Sovereign $8,280. Whop only takes cards up to $2,500, so annual is by wire. Links on https://getstpi.pages.dev/
 
 Q: Can I try it first?
-A: Yes. The free demo runs the whole pipeline on 1 candidate (25 drafts, 5 real sends per 30 days), or start a 7-day hosted trial: https://getstpi.pages.dev/
+A: Yes. The free demo runs the whole pipeline on 1 candidate (one candidate, five real sends per UTC month, free forever), or start a 7-day hosted trial: https://getstpi.pages.dev/
 
 Q: What happens after checkout?
 A: You land on a short setup page that arms your private dashboard and intake link. Your job seekers get a private intake link; they never need an account.

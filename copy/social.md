@@ -17,7 +17,7 @@ VacancyMail, iHarareJobs. Read every ad. Decide "is this Thabo?" Rewrite the sam
 letter for the 30th time. Attach the CV. Send. Repeat across 6 boards, 3 candidates,
 4 hours a day.
 
-So I built STPi. It runs on a schedule, sweeps 17 job boards by default (22 supported) across South Africa,
+So I built STPi. It runs on a schedule, sweeps country-specific sources (keys and availability vary) across South Africa,
 Zimbabwe and Zambia, matches every ad against the candidate's real profile, scores the
 fit, and drafts a tailored cover letter + a country-formatted CV — both as PDFs.
 
@@ -48,7 +48,7 @@ https://getstpi.pages.dev/demo
 ```
 The 40 open tabs are why good candidates lose.
 
-STPi sweeps 17 job boards by default (22 supported) in ZA·ZW·ZM, scores each ad against the candidate's real
+STPi sweeps country-specific sources (keys and availability vary) in ZA·ZW·ZM, scores each ad against the candidate's real
 profile, drafts the letter + CV as PDFs, and drops one card in your Discord:
 [✅ Approve & send] [❌ Reject].
 
@@ -66,7 +66,7 @@ They're losing to the 40 open tabs.
 I built STPi — a job-hunting copilot for coaches in ZA, ZW, ZM.
 Here's the whole loop in 7 posts 🧵
 
-2/ 06:00, 10:00, 14:00, 18:00. STPi wakes up and sweeps 17 boards by default (22 supported):
+2/ 06:00, 10:00, 14:00, 18:00. STPi wakes up and sweeps country-specific sources (keys and availability vary):
 Adzuna, Google for Jobs, PNet, CareerJunction, JobMail, VacancyMail, iHarareJobs,
 GoZambiaJobs, remote boards and more. No LinkedIn login. No scraping profiles.
 
@@ -90,7 +90,7 @@ The coach is the product. The tap is the product.
 so your mailbox never gets flagged. Replies reach the candidate AND you,
 and STPi pings you when one is an interview invite.
 Tap ❌ → the PDFs are deleted on the spot.
-Untouched drafts self-destruct at 72 hours. Zero-retention by design.
+Untouched drafts self-destruct at 72 hours. Active generated-content expiry, not universal erasure of copies.
 
 7/ It costs $0 to host. Two GitHub Actions workflows on a private repo.
 No server to sleep, no card on file, nothing to expire.
@@ -106,7 +106,7 @@ the demo is free forever — no card: https://getstpi.pages.dev/demo
 ## X — single post
 
 ```
-STPi sweeps 17 job boards by default (22 supported) in ZA·ZW·ZM, drafts the letter + CV, and posts one card
+STPi sweeps country-specific sources (keys and availability vary) in ZA·ZW·ZM, drafts the letter + CV, and posts one card
 to your Discord. [✅ Approve & send] [❌ Reject]. Nothing sends without your tap.
 The 40 tabs die today.
 ```
@@ -150,7 +150,7 @@ Reply "help" and I'll set it up with you on a 10-min call.
 ```
 **STPi** is live for our coaching crew 🔎
 
-What it does: sweeps 17 job boards by default (22 supported) across ZA·ZW·ZM + remote, scores each ad against your
+What it does: sweeps country-specific sources (keys and availability vary) across ZA·ZW·ZM + remote, scores each ad against your
 candidate's profile, drafts a tailored cover letter + CV as PDFs, and posts a single
 card here with ✅ / ❌.
 

@@ -106,14 +106,18 @@
       <div class="offer">
         <h2>Get the pipeline behind this card</h2>
         <p>One candidate, the full pipeline, free forever — no card, no sign-up. Cards land in your
-        Discord four times a day; the demo is the product with a counted leash (25 drafts + 5 sends
-        per rolling 30 days, enforced in code).</p>
+        Discord twice a day, Monday–Saturday; the demo is the product with a counted leash (one candidate, five sends per UTC month, free forever, enforced in code).</p>
         <div class="obtns">
           <a class="green" href="../demo.html" target="_top">⬇ Free demo — download page</a>
-          <a href="stpi-demo-1.0.1.zip" target="_top">⬇ Installable pack (.zip + sha256)</a>
-          <a class="ghost" href="../setup.html" target="_top">📖 Setup guide (10 min)</a>
+          <a href="stpi-demo-1.0.2.zip" target="_top">⬇ Installable pack (.zip + 4-Format Guides + Contract)</a>
+          <a class="ghost" href="../guides/STPi-Photo-Guide-demo.html" target="_top">📸 Interactive HTML Guide</a>
+          <a class="ghost" href="../guides/STPi-Photo-Guide-demo.pdf" target="_top">📄 PDF Guide (.pdf)</a>
+          <a class="ghost" href="../guides/STPi-Photo-Guide-demo.md" target="_top">📝 Markdown Guide (.md)</a>
+          <a class="ghost" href="../videos/STPi-Customer-Onboarding-Guide.mp4" target="_top">🎬 Narrated Video Guide (.mp4)</a>
+          <a class="ghost" style="border-color:#F23F43;color:#fca5a5" href="STPi-Customer-Sales-Contract.pdf" target="_top">📥 7-Day Printable Sales Contract (PDF)</a>
         </div>
-        <p class="fine">Try a design before you pay for one:
+        <p class="fine"><b>⚠️ Support-First Rule:</b> Contact STPi Support FIRST via WhatsApp (<a href="https://wa.me/263784600904">+263 78 460 0904</a>) or Email (<a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> / <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a>) before panicking or using random internet advice — running to the public before contacting us results in immediate removal.<br>
+        Try a design before you pay for one:
         <a href="../samples/cv-classic.pdf" target="_blank">classic</a> ·
         <a href="../samples/cv-indigo.pdf" target="_blank">indigo</a> ·
         <a href="../samples/cv-emerald.pdf" target="_blank">emerald</a> ·
@@ -210,7 +214,7 @@
     $("approve").style.opacity = $("reject").style.opacity = ".4";
     st.className = (kind === "ok") ? "sent" : "rej";
     st.innerHTML = (kind === "ok")
-      ? "✅ Sent to " + j.mail + " as \u201cThabo Nkosi (via your practice)\u201d — replies go to Thabo and to you. PDFs deleted after send (zero retention)."
+      ? "✅ Sent to " + j.mail + " as \u201cThabo Nkosi (via your practice)\u201d — replies go to Thabo and to you. PDFs deleted after send (active-copy deletion; external copies have separate retention)."
       : "❌ Rejected — both PDFs deleted on the spot. The pipeline learns your taste; rejections cost nothing.";
     setTimeout(function(){ i = (i + 1) % JOBS.length; paint(); }, 2800);
   }

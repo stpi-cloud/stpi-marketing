@@ -46,7 +46,7 @@ You're not buying infrastructure; you're buying your Tuesdays back."
 State price. Close with the demo stack:
 "The demo is free forever — one candidate, five sends a month, no card.
 Solo is $306 a month (about R4,999) for three candidates when your bench asks for it. Set the demo
-up now while we're on the phone; first card lands by the next hunt slot."
+up now while we're on the phone; a first card appears only when a suitable new job is found."
 Landing page (lead capture + download): https://getstpi.pages.dev/demo
 
 ---
@@ -61,7 +61,7 @@ Landing page (lead capture + download): https://getstpi.pages.dev/demo
 - **8 min — economics**: one LLM call per shortlisted job does score + letter + CV; rules
   and pre-scoring reject ~85% of ads for free before any AI spend. "Your API bill is in
   cents because triage is free and judgement is scarce."
-- **10 min — data posture**: zero-retention; store keeps `{job_url, status, timestamp}`;
+- **10 min — data posture**: active generated-content expiry; store keeps `{job_url, status, timestamp}`;
   candidate YAML is the right to erasure (delete file = gone); no LinkedIn login.
 - **12 min — billing rails**: Whop subscription, Lightning via coinos for ZW/ZM, Mukuru
   handled as a manual grant. "Your customers pay how they already pay."
@@ -94,7 +94,7 @@ VOICE/CAPTION: "STPi. Jobs found. Applications drafted. You tap approve. It send
 ```
 Great speaking, {{first_name}}.
 
-What you saw, in one line: STPi hunts 17 boards by default (22 supported), drafts the letter + CV,
+What you saw, in one line: STPi hunts country-specific sources (keys and availability vary), drafts the letter + CV,
 and waits for your tap.
 
 Attached/below: the sample CV + letter, the guard-rails list, pricing.

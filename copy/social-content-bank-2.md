@@ -9,11 +9,11 @@ forever), number-free unless dated and true, the human is the hero.
 
 1. Your job search has a queue. The only question is whether anything works it
    overnight. [CTA]
-2. The demo caps are the pitch: 25 drafts, 5 sends, then the machine asks.
+2. The demo caps are the pitch: one candidate, five monthly sends, no expiry.
    Sales prevention, on purpose. [CTA]
 3. "Nothing sends without my tap" is the sentence that sells us. It's also the
    sentence that sells YOU to hiring managers. [CTA]
-4. 17 boards by default, 22 supported, ✓ checked while the kettle boils. Your
+4. country-specific sources (keys and availability vary), ✓ checked while the kettle boils. Your
    competitor checked one of them. [CTA]
 5. Drafts purge at 72 hours. If your tooling hoards CVs indefinitely, ask what
    it's optimising — it isn't you. [CTA]
@@ -52,7 +52,7 @@ Refusals are features when they're enforceable in code. [CTA]
 ## WhatsApp group announcements (community groups, never buy posts)
 
 WA1: Morning fam 🌅 I coach job hunters and built the machine I wish existed:
-it reads 17 job boards nightly, drafts a tailored CV + letter per match, and
+it reads selected public sources nightly, drafts a tailored CV + letter per match, and
 nothing sends until you tap. Free forever for one job seeker, no card:
 [CTA] — DM me questions, first five get a walkthrough.
 

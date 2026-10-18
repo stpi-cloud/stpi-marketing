@@ -72,8 +72,8 @@ Subject: still keeping your seat warm
 Ninety days since the last hunt ran for you. Two honest options:
 - Come back: same workspace was kept read-only [days] as promised; reactivate
   here: [store link].
-- Close properly: reply "delete" and the last traces go. Zero retention means
-  exactly that — I'd rather be the company that deletes.
+- Close properly: reply "delete" for profile removal. Active generated drafts expire after 72 hours;
+  messages, downloads, Git history and backups have separate retention. I'd rather be the company that deletes.
 Either answer is a good one. The boards kept hunting the market meanwhile.
 
 ## L12 · Founder-to-founder (quarterly, personal from owner, not automated)

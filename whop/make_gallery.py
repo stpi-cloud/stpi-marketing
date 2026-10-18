@@ -17,7 +17,7 @@ src = (STPI / "stpi" / "billing.py").read_text()
 PLANS = ast.literal_eval(src[src.index("PLANS: dict[str, dict] = ") + len("PLANS: dict[str, dict] = "):src.index("DEFAULT_PLAN")].strip())
 
 W, H = 1600, 900
-PURPLE, DARK, GREY, BG, CARD, GREEN = "#27548f", "#24272a", "#6B6475", "#f3f6f9", "#FFFFFF", "#2E9E5B"
+NAVY, DARK, GREY, BG, CARD, GREEN = "#27548f", "#24272a", "#6B6475", "#f3f6f9", "#FFFFFF", "#2E9E5B"
 FD = "/usr/share/fonts/truetype/dejavu/"
 
 
@@ -70,14 +70,14 @@ def how_it_works():
     x, cw, gap, y0 = 80, 335, 28, 320
     for n, title, lines in steps:
         rrect(d, (x, y0, x + cw, y0 + 400), CARD, "#dbe5ee")
-        d.ellipse((x + 30, y0 + 30, x + 100, y0 + 100), fill=GREEN if n == "4" else PURPLE)
+        d.ellipse((x + 30, y0 + 30, x + 100, y0 + 100), fill=GREEN if n == "4" else NAVY)
         center(d, x + 30, x + 100, y0 + 45, n, font(36, True), "white")
         d.text((x + 30, y0 + 130), title, font=font(40, True), fill=DARK)
         for i, ln in enumerate(lines):
             d.text((x + 30, y0 + 205 + i * 44), ln, font=font(24), fill=GREY)
         x += cw + gap
     center(d, 0, W, 780, "30-day cooldown per employer  ·  daily caps  ·  nothing sends without your yes",
-           font(28, True), PURPLE)
+           font(28, True), NAVY)
     img.save(OUT / "2-how-it-works.png")
 
 
@@ -99,8 +99,8 @@ def plans():
     x, cw, gap, y0 = 80, 460, 30, 310
     for name, key, lines in tiers:
         hl = key == "studio"
-        rrect(d, (x, y0, x + cw, y0 + 470), CARD, PURPLE if hl else "#dbe5ee", w=5 if hl else 3)
-        d.text((x + 40, y0 + 35), name, font=font(40, True), fill=PURPLE)
+        rrect(d, (x, y0, x + cw, y0 + 470), CARD, NAVY if hl else "#dbe5ee", w=5 if hl else 3)
+        d.text((x + 40, y0 + 35), name, font=font(40, True), fill=NAVY)
         usd = f"${B['usd'][key]}"
         d.text((x + 40, y0 + 100), usd, font=font(72, True), fill=DARK)
         d.text((x + 50 + d.textlength(usd, font=font(72, True)), y0 + 138), "/mo", font=font(30), fill=GREY)
@@ -110,7 +110,7 @@ def plans():
             d.text((x + 40, y0 + 260 + i * 48), "✓  " + ln, font=font(27), fill=DARK)
         x += cw + gap
     center(d, 0, W, 812, f"Free demo pack for everyone  ·  annual prepay 25% off  ·  Lightning, Mukuru or EFT accepted",
-           font(26, True), PURPLE)
+           font(26, True), NAVY)
     img.save(OUT / "4-plans.png")
 
 
