@@ -1135,14 +1135,13 @@ VAT201, NRC, EcoCash). Demo persona only — never screenshot a real candidate.<
     <tr><td>5</td><td>Human replies within a day (your follow-up cadence, Scripts tab)</td><td>you</td></tr>
   </table>
   <div class="copyblock"><button class="copybtn">Copy</button><pre>Demo kit contents (downloads/stpi-demo-kit.zip):
+• STPi-Customer-Photo-Guide.html &amp; .pdf — 16-step screenshot walkthrough (all 7 STPi editions)
+• STPi-Photo-Guide-demo.html &amp; .pdf — dedicated Free Forever Demo screenshot guide
 • demo-card.html — live tappable replica of the approval card
-• samples/sample-cv-za.pdf + sample-cover-letter.pdf — real engine output
-• quickstart.md — 10-minute setup (webhook + app password, no card, no console)
-• pricing.md — R0 / $306 / $613 / $920 a month (or R4,999 / R9,999 / R15,000 in rands; annual by wire) with rationale
-• README.txt — the 5-step tour
+• sample-cv-finance.pdf + sample-cv-ngo.pdf + sample-cv-ops.pdf — real engine output
 • stpi-demo-1.0.2.zip + .sha256 — LIVE: the FULL installable demo: unzip, pip install the
-  wheel inside, `stpi doctor`. Four CV designs included; demo01 ships indigo, demo02 sunset.
-  Full walkthrough: setup.html (screenshots + the conversion playbook in its §12).</pre></div>
+  wheel inside, `stpi doctor`. All 12 CV designs included; no raw-text setup guides — only screenshot Photo Guides.
+  Full interactive screenshot walkthrough: guides/STPi-Customer-Photo-Guide.html &amp; setup.html.</pre></div>
 </section>
 
 <!-- ============ ENGINE TRUTH ============ -->
@@ -3419,28 +3418,12 @@ Sovereign $920/mo (about R15,000): self-hosted Docker deployment, unlimited cand
 
 Questions?
 simalidudu@gmail.com</pre></div>
-<h3>downloads/quickstart.md <span class="pill">220 words</span></h3><p class="sub">Demo kit quickstart (ships inside the zip)</p><div class="card" style="overflow-x:auto"><h1>Your pipeline in ~10 minutes</h1>
-<blockquote>
-<p>Want the bits themselves? <strong>downloads/stpi-demo-1.0.2.zip</strong> (sha256 beside it) — one wheel,
-the identical build the paid tiers run (caps in code: one candidate + five sends per UTC month, free forever until you licence). <code>unzip</code>, <code>pip install stpi-1.0.1-py3-none-any.whl</code>, <code>stpi doctor</code>.
-Full walkthrough with every command: <strong>setup.html</strong> (CV designs in §8).</p>
-</blockquote>
-<ol>
-<li><strong>Discord (2 min)</strong> — in your server: create #stpi → Edit Channel →
-   Integrations → Webhooks → New Webhook. Copy the URL.</li>
-<li><strong>Gmail (2 min)</strong> — switch on 2-step verification, then
-   myaccount.google.com/apppasswords → create → 16 characters.
-   (No Google Cloud project, no OAuth, no card. Outlook/Zoho work the same.)</li>
-<li><strong>Candidate (5 min)</strong> — one YAML: name, country, location, keywords,
-   exclusions. Starter that works: <code>accountant, bookkeeper</code> + <code>Johannesburg</code>
-   (or <code>Harare</code> / <code>Lusaka</code>), exclude <code>intern, unpaid, commission only</code>.</li>
-<li><strong>Run</strong> — the hosted demo runs hunts at 06:00/10:00/14:00/18:00 SAST Mon–Sat.
-   Your first card lands with both PDFs and the ✅ / ❌ links.</li>
-<li><strong>Tap</strong> — approve sends from your mailbox, signed as the candidate; replies reach them and you (20/day cap, 5 sends/mo
-   on demo — at the cap the card itself tells you what upgrading buys).
-   Reject deletes the PDFs. Untouched drafts die at 72 h.</li>
-</ol>
-<p>That's the whole loop. Upgrade when your second candidate asks for it.</p></div>
+<h3>guides/STPi-Photo-Guide-demo.html &amp; .pdf <span class="pill">16 screenshots · PDF + HTML</span></h3><p class="sub">Demo &amp; All-Editions Customer Photo Guides (ships inside the zip — replaces raw-text quickstart.md)</p><div class="card" style="overflow-x:auto"><h1>16-Step Screenshot Photo Guide (Onboarding → Full Operation)</h1>
+<p>Raw-text setup guides have been completely retired. Every STPi download and post-purchase welcome pack ships with two visual screenshot guides:</p>
+<ul>
+<li><strong>Interactive HTML Photo Guide:</strong> <a href="guides/STPi-Photo-Guide-demo.html">guides/STPi-Photo-Guide-demo.html</a> · <a href="guides/STPi-Customer-Photo-Guide.html">All-Editions Master HTML</a></li>
+<li><strong>Printable PDF Photo Guide:</strong> <a href="guides/STPi-Photo-Guide-demo.pdf">guides/STPi-Photo-Guide-demo.pdf</a> · <a href="guides/STPi-Customer-Photo-Guide.pdf">All-Editions Master PDF</a></li>
+</ul></div>
 <h3>downloads/pricing.md <span class="pill">575 words</span></h3><p class="sub">Demo kit pricing sheet (ships inside the zip)</p><div class="card" style="overflow-x:auto"><h1>STPi — pricing (decided 2026-09-17, founder-approved mandate)</h1>
 <p>Currency: <strong>US dollars, set to the rand value</strong> (owner decision 2026-09-27: Whop bills USD; rand
 figures are approximate at R16.31 per $1). ZA/ZW/ZM buyers can also pay sats via Lightning or
@@ -3527,21 +3510,12 @@ Bill monthly via <strong>Whop</strong>; annual = 25% off (the cash lever that fu
 <li>"Cheap" as a selling point. The selling point is hours; the price is just not a barrier.</li>
 <li>Per-send pricing. It incentivises spam and contradicts the 20/day guard-rail story.</li>
 </ul></div>
-<h3>downloads/README.txt <span class="pill">138 words</span></h3><p class="sub">The zip's README — the first file a demo user reads</p><div class="card" style="overflow-x:auto"><pre>STPI FREE DEMO KIT
-===================
-1. Open demo-card.html in any browser and TAP the buttons — that's the product.
-2. Read the two PDFs: a real letter + CV rendered by the live engine
-   (demo persona: Thabo Nkosi, the fictional example profile).
-3. quickstart.md sets your own pipeline up in ~10 minutes (Discord webhook +
-   Gmail app password; no card, no cloud console).
-4. pricing.md: R0 demo forever / R299 Solo / R799 Studio / R2 499 Sovereign.
-5. The full installable demo is LIVE: downloads/stpi-demo-1.0.2.zip (+ .sha256) — the same
-   wheel the paid tiers run, caps in code (one candidate / five sends per UTC month / free forever), four CV
-   designs per candidate. Step-by-step: ../setup.html
-
-Questions? The landing page that sent you here pings a human — expect a reply
-within a day. Free forever means free forever.
-</pre></div>
+<h3>guides/STPi-Customer-Photo-Guide.html &amp; .pdf <span class="pill">All 7 Products · Mirror Hosted</span></h3><p class="sub">The first file a customer or demo user opens — replaces raw-text README.txt</p><div class="card" style="overflow-x:auto"><p>Every STPi customer after purchase (and every demo downloader) receives two visual screenshot guides covering all 16 steps from onboarding to operation:</p>
+<ul>
+<li><b>Master All-Editions Guide:</b> <a href="guides/STPi-Customer-Photo-Guide.html">Interactive HTML</a> · <a href="guides/STPi-Customer-Photo-Guide.pdf">PDF</a></li>
+<li><b>Solo ($306/mo):</b> <a href="guides/STPi-Photo-Guide-solo.html">HTML</a> · <a href="guides/STPi-Photo-Guide-solo.pdf">PDF</a> &nbsp;|&nbsp; <b>Studio ($613/mo):</b> <a href="guides/STPi-Photo-Guide-studio.html">HTML</a> · <a href="guides/STPi-Photo-Guide-studio.pdf">PDF</a> &nbsp;|&nbsp; <b>Sovereign ($920/mo):</b> <a href="guides/STPi-Photo-Guide-sovereign.html">HTML</a> · <a href="guides/STPi-Photo-Guide-sovereign.pdf">PDF</a></li>
+<li><b>Done-For-You ($49/mo):</b> <a href="guides/STPi-Photo-Guide-dfy.html">HTML</a> · <a href="guides/STPi-Photo-Guide-dfy.pdf">PDF</a> &nbsp;|&nbsp; <b>CV Setup ($19):</b> <a href="guides/STPi-Photo-Guide-setup.html">HTML</a> · <a href="guides/STPi-Photo-Guide-setup.pdf">PDF</a> &nbsp;|&nbsp; <b>7-Day Trial:</b> <a href="guides/STPi-Photo-Guide-trial.html">HTML</a> · <a href="guides/STPi-Photo-Guide-trial.pdf">PDF</a> &nbsp;|&nbsp; <b>Free Demo:</b> <a href="guides/STPi-Photo-Guide-demo.html">HTML</a> · <a href="guides/STPi-Photo-Guide-demo.pdf">PDF</a></li>
+</ul></div>
 <h3>README.md <span class="pill">404 words</span></h3><p class="sub">This repo's own README — how the marketing site and bible ship</p><div class="card" style="overflow-x:auto"><h1>stpi-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch</h1>
 <p>Everything to market STPi, plus the public door for the <strong>free-for-everyone demo</strong>.</p>
 <h2>The two pages</h2>
@@ -3774,232 +3748,7 @@ Manual rails are the checkout until launch — guide §12 is the
 seller-side version of exactly this list. Prices are per month, cancel anytime, demo stays free forever.
 STPi · STPi store ·
 palette #27548f · STPi home →</pre></div>
-<h3>getstpi.pages.dev/setup <span class="pill">2264 words</span></h3><p class="sub">The setup guide the demo kit links to — screenshots captions, CV designs, troubleshooting</p><div class="copyblock"><button class="copybtn">Copy</button><pre>STPi — the setup guide: from zip to first application in ~20 minutes
-STPi — setup guide
-zip → wired pipeline → first application, ~20 minutes
-HomeDemoCustomers
-This guide is for the free demo: one candidate, the full pipeline, forever —
-one candidate, five sends per UTC month, free forever, enforced in code, the identical wheel the paid tiers run.
-No card, no account, no telemetry: the download IS the product.
-⬇ Download the demo (173 KB .zip)
-sha256 file
-1 Download, then prove the bytes
-Two files: the pack and its signature hash. Check the download matches the hash before installing —
-if it ever differs, you did not get our file:
-# Linux / Mac — in the folder you downloaded to:
-sha256sum -c stpi-demo-1.0.2.zip.sha256
-stpi-demo-1.0.2.zip: OK
-# Windows PowerShell:
-(Get-FileHash stpi-demo-1.0.2.zip).Hash -eq (Get-Content stpi-demo-1.0.2.zip.sha256).Substring(0,64)
-True
-Expected digest: 9f2b33e033a9cde21b131487180f598770426797efe97361e4c1e75c0a0f33a8
-2 Install (Python 3.11+)
-unzip stpi-demo-1.0.2.zip -d stpi-demo &amp;&amp; cd stpi-demo
-python3 -m venv .venv &amp;&amp; source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install stpi-1.0.1-py3-none-any.whl
-stpi doctor        # self-check: config, files, data dir, LLM key, SMTP
-✔ flavour: demo (one candidate / five sends per UTC month / free forever)
-✔ tenant demo: 2 candidates  …
-✘ groq key missing            ← fix it next line, that's the only real requirement
-The pack already contains a working tenant: config/tenants/demo/ with two
-synthetic candidates (Pat — ZA — and Lee — ZW). Doctor goes green when you give it a model key:
-# any free tier works; groq needs no card → console.groq.com → API key
-stpi encrypt "gsk_...your key..."        # prints an enc: blob — paste it as llm_api_key in tenant.yaml
-3 Your candidate = one YAML file
-Copy config/tenants/demo/candidates/demo01.yaml, rename, edit. That's the whole
-relationship — delete the file and your candidate's data is gone (right to erasure, not a promise):
-candidate_id: Lerato01
-full_name: Lerato Mokoena
-email: lerato@example.com
-phone: "+27 82 ..."
-country: ZA                    # ZA | ZW | ZM
-location: Johannesburg
-cv_design: indigo              # ← your look: classic | indigo | emerald | sunset (§8)
-summary: Sixth-year accounts professional, month-end in 4 days…
-skills: [Sage, Xero, Advanced Excel, VAT201]
-experience:
-- title: Senior Accounts Clerk
-company: Fake Corp (Pty) Ltd
-start: "2021-03"
-end: null
-bullets:
-- Month-end pack cut from 9 to 4 days
-education:
-- qualification: B.Com Hons
-institution: UJ
-year: "2019"
-# ZA extras (all optional, shown only if present):
-id_number: "890412 …"    ee_status: SA Black Male    drivers_licence: C1
-The criteria block in tenant.yaml (keywords / locations / exclusions)
-decides what gets hunted for this candidate. stpi hunt --dry previews without touching anything.
-4 Approvals: the card that runs your whole pipeline
-Every hunt posts one card per match to your dashboard: title · company · match % · reason · link · both PDFs · ✅ / ❌.
-Optional: paste a Discord webhook as discord_webhook: in tenant.yaml and each card also lands in your server as a notification with one-tap web links.
-the card — real product screenshot (demo persona)
-Tap around a live one right here — approve/reject logic runs in this page, no backend:
-interactive card — the actual approve experience
-5 Gmail: your sending mailbox
-Your Google account (a separate Gmail just for applications is best) → security → 2-Step Verification ON → App passwords → create → 16 chars.
-Put address: + app_password: in tenant.yaml under mailbox:
-(app password goes through stpi encrypt like the LLM key).
-stpi mailbox-test demo → green means the pipeline can deliver. No Google Cloud project,
-no OAuth consent screen, nothing to pay.
-How it's used: every application goes out from this mailbox, signed "Candidate (via your brand)",
-with reply-to set to the candidate and this mailbox — so the candidate hears straight away and so do you.
-The same app password lets STPi read the inbox (read-only, nothing marked or moved) to flag employer
-replies: interview invites, questions, no's, bounces. Caps: 20 per candidate a day, 150 per mailbox
-(demo: 5 sends per UTC calendar month).
-Paid plans: want each candidate to have their own address? With your domain, applications go out as
-lerato.dube@yourpractice.co.za; replies reach both you and the candidate. Use free Cloudflare Email Routing + Brevo/SMTP2GO,
-or connect an SMTP/IMAP server you already run. Demo and trial use Gmail only. The own-domain guide →
-6 First hunt
-stpi hunt --dry         # previews; marks nothing, sends nothing
-[hunter:careerjunction] 24 jobs
-[hunter:pnet] 30 jobs
-[pipeline:demo/lerato01] 32 pass rules, sending top 5 to LLM
-[dry] Senior Accountant @ Meridian Logistics (pre 0.71 / llm 88%) -&gt; Senior Accountant — Meridian…
-stpi hunt               # real: drafts the PDFs, posts the cards, waits for your tap
-18 board integrations across ZA · ZW · ZM + remote feeds, twice a day, Monday–Saturday if you schedule it
-(§10). A dead board never kills a run — [hunter:x] 0 jobs and the rest deliver.
-7 The tap is the product
-✅ Approvesends from your mailbox within seconds, signed as the candidate; PDFs deleted, draft text wiped from the store
-❌ RejectPNG… sorry — PDFs deleted on the spot, draft text wiped, job marked and never re-offered
-Ignoredrafts self-destruct at 72 hours. Nothing you didn't act on survives a weekend
-There is no auto-send mode. It does not exist in the code, so no setting can turn it on.
-8 CV design — chosen per candidate, applied on every draft
-Your clients don't all want the same document. Four designs ship in the demo; each candidate picks
-one — the cover letter stays business-plain no matter what. All four are real text PDFs: ATS-parseable,
-no graphics, no columns a parser can't read.
-Thabo Nkosi
-Johannesburg · +27 82 555 0142 · thabo@example.com
-Key Skills
-Sage · Xero · Advanced Excel · VAT201 / SARS
-Experience
-Senior Accounts Clerk — Fake Corp 2021 – Present
-Month-end pack cut from 9 to 4 days
-Cleared R2.1m aged debt, no write-offs
-classic full PDF ↗
-Thabo Nkosi
-Johannesburg · +27 82 555 0142 · thabo@example.com
-Key Skills
-Sage · Xero · Advanced Excel · VAT201 / SARS
-Experience
-Senior Accounts Clerk — Fake Corp 2021 – Present
-Month-end pack cut from 9 to 4 days
-Cleared R2.1m aged debt, no write-offs
-indigo full PDF ↗
-Thabo Nkosi
-Johannesburg · +27 82 555 0142 · thabo@example.com
-Key Skills
-Sage · Xero · Advanced Excel · VAT201 / SARS
-Experience
-Senior Accounts Clerk — Fake Corp 2021 – Present
-Month-end pack cut from 9 to 4 days
-Cleared R2.1m aged debt, no write-offs
-emerald full PDF ↗
-Thabo Nkosi
-Johannesburg · +27 82 555 0142 · thabo@example.com
-Key Skills
-Sage · Xero · Advanced Excel · VAT201 / SARS
-Experience
-Senior Accounts Clerk — Fake Corp 2021 – Present
-Month-end pack cut from 9 to 4 days
-Cleared R2.1m aged debt, no write-offs
-sunset full PDF ↗
-the previews above use the product's own CSS; the linked PDFs are real render output
-Three ways to set it
-stpi designs                          # list them
-stpi design demo lerato01 emerald     # CLI — one line, done
-# or the YAML field in §3, or the dropdown in the dashboard's candidate settings —
-#   cv design: [ classic ▾ ]   (classic · indigo · emerald · sunset)
-Set it per client (a corporate-career person gets classic; a marketing graduate gets sunset),
-per country habit, per whatever your client asks for. Takes effect on the next draft; pending
-cards keep their original render until re-rendered on approve.
-9 Where your data actually lives
-One SQLite file per tenant — state/&lt;tenant&gt;.sqlite — holding job metadata, status and
-the draft text only while it awaits your tap; the moment you approve or reject, the text is
-NULLed and the PDFs are unlinked, and settled rows expire after 60 days. PDFs are born in a temp
-folder and die at 72 h. Your Gmail app password and model key are Fernet-encrypted in the YAMLs.
-Nothing phones home: no accounts, no analytics, no server of ours in the data path — self-hosted demo
-means your laptop is the cloud.
-10 twice a day, Monday–Saturday, if you want it
-Demo mode: a scheduled stpi hunt via cron (Linux/Mac) or Task Scheduler (Windows):
-# crontab -e — the 06:00/14:00 SAST rhythm (adjust TZ to yours)
-0 4,12 * * 1-6  cd ~/stpi-demo &amp;&amp; .venv/bin/stpi hunt &gt;&gt; hunt.log 2&gt;&amp;1
-Paid hosted tier runs the same thing on GitHub Actions ($0 infra) for you — you never
-touch a scheduler.
-11 When something looks wrong
-SymptomWhat it is
-[llm] groq: 429free-tier rate limit. Naps are capped at 30 s then failover; run stpi llm-chain demo after exporting 2–3 free keys (cerebras, gemini…) to spread load.
-[pnet] detail path unhealthy — serving the rest from list databoard/DNS hiccup; the breaker keeps delivering ads from list data. No action; the next run retries normally.
-a board logs 0 jobsthat board is blocked from your IP or empty today. Coverage degrades, the run completes — always.
-DEMO limit: all 5 premium sends usedthe free-forever monthly allowance. Preserve data/.demo_usage.json — or upgrade (§12).
-everything times out on first runfree Groq key on a shared quota: it warms up. Every fetch has a hard 45 s budget — a run can idle, never hang forever.
-12 You're a coach and a client just said "I want this for everyone I have"
-(For STPi sellers: the same section in mirror — the bible's growth tab links here.)
-Take the order. Confirm: candidate count, countries, branding (Studio+). Solo $306/mo (about R4,999)
-= 3 candidates · 100 sends; Studio $613/mo (about R9,999) = 15 + white-label PDFs; Sovereign $920/mo (about R15,000) =
-self-hosted, unlimited. Annual prepay: $2,754 (Solo) / $5,517 (Studio) / $8,280 (Sovereign) — 25% off, one payment by bank wire.
-These are the actual prices everywhere: US dollars monthly, or pay in rands (R4,999 / R9,999 / R15,000 a month).
-Payment — Whop one-tap checkout is LIVE for every tier: in dollars (Solo whop.com/checkout/ch_abZZn55zTTq9VO0,
-Studio whop.com/checkout/ch_xXwDxquSJP2Ctwu, Sovereign whop.com/checkout/ch_cjiffJE23bpi6Zx),
-in rands (Solo ch_kx2q8S9aYZtNTbX, Studio ch_DevT4v0Yys7JPUX, Sovereign ch_kB1eviTd27jsJiv),
-and annual by bank wire (Solo ch_k0iLW2DxBwPn7Pb, Studio ch_2AqEEMTlrXveTzJ, Sovereign ch_4gPHCzpXHl3jk6y).
-Store whop.com/stpi. Whop only takes cards up to $2,500, so annual is wire-only.
-Card payments run through Whop; every manual rail below is honoured in full too — Lightning to
-SharkSkin@coinos.io (LUD-16-verified 2026-09-19; payer puts name + tier in the payment
-note, receipt to WhatsApp), or Mukuru/EFT quoting their tenant id as the reference. Push annual
-prepay on every close ($2,754 Solo / $5,517 Studio / $8,280 Sovereign) — cash now beats MRR while the build is unfunded,
-and one payment removes a month of manual grant admin. Whop checkout for a new tenant: point them at
-the tier card on the store page. Never start the tenant until money landed (or the owner's manual-rail
-receipt came in).
-Provision the tenant in seconds: copy the tenant template, add their candidates, encrypt their
-Gmail app passwords + their own LLM key (their key = their bill = their privacy), start their
-pipeline. A new paying tenant is a directory, not a deploy.
-Remove the leash: their build runs without STPI_FLAVOUR=demo — that single env
-flip is the entire upgrade; queues, history and CV designs carry over untouched.
-Self-host (Sovereign) customers: nothing to do by hand. After a Whop purchase their signed licence and the install steps below arrive
-by WhatsApp, and a fresh licence arrives on every renewal. Manual-rail buyers:
-stpi licence-issue signs one by hand. Support is WhatsApp +263 78 460 0904.
-Week-one check: after 3 days ask for a screenshot of their first approved card.
-That moment is the product working; it's also your referral ask, made warm.
-Copy-paste acceptance message:
-"Done — you're on [tier], [n] candidates live, sends start with your next hunt at [time].
-Nothing about your demo changes: same pipeline, your keys, your mailbox, no leash.
-Your first CV designs are set per candidate — say the word if anyone wants a different look."
-13 Sovereign: install STPi on your own box
-For Sovereign buyers. About 15 minutes on any Linux server, VPS or spare PC with Docker. Your licence arrives
-by WhatsApp when you purchase (and again on every renewal). Stuck? WhatsApp
-+263 78 460 0904.
-Get the image and the compose file.
-mkdir stpi &amp;&amp; cd stpi
-docker pull ghcr.io/stpi-cloud/stpi:latest
-curl -fsSLO https://getstpi.pages.dev/downloads/docker-compose.sovereign.yml
-Make two keys (run each once and keep the output):
-docker run --rm ghcr.io/stpi-cloud/stpi:latest stpi keygen
-docker run --rm ghcr.io/stpi-cloud/stpi:latest stpi admin-token
-Create .env in the same folder:
-STPI_LICENCE_KEY=STP1.paste-your-licence-here
-STPI_MASTER_KEY=the-keygen-output
-STPI_ADMIN_TOKEN=the-admin-token-output
-Start it and check the licence:
-docker compose -f docker-compose.sovereign.yml up -d
-docker compose -f docker-compose.sovereign.yml exec stpi stpi licence-status
-It should print your firm name, the expiry date and "seats: unlimited".
-Add your firm and candidates:
-docker compose -f docker-compose.sovereign.yml exec stpi stpi tenant add my-firm --name "My Firm"
-It prints the next steps (mailbox app password, AI key, candidates). Then run
-stpi doctor the same way to confirm everything is green. The dashboard is at
-http://your-box:8080; sign in with your admin token. Approvals go to the web dashboard or
-Telegram (STPI_TELEGRAM_BOT_TOKEN in .env); a Discord webhook can be added for card notifications.
-Renewals: each payment delivers a fresh licence by WhatsApp. Replace the
-STPI_LICENCE_KEY line and run docker compose -f docker-compose.sovereign.yml up -d.
-If a licence lapses, STPi turns read-only (the dashboard still works; hunting and sending stop). It never deletes anything.
-stpi-demo 1.0.1 · the free demo is the real wheel with a counted leash ·
-support: simalidudu@gmail.com · +263 78 460 0904 (WhatsApp) · home ·
-free demo page
-LICENSE: redistribution of the UNMODIFIED demo build is encouraged (that's how it spreads);
-modifications and paid tiers are where the licence bites.</pre></div>
+<h3>getstpi.pages.dev/setup &amp; /guides/ <span class="pill">16 Screenshots · Interactive HTML + PDF</span></h3><p class="sub">The interactive screenshot Customer Photo Guide served at /setup and /guides/ across getstpi.pages.dev and stpi-bible.pages.dev</p><div class="card" style="overflow-x:auto"><p><b>16-Step Visual Customer Photo Guide (Onboarding → Full Operation):</b></p><ul><li><b>Interactive HTML Guide:</b> <a href="setup.html">setup.html</a> · <a href="guides/STPi-Customer-Photo-Guide.html">guides/STPi-Customer-Photo-Guide.html</a></li><li><b>Printable PDF Guide:</b> <a href="guides/STPi-Customer-Photo-Guide.pdf">guides/STPi-Customer-Photo-Guide.pdf</a></li><li><b>Product Editions:</b> <a href="guides/STPi-Photo-Guide-solo.html">Solo</a> · <a href="guides/STPi-Photo-Guide-studio.html">Studio</a> · <a href="guides/STPi-Photo-Guide-sovereign.html">Sovereign</a> · <a href="guides/STPi-Photo-Guide-dfy.html">Done-For-You ($49/mo)</a> · <a href="guides/STPi-Photo-Guide-setup.html">CV Setup ($19)</a> · <a href="guides/STPi-Photo-Guide-trial.html">7-Day Trial</a> · <a href="guides/STPi-Photo-Guide-demo.html">Free Demo</a></li></ul></div>
 <h3>getstpi.pages.dev/domain <span class="pill">1041 words</span></h3><p class="sub">The own-domain guide — the paid sender-address feature explained to buyers</p><div class="copyblock"><button class="copybtn">Copy</button><pre>STPi — give every client their own sender address on your domain
 Your own domain: one address per client
 lerato.dube@yourpractice.co.za → replies in your inbox · ~30 minutes, once
