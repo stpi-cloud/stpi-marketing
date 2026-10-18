@@ -1,0 +1,98 @@
+{
+  "operator_duration_sec": 294.8,
+  "operator_size_kb": 4028,
+  "chapters": [
+    {
+      "id": "ch01",
+      "short_title": "01 \u00b7 Sign-In & Overview",
+      "title": "STPi Operator Guide \u00b7 Ch 1: Sign-In & Overview",
+      "summary": "Authenticate at /owner with STPI_OWNER_TOKEN, verify zero-polling summary boot, and read the 6 KPIs, alerts, and active tenant roster.",
+      "start_sec": 0.0,
+      "timestamp": "00:00",
+      "duration_sec": 47.2
+    },
+    {
+      "id": "ch02",
+      "short_title": "02 \u00b7 Tenants & Seats",
+      "title": "STPi Operator Guide \u00b7 Ch 2: Tenants & Provisioning",
+      "summary": "Search/filter all customer plans, mint new tenants or /s/<token> links, inspect tenant modals, and edit candidate profiles & 76 job board endpoints.",
+      "start_sec": 47.2,
+      "timestamp": "00:47",
+      "duration_sec": 51.4
+    },
+    {
+      "id": "ch03",
+      "short_title": "03 \u00b7 Health & Cron Loops",
+      "title": "STPi Operator Guide \u00b7 Ch 3: System Health & Schedules",
+      "summary": "Audit the 5 health counters, verify all UTC cron schedules (hunts, leads, social, outreach, press), and trigger Run Hunt or Run Doctor.",
+      "start_sec": 98.6,
+      "timestamp": "01:38",
+      "duration_sec": 52.2
+    },
+    {
+      "id": "ch04",
+      "short_title": "04 \u00b7 Growth & Affiliates",
+      "title": "STPi Operator Guide \u00b7 Ch 4: Growth, 4 Streams & Affiliates",
+      "summary": "Monitor 7-day trials, Free Forever Demo downloads, all 4 revenue streams ($306/$613/$920, Sovereign, $49 DFY, $19 Setup), and 30% Whop ?a= affiliates.",
+      "start_sec": 150.8,
+      "timestamp": "02:30",
+      "duration_sec": 50.2
+    },
+    {
+      "id": "ch05",
+      "short_title": "05 \u00b7 Distribution & Leads",
+      "title": "STPi Operator Guide \u00b7 Ch 5: Distribution & 6-Arm Engine",
+      "summary": "Operate the 6-arm Lead & Social Engagement Engine (a.i, a.ii, b.i, b.ii, c.i, c.ii), multi-inbox anti-collision routing, and Buffer X fallback.",
+      "start_sec": 201.0,
+      "timestamp": "03:20",
+      "duration_sec": 48.0
+    },
+    {
+      "id": "ch06",
+      "short_title": "06 \u00b7 Quotas & Settings",
+      "title": "STPi Operator Guide \u00b7 Ch 6: Quotas, Vault & Daily Ops",
+      "summary": "Manage Cloudflare KV/D1 daily budgets, 4-provider LLM failover, the 63-key D1 owner_settings vault, and daily Rounds approval.",
+      "start_sec": 249.0,
+      "timestamp": "04:09",
+      "duration_sec": 45.8
+    }
+  ],
+  "promos": [
+    {
+      "slug": "STPi-Promo-Flagship-Overview",
+      "title": "STPi \u2014 Autonomous Job Hunting & Placement Across 21 African Markets",
+      "badge": "Flagship Commercial \u00b7 16:9 HD",
+      "audience": "All Customers \u00b7 Storefront Hero \u00b7 LinkedIn / X / YouTube",
+      "vertical": false,
+      "duration": "00:52",
+      "size_kb": 694
+    },
+    {
+      "slug": "STPi-Promo-Agencies-Recruiters",
+      "title": "STPi for Recruitment Agencies, Career Coaches & Sovereign Enterprise",
+      "badge": "B2B Agency & Enterprise Commercial \u00b7 16:9 HD",
+      "audience": "Recruitment Agencies \u00b7 Outplacement Firms \u00b7 Career Coaches \u00b7 Enterprise HR",
+      "vertical": false,
+      "duration": "00:47",
+      "size_kb": 661
+    },
+    {
+      "slug": "STPi-Promo-JobSeekers-DFY",
+      "title": "STPi for Professionals \u2014 $19 CV Setup, $49/mo Done-For-You & Free Trial",
+      "badge": "Candidate & DFY Commercial \u00b7 16:9 HD",
+      "audience": "Executives \u00b7 Graduates \u00b7 Professionals Across 21 African Countries",
+      "vertical": false,
+      "duration": "00:36",
+      "size_kb": 492
+    },
+    {
+      "slug": "STPi-Promo-Vertical-Reel",
+      "title": "STPi Vertical Social Reel (9:16) \u2014 TikTok, Reels, Shorts, X & LinkedIn",
+      "badge": "9:16 Vertical Reel \u00b7 720\u00d71280 HD",
+      "audience": "TikTok \u00b7 Instagram Reels \u00b7 YouTube Shorts \u00b7 X / LinkedIn Mobile Feed",
+      "vertical": true,
+      "duration": "00:34",
+      "size_kb": 500
+    }
+  ]
+}

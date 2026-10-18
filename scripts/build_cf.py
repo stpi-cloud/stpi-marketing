@@ -22,7 +22,7 @@ PAGES = {  # source -> path on the site
     "setup.html": "setup.html",
     "domain.html": "domain.html",
 }
-DIRS = ["downloads", "guides", "brand", "graphics", "samples", "press/img"]
+DIRS = ["downloads", "guides", "videos", "brand", "graphics", "samples", "press/img"]
 FILES = ["16e37daa71b14add9de53ec65d64e01a.txt"]  # IndexNow key
 
 REDIRECTS = """# Pages already serves /demo for demo.html (and 308s /demo.html -> /demo); never map
@@ -33,6 +33,7 @@ REDIRECTS = """# Pages already serves /demo for demo.html (and 308s /demo.html -
 /download        /demo       301
 /downloads       /demo       301
 /downloads/      /demo       301
+/downloads/STPi-* /guides/STPi-:splat 301
 /guides          /guides/STPi-Customer-Photo-Guide.html 302
 /guides/         /guides/STPi-Customer-Photo-Guide.html 302
 /trial           https://stpi-mint.stpi-cloud.workers.dev/trial 302
@@ -51,6 +52,9 @@ HEADERS = """/*
   Cache-Control: public, max-age=3600
 /guides/*.html
   Content-Type: text/html; charset=utf-8
+  Cache-Control: public, max-age=3600
+/videos/*.mp4
+  Content-Type: video/mp4
   Cache-Control: public, max-age=3600
 /brand/*
   Cache-Control: public, max-age=86400
@@ -110,7 +114,7 @@ def _absolute(m: "re.Match") -> str:
     attr, url = m.group(1), m.group(2)
     if re.match(r"^(https?:|#|mailto:|tel:|data:|lightning:|javascript:)", url):
         return m.group(0)
-    if url.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/", "guides/", "downloads/")):
+    if url.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/", "guides/", "videos/", "downloads/")):
         return m.group(0)  # served by the bible project itself (copied in build_bible)
     path, _, frag = url.partition("#")
     path = _SITE_PATHS.get(path, "/" + path.lstrip("./"))
@@ -122,17 +126,17 @@ def build_bible() -> Path:
         shutil.rmtree(BIBLE_OUT)
     BIBLE_OUT.mkdir()
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    html = re.sub(r'\b(href|src|content)="([^"]+\.(?:html|pdf|zip|svg|ico|png|jpg)(?:#[^"]*)?)"', _absolute, html)
+    html = re.sub(r'\b(href|src|content)="([^"]+\.(?:html|pdf|mp4|zip|svg|ico|png|jpg)(?:#[^"]*)?)"', _absolute, html)
     html = html.replace("<head>", '<head>\n<meta name="robots" content="noindex, nofollow">', 1)
     left = [u for u in re.findall(
         r'\b(?:href|src)="(?!https?:|#|mailto:|tel:|data:|lightning:|javascript:)([^"]+)"', html)
-        if not u.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/", "guides/", "downloads/"))]
+        if not u.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/", "guides/", "videos/", "downloads/"))]
     if left:
         raise SystemExit(f"bible still has relative links: {sorted(set(left))[:10]}")
     (BIBLE_OUT / "index.html").write_text(html, encoding="utf-8")
     shutil.copyfile(ROOT / "brand" / "favicon.ico", BIBLE_OUT / "favicon.ico")
-    # 2026-10-01 (v3.0) + 2026-10-18: the bible serves its own image/materials vault and Customer Photo Guides mirror
-    for d in ("bible-assets", "whop", ".embed", "guides", "downloads"):
+    # 2026-10-01 (v3.0) + 2026-10-18: the bible serves its own image/materials vault and Customer Photo & Video Guides mirror
+    for d in ("bible-assets", "whop", ".embed", "guides", "videos", "downloads"):
         ba = ROOT / d
         if ba.is_dir():
             shutil.copytree(ba, BIBLE_OUT / d,
@@ -140,7 +144,8 @@ def build_bible() -> Path:
     (BIBLE_OUT / "_headers").write_text("/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n"
                                         "  Referrer-Policy: no-referrer\n"
                                         "/guides/*.pdf\n  Content-Type: application/pdf\n  Cache-Control: public, max-age=3600\n"
-                                        "/guides/*.html\n  Content-Type: text/html; charset=utf-8\n  Cache-Control: public, max-age=3600\n")
+                                        "/guides/*.html\n  Content-Type: text/html; charset=utf-8\n  Cache-Control: public, max-age=3600\n"
+                                        "/videos/*.mp4\n  Content-Type: video/mp4\n  Cache-Control: public, max-age=3600\n")
     (BIBLE_OUT / "_redirects").write_text("/guides   /guides/STPi-Customer-Photo-Guide.html 302\n"
                                           "/guides/  /guides/STPi-Customer-Photo-Guide.html 302\n")
     (BIBLE_OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
@@ -148,7 +153,9 @@ def build_bible() -> Path:
 
 
 if __name__ == "__main__":
-    out = build()
-    print(f"built {sum(1 for _ in out.rglob('*') if _.is_file())} files into {out}")
+    import sys
+    if "--bible-only" not in sys.argv[1:]:
+        out = build()
+        print(f"built {sum(1 for _ in out.rglob('*') if _.is_file())} files into {out}")
     bo = build_bible()
     print(f"built the bible into {bo}")
