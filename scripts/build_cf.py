@@ -22,7 +22,7 @@ PAGES = {  # source -> path on the site
     "setup.html": "setup.html",
     "domain.html": "domain.html",
 }
-DIRS = ["downloads", "brand", "graphics", "samples", "press/img"]
+DIRS = ["downloads", "guides", "brand", "graphics", "samples", "press/img"]
 FILES = ["16e37daa71b14add9de53ec65d64e01a.txt"]  # IndexNow key
 
 REDIRECTS = """# Pages already serves /demo for demo.html (and 308s /demo.html -> /demo); never map
@@ -33,8 +33,10 @@ REDIRECTS = """# Pages already serves /demo for demo.html (and 308s /demo.html -
 /download        /demo       301
 /downloads       /demo       301
 /downloads/      /demo       301
+/guides          /guides/STPi-Customer-Photo-Guide.html 302
+/guides/         /guides/STPi-Customer-Photo-Guide.html 302
 /trial           https://stpi-mint.stpi-cloud.workers.dev/trial 302
-/store           https://whop.com/jacaranda-labs 302
+/store           https://whop.com/stpi 302
 """
 
 HEADERS = """/*
@@ -43,6 +45,12 @@ HEADERS = """/*
 /downloads/*.zip
   Content-Type: application/zip
   Content-Disposition: attachment
+  Cache-Control: public, max-age=3600
+/guides/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=3600
+/guides/*.html
+  Content-Type: text/html; charset=utf-8
   Cache-Control: public, max-age=3600
 /brand/*
   Cache-Control: public, max-age=86400
@@ -102,7 +110,7 @@ def _absolute(m: "re.Match") -> str:
     attr, url = m.group(1), m.group(2)
     if re.match(r"^(https?:|#|mailto:|tel:|data:|lightning:|javascript:)", url):
         return m.group(0)
-    if url.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/")):
+    if url.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/", "guides/", "downloads/")):
         return m.group(0)  # served by the bible project itself (copied in build_bible)
     path, _, frag = url.partition("#")
     path = _SITE_PATHS.get(path, "/" + path.lstrip("./"))
@@ -118,19 +126,23 @@ def build_bible() -> Path:
     html = html.replace("<head>", '<head>\n<meta name="robots" content="noindex, nofollow">', 1)
     left = [u for u in re.findall(
         r'\b(?:href|src)="(?!https?:|#|mailto:|tel:|data:|lightning:|javascript:)([^"]+)"', html)
-        if not u.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/"))]
+        if not u.split("#")[0].startswith(("bible-assets/", "whop/", ".embed/", "guides/", "downloads/"))]
     if left:
         raise SystemExit(f"bible still has relative links: {sorted(set(left))[:10]}")
     (BIBLE_OUT / "index.html").write_text(html, encoding="utf-8")
     shutil.copyfile(ROOT / "brand" / "favicon.ico", BIBLE_OUT / "favicon.ico")
-    # 2026-10-01 (v3.0): the bible now serves its own image/materials vault
-    for d in ("bible-assets", "whop", ".embed"):
+    # 2026-10-01 (v3.0) + 2026-10-18: the bible serves its own image/materials vault and Customer Photo Guides mirror
+    for d in ("bible-assets", "whop", ".embed", "guides", "downloads"):
         ba = ROOT / d
         if ba.is_dir():
             shutil.copytree(ba, BIBLE_OUT / d,
                             ignore=shutil.ignore_patterns("*.py", "*.txt", "*.md", "__pycache__"))
     (BIBLE_OUT / "_headers").write_text("/*\n  X-Robots-Tag: noindex, nofollow\n  X-Content-Type-Options: nosniff\n"
-                                        "  Referrer-Policy: no-referrer\n")
+                                        "  Referrer-Policy: no-referrer\n"
+                                        "/guides/*.pdf\n  Content-Type: application/pdf\n  Cache-Control: public, max-age=3600\n"
+                                        "/guides/*.html\n  Content-Type: text/html; charset=utf-8\n  Cache-Control: public, max-age=3600\n")
+    (BIBLE_OUT / "_redirects").write_text("/guides   /guides/STPi-Customer-Photo-Guide.html 302\n"
+                                          "/guides/  /guides/STPi-Customer-Photo-Guide.html 302\n")
     (BIBLE_OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
     return BIBLE_OUT
 

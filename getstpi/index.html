@@ -2,18 +2,20 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>/* GH_REDIRECT_OK: GitHub Pages copy -> Cloudflare Pages (2026-09-27) */if(location.hostname.slice(-9)==="github.io"){location.replace("https://getstpi.pages.dev/"+location.search+location.hash)}</script>
-<link rel="canonical" href="https://getstpi.pages.dev/">
-
-<title>STPi — find jobs, write the paperwork, send them. Free demo, no email needed</title>
+<title>STPi — Strategic Talent Placement Infrastructure — find jobs, write the paperwork, send them. Free demo, no email needed</title>
 <meta name="description" content="STPi hunts public job ads (PNet, CareerJunction, iHarareJobs, VacancyMail…), drafts a cover letter + tailored CV, and waits for you to tap approve. Download the full demo free — no email gate.">
 <style>
- :root{--purp:#27548f;--deep:#3a546a;--ink:#2B2B2B;--tint:#eef4fb;--ok:#137333}
+ :root{--purp:#14365e;--deep:#0a1f3c;--ink:#272f35;--tint:#eef4fb;--ok:#137333;--vio:#2e9bff;--gold:#C6803C;--panel:#eef4fb}
  *{box-sizing:border-box}
  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.55;background:#fff}
  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
  header{background:linear-gradient(135deg,var(--deep),var(--purp) 60%,#87abc8);color:#fff;padding:56px 0 44px}
- header h1{margin:0 0 10px;font-size:clamp(28px,5vw,44px);letter-spacing:.3px}
+ header h1{margin:0 0 10px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,5vw,44px);letter-spacing:.3px}
+ section h2{font-family:Georgia,'Times New Roman',serif}
+ .eyebrow{font-size:11px;letter-spacing:5px;opacity:.85;margin-bottom:14px;font-weight:700}
+ .brandmark{height:44px;vertical-align:middle;margin-bottom:14px;display:block}
+ .statusrow{margin-top:14px;font-size:13.5px}
+ .statusrow code{background:rgba(0,0,0,.06);padding:2px 8px;border-radius:6px}
  header p.sub{margin:0 0 26px;font-size:clamp(15px,2.4vw,19px);opacity:.94;max-width:640px}
  .badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
  padding:4px 12px;border-radius:999px;font-size:13px;margin-bottom:18px}
@@ -35,16 +37,12 @@
  .term .ok{color:#7ee2a0}.term .cta{color:#bbdcf7}
  table{border-collapse:collapse;width:100%;font-size:14.5px}
  th,td{border-bottom:1px solid #eee;padding:9px 10px;text-align:left}
- .tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
- @media (max-width:520px){table{font-size:13px}th,td{padding:7px 5px}}
  th{background:var(--tint);color:var(--deep)}
  .price{border:2px solid var(--purp);border-radius:14px;padding:20px;text-align:center}
  .price .amt{font-size:26px;font-weight:800;color:var(--deep)}
  .price h3{margin:2px 0 10px}
  .price ul{margin:0 0 14px;padding-left:18px;text-align:left;font-size:14px;color:#444}
  .buy{display:inline-block;background:var(--purp);color:#fff;font-weight:700;padding:10px 22px;border-radius:9px;text-decoration:none}
- .buy.alt{display:block;margin-top:8px;background:#fff;color:var(--purp);border:2px solid var(--purp);padding:8px 14px;font-size:14px}
- .price .buy:first-of-type{display:block}
  .rails{background:var(--tint);border-radius:12px;padding:16px 18px;font-size:14.5px}
  .rails code{background:#fff;border:1px solid #d6e0e8;padding:1px 6px;border-radius:5px;font-size:13px}
  details{border:1px solid #dfe9f5;border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#f8fbff}
@@ -55,15 +53,21 @@
 </style></head><body>
 
 <header><div class="wrap">
+  <img class="brandmark" src="brand-logo.png" alt="STPi" style="filter:brightness(0) invert(1)">
+  <div class="eyebrow">S T R A T E G I C&nbsp;&nbsp;T A L E N T&nbsp;&nbsp;P L A C E M E N T&nbsp;&nbsp;I N F R A S T R U C T U R E</div>
   <div class="badge">🇿🇦 🇿🇼 🇿🇲 built for Southern Africa · 100% public sources, no LinkedIn login ever</div>
   <h1>Jobs found. Letters written.<br>You tap approve. It sends.</h1>
-  <p class="sub">STPi is the operations layer for the hiring industry — job coaches, boutique recruiters,
-  application agencies, outplacement teams. It hunts the public boards daily, drafts a cover letter and a
-  tailored CV per posting, and waits by your Discord / Telegram / dashboard for one tap.</p>
-  <a class="dl" href="https://getstpi.pages.dev/downloads/stpi-demo-1.0.1.zip">⬇ Download the free demo — 173 KB ZIP
+  <p class="sub">The era of the simple ATS is over. Applicant trackers are passive databases; STPi is
+  Strategic Talent Placement Infrastructure — the end-to-end operating system for job coaches, boutique
+  recruiters, application agencies and outplacement teams. It hunts the public boards daily, maps every
+  candidate, drafts a cover letter and a tailored CV per posting, and waits on your dashboard / Telegram for one tap.</p>
+  <a class="dl" href="https://getstpi.pages.dev/downloads/stpi-demo-1.0.2.zip">⬇ Download the free demo — ZIP + SHA-256
   <small>full product · four CV designs · no email · no card · no sign-up form (there is literally no form on this page)</small></a>
-  <p class="fine">Demo = 25 drafted applications, 5 real sends, 30 days, then the queue freezes (never your data).
-  SHA-256 ships next to the file; verify-then-install in the
+  <p class="fine">Demo = one active candidate, five deliveries per UTC month, free forever; no lifetime draft cap.
+  Includes the step-by-step screenshot <b>Customer Photo Guides</b>:
+  <a href="https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.html">Interactive HTML Guide</a> ·
+  <a href="https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.pdf">PDF Guide</a> ·
+  <a href="https://stpi-bible.pages.dev/guides/STPi-Customer-Photo-Guide.html">Bible Mirror</a> ·
   <a href="https://getstpi.pages.dev/setup">setup guide</a>.
   Questions: <a href="https://wa.me/263784600904">WhatsApp +263 78 460 0904</a> · <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a></p>
 </div></header>
@@ -71,19 +75,39 @@
 <section><div class="wrap">
   <h2>What it does while you sleep</h2>
   <ol class="steps" style="padding:0">
-    <li><b>Hunts</b> 17 job boards by default (22 supported): Adzuna · Google for Jobs · PNet · CareerJunction · JobMail · Bizcommunity · iHarareJobs · VacancyMail · JobsZimbabwe · GoZambiaJobs · Impactpool · LinkedIn · remote boards — per-candidate keywords, excludes and city prefs.</li>
+    <li><b>Hunts</b> PNet · CareerJunction · Careers24 · Bizcommunity · iHarareJobs · VacancyMail · JobsZimbabwe · GoZambiaJobs · UNjobs · Impactpool — per-candidate keywords, excludes and city prefs.</li>
     <li><b>Drafts</b> one LLM call per match: relevance score, cover letter, tailored CV — never invents facts, uses only the candidate profile you approve.</li>
     <li><b>Renders</b> print-ready PDFs (ZA/ZW/ZM CV formats) and sends the card: <i>"Accountant @ Acme — Match 87%"</i> with ✅ / ❌.</li>
     <li><b>Only after your tap:</b> it emails the ad's apply address from your mailbox, signed as the candidate, with the PDFs attached. Capped per candidate and per day so your mailbox never gets flagged.</li>
-    <li><b>When the employer answers:</b> the reply reaches the candidate <i>and</i> you, and STPi pings you: interview invite, question, no, or a bounced address. A monthly report counts the interviews.</li>
+    <li><b>When the employer answers:</b> the reply reaches the candidate <i>and</i> you, and STPi pings you: interview invite, question, no, or a bounced address.</li>
   </ol>
   <div class="term">
 $ <b>pip install ./stpi-1.0.1-py3-none-any.whl</b> &amp;&amp; stpi serve<br>
-<span class="ok">✔ demo flavour active — 25 drafts · 5 premium sends · 30 days</span><br>
+<span class="ok">✔ demo flavour active — one candidate · five sends per UTC month · free forever</span><br>
 $ stpi hunt --dry<br>
 <span class="ok">✔ 11 new matches for lerato01 — top 5 drafted</span><br>
-<span class="cta">⬆ unlock everything from $306/mo (about R4,999) — buy: https://whop.com/jacaranda-labs (demo nag, deleted on upgrade)</span>
+<span class="cta">⬆ unlock everything from $306/mo (about R4,999) — buy: https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi (demo nag, deleted on upgrade)</span>
   </div>
+</div></section>
+
+<section id="why-now" style="background:#fff"><div class="wrap">
+  <h2>Your candidates aren&rsquo;t losing to better candidates.</h2>
+  <p style="max-width:720px">They&rsquo;re losing to <b>faster</b> ones. The ads your candidates want are posted at 06:00,
+  hundreds of applications land by lunch, and a hand-typed application lands that night. That is the whole problem STPi exists to delete:</p>
+  <div class="grid">
+    <div class="card"><b>1 &middot; The 06:00 queue.</b> Boards reward speed, not quality. If your process starts
+      when you open your laptop, you are queueing behind every applicant who didn&rsquo;t need to type a letter first.</div>
+    <div class="card"><b>2 &middot; The typing ceiling.</b> Do your own maths: hours of hunt-and-rewrite per week
+      &times; what your coaching hour is worth &times; 4.3 weeks. That number is what the current process costs every month &mdash;
+      and every new candidate makes it bigger, so your income is capped by your typing speed.</div>
+    <div class="card"><b>3 &middot; Judgement is the product.</b> Clients pay for your judgement &mdash; which roles fit,
+      what to say, when to push. They were never paying for forty open tabs. STPi hands the tabs to a machine and
+      keeps the judgement with you: more candidates covered, same professional in charge.</div>
+    <div class="card"><b>4 &middot; Your tap, or nothing.</b> Nothing is ever sent without your approval tap &mdash;
+      there is no automatic mode. Drafts delete themselves in 72 hours, sends are capped per candidate per day,
+      and the letter only ever uses facts from the profile you approved. The machine proposes; you decide.</div>
+  </div>
+  <p style="margin-top:18px"><a class="buy" href="https://getstpi.pages.dev/demo">See it on your own candidate &mdash; the demo is free</a></p>
 </div></section>
 
 <section style="background:#f7fafd"><div class="wrap">
@@ -100,54 +124,75 @@ $ stpi hunt --dry<br>
   </div>
 </div></section>
 
-<section><div class="wrap">
-  <h2>Demo vs Premium</h2>
-  <div class="tw"><table>
-    <tr><th></th><th>Free demo</th><th>Premium (everything)</th></tr>
-    <tr><td>Full hunt → draft → PDF pipeline</td><td>✔ all of it</td><td>✔</td></tr>
-    <tr><td>Real email sends</td><td>5, so the moment of truth is real</td><td>Solo 100/mo · Studio fair-use · Sovereign unlimited (20/candidate/day anti-spam cap)</td></tr>
-    <tr><td>Candidates / tenants</td><td>1 candidate, 1 tenant</td><td>Solo 3 · Studio 15 · Sovereign unlimited</td></tr>
-    <tr><td>Discord + Telegram approvals, dashboard, LLM failover chain</td><td>✔</td><td>✔ + priority board packs (LinkedIn-style searches, company career pages via sitemap)</td></tr>
-    <tr><td>Upgrade nags</td><td>everywhere, on purpose</td><td>none. poetic, really</td></tr>
-    <tr><td>Support</td><td>docs + the pipeline itself</td><td>same-day human &mdash; <a href="https://wa.me/263784600904">WhatsApp +263 78 460 0904</a> or <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a></td></tr>
-  </table></div>
+<section id="self-serve"><div class="wrap">
+  <h2>Buy it, board it, run it — no ticket, no waiting on a human</h2>
+  <p style="max-width:720px">Half of software support is "where do I click now?". Here is the whole
+  journey, start to running, in one list. Every screen you'll open says the same things in fewer words.</p>
+  <ol class="steps" style="padding:0">
+    <li><b>Buy on Whop</b> (<a href="https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi">store</a>, plans below). Whop messages you
+      <b>within a minute</b>: your licence plus your personal setup link (<code>/start/…</code>).</li>
+    <li><b>Open your setup link.</b> It asks for exactly the three things a machine can't guess —
+      your <b>WhatsApp number</b> (for licence delivery),
+      your <b>Gmail app password</b> (<a href="https://myaccount.google.com/apppasswords">Google: 2FA on → App passwords</a>),
+      and a <b>free LLM key</b> (<a href="https://console.groq.com/keys">Groq</a> or
+      <a href="https://aistudio.google.com/apikey">Gemini</a>). Each field carries its own one-minute how-to.</li>
+    <li><b>Hunts start on the next cycle.</b> Matches arrive on <i>your</i> dashboard as cards — ✅ sends, ❌
+      skips. Nothing emails without a tap, ever; send caps keep your mailbox reputation boring.</li>
+    <li><b>Add your own clients (candidates) in the same dashboard.</b> The candidates page posts one card
+      per job seeker: <b>➕ Add</b> types their details (attach their CV with <code>/candidate add cv:</code>),
+      <b>🔗 Invite</b> mints a private link you WhatsApp them — they fill in their own details, upload their CV and
+      give consent, and you approve before they're hunted. Plan seats (3 / 15 / unlimited) are the only ceiling.</li>
+  </ol>
+  <div class="statusrow">Is it us or is it you? The machine answers for itself:
+    <a href="https://stpi-mint.stpi-cloud.workers.dev/health" target="_blank" rel="noopener"><code>stpi-mint /health</code></a>
+    — <code>"ok": true</code> and a fresh <code>tick</code> = everything is running; your screen is the place to look.
+    Need help anyway? Same-day human on <a href="https://wa.me/263784600904">WhatsApp</a> — for outages, not onboarding.</div>
 </div></section>
 
-<section style="background:#eef4fb"><div class="wrap">
-  <h2>Coach or agency? Try it hosted, free for 7 days.</h2>
-  <p>We run the whole pipeline for one of your real candidates on our servers: boards checked on a schedule,
-  every advert matched against their profile, letter and CV drafted, one card in <b>your own Discord</b>.
-  Nothing sends until you tap. No card; after 7 days the hunt pauses and your setup is kept. Buy with the same
-  email and it upgrades in place.</p>
-  <p><a class="buy" href="https://stpi-mint.stpi-cloud.workers.dev/g/st/getstpi">Start the 7-day hosted trial</a></p>
+<section><div class="wrap">
+  <h2>Demo vs Premium</h2>
+  <table>
+    <tr><th></th><th>Free demo</th><th>Premium (everything)</th></tr>
+    <tr><td>Full hunt → draft → PDF pipeline</td><td>✔ all of it</td><td>✔</td></tr>
+    <tr><td>Real email sends</td><td>5, so the moment of truth is real</td><td>Unlimited (20/candidate/day anti-spam cap)</td></tr>
+    <tr><td>Candidates / tenants</td><td>2 candidates, 1 tenant</td><td>Plan-sized: solo → studio → agency</td></tr>
+    <tr><td>Dashboard approvals, Telegram/Discord webhook notifications, LLM failover chain</td><td>✔</td><td>✔ + priority board packs (LinkedIn-style searches, company career pages via sitemap)</td></tr>
+    <tr><td>Upgrade nags</td><td>everywhere, on purpose</td><td>none. poetic, really</td></tr>
+    <tr><td>Support</td><td>docs + the pipeline itself</td><td>same-day human &mdash; <a href="https://wa.me/263784600904">WhatsApp +263 78 460 0904</a> or <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a></td></tr>
+  </table>
 </div></section>
 
 <section style="background:#f7fafd"><div class="wrap">
   <h2>Simple pricing. Pay how you want.</h2>
   <div class="grid">
-    <div class="price"><h3>Solo</h3><div class="amt">$306<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">or R4,999/mo in rands</div>
-      <ul><li>1 tenant · 3 candidates · 100 sends/mo</li><li>hosted for you, nothing to install</li><li>approve in Discord (web dashboard + Telegram when self-hosted)</li>
+    <div class="price"><h3>Solo</h3><div class="amt">$306<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">about R4,999</div>
+      <ul><li>1 tenant · 3 candidates · 100 sends/mo</li><li>hosted on your GitHub Actions</li><li>dashboard + Telegram/webhook notifications</li>
       <li><b>$2,754/yr (about R45,000)</b> &mdash; save $918</li></ul>
-      <a class="buy" href="https://stpi-mint.stpi-cloud.workers.dev/g/s1/getstpi">Buy Solo &mdash; $306/mo</a>
-      <a class="buy alt" href="https://stpi-mint.stpi-cloud.workers.dev/g/s7/getstpi">Pay in rands &mdash; R4,999/mo</a>
-      <a class="buy alt" href="https://stpi-mint.stpi-cloud.workers.dev/g/s4/getstpi">Pay annual by bank wire &mdash; $2,754</a></div>
+      <a class="buy" href="https://whop.com/checkout/ch_abZZn55zTTq9VO0/">Buy Solo on Whop</a></div>
     <div class="price" style="border-width:3px"><h3>Studio ⭐ most popular</h3>
-      <div class="amt">$613<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">or R9,999/mo in rands</div>
+      <div class="amt">$613<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">about R9,999</div>
       <ul><li>1 tenant · 15 candidates · fair-use sends</li><li>LLM failover chain (never rate-limited mid-hunt)</li><li>queue paging + priority support</li>
-      <li><b>$5,517/yr (about R90,000)</b> &mdash; save $1,839</li></ul>
-      <a class="buy" href="https://stpi-mint.stpi-cloud.workers.dev/g/s2/getstpi">Buy Studio &mdash; $613/mo</a>
-      <a class="buy alt" href="https://stpi-mint.stpi-cloud.workers.dev/g/s8/getstpi">Pay in rands &mdash; R9,999/mo</a>
-      <a class="buy alt" href="https://stpi-mint.stpi-cloud.workers.dev/g/s5/getstpi">Pay annual by bank wire &mdash; $5,517</a></div>
-    <div class="price"><h3>Sovereign</h3><div class="amt">$920<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">or R15,000/mo in rands</div>
-      <ul><li>self-hosted: your box, your Docker, signed offline licence</li><li>unlimited candidates</li><li>licence + install steps delivered in your Discord; WhatsApp backup</li>
-      <li><b>$8,280/yr (about R135,000)</b> &mdash; save $2,760</li></ul>
-      <a class="buy" href="https://stpi-mint.stpi-cloud.workers.dev/g/s3/getstpi">Buy Sovereign &mdash; $920/mo</a>
-      <a class="buy alt" href="https://stpi-mint.stpi-cloud.workers.dev/g/s9/getstpi">Pay in rands &mdash; R15,000/mo</a>
-      <a class="buy alt" href="https://stpi-mint.stpi-cloud.workers.dev/g/s6/getstpi">Pay annual by bank wire &mdash; $8,280</a></div>
+      <li><b>$5,517/yr (about R90,000)</b></li></ul>
+      <a class="buy" href="https://whop.com/checkout/ch_xXwDxquSJP2Ctwu/">Buy Studio on Whop</a></div>
+    <div class="price"><h3>Sovereign</h3><div class="amt">$920<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">about R15,000</div>
+      <ul><li>your box, your Docker, signed offline licence</li><li>unlimited candidates</li><li>24-month source conversion terms</li></ul>
+      <a class="buy" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Sovereign%20(self-hosted)%20licence">Invoice / pay direct on WhatsApp</a></div>
   </div>
-  <p style="margin-top:16px;font-size:14px">💱 <b>Pay in dollars or rands.</b> Monthly checkout on Whop takes a card in US dollars or in South African rands.
-  Annual is one payment by bank wire on Whop: Whop only takes cards up to $2,500, so yearly plans go by wire.
-  Every tier renews monthly unless you pick annual; cancel any time in Whop.</p>
+  <div class="grid" style="margin-top:18px">
+    <div class="price"><h3>Done-For-You Placement</h3><div class="amt">$49<span style="font-size:14px">/mo</span></div><div style="font-size:13px;opacity:.75">or R850/mo · individual job seekers</div>
+      <ul><li>1 seat hosted on our live engine · 30 sends/mo</li><li>twice-daily hunts across 16 African markets + remote boards</li><li>tailored Apex CV + cover letter PDFs per vacancy</li></ul>
+      <a class="buy" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Done-For-You%20Executive%20Placement%20Retainer">Book DFY Seat on WhatsApp</a></div>
+    <div class="price"><h3>Truth-File &amp; Apex CV Pack</h3><div class="amt">$19<span style="font-size:14px"> once</span></div><div style="font-size:13px;opacity:.75">or R350 once-off · instant upgrade</div>
+      <ul><li>structured YAML Truth-File + ATS keyword audit</li><li>country-compliant PDF in 12 designs / 5 Apex palettes</li><li>includes the 6-prompt kit + free 1-candidate demo</li></ul>
+      <a class="buy" href="https://wa.me/263784600904?text=STPi%20%E2%80%94%20Truth-File%20%26%20Apex%20CV%20Setup%20Pack">Order Apex CV Pack on WhatsApp</a></div>
+    <div class="price"><h3>Whop Affiliate &amp; Partner</h3><div class="amt">30%<span style="font-size:14px"> recurring</span></div><div style="font-size:13px;opacity:.75">built-in Whop affiliate split</div>
+      <ul><li>share any STPi link with <code>?a=your_whop_handle</code></li><li>tracks across landing, trial &amp; all 9 Whop checkouts</li><li>automatic payout on Whop for Solo, Studio &amp; Sovereign</li></ul>
+      <a class="buy" href="https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi">Join on Whop Storefront</a></div>
+  </div>
+  <p style="margin-top:16px;max-width:760px"><b>Payback, in your numbers:</b> Solo ($306, about R4,999) is two to three
+  CV-and-letter bundles at typical coach rates (R600&ndash;R1,500 each) &mdash; and it deletes the hunt-and-rewrite hours
+  behind every one of them. If it doesn&rsquo;t earn its keep, cancel in the app; no retention call. The demo below stays
+  free forever either way, so the bench can judge the cards before you judge the price.</p>
   <p style="margin-top:16px" class="rails">🇿🇼 🇿🇦 No card? No problem — pay by <b>⚡ Lightning</b>
   (<code>SharkSkin@coinos.io</code>, name + tier in the memo) or <b>Mukuru / cash EFT</b>
   (<code>+263 78 460 0904 · ref = your tenant id</code>). Say what you paid for and the licence lands the same day.</p>
@@ -157,28 +202,41 @@ $ stpi hunt --dry<br>
   <h2>The honest questions</h2>
   <details><summary>Why is the download not gated by an email form?</summary>
   Because you'd delete our number the second the demo expired, and we'd rather you forwarded the ZIP.
-  The demo runs entirely on your machine — we couldn't collect your data if we wanted to.</details>
+  The engine runs on your machine; configured LLM, mailbox, messaging and state-storage providers process the data their features require.</details>
   <details><summary>What happens to my candidates' ID numbers, emails, CVs?</summary>
   They live in a YAML folder on your box or your private GitHub repo, and that's it. The product ships with
-  a right-to-erasure button (delete file = gone, logs keep only an opaque id) and 72-hour PDF expiry.</details>
+  profile removal and 72-hour active generated-content access expiry. Downloads, delivered messages, Git history and backups are separate copies, not erased by deleting a YAML file.</details>
   <details><summary>Is the demo actually the product?</summary>
   Bit-for-bit — one environment flag separates demo from paid (STPI_FLAVOUR=demo). No feature lobotomy,
-  just a 25-draft / 5-send / 30-day leash and a lot of purple upgrade banners.</details>
+  just a one-candidate / five-monthly-send allowance with no expiry and a lot of purple upgrade banners.</details>
   <details><summary>What's your licence stance?</summary>
   Commercial, source-included, and each released version converts to MIT 24 months after release.
   The demo you're downloading may be freely re-shared unmodified — that's in the licence itself.</details>
 </div></section>
 
 <footer><div class="wrap">
-  <b>STPi</b> by Jacaranda Labs · <a href="https://wa.me/263784600904">+263 78 460 0904</a> · <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> ·
-  checkout: <a href="https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi">Whop store</a> · ⚡ <code>SharkSkin@coinos.io</code> ·
+  <b>STPi</b> by <b>STPi</b> · <a href="https://wa.me/263784600904">+263 78 460 0904</a> · <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> ·
+  checkout: <a href="https://stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi">store</a> · ⚡ <code>SharkSkin@coinos.io</code> ·
   Mukuru/EFT <code>+263 78 460 0904</code><br>
   <span style="opacity:.7">No scraping behind logins. No spam (daily send caps). No dark patterns — the upgrade
   banners are so loud you can find the exit by echo.</span>
-  <p class="note">demo zip: stpi-demo-1.0.1.zip · sha256 published beside it · this page makes ZERO external requests</p>
+  <p class="note">demo zip: stpi-demo-1.0.2.zip · sha256 published beside it · this page makes one anonymous request: a pageview + click counter with mint (no cookies, no ids)</p>
 </div></footer>
 <script>
+/* STPi analytics beacon (2026-10-13): anonymous pageview + conversion-click counter served by
+   our own worker (stpi-mint /px). No cookies, no fingerprints, no third party. */
 (function(){
+  var M="https://stpi-mint.stpi-cloud.workers.dev/px?kind=";
+  function px(k,t){
+    try{
+      var u=M+encodeURIComponent(k)+(t?"&tag="+encodeURIComponent(t):"")+
+        "&path="+encodeURIComponent(location.pathname+location.hash.slice(0,40))+
+        (document.referrer?"&ref="+encodeURIComponent(document.referrer.slice(0,180)):"");
+      if(navigator.sendBeacon){navigator.sendBeacon(u);}
+      else{var i=new Image();i.src=u;}
+    }catch(e){}
+  }
+  px("pageview");
   try{
     var q=new URLSearchParams(location.search),aff=(q.get("a")||sessionStorage.getItem("stpi_whop_aff")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
     if(aff){
@@ -189,6 +247,13 @@ $ stpi hunt --dry<br>
       });
     }
   }catch(e){}
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest?e.target.closest("a"):null;if(!a)return;
+    var href=a.getAttribute("href")||"";
+    var k=a.classList.contains("dl")?"download":a.classList.contains("buy")?"checkout":
+      /wa\.me/.test(href)?"whatsapp":/stpi-mint/.test(href)?"console":"click";
+    px(k,href.slice(0,120));
+  },true);
 })();
 </script>
 </body></html>

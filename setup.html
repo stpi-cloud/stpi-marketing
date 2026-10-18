@@ -83,34 +83,45 @@
 </div></header>
 <main>
 
-<p class="sub">This guide is for the <b>free demo</b>: one candidate, the full pipeline, forever —
-25 drafts + 5 sends per rolling 30 days, enforced in code, the identical wheel the paid tiers run.
+<p class="sub">This guide is for the <b>free demo</b> and all STPi editions: one candidate, five sends per UTC month, free forever, enforced in code, the identical wheel the paid tiers run.
 No card, no account, no telemetry: the download IS the product.</p>
 
+<div class="note" style="margin:14px 0">
+ <b>📸 Step-by-Step Customer Photo Guides (Onboarding → Full Operation · All 7 Products):</b><br>
+ Actual screenshots of every onboarding and operating step with instructions &amp; examples:<br>
+ <div class="btns" style="margin-top:8px">
+   <a class="btn" href="guides/STPi-Customer-Photo-Guide.html">🌐 Interactive HTML Photo Guide (All Products)</a>
+   <a class="btn alt" href="guides/STPi-Customer-Photo-Guide.pdf">📄 Download PDF Photo Guide</a>
+   <a class="btn alt" href="guides/STPi-Photo-Guide-demo.html">Demo HTML Guide</a>
+   <a class="btn alt" href="guides/STPi-Photo-Guide-sovereign.html">Sovereign HTML Guide</a>
+   <a class="btn alt" href="https://stpi-bible.pages.dev/guides/STPi-Customer-Photo-Guide.html">Mirror (stpi-bible.pages.dev)</a>
+ </div>
+</div>
+
 <div class="btns">
- <a class="btn" href="downloads/stpi-demo-1.0.1.zip">⬇ Download the demo (173 KB .zip)</a>
- <a class="btn alt" href="downloads/stpi-demo-1.0.1.zip.sha256">sha256 file</a>
+ <a class="btn" href="downloads/stpi-demo-1.0.2.zip">⬇ Download the demo (.zip + Photo Guides)</a>
+ <a class="btn alt" href="downloads/stpi-demo-1.0.2.zip.sha256">sha256 file</a>
 </div>
 
 <h2><span class="n">1</span> Download, then prove the bytes</h2>
 <p>Two files: the pack and its signature hash. Check the download matches the hash before installing —
 if it ever differs, you did not get our file:</p>
 <pre class="term"><span class="dim"># Linux / Mac — in the folder you downloaded to:</span>
-sha256sum -c stpi-demo-1.0.1.zip.sha256
-<span class="c">stpi-demo-1.0.1.zip: OK</span>
+sha256sum -c stpi-demo-1.0.2.zip.sha256
+<span class="c">stpi-demo-1.0.2.zip: OK</span>
 
 <span class="dim"># Windows PowerShell:</span>
-(Get-FileHash stpi-demo-1.0.1.zip).Hash -eq (Get-Content stpi-demo-1.0.1.zip.sha256).Substring(0,64)
+(Get-FileHash stpi-demo-1.0.2.zip).Hash -eq (Get-Content stpi-demo-1.0.2.zip.sha256).Substring(0,64)
 <span class="c">True</span></pre>
-<p class="sub">Expected digest: <code>9f2b33e033a9cde21b131487180f598770426797efe97361e4c1e75c0a0f33a8</code></p>
+<p class="sub">Expected digest: <code>0ecf6c0b55cc51aeaea85e43bcdb73f587e28f1f123d4fcf732086e800dfe3b8</code></p>
 
 <h2><span class="n">2</span> Install (Python 3.11+)</h2>
-<pre class="term">unzip stpi-demo-1.0.1.zip -d stpi-demo && cd stpi-demo
+<pre class="term">unzip stpi-demo-1.0.2.zip -d stpi-demo && cd stpi-demo
 python3 -m venv .venv && source .venv/bin/activate      <span class="dim"># Windows: .venv\Scripts\activate</span>
-pip install stpi-1.0.1-py3-none-any.whl
+pip install stpi-1.0.2-py3-none-any.whl
 
 stpi doctor        <span class="dim"># self-check: config, files, data dir, LLM key, SMTP</span>
-<span class="c">✔ flavour: demo (25 drafts / 5 sends / 30-day window)</span>
+<span class="c">✔ flavour: demo (one candidate / five sends per UTC month / free forever)</span>
 <span class="c">✔ tenant demo: 2 candidates</span>  <span class="dim">…</span>
 <span class="dim">✘ groq key missing            ← fix it next line, that's the only real requirement</span></pre>
 <p>The pack already contains a working tenant: <code>config/tenants/demo/</code> with two
@@ -169,7 +180,7 @@ decides what gets hunted for this candidate. <code>stpi hunt --dry</code> previe
 with reply-to set to the candidate <i>and</i> this mailbox — so the candidate hears straight away and so do you.
 The same app password lets STPi read the inbox (read-only, nothing marked or moved) to flag employer
 replies: interview invites, questions, no's, bounces. Caps: 20 per candidate a day, 150 per mailbox
-(demo: 5 sends per 30 days).</div>
+(demo: 5 sends per UTC calendar month).</div>
 <div class="note"><b>Paid plans: want each candidate to have their own address?</b> With your domain, applications go out as
 <code>lerato.dube@yourpractice.co.za</code>; replies reach both you and the candidate. Use free Cloudflare Email Routing + Brevo/SMTP2GO,
 or connect an SMTP/IMAP server you already run. Demo and trial use Gmail only. <a href="domain.html">The own-domain guide →</a></div>
@@ -182,7 +193,7 @@ or connect an SMTP/IMAP server you already run. Demo and trial use Gmail only. <
 <span class="dim">[dry] Senior Accountant @ Meridian Logistics (pre 0.71 / llm 88%) -&gt; Senior Accountant — Meridian…</span>
 
 stpi hunt               <span class="dim"># real: drafts the PDFs, posts the cards, waits for your tap</span></pre>
-<p>18 board integrations across ZA · ZW · ZM + remote feeds, four times a day if you schedule it
+<p>18 board integrations across ZA · ZW · ZM + remote feeds, twice a day, Monday–Saturday if you schedule it
 (§10). A dead board never kills a run — <code>[hunter:x] 0 jobs</code> and the rest deliver.</p>
 
 <h2><span class="n">7</span> The tap is the product</h2>
@@ -241,7 +252,7 @@ folder and die at 72 h. Your Gmail app password and model key are Fernet-encrypt
 Nothing phones home: no accounts, no analytics, no server of ours in the data path — self-hosted demo
 means your laptop is the cloud.</p>
 
-<h2><span class="n">10</span> Four times a day, if you want it</h2>
+<h2><span class="n">10</span> twice a day, Monday–Saturday, if you want it</h2>
 <p>Demo mode: a scheduled <code>stpi hunt</code> via cron (Linux/Mac) or Task Scheduler (Windows):</p>
 <pre class="term"><span class="dim"># crontab -e — the 06:00/14:00 SAST rhythm (adjust TZ to yours)</span>
 0 4,12 * * 1-6  cd ~/stpi-demo && .venv/bin/stpi hunt &gt;&gt; hunt.log 2&gt;&amp;1</pre>
@@ -254,7 +265,7 @@ touch a scheduler.</p>
 <tr><td><code>[llm] groq: 429</code></td><td>free-tier rate limit. Naps are capped at 30 s then failover; run <code>stpi llm-chain demo</code> after exporting 2–3 free keys (cerebras, gemini…) to spread load.</td></tr>
 <tr><td><code>[pnet] detail path unhealthy — serving the rest from list data</code></td><td>board/DNS hiccup; the breaker keeps delivering ads from list data. No action; the next run retries normally.</td></tr>
 <tr><td>a board logs <code>0 jobs</code></td><td>that board is blocked from your IP or empty today. Coverage degrades, the run completes — always.</td></tr>
-<tr><td><code>DEMO limit: all 5 premium sends used</code></td><td>the 30-day leash. Reset goodwill: delete <code>data/.demo_usage.json</code> — or upgrade (§12).</td></tr>
+<tr><td><code>DEMO limit: all 5 premium sends used</code></td><td>free forever, one candidate and five sends per UTC calendar month. Preserve <code>data/.demo_usage.json</code> — or upgrade (§12).</td></tr>
 <tr><td>everything times out on first run</td><td>free Groq key on a shared quota: it warms up. Every fetch has a hard 45 s budget — a run can idle, never hang forever.</td></tr>
 </table>
 
@@ -269,7 +280,7 @@ touch a scheduler.</p>
      Studio <code>whop.com/checkout/ch_xXwDxquSJP2Ctwu</code>, Sovereign <code>whop.com/checkout/ch_cjiffJE23bpi6Zx</code>),
      in rands (Solo <code>ch_kx2q8S9aYZtNTbX</code>, Studio <code>ch_DevT4v0Yys7JPUX</code>, Sovereign <code>ch_kB1eviTd27jsJiv</code>),
      and annual by bank wire (Solo <code>ch_k0iLW2DxBwPn7Pb</code>, Studio <code>ch_2AqEEMTlrXveTzJ</code>, Sovereign <code>ch_4gPHCzpXHl3jk6y</code>).
-     Store <code>whop.com/jacaranda-labs</code>. Whop only takes cards up to $2,500, so annual is wire-only.
+     Store <code>stpi-mint.stpi-cloud.workers.dev/g/ss/getstpi</code>. Whop only takes cards up to $2,500, so annual is wire-only.
      Card payments run through Whop; every manual rail below is honoured in full too — Lightning to
      <b>SharkSkin@coinos.io</b> (LUD-16-verified 2026-09-19; payer puts name + tier in the payment
      note, receipt to WhatsApp), or Mukuru/EFT quoting their tenant id as the reference. Push annual
@@ -331,4 +342,38 @@ docker compose -f docker-compose.sovereign.yml exec stpi stpi licence-status</pr
  LICENSE: redistribution of the UNMODIFIED demo build is encouraged (that's how it spreads);
  modifications and paid tiers are where the licence bites.
 </div></footer>
-</main></body></html>
+</main><script>
+/* STPi analytics beacon (2026-10-13): anonymous pageview + conversion-click counter served by
+   our own worker (stpi-mint /px). No cookies, no fingerprints, no third party. */
+(function(){
+  var M="https://stpi-mint.stpi-cloud.workers.dev/px?kind=";
+  function px(k,t){
+    try{
+      var u=M+encodeURIComponent(k)+(t?"&tag="+encodeURIComponent(t):"")+
+        "&path="+encodeURIComponent(location.pathname+location.hash.slice(0,40))+
+        (document.referrer?"&ref="+encodeURIComponent(document.referrer.slice(0,180)):"");
+      if(navigator.sendBeacon){navigator.sendBeacon(u);}
+      else{var i=new Image();i.src=u;}
+    }catch(e){}
+  }
+  px("pageview");
+  try{
+    var q=new URLSearchParams(location.search),aff=(q.get("a")||sessionStorage.getItem("stpi_whop_aff")||sessionStorage.getItem("stpi_whop_affiliate")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+    if(aff){
+      sessionStorage.setItem("stpi_whop_aff",aff);
+      document.querySelectorAll('a[href*="whop.com"],a[href*="stpi-mint.stpi-cloud.workers.dev/g/"],a[href*="stpi-mint.stpi-cloud.workers.dev/trial"]').forEach(function(el){
+        var h=el.getAttribute("href")||"";
+        if(h&&h.indexOf("a=")===-1)el.setAttribute("href",h+(h.indexOf("?")===-1?"?":"&")+"a="+encodeURIComponent(aff));
+      });
+    }
+  }catch(e){}
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest?e.target.closest("a"):null;if(!a)return;
+    var href=a.getAttribute("href")||"";
+    var k=a.classList.contains("dl")?"download":a.classList.contains("buy")?"checkout":
+      /wa\.me/.test(href)?"whatsapp":/stpi-mint/.test(href)?"console":"click";
+    px(k,href.slice(0,120));
+  },true);
+})();
+</script>
+</body></html>
