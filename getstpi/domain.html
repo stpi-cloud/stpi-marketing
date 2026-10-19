@@ -3,21 +3,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="canonical" href="https://getstpi.pages.dev/domain">
+<link rel="icon" type="image/svg+xml" href="/stpi-icon.svg">
+<link rel="alternate icon" href="/favicon.ico">
 <title>STPi — give every client their own sender address on your domain</title>
-<meta name="description" content="Applications go out as lerato.dube@yourpractice.co.za, replies land in your Gmail. Free Cloudflare Email Routing + a free sending relay; about R100–R200 a year for the domain.">
+<meta name="description" content="Applications go out from the candidate's own Gmail by default, or as lerato.dube@yourpractice.co.za on your custom domain; replies land in your inbox.">
 <style>
- :root { --purple:#27548f; --ink:#2B2B2B; --lilac:#eef4fb; --line:#dbe7f4; --ok:#137333; --warn:#B00020; }
+ :root { --purple:#14365e; --deep:#0a1f3c; --ink:#272f35; --lilac:#eef4fb; --line:#dbe7f4; --ok:#15803d; --warn:#b91c1c; }
  * { box-sizing:border-box; }
- body { margin:0; font:15.5px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:#fff; }
- header { background:linear-gradient(135deg,#2B2B2B,#0f2748); color:#fff; padding:26px 20px 30px; }
+ body { margin:0; font:15.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:#fff; }
+ header { background:linear-gradient(135deg,var(--deep),var(--purple)); color:#fff; padding:26px 20px 30px; }
  .wrap { max-width:900px; margin:0 auto; padding:0 18px; }
  header .wrap { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
- header svg { width:34px; height:34px; }
- header h1 { font-size:21px; margin:0; flex:1 1 300px; }
+ header img.logo { height:44px; border-radius:9px; display:block; }
+ header h1 { font-family:Georgia,'Times New Roman',serif; font-size:21px; margin:0; flex:1 1 300px; }
  header nav a { color:#fff; text-decoration:none; font-size:13.5px; opacity:.85; margin-left:14px; border-bottom:1px solid transparent; }
  header nav a:hover { opacity:1; border-color:#fff; }
  main { max-width:900px; margin:0 auto; padding:26px 18px 60px; }
- h2 { font-size:20px; margin:38px 0 6px; letter-spacing:.2px; }
+ h2 { font-family:Georgia,'Times New Roman',serif; color:var(--deep); font-size:20px; margin:38px 0 6px; letter-spacing:.2px; }
  h2 .n { color:var(--purple); font-weight:800; margin-right:6px; }
  h3 { font-size:15.5px; margin:20px 0 4px; }
  p { margin:8px 0; } .sub { color:#666; font-size:13.5px; }
@@ -44,17 +46,17 @@
 </head>
 <body>
 <header><div class="wrap">
- <svg viewBox="0 0 116 116" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="27"/><path d="M59 59 L72 72"/><path d="M72 72 L108 48 L88 106 L78 84 Z"/><path d="M78 84 L108 48"/></g></svg>
- <h1>Your own domain: one address per client<br><span style="font-weight:400;font-size:13px;opacity:.8">lerato.dube@yourpractice.co.za → replies in your inbox · ~30 minutes, once</span></h1>
- <nav><a href="https://getstpi.pages.dev/">Home</a><a href="setup.html">Setup guide</a><a href="demo.html">Demo</a></nav>
+ <img class="logo" src="/brand/stpi-logo-on-navy.png" alt="STPi — Strategic Talent Placement Infrastructure">
+ <h1>Candidate Gmail Default &amp; Custom Domain Sending<br><span style="font-weight:400;font-size:13px;opacity:.8">Default: candidate&rsquo;s own Gmail + App Password · Optional: lerato.dube@yourpractice.co.za</span></h1>
+ <nav><a href="https://getstpi.pages.dev/">Home</a><a href="setup.html">Setup guide</a><a href="demo.html">Demo</a><a href="videos/">32 Videos</a></nav>
 </div></header>
 <main>
 
-<p class="sub">Optional. Without it, STPi sends every application from your Gmail, signed
-"Candidate (via your brand)". With it, each client gets an address of their own on your domain —
-created automatically from their name, nothing to set up per client — and every reply still lands
-in one inbox you already read, with a STPi alert when an employer answers. Operators and candidates both get
-copies of outgoing applications; replies are addressed to the candidate and the operator.</p>
+<p class="sub"><b>Default (recommended):</b> Every candidate connects their own Gmail + 16-character App Password so applications send directly from the candidate&rsquo;s inbox (giving both candidate and operator a real-world Sent folder). Your agency mailbox is used as a BCC copy and fallback only when a candidate has not connected their own Gmail. <b>Optional custom domain:</b> With custom domain routing below, each client gets an address of their own on your domain — created automatically from their name — and every reply still lands in your inbox and the candidate&rsquo;s inbox.</p>
+<div style="margin:14px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#f8fbff">
+  <a href="/guides/shots/step-14-mailbox-plan-settings.png" target="_blank" rel="noopener"><img src="/guides/shots/step-14-mailbox-plan-settings.png" alt="STPi Mailbox & Domain Settings" loading="lazy" style="width:100%;display:block"></a>
+  <div style="padding:8px 12px;font-size:12.5px;color:var(--deep)"><b>Live Workspace Screenshot:</b> Candidate &amp; Agency Mailbox configuration inside the STPi Command Workspace.</div>
+</div>
 <div class="warn"><b>Paid feature:</b> own-domain sending is available on Solo, Studio and Sovereign. Demo and the 7-day trial
 use a Gmail app password and send from that Gmail; they cannot connect a domain or a non-Gmail mail server.</div>
 
@@ -147,15 +149,16 @@ If you only have a domain but no mail server, choose Cloudflare routing + a free
 </ul>
 
 <footer><div class="wrap" style="padding:0">
- <b>STPi Official Support &amp; Socials:</b> WhatsApp <a href="https://wa.me/263784600904">+263 78 460 0904</a> ·
+ <b>STPi Official Support &amp; Socials:</b> WhatsApp <a href="https://wa.me/263784600904" target="_blank" rel="noopener">+263 78 460 0904</a> ·
  Email <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> &amp; <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a> ·
  <a href="https://getstpi.pages.dev/">home</a> · <a href="setup.html">4-Format Customer Guides</a> ·
- <a href="videos/">11 Promo Videos &amp; Video Guide</a> ·
+ <a href="videos/">32 Promo Videos &amp; Video Guide</a> ·
  <a href="downloads/STPi-Customer-Sales-Contract.pdf"><b>📥 7-Day Printable Sales Contract (PDF)</b></a> ·
- <a href="https://whop.com/stpi">Whop</a> · <a href="https://getstpi.pages.dev/g/xl/contact">X @STPi_Cloud</a> ·
- <a href="https://getstpi.pages.dev/g/ll/contact">LinkedIn</a> · <a href="https://bsky.app/profile/stpi.bsky.social">Bluesky @stpi.bsky.social</a> ·
- <a href="https://getstpi.pages.dev/g/tl/contact">Telegram</a> · <a href="https://getstpi.pages.dev/g/fl/contact">Facebook</a> ·
- <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/">Pinterest</a> · <a href="https://dev.to/simali_dud_b97add4154d7a6">Dev.to</a><br>
+ <a href="https://whop.com/stpi" target="_blank" rel="noopener">Whop Shop</a> · <a href="https://stpi.whop.site" target="_blank" rel="noopener">stpi.whop.site</a> ·
+ <a href="https://x.com/STPi_Cloud" target="_blank" rel="noopener">X @STPi_Cloud</a> ·
+ <a href="https://www.linkedin.com/company/stpi" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://bsky.app/profile/stpi.bsky.social" target="_blank" rel="noopener">Bluesky @stpi.bsky.social</a> · <a href="https://bsky.app/profile/tariromalajila.bsky.social" target="_blank" rel="noopener">Bluesky @tariromalajila.bsky.social</a> ·
+ <a href="https://www.facebook.com/stpicareers" target="_blank" rel="noopener">Facebook</a> ·
+ <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/" target="_blank" rel="noopener">Pinterest</a> · <a href="https://dev.to/simali_dud_b97add4154d7a6" target="_blank" rel="noopener">Dev.to</a><br>
  <b>⚠️ Support-First Rule:</b> Always contact STPi Support FIRST before panicking or using random internet advice! Running to the public before contacting us results in immediate removal.
 </div></footer>
 <script>

@@ -1,0 +1,96 @@
+-- extracted 2026-10-09 from stpi/landing/index.html --
+STPi — Strategic Talent Placement Infrastructure — find jobs, write the paperwork, send them. Free demo, no email needed
+What it does while you sleep
+Hunts PNet · CareerJunction · Careers24 · Bizcommunity · iHarareJobs · VacancyMail · JobsZimbabwe · GoZambiaJobs · UNjobs · Impactpool — per-candidate keywords, excludes and city prefs.
+Drafts one LLM call per match: relevance score, cover letter, tailored CV — never invents facts, uses only the candidate profile you approve.
+Renders print-ready PDFs (ZA/ZW/ZM CV formats) and sends the card: "Accountant @ Acme — Match 87%" with ✅ / ❌.
+Only after your tap: it emails the ad's apply address from your mailbox, signed as the candidate, with the PDFs attached. Capped per candidate and per day so your mailbox never gets flagged.
+When the employer answers: the reply reaches the candidate and you, and STPi pings you: interview invite, question, no, or a bounced address.
+$ pip install ./stpi-1.0.1-py3-none-any.whl && stpi serve
+✔ demo flavour active — 25 drafts · 5 premium sends · 30 days
+$ stpi hunt --dry
+✔ 11 new matches for lerato01 — top 5 drafted
+⬆ unlock everything from $306/mo (about R4,999) — buy: https://whop.com/jacaranda-labs (demo nag, deleted on upgrade)
+Run it free, forever… on your own terms
+Zero infrastructure. The default deployment is two GitHub Actions workflows —
+no server, no Docker, no credit card. Your state lives in your private repo.
+Your keys, your mailbox. Bring a free-tier Groq/Cerebras/Gemini key and a Gmail
+app-password for your sending mailbox. We never hold either; both are encrypted at rest on your box.
+Nothing to leak. Server side you keep {job_url, status, timestamp}.
+PDFs auto-purge in ≤72 h. No CRM, no tracking pixels, no "sales team will contact you".
+Self-hosted option. Agencies that want sovereignty run the Docker image on their
+own box with a signed offline licence (read-only when it lapses — never a bricked machine).
+Buy it, board it, run it — no ticket, no waiting on a human
+Half of software support is "where do I click now?". Here is the whole
+journey, start to running, in one list. Every screen you'll open says the same things in fewer words.
+Buy on Whop (store, plans below). Whop messages you
+within a minute: your licence plus your personal setup link (/start/…).
+Open your setup link. It asks for exactly the three things a machine can't guess —
+your WhatsApp number (for licence delivery),
+your Gmail app password (Google: 2FA on → App passwords),
+and a free LLM key (Groq or
+Gemini). Each field carries its own one-minute how-to.
+Hunts start on the next cycle. Matches arrive on your dashboard as cards — ✅ sends, ❌
+skips. Nothing emails without a tap, ever; send caps keep your mailbox reputation boring.
+Add your own clients (candidates) in the same dashboard. The candidates page posts one card
+per job seeker: ➕ Add types their details (attach their CV with /candidate add cv:),
+🔗 Invite mints a private link you WhatsApp them — they fill in their own details, upload their CV and
+give consent, and you approve before they're hunted. Plan seats (5 / 25 / unlimited) are the only ceiling.
+Is it us or is it you? The machine answers for itself:
+stpi-mint /health
+— "ok": true and a fresh tick = everything is running; your screen is the place to look.
+Need help anyway? Same-day human on WhatsApp — for outages, not onboarding.
+Demo vs Premium
+Free demoPremium (everything)
+Full hunt → draft → PDF pipeline✔ all of it✔
+Real email sends5, so the moment of truth is realUnlimited (20/candidate/day anti-spam cap)
+Candidates / tenants2 candidates, 1 tenantPlan-sized: solo → studio → agency
+Dashboard approvals, Telegram/Discord webhook notifications, LLM failover chain✔✔ + priority board packs (LinkedIn-style searches, company career pages via sitemap)
+Upgrade nagseverywhere, on purposenone. poetic, really
+Supportdocs + the pipeline itselfsame-day human — WhatsApp +263 78 460 0904 or simalidudu@gmail.com
+Simple pricing. Pay how you want.
+Solo
+$306/mo
+about R4,999
+1 tenant · 3 candidates · 100 sends/mo
+hosted on your GitHub Actions
+dashboard + Telegram/webhook notifications
+$2,754/yr (about R45,000) — save $918
+Buy Solo on Whop
+Studio ⭐ most popular
+$613/mo
+about R9,999
+1 tenant · 15 candidates · fair-use sends
+LLM failover chain (never rate-limited mid-hunt)
+queue paging + priority support
+$5,517/yr (about R90,000)
+Buy Studio on Whop
+Sovereign
+$920/mo
+about R15,000
+your box, your Docker, signed offline licence
+unlimited candidates
+24-month source conversion terms
+Invoice / pay direct on WhatsApp
+🇿🇼 🇿🇦 No card? No problem — pay by ⚡ Lightning
+(SharkSkin@coinos.io, name + tier in the memo) or Mukuru / cash EFT
+(+263 78 460 0904 · ref = your tenant id). Say what you paid for and the licence lands the same day.
+The honest questions
+Why is the download not gated by an email form?
+Because you'd delete our number the second the demo expired, and we'd rather you forwarded the ZIP.
+The demo runs entirely on your machine — we couldn't collect your data if we wanted to.
+What happens to my candidates' ID numbers, emails, CVs?
+They live in a YAML folder on your box or your private GitHub repo, and that's it. The product ships with
+a right-to-erasure button (delete file = gone, logs keep only an opaque id) and 72-hour PDF expiry.
+Is the demo actually the product?
+Bit-for-bit — one environment flag separates demo from paid (STPI_FLAVOUR=demo). No feature lobotomy,
+just a 25-draft / 5-send / 30-day leash and a lot of purple upgrade banners.
+What's your licence stance?
+Commercial, source-included, and each released version converts to MIT 24 months after release.
+The demo you're downloading may be freely re-shared unmodified — that's in the licence itself.
+STPi — Strategic Talent Placement Infrastructure · +263 78 460 0904 · simalidudu@gmail.com ·
+checkout: Whop store · ⚡ SharkSkin@coinos.io ·
+Mukuru/EFT +263 78 460 0904
+No scraping behind logins. No spam (daily send caps). No dark patterns — the upgrade
+banners are so loud you can find the exit by echo.
+demo zip: stpi-demo-1.0.1.zip · sha256 published beside it · this page makes ZERO external requests

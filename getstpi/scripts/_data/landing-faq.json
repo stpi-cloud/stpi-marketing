@@ -1,0 +1,18 @@
+[
+ [
+  "Why is the download not gated by an email form?",
+  "Because you'd delete our number the second the demo expired, and we'd rather you forwarded the ZIP.\n  The demo runs entirely on your machine \u2014 we couldn't collect your data if we wanted to."
+ ],
+ [
+  "What happens to my candidates' ID numbers, emails, CVs?",
+  "They live in a YAML folder on your box or your private GitHub repo, and that's it. The product ships with\n  a right-to-erasure button (delete file = gone, logs keep only an opaque id) and 72-hour PDF expiry."
+ ],
+ [
+  "Is the demo actually the product?",
+  "Bit-for-bit \u2014 one environment flag separates demo from paid (STPI_FLAVOUR=demo). No feature lobotomy,\n  just a one-candidate / five-monthly-send allowance with no expiry and a lot of purple upgrade banners."
+ ],
+ [
+  "What's your licence stance?",
+  "Commercial, source-included, and each released version converts to MIT 24 months after release.\n  The demo you're downloading may be freely re-shared unmodified \u2014 that's in the licence itself."
+ ]
+]

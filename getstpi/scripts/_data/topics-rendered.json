@@ -1,0 +1,1243 @@
+{
+  "rendered": "2026-10-01",
+  "topics": [
+    {
+      "id": "pile-math",
+      "kind": "value",
+      "format": "longform",
+      "title": "Apply early beats apply polished",
+      "angle": "The pile grows by the hour; reviewers sample it on their clock, not yours.",
+      "beats": [
+        "What happens in the first 48 hours of a posting versus day five",
+        "Why an 8/10 application in hour two outscores a 10/10 on day four",
+        "A weekly rhythm that reserves polish time only after the fresh-role pass"
+      ],
+      "tags": "career,jobsearch,productivity"
+    },
+    {
+      "id": "ats-mechanics",
+      "kind": "value",
+      "format": "longform",
+      "title": "What parsers actually read",
+      "angle": "Correcting the keyword-stuffing folklore with how text extraction and scoring really behave.",
+      "beats": [
+        "Extraction first: tables, columns and graphics fail before keywords ever matter",
+        "Descriptions and job titles carry the signal; buzzword density does not",
+        "The only honest ATS hack is formatting for humans who arrive after the parser"
+      ],
+      "tags": "resume,automation,career"
+    },
+    {
+      "id": "follow-up-info",
+      "kind": "value",
+      "format": "longform",
+      "title": "The follow-up that earns a reply",
+      "angle": "Nudges carrying new information beat apologies for existing.",
+      "beats": [
+        "Why floating-this emails train people to ignore you",
+        "One data point per nudge: a shipped thing, a result, an answer to the JD's own question",
+        "Timing: five working days, then silence is an answer"
+      ],
+      "tags": "career,negotiation,productivity"
+    },
+    {
+      "id": "pipeline-not-document",
+      "kind": "value",
+      "format": "longform",
+      "title": "Your search is a pipeline, not a document",
+      "angle": "Volume, targeting and timing explain most outcomes; wording explains the rest.",
+      "beats": [
+        "Where applications actually die (aim, timing) versus where advice says they die (wording)",
+        "The three metrics worth tracking per employer, not per draft",
+        "Automating the boring eighty percent and hard-gating the twenty percent with your name on it"
+      ],
+      "tags": "career,automation,productivity"
+    },
+    {
+      "id": "ai-line",
+      "kind": "value",
+      "format": "longform",
+      "title": "The line where AI help becomes your liability",
+      "angle": "Upstream assistance passes the smell test; in-the-room automation deletes what interviews measure.",
+      "beats": [
+        "Prepare with machines, perform unassisted: the asymmetry interviewers punish",
+        "Why confession rules are a policy smell: the boundary should be architectural",
+        "Building prep tooling that makes you better, not dependent"
+      ],
+      "tags": "ai,career,interviews"
+    },
+    {
+      "id": "tracker-schema",
+      "kind": "value",
+      "format": "longform",
+      "title": "The application tracker that changes outcomes",
+      "angle": "Columns are decisions. Design for the follow-up date first.",
+      "beats": [
+        "Role, closing date, contact, follow-up date: why each earns its column",
+        "Re-listing signals: backfill churn versus rejection cascade",
+        "What the tracker tells you after month one that vibes never would"
+      ],
+      "tags": "productivity,career,datascience"
+    },
+    {
+      "id": "rejection-postmortem",
+      "kind": "value",
+      "format": "longform",
+      "title": "Turning silence and form rejections into data",
+      "angle": "You cannot optimize what you do not label; rejections carry more signal than offers.",
+      "beats": [
+        "The two-sentence feedback request recruiters actually answer",
+        "Labeling outcomes: aim, timing, fit, quality; most are two of four",
+        "Five patterns worth tracking across thirty rejections"
+      ],
+      "tags": "career,growth,productivity"
+    },
+    {
+      "id": "burnout-ops",
+      "kind": "value",
+      "format": "longform",
+      "title": "Burnout is an operations problem",
+      "angle": "Willpower fails at volume; caps and cooldowns do not.",
+      "beats": [
+        "The doom-loop: doomscroll, panic-apply, receive silence, repeat",
+        "Engineering constraints that make the self-harm path unavailable",
+        "Rest as pipeline state: cooldowns improve reply rates, not just mood"
+      ],
+      "tags": "mentalhealth,career,productivity"
+    },
+    {
+      "id": "link-hygiene",
+      "kind": "value",
+      "format": "longform",
+      "title": "Every link on your resume is a promise",
+      "angle": "A stranger will open it on a phone. Will it survive?",
+      "beats": [
+        "Dead repos, expired shares, request-access notes: the trust leaks nobody checks",
+        "The auditability frame: link what you want examined, hide what you would not defend",
+        "A 60-second pre-send pass that catches the usual four failures"
+      ],
+      "tags": "resume,career,security"
+    },
+    {
+      "id": "pay-for-tools",
+      "kind": "value",
+      "format": "longform",
+      "title": "Why the honest tool charges while the flatterer is free",
+      "angle": "Support costs money; free tools monetize your attention or your data.",
+      "beats": [
+        "What $306/mo (about R4,999) buys that a free template site does not: your machine, your keys, your data",
+        "The incentive map of resume flattery: why it must make you feel good",
+        "Open demos and verifiable claims as the replacement for trust-me marketing"
+      ],
+      "tags": "opensource,business,career"
+    },
+    {
+      "id": "repeat-means-real",
+      "kind": "value",
+      "format": "short",
+      "title": "Repeated requirements are the real ones",
+      "angle": "What a JD repeats or front-loads outranks what it lists.",
+      "beats": [
+        "Repetition density as the true signal",
+        "Reading for the problem, not the wish list",
+        "Two minutes of this beats two hours of keyword matching"
+      ]
+    },
+    {
+      "id": "evidence-mapping",
+      "kind": "value",
+      "format": "short",
+      "title": "One line of proof per bullet",
+      "angle": "Tailoring is evidence mapping, not thesaurus work.",
+      "beats": [
+        "Pair every changed bullet with the JD line it answers",
+        "That pairing doubles as interview prep",
+        "Fabricated specifics are how tailoring becomes fraud"
+      ]
+    },
+    {
+      "id": "three-sentences",
+      "kind": "value",
+      "format": "short",
+      "title": "The three-sentence reach-out",
+      "angle": "Hiring managers read cold messages on phones between meetings.",
+      "beats": [
+        "One: proof you read something. Two: strongest evidenced match. Three: zero-pressure close",
+        "Anything longer is pattern-matched to mass mail",
+        "Send when the posting is hours old, not days"
+      ]
+    },
+    {
+      "id": "window-not-scroll",
+      "kind": "value",
+      "format": "short",
+      "title": "Fixed windows beat the feed",
+      "angle": "Doomscrolling is a slot machine pointed at your own livelihood.",
+      "beats": [
+        "Batch board checks twice a day, keep the rest clean",
+        "Freshness windows still beat novelty seeking",
+        "The scroll converts job-seeking into job-worrying"
+      ]
+    },
+    {
+      "id": "story-bank",
+      "kind": "value",
+      "format": "short",
+      "title": "Three stories, every interview",
+      "angle": "Failure, conflict, ownership: prepare the trio once, reuse everywhere.",
+      "beats": [
+        "Why these three questions dominate loops",
+        "The twenty-minute prep that compounds across applications",
+        "Stories written down survive the adrenaline tax"
+      ]
+    },
+    {
+      "id": "title-honesty",
+      "kind": "value",
+      "format": "short",
+      "title": "Honest title plus one line of scope",
+      "angle": "Title marketing fails consistency checks; factual parentheticals pass.",
+      "beats": [
+        "Parsers score the description body, humans check history for consistency",
+        "Six months doing the job is the real title, documented honestly",
+        "One line of scope beats a fancier adjective"
+      ]
+    },
+    {
+      "id": "recruiter-silence",
+      "kind": "value",
+      "format": "short",
+      "title": "Decoding recruiter silence",
+      "angle": "Silence has three states and only one is about you.",
+      "beats": [
+        "Internal delay, requisition freeze, quiet no: different responses",
+        "The nudge that distinguishes them (one new data point)",
+        "Budget cycles are calendar facts, not verdicts on you"
+      ]
+    },
+    {
+      "id": "cooldown-value",
+      "kind": "value",
+      "format": "short",
+      "title": "The 30-day reapply rule",
+      "angle": "Reapplying too early reads as spam to systems and people.",
+      "beats": [
+        "Why employer-side dedupe punishes repeat submissions",
+        "Waiting beats rewording when the pile has not moved",
+        "Fresh requisitions change the math entirely"
+      ]
+    },
+    {
+      "id": "polish-plateau",
+      "kind": "value",
+      "format": "short",
+      "title": "Polish plateaus after pass two",
+      "angle": "Reply rates are decided by timing and aim more than wording.",
+      "beats": [
+        "Diminishing returns data from any honest tracker",
+        "Send the best few early, iterate against reply rates",
+        "Perfectionism is procrastination wearing a suit"
+      ]
+    },
+    {
+      "id": "small-biz-edge",
+      "kind": "value",
+      "format": "short",
+      "title": "Small businesses have no pile",
+      "angle": "At a ten-person shop the person on the website is the decision-maker.",
+      "beats": [
+        "No ATS, no recruiter gate, one busy human",
+        "Send the pitch twice, first sentence about their problem",
+        "Silence at this scale usually means swamped, not no"
+      ]
+    },
+    {
+      "id": "promo-flagship",
+      "kind": "promo",
+      "format": "short",
+      "title": "The pipeline essay, shortened",
+      "angle": "Distill the flagship dev.to essay into one channel-native pointer.",
+      "beats": [
+        "Point at the essay, one line of why it matters",
+        "Link included, zero hype",
+        "Mention the free self-hosted demo once, plainly"
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34"
+    },
+    {
+      "id": "promo-prompts",
+      "kind": "promo",
+      "format": "short",
+      "title": "Six prompts, free forever",
+      "angle": "The copy-paste prompt set works without the product; say so honestly.",
+      "beats": [
+        "Give the value in the post itself (one prompt inline)",
+        "The full six live on dev.to, no signup",
+        "If you want it as a pipeline instead of a habit, the demo is a zip"
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/six-prompts-that-do-the-boring-80-of-your-job-search-copy-paste-1bf9"
+    },
+    {
+      "id": "promo-demo",
+      "kind": "promo",
+      "format": "short",
+      "title": "The demo is the whole wheel, leashed",
+      "angle": "Same code path as paid, caps smaller: one candidate, five sends per UTC month, free forever.",
+      "beats": [
+        "What the demo runs on: your machine, your free-tier key",
+        "What the leash means and why it exists",
+        "The zip and its digest are on the landing page"
+      ],
+      "asset": "https://getstpi.pages.dev/"
+    },
+    {
+      "id": "promo-tiers",
+      "kind": "promo",
+      "format": "short",
+      "title": "What $306/mo (about R4,999) a month buys",
+      "angle": "Plain accounting of the tiers without the funnel voice.",
+      "beats": [
+        "Solo $306/mo (about R4,999), Studio $613/mo (about R9,999), Sovereign $920/mo (about R15,000), thirty-day cycles",
+        "No lock-in: files stay on your machine either way",
+        "Support costs money; that is the whole pitch"
+      ],
+      "asset": "https://whop.com/stpi"
+    },
+    {
+      "id": "promo-caps-feature",
+      "kind": "promo",
+      "format": "short",
+      "title": "The caps are the feature",
+      "angle": "Every other tool maximizes send volume; stpi makes burnout unsendable.",
+      "beats": [
+        "Approval gates and cooldowns as product philosophy",
+        "Why we turned volume down on purpose",
+        "Demo runs the same constraints, just smaller"
+      ],
+      "asset": "https://getstpi.pages.dev/"
+    },
+    {
+      "id": "promo-changelog",
+      "kind": "promo",
+      "format": "short",
+      "title": "Shipped this cycle",
+      "angle": "A plain changelog slot; facts about the product only, no adjectives.",
+      "beats": [
+        "List only what is actually true from the voice-pack facts",
+        "One link, one sentence of what changed for users",
+        "Skip the slot entirely if nothing shipped (planner knows this)"
+      ],
+      "asset": "https://getstpi.pages.dev/"
+    },
+    {
+      "id": "skim-six-seconds",
+      "kind": "value",
+      "format": "short",
+      "title": "Hiring managers skim in six seconds, then reread",
+      "angle": "First pass is triage, second pass is judgment; front-load for the triage.",
+      "beats": [
+        "The top third of page one decides whether the rest gets read",
+        "Put the strongest evidenced match where the six-second pass lands",
+        "Detail is for the reread, which only exists if triage passes"
+      ]
+    },
+    {
+      "id": "referral-ask",
+      "kind": "value",
+      "format": "short",
+      "title": "The referral ask that does not make people wince",
+      "angle": "Make the intro one-forwardable: give them the sentence about you.",
+      "beats": [
+        "Attach a two-line blurb they can paste, never make them write it",
+        "Ask about the team, not the job, first",
+        "A referral skips the pile, it does not skip the bar"
+      ]
+    },
+    {
+      "id": "reply-speed",
+      "kind": "value",
+      "format": "short",
+      "title": "Answer recruiters inside four hours",
+      "angle": "Response time is a signal employers read, and momentum is a resource.",
+      "beats": [
+        "Fast replies keep you in the live batch, not the maybe pile",
+        "Draft a two-line reply template now, not when the email lands",
+        "Speed on scheduling calls is the cheapest impression you make"
+      ]
+    },
+    {
+      "id": "verbs-over-adjectives",
+      "kind": "value",
+      "format": "short",
+      "title": "Verbs beat adjectives on a CV",
+      "angle": "Reduced, migrated, renegotiated: measurable acts survive both audiences.",
+      "beats": [
+        "Adjectives are claims, verbs are events",
+        "Parsers match the event, humans trust the event",
+        "Delete every soft descriptor and put the action in its place"
+      ]
+    },
+    {
+      "id": "gap-framing",
+      "kind": "value",
+      "format": "short",
+      "title": "Explain the gap in one honest line",
+      "angle": "A factual sentence closes the question; a dodge opens an investigation.",
+      "beats": [
+        "Caregiving, health, study, contract work: plain naming reads as confidence",
+        "One line, no apology, then forward to what you did during it",
+        "White lies get checked, and checks get remembered"
+      ]
+    },
+    {
+      "id": "recruiter-boolean",
+      "kind": "value",
+      "format": "short",
+      "title": "Recruiters search booleans, not keywords",
+      "angle": "Their query is python OR (django AND rest). Context is what matches.",
+      "beats": [
+        "A word alone passes a scan, a project sentence passes a boolean",
+        "Write the stack in the sentence where you used it, at the scale you used it",
+        "Optimize for the query shape, not the word list"
+      ]
+    },
+    {
+      "id": "ats-score-myth",
+      "kind": "value",
+      "format": "short",
+      "title": "A perfect ATS score means nothing about being picked",
+      "angle": "Formatting clears floors; people set ceilings.",
+      "beats": [
+        "Green parser scores only prove you are not disqualified",
+        "The reviewer who decides reads for scope and outcomes",
+        "Fix layout once, then spend every remaining hour on evidence"
+      ]
+    },
+    {
+      "id": "source-tags",
+      "kind": "value",
+      "format": "short",
+      "title": "Tag where every role came from",
+      "angle": "Board X versus referral versus recruiter: three months of labels show where your search actually works.",
+      "beats": [
+        "Interview rate per source is the only career-advice metric that is yours",
+        "Double down on the source that converts for your profile, quietly drop the rest",
+        "Your tracker becomes a map, not a graveyard"
+      ]
+    },
+    {
+      "id": "batched-rejections",
+      "kind": "value",
+      "format": "short",
+      "title": "Rejections arrive in batches, and so does silence",
+      "angle": "Review cycles, not vibes: employers sweep the pile on their calendar.",
+      "beats": [
+        "A quiet week often means nobody has read anything yet",
+        "Map each role's likely review rhythm instead of reacting daily",
+        "Judge your aim on the cycle, not the hour"
+      ]
+    },
+    {
+      "id": "headline-is-a-search-result",
+      "kind": "value",
+      "format": "short",
+      "title": "Your LinkedIn headline is a search result, not a mood",
+      "angle": "Role, domain, one value clause. The poem can wait for the About section.",
+      "beats": [
+        "Recruiters land on the headline row and nothing else",
+        "Seniority and stack belong in the searchable text",
+        "Clarity reads as competence; mystery reads as spam"
+      ]
+    },
+    {
+      "id": "listing-cadence",
+      "kind": "value",
+      "format": "short",
+      "title": "Boards publish on a rhythm; set alerts to it",
+      "angle": "If the market posts Tuesday mornings, your freshness window is Tuesday 9am.",
+      "beats": [
+        "Track the days your target boards actually push new roles",
+        "Alerts beat infinite scroll for both speed and mood",
+        "The right second application is one hour after the right first"
+      ]
+    },
+    {
+      "id": "portfolio-audited",
+      "kind": "value",
+      "format": "short",
+      "title": "Publish nothing you would not want opened on a projector",
+      "angle": "Every linked artifact is an interview waiting to happen.",
+      "beats": [
+        "Half-finished demos teach them you ship half-finished",
+        "A tiny repo with a README that explains decisions outscores a big one that does not",
+        "If it would embarrass you in the room, pull it now"
+      ]
+    },
+    {
+      "id": "offer-math",
+      "kind": "value",
+      "format": "short",
+      "title": "Compare offers in net-worth-per-hour, not headline salary",
+      "angle": "Bonus structure, equity vesting, benefits, commute, and overtime are all salary.",
+      "beats": [
+        "Do the arithmetic on paper; the gut always loses to the printer",
+        "A longer week can eat a ten percent premium in a year",
+        "Ask the boring benefits questions early, they are checks not fights"
+      ]
+    },
+    {
+      "id": "warm-before-ask",
+      "kind": "value",
+      "format": "short",
+      "title": "Warm the contact before you need anything",
+      "angle": "Follow, read, and reference their work weeks before the ask. It changes what the ask sounds like.",
+      "beats": [
+        "A genuine comment earns more than a template connect request",
+        "When you finally apply, you are a name, not a ticket",
+        "No scorekeeping: performative engagement is detectable and cheap"
+      ]
+    },
+    {
+      "id": "promo-storefront",
+      "kind": "promo",
+      "format": "short",
+      "title": "The store is open",
+      "angle": "Plain storefront post: three tiers, one line each, checkout link.",
+      "beats": [
+        "Name the three tiers and what each is for",
+        "No countdown, no scarcity, no emoji",
+        "Support costs money; say it once"
+      ],
+      "asset": "https://whop.com/stpi"
+    },
+    {
+      "id": "promo-community",
+      "kind": "promo",
+      "format": "short",
+      "title": "The community board is live",
+      "angle": "Invite to the Whop community: what the board is for, who answers, how to join.",
+      "beats": [
+        "Bring the data, share templates, flag scary things",
+        "Free demo folks are welcome, not just buyers",
+        "One link, zero pressure"
+      ],
+      "asset": "https://getstpi.pages.dev/"
+    },
+    {
+      "id": "caseload-ceiling",
+      "kind": "value",
+      "format": "short",
+      "title": "Your caseload ceiling is a logistics number",
+      "angle": "How many candidates a consultant can carry is set by hours spent reading adverts and rewriting letters, not by coaching skill.",
+      "beats": [
+        "List what a consultant does per candidate per week, and mark which steps need judgment",
+        "The reading and rewriting steps grow with every new client; the coaching step barely does",
+        "Raise the ceiling by removing the steps that need no judgment, not by working evenings"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "hours-per-client",
+      "kind": "value",
+      "format": "short",
+      "title": "Where a client's hours actually go",
+      "angle": "Coaching is the smallest slice of a client's week; searching, matching and rewriting eat the rest.",
+      "beats": [
+        "Time one client's week honestly: board reading, matching, letters, sending, follow-ups, coaching",
+        "The slices a client pays you for are rarely the ones taking the hours",
+        "Price and plan from the real split, not the brochure one"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "proof-of-work",
+      "kind": "value",
+      "format": "short",
+      "title": "Show clients the work, not the promise",
+      "angle": "Clients who can see weekly activity stay; clients who only hear 'we're working on it' leave.",
+      "beats": [
+        "A weekly note: roles found, applications sent, replies, next steps",
+        "Silence from employers reads as silence from you unless you show the activity",
+        "The note takes minutes when the activity is logged as it happens"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "approval-gate",
+      "kind": "value",
+      "format": "short",
+      "title": "Nothing should send without your tap",
+      "angle": "An agency's name rides on every application; auto-apply tools spend that reputation without asking.",
+      "beats": [
+        "One careless application to a key employer costs more than a week of speed",
+        "Review in one pass: a card per round, approve or reject, then send",
+        "Fast is good; fast and unreviewed is how agencies get blocked by employers"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "brand-on-documents",
+      "kind": "value",
+      "format": "short",
+      "title": "Your brand on every document",
+      "angle": "When the letter and CV carry your practice's name, the candidate remembers who did the work.",
+      "beats": [
+        "Unbranded documents make your work look like the candidate's own effort",
+        "Consistent formatting across every client signals a real process",
+        "Branding is also accountability: it is your name on the claim"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "speed-as-service",
+      "kind": "value",
+      "format": "short",
+      "title": "Speed is a service you can sell",
+      "angle": "Early applications get read while the pile is small, and clients will pay for a response window you can keep.",
+      "beats": [
+        "Promise a window you can meet every week: new roles checked and drafted within a set time",
+        "The window only holds if board checking is scheduled, not remembered",
+        "Tell clients the window; it turns effort they can't see into a promise they can check"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "charge-for-the-search",
+      "kind": "value",
+      "format": "short",
+      "title": "Charge for the search, not the session",
+      "angle": "Session pricing caps income at your calendar; search pricing pays for the work that actually moves a client.",
+      "beats": [
+        "Sessions sell advice; clients buy outcomes they can't produce alone",
+        "A monthly search package covers finding, drafting and follow-up",
+        "You can only sell the package if the search work fits in your week"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "candidate-data-duty",
+      "kind": "value",
+      "format": "short",
+      "title": "Candidate data is a liability you hold",
+      "angle": "CVs, ID numbers and phone numbers are regulated personal data in South Africa, Zimbabwe and Zambia alike.",
+      "beats": [
+        "Get the candidate's consent in writing before you search for them",
+        "Keep only what the search needs, and delete drafts you no longer use",
+        "Know where every copy lives: inboxes, laptops and chat apps count"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "one-profile-many-formats",
+      "kind": "value",
+      "format": "short",
+      "title": "One candidate, a CV format per country",
+      "angle": "What employers expect on a CV differs across South Africa, Zimbabwe and Zambia, so keep one master profile and render it per market.",
+      "beats": [
+        "The facts about the candidate don't change between countries; the layout and emphasis do",
+        "Editing three separate CVs by hand guarantees they drift apart",
+        "Render from one source of truth and every version stays accurate"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "board-coverage",
+      "kind": "value",
+      "format": "short",
+      "title": "No single board sees the whole market",
+      "angle": "Roles in the region are spread across national boards, niche boards and company pages; checking one is checking a slice.",
+      "beats": [
+        "Each board has its own employers and its own posting habits",
+        "Duplicates across boards are a signal the role is real and urgent",
+        "Coverage is a schedule problem: check the same boards at the same times every day"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "follow-up-leak",
+      "kind": "value",
+      "format": "short",
+      "title": "Follow-ups are where placements leak",
+      "angle": "Most agencies track applications sent; far fewer track which ones need a nudge this week.",
+      "beats": [
+        "A reply table per candidate: sent, followed up, replied, closed",
+        "A follow-up a week later often gets the reply the first send didn't",
+        "The table also tells you which boards and employers actually answer"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "consultant-week",
+      "kind": "value",
+      "format": "short",
+      "title": "A consultant's week, with the busywork taken out",
+      "angle": "When searching and drafting run on a schedule, a consultant's week turns into reviewing, coaching and closing.",
+      "beats": [
+        "Monday: approve the weekend's drafts in one sitting",
+        "Midweek: coaching calls and interview prep, the work clients value most",
+        "Friday: send the proof-of-work note and plan next week"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "set-expectations-day-one",
+      "kind": "value",
+      "format": "short",
+      "title": "Set the reply expectation on day one",
+      "angle": "Clients judge you on employer silence unless you explain, before the first send, how hiring timelines really work.",
+      "beats": [
+        "Tell them silence is normal and what a normal week of activity looks like",
+        "Agree what you will report and when",
+        "Clients who were told the truth on day one stay through a quiet month"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "placement-desk-pipeline",
+      "kind": "value",
+      "format": "longform",
+      "title": "Running a placement desk as a pipeline",
+      "angle": "Treat each candidate's search as stages with owners and timings, and the desk scales without heroics.",
+      "beats": [
+        "Intake: consent, one master profile, target roles and countries",
+        "Sourcing on a schedule across boards, with duplicates merged",
+        "Drafting and review: one approval pass per round, nothing sent unreviewed",
+        "Follow-up and reporting: the reply table and the weekly client note"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "grow-practice-without-hiring",
+      "kind": "value",
+      "format": "longform",
+      "title": "How a small coaching practice grows without hiring",
+      "angle": "The next hire is usually a response to busywork; remove the busywork and the practice can take more clients first.",
+      "beats": [
+        "Find the hours: audit a month of client work by task",
+        "Which tasks need your judgment and which only need doing",
+        "Package the service around outcomes clients can check",
+        "What to automate, what to keep human, and where the line sits"
+      ],
+      "tags": "career,recruiting,smallbusiness",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-trial",
+      "kind": "promo",
+      "format": "short",
+      "title": "Try it on one of your candidates, hosted, 7 days",
+      "angle": "For coaches and agencies: the hosted trial runs the whole pipeline on one real candidate, cards land in their own Discord, no card needed.",
+      "beats": [
+        "One candidate, 7 days, drafts approved in their own Discord before anything sends",
+        "No card; the hunt pauses at the end and the setup is kept",
+        "Link included, zero hype"
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-use-case-bootcamp",
+      "kind": "promo",
+      "format": "short",
+      "title": "Bootcamp graduates find jobs faster with STPi",
+      "angle": "Illustrate a real-world workflow for recent grads using the Solo plan.",
+      "beats": [
+        "Import alumni list, let STPi match to openings automatically.",
+        "Track each application\u2019s status in one place.",
+        "Cost is just $306/mo (about R4,999) a month, less than a single coffee habit."
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-comparison-ethics",
+      "kind": "promo",
+      "format": "short",
+      "title": "Ethical hiring versus click-bait platforms",
+      "angle": "Contrast transparent pricing with platforms that charge per click and hide costs.",
+      "beats": [
+        "STPi shows exact monthly cost upfront - no surprise invoices.",
+        "Candidates see only relevant roles, not endless ads.",
+        "Annual plans discount the year and are paid by bank wire on Whop."
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-behind-the-scenes",
+      "kind": "promo",
+      "format": "short",
+      "title": "Inside STPi\u2019s matching algorithm",
+      "angle": "Give a peek at the data-driven process that powers job matches.",
+      "beats": [
+        "Machine learning scores each resume against employer criteria.",
+        "Continuous feedback loops improve relevance over time.",
+        "No extra charge for algorithm updates - included in $306/mo (about R4,999)."
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/six-prompts-that-do-the-boring-80-of-your-job-search-copy-paste-1bf9",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-buyer-fear",
+      "kind": "promo",
+      "format": "short",
+      "title": "Worried about committing to a subscription?",
+      "angle": "Ease the fear of long-term contracts by highlighting the trial and flexible billing.",
+      "beats": [
+        "Start with the free trial and see the pipeline working before paying a cent.",
+        "Switch between monthly and annual without penalty.",
+        "Cancel anytime; no hidden renewal clauses."
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-buyer-math",
+      "kind": "promo",
+      "format": "short",
+      "title": "Calculate your hiring ROI with STPi",
+      "angle": "Show the math of how a single successful placement offsets the subscription cost.",
+      "beats": [
+        "One hire saves dozens of interview hours.",
+        "A single successful placement covers the subscription in weeks.",
+        "Go yearly and the annual discount does the math for you."
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-sole-pro",
+      "kind": "promo",
+      "format": "short",
+      "title": "Freelance recruiters thrive on STPi Solo",
+      "angle": "Target solo consultants who need a lean, powerful tool.",
+      "beats": [
+        "One-click candidate export to client reports.",
+        "Monthly fee of $306/mo (about R4,999) fits freelance cash flow.",
+        "Access to all job sources without extra commissions."
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-annual-savings",
+      "kind": "promo",
+      "format": "short",
+      "title": "Lock in lower rates with STPi\u2019s annual plans",
+      "angle": "Emphasize the yearly discount and the simple wire payment process.",
+      "beats": [
+        "Pay once via bank wire on Whop, no monthly hassle.",
+        "Solo annual at $2,754/yr (about R45,000) beats stacking twelve monthly renewals.",
+        "Same features, lower total cost for the year."
+      ],
+      "asset": "https://whop.com/stpi",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-support-access",
+      "kind": "promo",
+      "format": "short",
+      "title": "Direct support when you need a quick answer",
+      "angle": "Assure users that help is just an email away, reducing friction.",
+      "beats": [
+        "Contact simalidudu@gmail.com for personalized assistance.",
+        "Lightning payments enable instant upgrades.",
+        "Mukuru/EFT option for local cash flow."
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-objection-handling",
+      "kind": "promo",
+      "format": "short",
+      "title": "Why the monthly fee feels safe for job seekers",
+      "angle": "Address the worry that a subscription feels risky by explaining the refundable trial and clear exit options.",
+      "beats": [
+        "Explain the 7-day trial link and how no card is required",
+        "Show the monthly cost in local rand and USD using $306/mo (about R4,999)",
+        "Detail the simple cancel process through Whop",
+        "Reassure that support is reachable via email"
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-operator-usecase",
+      "kind": "promo",
+      "format": "short",
+      "title": "How recruiters streamline candidate pipelines with STPi",
+      "angle": "Show recruiters the concrete steps where STPi replaces manual tracking and saves time each week.",
+      "beats": [
+        "Map the job posting to candidate sourcing flow",
+        "Highlight automated tagging that reduces manual entry",
+        "Demonstrate batch messaging that cuts outreach time",
+        "Point out reporting that replaces spreadsheet updates"
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-seeker-clarity",
+      "kind": "promo",
+      "format": "short",
+      "title": "Seeing every application as a pipeline, not a resume pile",
+      "angle": "Speak to job hunters who feel overwhelmed by endless applications and need a visual pipeline.",
+      "beats": [
+        "Describe the Kanban view that groups applications by stage",
+        "Explain how notes attach to each prospect without extra tools",
+        "Show the drag-and-drop move that updates status instantly",
+        "Mention the ability to set reminders for follow-ups"
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-behind-scenes",
+      "kind": "promo",
+      "format": "short",
+      "title": "A day in the life of the STPi development team",
+      "angle": "Give a behind-the-scenes glimpse at how features are prioritized based on user feedback.",
+      "beats": [
+        "Describe the weekly feedback review meeting",
+        "Show a screenshot of the public roadmap",
+        "Explain how a user request became the latest tag filter",
+        "Mention the sprint cycle that delivers updates every two weeks"
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/six-prompts-that-do-the-boring-80-of-your-job-search-copy-paste-1bf9"
+    },
+    {
+      "id": "promo-fear-of-commit",
+      "kind": "promo",
+      "format": "short",
+      "title": "What happens if you stop using STPi after a month",
+      "angle": "Calm the fear of being locked in by outlining data export options and account closure steps.",
+      "beats": [
+        "Detail the one-click export to CSV for all pipelines",
+        "Explain that no data is retained after deletion",
+        "Show the Whop dashboard button to cancel subscription",
+        "Mention that support will confirm the closure"
+      ],
+      "asset": "https://whop.com/stpi",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-remote-team",
+      "kind": "promo",
+      "format": "short",
+      "title": "Managing a distributed hiring team without endless emails",
+      "angle": "Illustrate how remote recruiters stay aligned using shared pipelines and comment threads.",
+      "beats": [
+        "Show the shared board that all members can view",
+        "Explain inline comments that replace back-and-forth emails",
+        "Highlight real-time status updates visible to the whole team",
+        "Mention the ability to assign tasks to specific users"
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-career-boost",
+      "kind": "promo",
+      "format": "short",
+      "title": "Turning application fatigue into measurable progress",
+      "angle": "Help job seekers see how tracking each step turns vague effort into concrete metrics.",
+      "beats": [
+        "Introduce the daily activity count that logs each outreach",
+        "Explain the conversion rate view from applied to interview",
+        "Show the weekly summary that highlights improvement",
+        "Mention the goal-setting feature for next-month targets"
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-agency-scale",
+      "kind": "promo",
+      "format": "short",
+      "title": "Scaling an agency without adding admin staff",
+      "angle": "Show agencies how the platform handles more clients while keeping overhead flat.",
+      "beats": [
+        "Describe multi-client workspaces that keep data separate",
+        "Explain bulk upload of candidate lists saves manual entry",
+        "Highlight reporting that aggregates performance across accounts",
+        "State that the same subscription covers unlimited users"
+      ],
+      "asset": "https://whop.com/stpi",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-quick-start",
+      "kind": "promo",
+      "format": "short",
+      "title": "Get your first pipeline running in under ten minutes",
+      "angle": "Provide a step-by-step starter guide that removes setup friction.",
+      "beats": [
+        "Sign up through the Whop link and choose a plan",
+        "Create your first board using the template button",
+        "Add a few candidate entries via CSV import",
+        "Set the stages and start moving cards"
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-privacy-focus",
+      "kind": "promo",
+      "format": "short",
+      "title": "Your candidate data stays under your control",
+      "angle": "Reassure users that STPi does not sell data and offers easy export options.",
+      "beats": [
+        "State that no third parties receive your pipeline data",
+        "Explain the one-click export to local files",
+        "Highlight encryption at rest on all servers",
+        "Mention that account deletion removes all records"
+      ],
+      "asset": "https://whop.com/stpi"
+    },
+    {
+      "id": "promo-compare-ethics-2",
+      "kind": "promo",
+      "format": "short",
+      "title": "Choosing a tool that respects your brand reputation",
+      "angle": "Contrast STPi\u2019s transparent policies with platforms that embed ads or promote competitor services.",
+      "beats": [
+        "Declare that the UI contains no third-party ads",
+        "Explain that branding remains fully customizable",
+        "State that no competitor services are suggested in the app",
+        "Highlight the clear terms of service that protect user rights"
+      ],
+      "asset": "https://getstpi.pages.dev/"
+    },
+    {
+      "id": "promo-operator-persona",
+      "kind": "promo",
+      "format": "short",
+      "title": "Recruiters who need a clean pipeline for every client",
+      "angle": "Speak directly to agency recruiters who juggle multiple client pipelines and need a single source of truth.",
+      "beats": [
+        "Describe how STPi centralises all candidate data in one view.",
+        "Highlight the ability to tag pipelines per client without extra setup.",
+        "Explain that the studio tier supports unlimited client workspaces.",
+        "Show that you can export reports for each client on demand."
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-seeker-usecase",
+      "kind": "promo",
+      "format": "short",
+      "title": "Job seekers turning applications into a measurable funnel",
+      "angle": "Illustrate how a candidate can treat each application as a step in a personal growth pipeline.",
+      "beats": [
+        "Walk through creating a custom stage for each job role.",
+        "Explain how to log feedback and adjust outreach tactics.",
+        "Show the metric view that tracks response rates over weeks.",
+        "Mention the free trial link for a hands-on test."
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-operator-privacy",
+      "kind": "promo",
+      "format": "short",
+      "title": "Keeping client data safe while sharing progress updates",
+      "angle": "Address privacy concerns for agencies that must protect client information.",
+      "beats": [
+        "Explain role-based access that limits who sees each client\u2019s pipeline.",
+        "State that data is encrypted at rest and in transit.",
+        "Show the audit log that records every change.",
+        "Note that no personal data leaves the platform without consent."
+      ],
+      "asset": "https://getstpi.pages.dev/"
+    },
+    {
+      "id": "promo-seeker-mindset",
+      "kind": "promo",
+      "format": "short",
+      "title": "Turning rejection into data-driven adjustments",
+      "angle": "Help job seekers use each rejection as a data point to refine their approach.",
+      "beats": [
+        "Log the reason for each rejection in a custom field.",
+        "Run a quick report to see the most common feedback.",
+        "Adjust your outreach script based on the trend.",
+        "Use the free trial to experiment with this workflow."
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-seeker-organization",
+      "kind": "promo",
+      "format": "short",
+      "title": "Keeping your job search organized without spreadsheets",
+      "angle": "Offer a solution to the chaos of tracking applications across multiple platforms.",
+      "beats": [
+        "Create a single dashboard for all active applications.",
+        "Set custom reminders for follow-up dates.",
+        "View response rates by industry with a quick chart.",
+        "Start with the free trial to see the layout."
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/six-prompts-that-do-the-boring-80-of-your-job-search-copy-paste-1bf9",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-operator-setup",
+      "kind": "promo",
+      "format": "short",
+      "title": "Getting a new recruitment team up and running in a day",
+      "angle": "Demonstrate the quick onboarding process for new agency teams.",
+      "beats": [
+        "Import existing candidate lists with a CSV upload.",
+        "Assign team members to client workspaces instantly.",
+        "Use the built-in tutorial to train new hires.",
+        "Upgrade to studio for unlimited workspaces if needed."
+      ],
+      "asset": "https://whop.com/stpi",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-operator-analytics",
+      "kind": "promo",
+      "format": "short",
+      "title": "Turning pipeline data into actionable hiring forecasts",
+      "angle": "Show recruiters how to use built-in analytics for future hiring plans.",
+      "beats": [
+        "Generate a weekly report of candidates per stage.",
+        "Identify bottlenecks where candidates stall.",
+        "Project hiring velocity based on historical trends.",
+        "Use the sovereign tier for predictive modeling tools."
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-pipeline-over-resume",
+      "kind": "promo",
+      "format": "short",
+      "title": "Why hiring teams need a pipeline over a resume mindset",
+      "angle": "Show job hunters that treating applications as a pipeline reduces friction and improves match quality.",
+      "beats": [
+        "Explain the difference between a static resume and a living application pipeline.",
+        "Highlight how continuous feedback shortens hiring cycles.",
+        "Give a simple example of a candidate moving through stages without re-uploading documents."
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/i-treat-job-applications-as-a-pipeline-not-a-resume-problem-a34",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-recruiter-budget-math",
+      "kind": "promo",
+      "format": "short",
+      "title": "Crunching the numbers on hiring automation for recruiters",
+      "angle": "Break down the monthly cost versus the hidden expense of manual screening.",
+      "beats": [
+        "Show the monthly subscription price $306/mo (about R4,999) compared to average recruiter hourly cost.",
+        "Calculate the time saved per open role with automated candidate matching.",
+        "Demonstrate the ROI after one quarter of reduced time-to-hire."
+      ],
+      "asset": "https://getstpi.pages.dev/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-jobseeker-time-saver",
+      "kind": "promo",
+      "format": "short",
+      "title": "How job seekers can spend less time applying and more time interviewing",
+      "angle": "Address the objection that job boards are a waste of time by showing a streamlined workflow.",
+      "beats": [
+        "Outline a typical day of applying on multiple sites versus using a single pipeline.",
+        "Show how STPi syncs applications to all active listings automatically.",
+        "Mention that the free trial lets users test the flow before committing."
+      ],
+      "asset": "https://stpi-mint.stpi-cloud.workers.dev/trial",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-ethics-of-data-ownership",
+      "kind": "promo",
+      "format": "short",
+      "title": "Data ownership matters when you choose a hiring platform",
+      "angle": "Contrast STPi\u2019s transparent data policy with opaque competitor practices.",
+      "beats": [
+        "Explain that candidates retain full control of their profiles.",
+        "Point out that recruiters cannot export data without consent.",
+        "Reference the built-in audit logs that record every data access."
+      ],
+      "asset": "https://dev.to/simali_dud_b97add4154d7a6/six-prompts-that-do-the-boring-80-of-your-job-search-copy-paste-1bf9",
+      "audience": "seeker"
+    },
+    {
+      "id": "promo-affiliate-coaches",
+      "kind": "promo",
+      "format": "short",
+      "title": "Recommend stpi, get paid for it",
+      "angle": "Invite community members to become store affiliates; same generous share the field agents earn, paid automatically on referrals.",
+      "beats": [
+        "The store now recruits affiliates: coaches know coaches.",
+        "Every referral that pays, pays you, tracked by Whop itself.",
+        "No selling skills required when the demo does the talking."
+      ],
+      "asset": "https://whop.com/stpi/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-affiliate-demo-sells",
+      "kind": "promo",
+      "format": "short",
+      "title": "The easiest referral is a demo they can click",
+      "angle": "Affiliates do not sell ads or claims; they hand people a working demo whose leash ends where the invoice begins.",
+      "beats": [
+        "Affiliates share the store; the store shares the demo.",
+        "One candidate and five monthly sends; the downloadable demo never expires.",
+        "Referrals are tracked and paid by the platform, not by us."
+      ],
+      "asset": "https://whop.com/stpi/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-affiliate-recurring",
+      "kind": "promo",
+      "format": "short",
+      "title": "One referral, paid again every month it stays",
+      "angle": "Explain recurring affiliate economics in plain words: a referral that keeps their subscription keeps paying the referrer.",
+      "beats": [
+        "Referrals that stay subscribed keep paying the referrer.",
+        "The share mirrors what our field agents already earn.",
+        "Sovereign referrals are the ones that change a month."
+      ],
+      "asset": "https://whop.com/stpi/",
+      "audience": "operator"
+    },
+    {
+      "id": "promo-affiliate-proof",
+      "kind": "promo",
+      "format": "short",
+      "title": "Sell the pipeline, not a promise",
+      "angle": "Position affiliation as selling proof: approval cards, tracked sends, Telegram-quiet ops - the referral pitch writes itself from screenshots.",
+      "beats": [
+        "The pitch is a screenshot of an approval card, nothing more.",
+        "Court the coach, not the crowd: three good referrals beat thirty.",
+        "The demo freeze is visible, so the upgrade question asks itself."
+      ],
+      "asset": "https://whop.com/stpi/",
+      "audience": "operator"
+    }
+  ]
+}

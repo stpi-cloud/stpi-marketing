@@ -31,11 +31,13 @@
 | **Customer Care & Onboarding Email** | `tafadzwamchikanya@gmail.com` | [mailto:tafadzwamchikanya@gmail.com](mailto:tafadzwamchikanya@gmail.com) |
 | **Official Website & Self-Serve Portal** | `getstpi.pages.dev` | [https://getstpi.pages.dev](https://getstpi.pages.dev) |
 | **Whop Official Storefront & Community** | `whop.com/stpi` | [https://whop.com/stpi](https://whop.com/stpi) |
-| **X (Twitter) Official Channel** | `@STPi_Cloud (via /g/xl/contact)` | [https://getstpi.pages.dev/g/xl/contact](https://getstpi.pages.dev/g/xl/contact) |
-| **LinkedIn Official Page & Team** | `STPi Placement · Tariro Malajila` | [https://getstpi.pages.dev/g/ll/contact](https://getstpi.pages.dev/g/ll/contact) |
-| **Bluesky Official Accounts** | `@stpi.bsky.social · @tariromalajila.bsky.social` | [https://bsky.app/profile/stpi.bsky.social](https://bsky.app/profile/stpi.bsky.social) |
-| **Telegram Official Channel** | `STPi Placement Channel` | [https://getstpi.pages.dev/g/tl/contact](https://getstpi.pages.dev/g/tl/contact) |
-| **Facebook Official Page** | `STPi Autonomous Placement` | [https://getstpi.pages.dev/g/fl/contact](https://getstpi.pages.dev/g/fl/contact) |
+| **Whop Native App Website** | `stpi.whop.site` | [https://stpi.whop.site](https://stpi.whop.site) |
+| **32-Video Library & Walkthroughs** | `getstpi.pages.dev/videos` | [https://getstpi.pages.dev/videos/](https://getstpi.pages.dev/videos/) |
+| **X (Twitter) Official Channel** | `@STPi_Cloud` | [https://x.com/STPi_Cloud](https://x.com/STPi_Cloud) |
+| **LinkedIn Official Page & Team** | `linkedin.com/company/stpi` | [https://www.linkedin.com/company/stpi](https://www.linkedin.com/company/stpi) |
+| **Bluesky Official Account** | `@stpi.bsky.social` | [https://bsky.app/profile/stpi.bsky.social](https://bsky.app/profile/stpi.bsky.social) |
+| **Bluesky Founder & Support** | `@tariromalajila.bsky.social` | [https://bsky.app/profile/tariromalajila.bsky.social](https://bsky.app/profile/tariromalajila.bsky.social) |
+| **Facebook Official Page** | `facebook.com/stpicareers` | [https://www.facebook.com/stpicareers](https://www.facebook.com/stpicareers) |
 | **Pinterest Official Visual Boards** | `pinterest.com/tafadzwamchikanya/stpi-board` | [https://www.pinterest.com/tafadzwamchikanya/stpi-board/](https://www.pinterest.com/tafadzwamchikanya/stpi-board/) |
 | **Dev.to Engineering & Career Guides** | `dev.to/simali_dud_b97add4154d7a6` | [https://dev.to/simali_dud_b97add4154d7a6](https://dev.to/simali_dud_b97add4154d7a6) |
 

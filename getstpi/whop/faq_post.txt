@@ -1,0 +1,33 @@
+Everything people ask before buying STPi, in one place.
+
+Does anything send without me?
+No. Every application arrives in Discord as a card with the job, match reason and PDFs. Nothing goes out until you tap Approve.
+
+Which jobs does it search?
+17 job boards by default (22 supported) across South Africa, Zimbabwe and Zambia. One employer is never contacted twice within 30 days, and daily caps keep volume sane.
+
+Can I try it before paying?
+Yes. The free demo pack runs the whole pipeline on 1 candidate, capped at 25 drafts and 5 sends per rolling 30 days: https://getstpi.pages.dev/
+
+Can I pay in rands?
+Yes. Every plan has a rand checkout on Whop: Solo R4,999/mo, Studio R9,999/mo, Sovereign R15,000/mo. The dollar plans are set to the same value; rand figures are approximate, at R16.31 per $1 (27 Sep 2026).
+
+No card?
+Pay by Lightning (SharkSkin@coinos.io, name and tier in the memo) or Mukuru / EFT to +263 78 460 0904 (reference: your tenant id). Your licence is issued once payment lands.
+
+What happens after checkout?
+You are sent to a short setup page. Your job seekers get a private intake link; they never need to join your Discord.
+
+Can I pay yearly?
+Yes, 25% off in one payment by bank wire on Whop (Whop only takes cards up to $2,500): Solo $2,754/yr (about R45,000), Studio $5,517/yr (about R90,000), Sovereign $8,280/yr (about R135,000). Pick the annual option on https://getstpi.pages.dev/
+
+How does Sovereign (self-hosted) arrive?
+In Discord. After checkout you run /claim in your own server; a private channel opens with your signed licence and the Docker install steps, and every renewal posts a fresh licence there. Help: /help in that channel, WhatsApp backup +263 78 460 0904.
+
+What does each plan include?
+Solo $306/mo (about R4,999): 3 candidates, 100 sends a month, priority slots; approve in Discord (web dashboard + Telegram when self-hosted).
+Studio $613/mo (about R9,999): 15 candidates, fair-use sends, white-label PDFs, LLM fallback chain.
+Sovereign $920/mo (about R15,000): self-hosted Docker deployment, unlimited candidates and sends, signed offline licence delivered in your Discord, install help in your private channel. If the licence lapses it goes read-only; your data is never locked or deleted.
+
+Questions?
+simalidudu@gmail.com

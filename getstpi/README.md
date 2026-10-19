@@ -1,35 +1,48 @@
-# Landing page — the un-gated demo download
+> **Current operating baseline · 16 October 2026:** [read this first](../docs/60-current-operations-2026-10-16.md). Jacaranda Labs owns STPI and its think tank. Hosted onboarding/control is web-first; candidate applications require approval, eligible researched STPI sales remains automatic. Two candidate hunts/day and the forever-download/separate-hosted-trial contracts supersede conflicting older examples. Owner access was repaired and reset only on primary Mint; do not change tenant, runner, mailbox or persona credentials incidentally. Usage scope/unknown states and provider-delivery limitations remain explicit. Dated material below is reference, not a new production acceptance claim. Never copy populated access links into documentation/publications.
 
-`index.html` is fully self-contained: inline CSS, inline SVG, **no JS bundles, no fonts,
-no analytics, no forms** — the only link is the `stpi-demo-<ver>.zip` next to it (plus mailto
-and the Whop checkout). That is a product promise, not a style preference: a test enforces it
-(`test_landing_page_is_truly_ungated`).
+# stpi-marketing · v2.1 (the bible) — audit-hardened build, demo pack at launch
 
-## Ship it ($0)
-```bash
-cd .. && python -m build && python scripts/make_demo_pack.py
-cp dist/stpi-demo-1.0.2.zip dist/stpi-demo-1.0.2.zip.sha256 landing/
-npx wrangler pages deploy landing --project-name stpi-landing   # or: any static host, or a
-                                                                   #   directory served by Caddy
+Everything to market STPi, plus the public door for the **free-for-everyone demo**.
+
+## The two pages
+
+| Page | What |
+|---|---|
+| **`index.html`** | The bible — 16 tabs: product truth, market/ICP, decided pricing (R0 · $306 (about R4,999)/$613 (about R9,999)/$920 (about R15,000)), social, outreach, sales scripts, lifecycle, demo & video, FAQ, growth plan, brand, samples, landing/leads, legal, checklist. Every block has a Copy button. Images are embedded (data URIs) so the file works from Pages, a USB stick or a WhatsApp download. |
+| **`demo.html`** | Public landing: hero → how it works → lead form → kit downloads instantly → lead card pings Discord ("STPi Leads") → human replies <24 h. |
+
+Serve it: GitHub → Settings → Pages → `main` → `/ (root)` →
+`https://getstpi.pages.dev/` (already enabled).
+
+## Contents
+
 ```
-Cloudflare Pages free tier: 500 builds/month, unlimited requests, free TLS, custom domain free.
-No card needed for `.pages.dev`. Update the checkout URL after `wrangler` or leave the placeholder
-— the pack builder screams if placeholders are still in `stpi/demo.py`.
+index.html      the bible (self-contained, ~400 KB with embedded imagery)
+demo.html       lead-capture landing + demo-kit download
+downloads/      stpi-demo-kit.zip · demo-card.html (interactive) · quickstart · pricing
+brand/          logos, icons, og-image (+ raw concepts)
+graphics/       discord mockup · hero card · before/after (PNG masters; index embeds JPGs)
+samples/        sample CV + letter (.pdf real-engine output, .html mirrors)
+copy/           pitch · social · cold-outreach · email-sequences · demo-script
+                faq-objections · sales-scripts (the full library) · pricing (decided)
+BRAND.md        palette, type, logo rules, voice
+```
 
-## Editing copy
-Prices/rails/links live in `stpi/demo.py → BILLING` (product surfaces) and are mirrored by hand
-in `index.html` (search `whop.com/checkout` / `$306`). Keep the zip filename in the
-`href` in sync with the version you just built. Do NOT add a form, a pixel or a script — the
-page's entire pitch is that there isn't one.
+## The offer, everywhere
 
-## 2026-10-01 — this folder IS the whole buyer site now
+Free demo for everyone, forever — 1 candidate, 5 sends/month, no card.
+All CTAs point at `demo.html`. Paid (USD/mo, confirmed by owner 2026-09-19): Solo $306 (about R4,999) · Studio $613 (about R9,999) · Sovereign $920 (about R15,000)
+(rationale in copy/pricing.md). Annual = 2 months free; affiliates 30%/12 mo.
 
-It used to be just the branded landing. It now also carries the full public
-property previously deployed from stpi-marketing (`demo.html`, `setup.html`,
-`domain.html`, `downloads/`, `samples/`, `brand/`, `graphics/`, `press/img/`,
-`_redirects`, `_headers`, `robots.txt`, `sitemap.xml`, favicon, IndexNow key),
-because `pages-deploy.yml` is the single owner of the `getstpi` Pages project —
-the marketing repo deploys only the internal bible from now on. The mirror step
-rebuilds `stpi-a.pages.dev` from this same tree (host refs swapped), and the
-smoke step fails the run if any of `/demo /setup /domain /downloads/…zip
-/robots.txt /sitemap.xml /favicon.ico` ever falls back to the index page again.
+## Before any campaign
+
+- Live: downloads/stpi-demo-1.0.2.zip (+.sha256) · setup.html (screenshot guide + §12
+  conversion playbook) · samples/cv-{classic,indigo,emerald,sunset}.pdf — CV designs are a
+  per-candidate field, four looks.
+- Numbers: state-store-verified 2026-09-19 (runs 09-16→18: 72 drafted, 3 candidates, 0 auto-sends).
+  Board ad ranges dated 2026-09-17 — refresh from a fresh hunt log before each campaign.
+- Demo caps as shipped: one candidate, five sends per UTC month, free forever, in the same wheel as paid.
+- Billing rails LIVE: Whop tier checkouts ($306 (about R4,999)/$613 (about R9,999)/$920 (about R15,000) USD monthly) + Lightning + Mukuru/EFT.
+- One CTA per post: the demo link.
+- Read the house rules (Start tab) and the "never" list (Brand tab).
+- Demo persona only — never screenshot a real candidate.
