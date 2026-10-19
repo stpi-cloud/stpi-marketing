@@ -3,7 +3,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>STPi — Strategic Talent Placement Infrastructure — find jobs, write the paperwork, send them. Free demo, no email needed</title>
-<meta name="description" content="STPi hunts public job ads (PNet, CareerJunction, iHarareJobs, VacancyMail…), drafts a cover letter + tailored CV, and waits for you to tap approve. Download the full demo free — no email gate.">
+<meta name="description" content="STPi hunts public job ads across 76 job board families and 21 African markets, drafts a cover letter + tailored CV, and waits for you to tap approve. Download the full demo free — no email gate.">
+<link rel="icon" type="image/svg+xml" href="/stpi-icon.svg">
+<link rel="alternate icon" href="/favicon.ico">
+<meta property="og:title" content="STPi — Strategic Talent Placement Infrastructure">
+<meta property="og:description" content="76 job board families across 21 African markets. Tailored CV + cover letter PDFs per vacancy, sent from the candidate's own Gmail after your 1-tap approval.">
+<meta property="og:image" content="https://getstpi.pages.dev/brand/og-image.png">
 <style>
  :root{--purp:#14365e;--deep:#0a1f3c;--ink:#272f35;--tint:#eef4fb;--ok:#137333;--vio:#2e9bff;--gold:#C6803C;--panel:#eef4fb}
  *{box-sizing:border-box}
@@ -13,7 +18,16 @@
  header h1{margin:0 0 10px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,5vw,44px);letter-spacing:.3px}
  section h2{font-family:Georgia,'Times New Roman',serif}
  .eyebrow{font-size:11px;letter-spacing:5px;opacity:.85;margin-bottom:14px;font-weight:700}
- .brandmark{height:44px;vertical-align:middle;margin-bottom:14px;display:block}
+ .brandmark{height:52px;vertical-align:middle;margin-bottom:14px;display:block;border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,.28)}
+ .social-strip{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;font-size:12.5px}
+ .social-strip a{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);color:#fff;text-decoration:none;padding:5px 11px;border-radius:999px;font-weight:600}
+ .social-strip a:hover{background:rgba(255,255,255,.24)}
+ .media-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:16px}
+ .shot-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:18px}
+ .shot-card{border:1px solid #dfe9f5;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(10,31,60,.06);text-decoration:none;color:inherit;display:block}
+ .shot-card img{width:100%;height:auto;display:block;border-bottom:1px solid #dfe9f5}
+ .shot-card div{padding:10px 12px;font-size:12.5px;color:var(--deep);font-weight:600}
+ .shot-card small{display:block;color:#5a6e8c;font-weight:400;margin-top:2px}
  .statusrow{margin-top:14px;font-size:13.5px}
  .statusrow code{background:rgba(0,0,0,.06);padding:2px 8px;border-radius:6px}
  header p.sub{margin:0 0 26px;font-size:clamp(15px,2.4vw,19px);opacity:.94;max-width:640px}
@@ -53,27 +67,88 @@
 </style></head><body>
 
 <header><div class="wrap">
-  <img class="brandmark" src="brand-logo.png" alt="STPi" style="filter:brightness(0) invert(1)">
+  <img class="brandmark" src="/brand/stpi-logo-on-navy.png" alt="STPi — Strategic Talent Placement Infrastructure">
   <div class="eyebrow">S T R A T E G I C&nbsp;&nbsp;T A L E N T&nbsp;&nbsp;P L A C E M E N T&nbsp;&nbsp;I N F R A S T R U C T U R E</div>
-  <div class="badge">🇿🇦 🇿🇼 🇿🇲 built for Southern Africa · 100% public sources, no LinkedIn login ever</div>
+  <div class="badge">🇿🇦 🇿🇼 🇿🇲 🇰🇪 🇳🇬 🇬🇭 21 African markets · 76 job board families · 100% public sources, no LinkedIn login ever</div>
   <h1>Jobs found. Letters written.<br>You tap approve. It sends.</h1>
   <p class="sub">The era of the simple ATS is over. Applicant trackers are passive databases; STPi is
   Strategic Talent Placement Infrastructure — the end-to-end operating system for job coaches, boutique
-  recruiters, application agencies and outplacement teams. It hunts the public boards daily, maps every
-  candidate, drafts a cover letter and a tailored CV per posting, and waits on your dashboard / Telegram for one tap.</p>
+  recruiters, application agencies and outplacement teams. It hunts 76 job board families (115 endpoints, including unindexed social &amp; newspaper PDFs) daily, maps every
+  candidate, drafts a cover letter and a tailored CV per posting, and sends from the candidate&rsquo;s own Gmail after your one tap.</p>
   <a class="dl" href="https://getstpi.pages.dev/downloads/stpi-demo-1.0.2.zip">⬇ Download the free demo — ZIP + SHA-256
-  <small>full product · four CV designs · no email · no card · no sign-up form (there is literally no form on this page)</small></a>
+  <small>full product · 12 CV designs · no email · no card · no sign-up form (there is literally no form on this page)</small></a>
   <p class="fine">Demo = one active candidate, five deliveries per UTC month, free forever; no lifetime draft cap.
-  Includes the step-by-step &ldquo;For Dummies&rdquo; <b>Customer Guides (4 Formats)</b>, <b>11 Social Promo Videos</b> &amp; <b>Mandatory 7-Day Sales Contract</b>:
+  Includes the step-by-step &ldquo;For Dummies&rdquo; <b>Customer Guides (4 Formats)</b>, <b>31 Social Promo Videos</b> &amp; <b>Mandatory 7-Day Sales Contract</b>:
   <a href="https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.html">Interactive HTML Guide</a> ·
   <a href="https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.pdf">PDF Guide (.pdf)</a> ·
   <a href="https://getstpi.pages.dev/guides/STPi-Customer-Photo-Guide.md">Markdown Guide (.md)</a> ·
   <a href="https://getstpi.pages.dev/videos/STPi-Customer-Onboarding-Guide.mp4">Video Guide (.mp4)</a> ·
-  <a href="https://getstpi.pages.dev/videos/">11 Social Promo Videos</a> ·
+  <a href="https://getstpi.pages.dev/videos/">32 Live Product &amp; Promo Videos</a> ·
   <a href="https://getstpi.pages.dev/downloads/STPi-Customer-Sales-Contract.pdf"><b>📥 7-Day Printable Sales Contract (PDF)</b></a> ·
   <a href="https://getstpi.pages.dev/setup">setup guide</a>.<br>
   <b>⚠️ Mandatory Client Rule — Contact Us First:</b> Always contact STPi Support FIRST via <a href="https://wa.me/263784600904">WhatsApp +263 78 460 0904</a> or Email (<a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> / <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a>) before panicking or using random internet advice — running to the public before contacting us results in immediate removal.</p>
+  <div class="social-strip" aria-label="Direct 1-click official contacts and social profiles">
+    <a href="https://wa.me/263784600904" target="_blank" rel="noopener">💬 WhatsApp +263 78 460 0904</a>
+    <a href="mailto:simalidudu@gmail.com">✉️ simalidudu@gmail.com</a>
+    <a href="mailto:tafadzwamchikanya@gmail.com">✉️ tafadzwamchikanya@gmail.com</a>
+    <a href="https://whop.com/stpi" target="_blank" rel="noopener">🛒 Whop Shop</a>
+    <a href="https://stpi.whop.site" target="_blank" rel="noopener">🌐 stpi.whop.site</a>
+    <a href="https://x.com/STPi_Cloud" target="_blank" rel="noopener">𝕏 @STPi_Cloud</a>
+    <a href="https://www.linkedin.com/company/stpi" target="_blank" rel="noopener">in LinkedIn</a>
+    <a href="https://bsky.app/profile/stpi.bsky.social" target="_blank" rel="noopener">🦋 @stpi.bsky.social</a>
+    <a href="https://bsky.app/profile/tariromalajila.bsky.social" target="_blank" rel="noopener">🦋 @tariromalajila.bsky.social</a>
+    <a href="https://www.facebook.com/stpicareers" target="_blank" rel="noopener">f Facebook</a>
+    <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/" target="_blank" rel="noopener">📌 Pinterest</a>
+    <a href="https://dev.to/simali_dud_b97add4154d7a6" target="_blank" rel="noopener">👩🏾‍💻 Dev.to</a>
+  </div>
 </div></header>
+
+<section id="live-media" style="background:#f4f8fd;border-bottom:1px solid #dfe9f5"><div class="wrap">
+  <h2>See the Live STPi Engine in Action — Video Walkthroughs &amp; Annotated Workspace Screenshots</h2>
+  <p style="max-width:780px;margin:0 0 14px">Every screen below is captured directly from the live production STPi command workspace. Watch the narrated walkthroughs or click any screenshot to inspect the full-resolution &ldquo;For Dummies&rdquo; annotated guide.</p>
+  <div class="media-grid">
+    <div class="card" style="background:#0a1f3c;color:#fff;border-color:#1e3f6e">
+      <b style="color:#7cc0ff;display:block;margin-bottom:6px">🎬 Customer Onboarding Walkthrough (Narrated MP4)</b>
+      <video controls preload="metadata" poster="/guides/shots/step-10-command-overview-dash.png" style="width:100%;border-radius:8px;background:#061428;border:1px solid #2b4c7e">
+        <source src="/videos/STPi-Customer-Onboarding-Guide.mp4" type="video/mp4">
+      </video>
+      <div style="font-size:12.5px;margin-top:8px;opacity:.9">Step-by-step from Whop checkout &amp; <code>/start</code> to candidate Gmail connection and 1-tap send approvals. <a href="/videos/STPi-Customer-Onboarding-Guide.mp4" style="color:#7cc0ff;font-weight:700">Download MP4 ↗</a></div>
+    </div>
+    <div class="card" style="background:#0a1f3c;color:#fff;border-color:#1e3f6e">
+      <b style="color:#7cc0ff;display:block;margin-bottom:6px">🚀 Full STPi Product &amp; 4-Stream Overview (Narrated MP4)</b>
+      <video controls preload="metadata" poster="/guides/shots/step-01-landing-hero-pricing.png" style="width:100%;border-radius:8px;background:#061428;border:1px solid #2b4c7e">
+        <source src="/videos/STPi-Promo-Long-Complete.mp4" type="video/mp4">
+      </video>
+      <div style="font-size:12.5px;margin-top:8px;opacity:.9">How STPi hunts 76 board families across 21 African markets and powers all 4 revenue streams. <a href="https://getstpi.pages.dev/videos/" style="color:#7cc0ff;font-weight:700">Browse all 32 Videos ↗</a></div>
+    </div>
+  </div>
+  <div class="shot-grid">
+    <a class="shot-card" href="/guides/shots/step-10-command-overview-dash.png" target="_blank" rel="noopener">
+      <img src="/guides/shots/step-10-command-overview-dash.png" alt="STPi Command Overview Dashboard" loading="lazy">
+      <div>1 · Command Overview &amp; Live Telemetry<small>Real-time funnel, 14-day send velocity &amp; candidate mailbox status</small></div>
+    </a>
+    <a class="shot-card" href="/guides/shots/step-11-approval-rounds-queue.png" target="_blank" rel="noopener">
+      <img src="/guides/shots/step-11-approval-rounds-queue.png" alt="STPi Approval Rounds Queue & Manual Job Input" loading="lazy">
+      <div>2 · 1-Tap Approval Queue &amp; Manual Job Input<small>Review tailored PDFs, tap Approve &amp; Send, or paste any job ad manually</small></div>
+    </a>
+    <a class="shot-card" href="/guides/shots/step-12-candidate-profiles-cv-studio.png" target="_blank" rel="noopener">
+      <img src="/guides/shots/step-12-candidate-profiles-cv-studio.png" alt="STPi Candidate Profiles & 12-Design CV Studio" loading="lazy">
+      <div>3 · Candidate Editor &amp; 12-Design CV Studio<small>Up to 25 countries, 76 job board families &amp; candidate Gmail App Password</small></div>
+    </a>
+    <a class="shot-card" href="/guides/shots/step-08-self-intake-portal.png" target="_blank" rel="noopener">
+      <img src="/guides/shots/step-08-self-intake-portal.png" alt="STPi Candidate Self-Intake Portal" loading="lazy">
+      <div>4 · Candidate Self-Intake Link (<code>/intake/…</code>)<small>Candidates upload their CV, photo, certificates &amp; Gmail App Password</small></div>
+    </a>
+    <a class="shot-card" href="/guides/shots/step-14-mailbox-plan-settings.png" target="_blank" rel="noopener">
+      <img src="/guides/shots/step-14-mailbox-plan-settings.png" alt="STPi Mailbox & Plan Settings" loading="lazy">
+      <div>5 · Connected Candidate &amp; Agency Mailboxes<small>Default candidate Gmail sending + fallback agency relay &amp; plan controls</small></div>
+    </a>
+    <a class="shot-card" href="/guides/shots/step-16-print-ready-cv-preview.png" target="_blank" rel="noopener">
+      <img src="/guides/shots/step-16-print-ready-cv-preview.png" alt="STPi Print-Ready Tailored CV & Cover Letter Preview" loading="lazy">
+      <div>6 · Print-Ready Tailored CV &amp; Cover Letter<small>Live A4 preview across Classic, Modern Photo &amp; Apex executive templates</small></div>
+    </a>
+  </div>
+</div></section>
 
 <section><div class="wrap">
   <h2>What it does while you sleep</h2>
@@ -220,16 +295,21 @@ $ stpi hunt --dry<br>
 </div></section>
 
 <footer><div class="wrap">
-  <b>STPi</b> by <b>Jacaranda Labs / STPi</b> · WhatsApp 24/7: <a href="https://wa.me/263784600904">+263 78 460 0904</a> ·
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
+    <img src="/brand/stpi-logo-on-navy.png" alt="STPi" style="height:38px;border-radius:8px">
+    <div><b>STPi — Strategic Talent Placement Infrastructure</b> by <b>Jacaranda Labs / STPi</b></div>
+  </div>
+  WhatsApp 24/7: <a href="https://wa.me/263784600904" target="_blank" rel="noopener">+263 78 460 0904</a> ·
   Email: <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> &amp; <a href="mailto:tafadzwamchikanya@gmail.com">tafadzwamchikanya@gmail.com</a> ·
-  Whop Store: <a href="https://whop.com/stpi">whop.com/stpi</a> ·
-  X: <a href="https://getstpi.pages.dev/g/xl/contact">@STPi_Cloud</a> ·
-  LinkedIn: <a href="https://getstpi.pages.dev/g/ll/contact">STPi Placement</a> ·
-  Bluesky: <a href="https://bsky.app/profile/stpi.bsky.social">@stpi.bsky.social</a> &amp; <a href="https://bsky.app/profile/tariromalajila.bsky.social">@tariromalajila.bsky.social</a> ·
-  Telegram: <a href="https://getstpi.pages.dev/g/tl/contact">Telegram</a> ·
-  Facebook: <a href="https://getstpi.pages.dev/g/fl/contact">Facebook</a> ·
-  Pinterest: <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/">Pinterest</a> ·
-  Dev.to: <a href="https://dev.to/simali_dud_b97add4154d7a6">Dev.to</a> ·
+  Whop Store: <a href="https://whop.com/stpi" target="_blank" rel="noopener">whop.com/stpi</a> ·
+  Whop App: <a href="https://stpi.whop.site" target="_blank" rel="noopener">stpi.whop.site</a> ·
+  Video Library: <a href="https://getstpi.pages.dev/videos/" target="_blank" rel="noopener">getstpi.pages.dev/videos</a> ·
+  X: <a href="https://x.com/STPi_Cloud" target="_blank" rel="noopener">@STPi_Cloud</a> ·
+  LinkedIn: <a href="https://www.linkedin.com/company/stpi" target="_blank" rel="noopener">STPi Placement</a> ·
+  Bluesky: <a href="https://bsky.app/profile/stpi.bsky.social" target="_blank" rel="noopener">@stpi.bsky.social</a> &amp; <a href="https://bsky.app/profile/tariromalajila.bsky.social" target="_blank" rel="noopener">@tariromalajila.bsky.social</a> ·
+  Facebook: <a href="https://www.facebook.com/stpicareers" target="_blank" rel="noopener">facebook.com/stpicareers</a> ·
+  Pinterest: <a href="https://www.pinterest.com/tafadzwamchikanya/stpi-board/" target="_blank" rel="noopener">Pinterest</a> ·
+  Dev.to: <a href="https://dev.to/simali_dud_b97add4154d7a6" target="_blank" rel="noopener">Dev.to</a> ·
   ⚡ <code>SharkSkin@coinos.io</code> · Mukuru/EFT <code>+263 78 460 0904</code><br>
   <b>📝 Mandatory 7-Day Printable Sales Contract:</b> Every paying customer must download <a href="https://getstpi.pages.dev/downloads/STPi-Customer-Sales-Contract.pdf">STPi-Customer-Sales-Contract.pdf</a>, print it, fill it in by hand in ink, scan it, and email it to <a href="mailto:simalidudu@gmail.com">simalidudu@gmail.com</a> within the first 7 business days after payment, and preserve the physical copy.<br>
   <b>⚠️ Support-First Rule:</b> Contact us FIRST before panicking or using random internet advice! If we find you ran to the public before contacting us first, we will remove you immediately.
