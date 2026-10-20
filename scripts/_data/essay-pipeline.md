@@ -11,7 +11,7 @@ Here is the failure order I keep observing, roughly in order of damage:
 3. The letter was generically excellent and specifically empty, so the reader felt the form letter.
 4. Only then, maybe, does a parser or a recruiter glance at the resume itself.
 
-A CV tweak fixes item three at best. The real fix is operational: treat the search as a small production system with sourcing, screening, drafting and a quality gate. This post is about the one I built and run for other people, stpi, and specifically the architecture, because the architecture is the part worth stealing even if you never touch my code.
+A CV tweak fixes item three at best. The real fix is operational: treat the search as a small production system with sourcing, screening, drafting and a quality gate. This post is about the live production desk running for our clients, stpi, and specifically the architecture, because the architecture is the part worth stealing even if you never touch my code.
 
 ## The nightly hunt
 

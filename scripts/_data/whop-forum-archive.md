@@ -130,7 +130,7 @@ Prompt: "Summarize your last project in two bullet points." Copy-paste it to kee
 
 ## We put a human approval gate inside a job application robot, on purpose _(Sep 20)_
 
-Most job-hunt tools optimize the same thing: send more, faster, with AI-polished wording everywhere. We built the opposite trade on purpose and it is worth explaining why, because the reasoning matters even if you never touch our product.
+Most job-hunt tools optimize the same thing: send more, faster, with AI-polished wording everywhere. STPi is engineered around the opposite trade on purpose and it is worth explaining why, because the reasoning matters even if you never touch our product.
 
 A search has two very different halves. The boring eighty percent (reading listings, scoring fit against what a job description actually repeats, tailoring drafts, timing follow-ups, keeping a tracker honest) is language logistics, and it is fully automatable. The twenty percent that carries your name, your judgment, your voice in the room, is not, and the moment a tool sends that part unattended it stops being leverage and starts being liability.
 

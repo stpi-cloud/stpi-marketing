@@ -20,7 +20,7 @@ forever), number-free unless dated and true, the human is the hero.
 6. The 06:00 shift your agency doesn't staff: it's automatable, it's $306/mo,
    and the demo is free forever. [CTA]
 7. Reframe: you don't need a better CV, you need a pipeline with a quality gate.
-   We built the gate. [CTA]
+   We hard-wired the approval gate. [CTA]
 8. Duplicates aren't noise: a role posted on 3+ boards is real and urgent.
    Queue those first. (Trick from the machine.) [CTA]
 

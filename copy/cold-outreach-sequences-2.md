@@ -42,7 +42,7 @@ one word back ("later") and I return next quarter with better manners.
 
 **T1 · WhatsApp.**
 Mhoro [name] — quick one: your graduates compete with applications posted at
-06:00 that nobody on your team reads before 14:00. I built stpi: it hunts the
+06:00 that nobody on your team reads before 14:00. STPi is the live placement desk that hunts the
 ZA/ZW/ZM boards nightly, drafts tailored docs per graduate, and your officer
 taps approve per send. Free forever for one candidate, self-hosted:
 getstpi.pages.dev — worth a look for the next intake?

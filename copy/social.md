@@ -8,7 +8,7 @@ numbers before posting.
 ## LinkedIn — launch post (long)
 
 ```
-I built a small machine that does the worst part of job hunting.
+A quiet production desk now runs the worst part of job hunting.
 
 Not the interviews. The 40 open tabs.
 
@@ -17,7 +17,7 @@ VacancyMail, iHarareJobs. Read every ad. Decide "is this Thabo?" Rewrite the sam
 letter for the 30th time. Attach the CV. Send. Repeat across 6 boards, 3 candidates,
 4 hours a day.
 
-So I built STPi. It runs on a schedule, sweeps country-specific sources (keys and availability vary) across South Africa,
+That live desk is STPi. It runs on a schedule, sweeps country-specific sources (keys and availability vary) across South Africa,
 Zimbabwe and Zambia, matches every ad against the candidate's real profile, scores the
 fit, and drafts a tailored cover letter + a country-formatted CV — both as PDFs.
 
@@ -63,7 +63,7 @@ Demo is free forever, one candidate, no card: https://getstpi.pages.dev/demo
 1/ Your candidates aren't losing to better candidates.
 They're losing to the 40 open tabs.
 
-I built STPi — a job-hunting copilot for coaches in ZA, ZW, ZM.
+STPi runs as the live job-hunting copilot for coaches in ZA, ZW, ZM.
 Here's the whole loop in 7 posts 🧵
 
 2/ 06:00, 10:00, 14:00, 18:00. STPi wakes up and sweeps country-specific sources (keys and availability vary):
@@ -118,7 +118,7 @@ Hi everyone 🙋 I coach job seekers and I got tired of doing the same thing eve
 week: opening six job sites, reading every advert, rewriting the same cover letter
 for each candidate.
 
-So I built a little tool (with my developer) that does the boring part for me. It
+So our desk wired an operational engine that runs the boring part on schedule. It
 checks the boards on a schedule, shortlists the ads that actually match a candidate,
 and writes a proper letter and CV for the ones worth it. Then it sends me ONE card
 on Discord with an Approve button — nothing goes anywhere unless I tap it.
