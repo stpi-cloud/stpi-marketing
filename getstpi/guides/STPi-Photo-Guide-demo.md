@@ -35,7 +35,7 @@
 | **32-Video Library & Walkthroughs** | `getstpi.pages.dev/videos` | [https://getstpi.pages.dev/videos/](https://getstpi.pages.dev/videos/) |
 | **X (Twitter) Official Channel** | `@STPi_Cloud` | [https://x.com/STPi_Cloud](https://x.com/STPi_Cloud) |
 | **LinkedIn Official Page & Team** | `linkedin.com/company/stpi` | [https://www.linkedin.com/company/stpi](https://www.linkedin.com/company/stpi) |
-| **Bluesky Official Account** | `@stpi.bsky.social` | [https://bsky.app/profile/stpi.bsky.social](https://bsky.app/profile/stpi.bsky.social) |
+| **Bluesky Official Account** | `@stpi-official.bsky.social` | [https://bsky.app/profile/stpi-official.bsky.social](https://bsky.app/profile/stpi-official.bsky.social) |
 | **Bluesky Founder & Support** | `@tariromalajila.bsky.social` | [https://bsky.app/profile/tariromalajila.bsky.social](https://bsky.app/profile/tariromalajila.bsky.social) |
 | **Facebook Official Page** | `facebook.com/stpicareers` | [https://www.facebook.com/stpicareers](https://www.facebook.com/stpicareers) |
 | **Pinterest Official Visual Boards** | `pinterest.com/tafadzwamchikanya/stpi-board` | [https://www.pinterest.com/tafadzwamchikanya/stpi-board/](https://www.pinterest.com/tafadzwamchikanya/stpi-board/) |
@@ -151,11 +151,11 @@ Every screenshot below is taken directly from the real STPi pipeline and annotat
 
 ## Part 3 · Daily Operation: Reviewing, Approving & Tracking
 
-### Step 11 of 16: Rounds View (#rounds) — Batch-Review Morning & Afternoon Hunt Matches
+### Step 11 of 16: Rounds View (#rounds) — Batch-Review Daily Hunt Matches
 
 **What you see on screen:** Clicking **Rounds** in the sidebar groups all researched job matches by hunt batch (`R-1018-AM · Morning matches`, `R-1018-PM · Afternoon matches`). Each card displays the candidate name, job title, employer, relevance score (`89%`), application route (`✉️ emailed application` vs `📦 portal apply pack`), and closing date countdown.
 
-![Step 11 — Rounds View (#rounds) — Batch-Review Morning & Afternoon Hunt Matches](shots/step-11-rounds-batch-review.png)
+![Step 11 — Rounds View (#rounds) — Batch-Review Daily Hunt Matches](shots/step-11-rounds-batch-review.png)
 
 #### 🎯 'For Dummies' Yellow Speech-Bubble & Arrow Callouts on This Screen
 

@@ -37,7 +37,7 @@ If anything ever looks unfamiliar or if you have a question at any step, **conta
 - **Whop Storefront:** <https://whop.com/stpi>
 - **X (Twitter):** `@STPi_Cloud` (<https://getstpi.pages.dev/g/xl/contact>)
 - **LinkedIn:** `STPi Placement` (<https://getstpi.pages.dev/g/ll/contact>)
-- **Bluesky:** `@stpi.bsky.social` (<https://bsky.app/profile/stpi.bsky.social>) & `@tariromalajila.bsky.social` (<https://bsky.app/profile/tariromalajila.bsky.social>)
+- **Bluesky:** `@stpi-official.bsky.social` (<https://bsky.app/profile/stpi-official.bsky.social>) & `@tariromalajila.bsky.social` (<https://bsky.app/profile/tariromalajila.bsky.social>)
 - **Telegram:** <https://getstpi.pages.dev/g/tl/contact>
 - **Facebook:** <https://getstpi.pages.dev/g/fl/contact>
 - **Pinterest:** <https://www.pinterest.com/tafadzwamchikanya/stpi-board/>

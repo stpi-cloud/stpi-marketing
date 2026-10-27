@@ -118,7 +118,7 @@ Hi {{candidate}},
 
 From this week, your job hunt runs on STPi:
 
-- It checks the boards for you, twice a day, Monday–Saturday.
+- It checks the boards for you, once a day, Monday–Saturday.
 - It shortlists only ads that match YOUR profile — location, field, seniority.
 - It drafts a letter and CV per ad, tailored, never invented.
 - NOTHING is ever sent without {{coach}} approving it first — and you can see

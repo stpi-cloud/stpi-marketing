@@ -24,7 +24,7 @@ Use their estimates with date/range. Hours × rate × a stated month conversion 
 
 Agree the question and safe scope. Scene 1: a clearly synthetic artifact and source lineage. Scene 2: relevant controls and a negative case. Scene 3: conservative assumptions and a bounded next step. Label simulations and live provider interactions. No real recipient sends, billing grants, candidate state changes or credential resets as incidental demo actions.
 
-Product explanation: “Candidate applications require your approval. STPI's researched sales is a separate automatic workflow under safeguards. Normal candidate hunts are twice daily Monday–Saturday. A qualified result depends on execution, sources and eligibility.”
+Product explanation: “Candidate applications require your approval. STPI's researched sales is a separate automatic workflow under safeguards. Normal candidate hunts run once a day Monday–Saturday. A qualified result depends on execution, sources and eligibility.”
 
 Offer explanation: “The download is free forever with one active candidate and five counted deliveries per UTC month. The hosted seven-day trial is separate. Provider allowances and safety caps still apply.”
 

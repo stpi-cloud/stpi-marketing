@@ -124,12 +124,12 @@ Setup Pack includes:
     "prod_ZqlnkKABqd48o": {
         "title": "STPi Done-For-You Placement",
         "headline": "1 seat hosted on our live engine, 30 sends/mo across 21 African + remote boards.",
-        "description": f"""For individual executives and professionals who want STPi to hunt, score, and draft tailored applications twice daily across 21 African markets and remote boards.
+        "description": f"""For individual executives and professionals who want STPi to hunt, score, and draft tailored applications once a day across 21 African markets and remote boards.
 
 Done-For-You Placement includes:
 - 1 candidate seat hosted on our live engine
 - 30 approved sends a month
-- Twice-daily hunts across {BOARDS}
+- Once-daily hunts (Mon–Sat) across {BOARDS}
 - Tailored Executive CV + Cover Letter PDFs per vacancy
 - Web approval dashboard: nothing sends until you tap Approve
 - 'For Dummies' Onboarding + Operational Guide in 4 formats (PDF, MD, HTML & Video)

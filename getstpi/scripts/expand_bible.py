@@ -960,7 +960,7 @@ owner keeps judgment. Run full mode in W1 so you learn what green looks like;
 switch to lean only when you can tell green from silent.*
 
 *What the machines already carry (verified 2026-10-09): lead intake fills D1
-twice daily (leads-hunt.yml 07:23/14:23 SAST); the 08:21 weekday compose queues
+once a day Mon–Sat (leads-hunt.yml 07:23 SAST); the 08:21 weekday compose queues
 the batch and posts its card (outreach.yml); replies are triaged 3×/day —
 opt-outs→DNC, bounces→dead, real replies→owner ping; the press autopilot
 publishes 4 slots/day, 7 days/week (press.yml, recent runs all green).*

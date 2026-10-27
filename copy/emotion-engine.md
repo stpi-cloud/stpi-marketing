@@ -11,7 +11,7 @@ Emotion means making a true consequence understandable. Never manufacture pain, 
 ## Product facts that every script must preserve
 
 - Candidate applications require human approval. Eligible researched STPI sales outreach remains automatic under evidence, suppression, pacing and sender policy. Do not say the entire product has no automatic mode.
-- Two scheduled candidate hunts per day Monday–Saturday: 04:17/12:17 UTC, 06:17/14:17 SAST. A schedule does not guarantee successful execution or a qualified vacancy.
+- One scheduled candidate hunt per day Monday–Saturday: 04:17 UTC, 06:17 SAST. A schedule does not guarantee successful execution or a qualified vacancy.
 - Downloadable demo: free forever; one active candidate; five counted deliveries per UTC calendar month; no lifetime draft cap. Hosted seven-day trial is separate.
 - Fact-bound preparation does not verify upstream extraction/profile truth. Human comparison remains necessary.
 - The 72-hour rule covers active generated content/age checks, not universal erasure of downloads, delivered mail, history, backups or provider logs.

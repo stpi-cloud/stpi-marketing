@@ -39,7 +39,7 @@ email to put it on so it doesn't die in a folder?"
 "{{name}}, {{you}}, thirty seconds, then you hang up on me if it's rubbish.
 
 You spend your week opening six job boards and rewriting the same cover letter.
-I run a small pipeline that does that part: it hunts the boards twice a day, Monday–Saturday,
+I run a small pipeline that does that part: it hunts the boards once a day, Monday–Saturday,
 drafts the letter and CV, and drops ONE card in your Discord. You tap approve.
 Nothing sends without you.
 
@@ -71,7 +71,7 @@ Then SMS: `STPi demo (free, no card): <landing-url> — 1 candidate, free foreve
 ```
 "Okay. Here's what I'm NOT going to do: quote you a price on this call.
 Set up the free demo now while we're on the phone — ten minutes, I stay on the
-line. You pick one candidate and one keyword. A first card appears only when a suitable new job is found — twice a day, Monday–Saturday. When you've tapped approve on a real send, then we talk
+line. You pick one candidate and one keyword. A first card appears only when a suitable new job is found — once a day, Monday–Saturday. When you've tapped approve on a real send, then we talk
 about Solo at $306 a month (about R4,999). Fair?"
 ```
 
@@ -126,7 +126,7 @@ AFTER DEMO SIGNUP (day 3)  First cards landing? The reject button is the most
 
 ```
 "We do the forty-tabs part of job hunting. You give it one candidate and one
-keyword; it checks the candidate’s country-specific source set, twice a day, Monday–Saturday, drafts the letter and CV,
+keyword; it checks the candidate’s country-specific source set, once a day, Monday–Saturday, drafts the letter and CV,
 and asks your permission before anything sends. Demo's free forever — scan this."
 → QR to <landing-url>
 ```

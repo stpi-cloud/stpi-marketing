@@ -13,7 +13,7 @@ Score each 0/1 only when the consented record supports it; otherwise mark unknow
 5. Did we identify the desired outcome without turning released capacity into guaranteed revenue?
 6. Did we explain candidate-only approval versus separate automatic researched STPI sales?
 7. Did the demonstration use safe data and show lineage, a meaningful limit and a negative case?
-8. Did we preserve the two-hunt, forever-demo/separate-trial, conditional-source and scoped-retention contracts?
+8. Did we preserve the one-hunt-a-day, forever-demo/separate-trial, conditional-source and scoped-retention contracts?
 9. Did we surface stakeholder authority, implementation work, exit and material unanswered questions?
 10. Was the next step actually wanted, with effective follow-up/stop preferences?
 

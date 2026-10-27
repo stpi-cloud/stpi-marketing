@@ -6,7 +6,7 @@ Use this after a conversation only with appropriate permission. Replace fields w
 
 **Current workflow and objective:** [their corrected account; reported estimates clearly labeled].
 
-**What STPI can support:** relevant vacancy research, fact-bound preparation and candidate applications that require human approval. Eligible researched STPI business sales is a separate automatic loop under safeguards. Normal candidate hunts are twice daily Monday–Saturday, not a guarantee of a qualified result.
+**What STPI can support:** relevant vacancy research, fact-bound preparation and candidate applications that require human approval. Eligible researched STPI business sales is a separate automatic loop under safeguards. Normal candidate hunts run once a day Monday–Saturday, not a guarantee of a qualified result.
 
 **What remains conditional:** profile/extraction accuracy, source access, eligibility, provider allowances, deliverability and outcomes. Active-content age limits do not erase every external copy.
 

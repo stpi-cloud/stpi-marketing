@@ -90,6 +90,6 @@ cron. STPi is the difference between a prompt and a pipeline.
 
 **"What's the catch with $0 hosting?"**
 No catch, just honesty: GitHub Actions free tier is 2,000 minutes on a private repo;
-illustratively, 5 minutes × 2 hunts/day × 26 days = 260 minutes/month for hunts alone.
+illustratively, 5 minutes × 1 hunt/day × 26 days = 130 minutes/month for hunts alone.
 Actual runs vary; outreach, press, retries and CI share the allowance. No blanket $0 bill
 is promised. The customer's LLM key and mailbox have their own limits.

@@ -11,7 +11,7 @@ affiliates 30% recurring 12 months. Every Whop plan charges exactly its price on
 | Tier | USD/mo | ≈ ZAR | Candidates | Sends | Extras |
 |---|---|---|---|---|---|
 | **Demo** | $0 forever | R0 | 1 | 5/mo | full pipeline, Discord card, PDFs, 72 h purge |
-| **Solo** | $306 | R4,999 | 3 | 100/mo | priority hunt slots; approve in Discord (web dashboard + Telegram when self-hosted) |
+| **Solo** | $306 | R4,999 | 3 | 100/mo | daily hunt Mon–Sat; approve in Discord (web dashboard + Telegram when self-hosted) |
 | **Studio** | $613 | R9,999 | 15 | fair-use (20/day/candidate guard-rail) | white-label PDFs, brand header |
 | **Sovereign** | $920 | R15,000 | unlimited | guard-rail | self-hosted Docker; signed licence + install steps delivered in the buyer's Discord (WhatsApp backup); data never leaves |
 
