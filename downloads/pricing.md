@@ -35,7 +35,6 @@ If anything ever looks unfamiliar or if you have a question at any step, **conta
 - **Customer Care & Onboarding Email:** `tafadzwamchikanya@gmail.com`
 - **Official Portal:** <https://getstpi.pages.dev>
 - **Whop Storefront:** <https://whop.com/stpi>
-- **X (Twitter):** `@STPi_Cloud` (<https://getstpi.pages.dev/g/xl/contact>)
 - **LinkedIn:** `STPi Placement` (<https://getstpi.pages.dev/g/ll/contact>)
 - **Bluesky:** `@stpi-official.bsky.social` (<https://bsky.app/profile/stpi-official.bsky.social>) & `@tariromalajila.bsky.social` (<https://bsky.app/profile/tariromalajila.bsky.social>)
 - **Telegram:** <https://getstpi.pages.dev/g/tl/contact>

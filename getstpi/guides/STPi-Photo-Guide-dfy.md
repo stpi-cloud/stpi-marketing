@@ -33,7 +33,6 @@
 | **Whop Official Storefront & Community** | `whop.com/stpi` | [https://whop.com/stpi](https://whop.com/stpi) |
 | **Whop Native App Website** | `stpi.whop.site` | [https://stpi.whop.site](https://stpi.whop.site) |
 | **32-Video Library & Walkthroughs** | `getstpi.pages.dev/videos` | [https://getstpi.pages.dev/videos/](https://getstpi.pages.dev/videos/) |
-| **X (Twitter) Official Channel** | `@STPi_Cloud` | [https://x.com/STPi_Cloud](https://x.com/STPi_Cloud) |
 | **LinkedIn Official Page & Team** | `linkedin.com/company/stpi` | [https://www.linkedin.com/company/stpi](https://www.linkedin.com/company/stpi) |
 | **Bluesky Official Account** | `@stpi-official.bsky.social` | [https://bsky.app/profile/stpi-official.bsky.social](https://bsky.app/profile/stpi-official.bsky.social) |
 | **Bluesky Founder & Support** | `@tariromalajila.bsky.social` | [https://bsky.app/profile/tariromalajila.bsky.social](https://bsky.app/profile/tariromalajila.bsky.social) |
